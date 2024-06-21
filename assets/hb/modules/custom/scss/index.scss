@@ -1,0 +1,127 @@
+// This SCSS styles will be compiled into the CSS bundle automatically.
+/*! purgecss start ignore */
+//
+// Main
+//
+
+// Font
+:root {
+  --hb-font-sans-serif: 'Pretendard Variable', 'Spoqa Han Sans Neo', 'Noto Sans KR', system-ui, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  --hb-font-monospace: 'Monoplex KR Wide Nerd', D2Coding, 'D2 coding', Consolas, monospace;
+  --hb-body-font-size: 1.1rem;
+  font-feature-settings: 'calt' 1, 'case' 1, 'ccmp' 1, 'ss03' 1, 'ss05' 1, 'ss06' 1, 'ss10' 1;
+}
+b, strong { font-weight: 700; }
+.badge { --hb-badge-font-size: 0.9rem; }
+.hb-blog-post-meta { font-size: 0.9rem; }
+
+// Menu
+.hb-header-menus {
+  .dropdown-item-icon { background-image: none !important; }
+  .hb-header-menu-icon { width: 1rem; }
+  .hb-header-menu-icon-image { width: 1rem; margin-right: 4px; }
+  .hb-header-menu-icon-image-sub { width: 2rem; }
+}
+
+// Main header taxonomy
+.nav { justify-content: space-evenly; }
+.nav-fill > .nav-link { flex: initial; }
+
+// Taxonomy
+.hb-blog-post-taxonomy-tag::before { content: '#'; }
+.hb-blog-post-taxonomy-series::before { content: '§'; }
+
+// Post Card without image
+div.hb-blog-post-card-img-none {
+  font-size: 3rem;
+  filter: blur(2px);
+  text-transform: none;
+}
+
+// Hide Post Meta in article
+.hb-blog-post {
+  .hb-blog-post-section { display: none; }
+}
+
+// Post style
+div.hb-blog-post-content {
+  p:first-child { margin-top: 0; margin-bottom: 0.7rem; }
+  p:not(:first-child) { margin: 0.7rem 0; }
+  p:last-child { margin-bottom: 0; }
+  blockquote {
+    & { margin: 0 0 0.7rem 0; }
+    &.block-quote {
+      padding: 0.5rem 1rem;
+      border: 1px var(--hb-tertiary-color) dashed;
+      background-color: var(--hb-tertiary-bg);
+    }
+    p, ul:last-child, ol:last-child { margin-bottom: 0; }
+    hr { margin: 0.5rem 0; }
+    // Twitter embed (Not sure why this doesn't work)
+    &.twitter-tweet { font-family: var(--hb-font-sans-serif) !important; }
+  }
+  img.img-fluid { margin: 0.5rem 0; }
+  // Headings
+  h1, h2, h3, h4, h5, h6 { margin-top: 2rem; }
+  // Horizontal Line
+  hr { margin: 1.5rem 0; }
+  // Code Block
+  pre { background-color: var(--hb-secondary-bg); }
+  // List
+  ul, ol { li p { margin-bottom: 0; } }
+  // Table
+  table, .table { --hb-table-color: var(--hb-body-color) }
+}
+
+//
+// Shortcodes
+//
+
+// Gallery
+div.hb-blog-post-content div.gallery {
+  div.gallery-container {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  figure {
+    & { margin: 0; }
+    figcaption {
+      caption-side: bottom;
+      color: #9999A1;
+      font-size: 1rem;
+      min-height: 20px;
+      text-align: center;
+      word-break: break-word;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  div.hb-blog-post-content div[id^='gallery-container-'] { width: 100% !important; }
+}
+// Youtube
+div.hb-blog-post-content div.youtube-container {
+  & { margin: 0 auto; }
+  div.youtube-container-inner {
+    height: 0; // width: 100%;
+    overflow: hidden;
+    padding-bottom: calc(56.25% + 50px);
+    position: relative;
+  }
+  figcaption {
+    caption-side: bottom;
+    color: #9999A1;
+    font-size: 1rem;
+    margin-top: 7px;
+    min-height: 20px;
+    text-align: center;
+    word-break: break-word;
+  }
+}
+@media (max-width: 767.98px) {
+  div.hb-blog-post-content div.youtube-container { max-width: 100% !important; }
+}
+
+/*! purgecss end ignore */

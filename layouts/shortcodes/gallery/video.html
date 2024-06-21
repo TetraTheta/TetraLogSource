@@ -1,0 +1,69 @@
+{{- $srcset := .Get "src" -}}
+{{- $align := default "center" (.Get "align") -}}
+{{- $width := default "100%" (.Get "width") -}}
+{{- $caption := default "" (.Get "caption") -}}
+
+{{- $id := delimit (shuffle (seq 1 9)) "" -}}
+{{- $page := .Page -}}
+{{- $style := "" -}}
+
+{{- if strings.Contains $srcset "|" -}}
+  {{- $srcset = split $srcset "|" -}}
+{{- else -}}
+  {{- $srcset = slice $srcset -}}
+{{- end -}}
+
+{{- if gt (len $srcset) 3 -}}
+  {{- errorf "[gallery/video] Too many videos. Up to 3 images are allowed. @ %s" $page.Title -}}
+{{- else if lt (len $srcset) 1 -}}
+  {{- errorf "[gallery/video] Not enough video. At least 1 image is required. @ %s" $page.Title -}}
+{{- end -}}
+
+{{- if eq (len $srcset) 1 -}}
+  {{- $style = "width: 100%" -}}
+{{- else if eq (len $srcset) 2 -}}
+  {{- $style = "width: 49.5%" -}}
+{{- else -}}
+  {{- $style = "width: 32.5%" -}}
+{{- end -}}
+<div class="gallery" align="{{ $align }}">
+  <div id="gallery-container-{{ $id }}" style="width: {{ $width }}">
+    <figure class="gallery-figure">
+      <div class="gallery-container">
+        {{- range $srcset -}}
+          {{- $src := (printf "%s" .) | default "" -}}
+          {{- $srcLink := "" -}}
+          {{- if eq (path.Ext $src) "" -}}
+            {{- $src = printf "%s.mp4" $src -}}
+          {{- end -}}
+          {{- $url := urls.Parse $src -}}
+          {{- if not $url.Scheme -}}
+            {{/* Process internal video */}}
+            {{- $path := $url.Path -}}
+            {{- $res := "" -}}
+            {{/* Filename begin with leading slash will be treated as global image resource. */}}
+            {{- if hasPrefix $path "/" -}}
+              {{- $path = strings.TrimPrefix "/" $path -}}
+              {{- $res = resources.GetMatch $path -}}
+            {{- else -}}
+              {{- $res = $page.Resources.GetMatch $path -}}
+            {{- end -}}
+            {{- if ne $res.MediaType.MainType "video" -}}
+              {{- errorf "[gallery/video] Video is not valid: %s @ %s" $src $page.Title -}}
+            {{- end -}}
+            {{- $srcLink = $res.RelPermalink -}}
+          {{- else -}}
+            {{/* Process external video */}}
+            {{- $srcLink = $src -}}
+          {{- end -}}
+        <div class="gallery-inner" style="{{ $style }}">
+          <video style="max-width: 100%" src="{{ $srcLink }}" autoplay muted loop controlsList="nodownload" disablepictureinpicture oncontextmenu="return false;" onkeydown="return false;"></video>
+        </div>
+        {{- end -}}
+      </div>
+      {{- if ne $caption "" -}}
+      <figcaption>{{ (printf "%s" $caption) | markdownify }}</figcaption>
+      {{- end -}}
+    </figure>
+  </div>
+</div>

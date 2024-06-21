@@ -1,0 +1,4 @@
+{{- $src := default (.Get 0) (.Get "src") -}}
+{{- $style := default (.Get 1) (.Get "style") -}}
+{{- $src = .Page.Resources.Get $src -}}
+<img src="{{- $src.RelPermalink -}}" style="{{- $style -}}">

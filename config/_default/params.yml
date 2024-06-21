@@ -1,0 +1,86 @@
+google_adsense: ca-pub-4833500762608350
+
+hb:
+  back_to_top:
+    icon_name: 'arrow-up-circle'
+  blog:
+    giscus:
+      category: 'Giscus'
+      category_id: 'DIC_kwDOKakTSM4CZxf_'
+      languages_mapping.ko: ko
+      repo: 'TetraTheta/TetraLogComment'
+      repo_id: 'R_kgDOKakTSA'
+    home:
+      featured_posts: 3 # the number of the featured posts.
+    paginate: 12
+    post_read_more: false
+    related_posts:
+      list_style: slide
+    terms:
+      paginate: 12
+  color: 'dark'
+  footer:
+    # see https://hbstack.dev/en/docs/modules/socials/.
+    socials:
+      _color: true # when false, remove the color of social icons.
+      github: 'TetraTheta'
+      rss: true
+  full_width: false
+  header:
+    brand: 'TetraLog' # the brand name, leave it empty to use site's title.
+    logo_bg: '#00000000' # logo background color, used by logo with transparent background.
+    # see https://hbstack.dev/en/docs/modules/socials/.
+    socials:
+      github: 'TetraTheta'
+      rss: true
+  heading_sign:
+    symbol: '¶'
+  pagination:
+    siblings: 3
+  progress_bar:
+    height: '4px'
+  terms:
+    paginate: 12
+    profile: false
+
+hugopress:
+  modules:
+    hb-custom:
+      hooks:
+        hb-blog-post-meta:
+          cacheable: false
+        head-end:
+          cacheable: true
+        body-end:
+          cacheable: true
+
+# Default Open Graph / Twitter Cards image
+images:
+  - 'images/card-twitter.png'
+
+mermaid:
+  js_url: 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
+
+# PWA settings, see https://hugomods.com/en/docs/pwa/#site-parameters.
+pwa:
+  debug: false
+  manifest:
+    background_color: '#712cf9'
+    theme_color: '#712cf9'
+    short_name: 'TetraLog'
+
+# see https://hugomods.com/en/docs/search/#site-parameters
+search:
+  case_sensitive: false
+  distance: 1000 # ignored by 'ignore_location'
+  expand_results_meta: true
+  ignore_location: true
+  index_content: true
+  location: 10 # ignored by 'ignore_location'
+  min_match_char_length: 2
+  stall_threshold: 900
+  threshold: 0.2
+
+seo:
+  favicons:
+    icon: 'images/logo.png'
