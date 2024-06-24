@@ -2,6 +2,29 @@
 
 This is the source of my blog, [TetraLog](https://tetralog.haipa.xyz/), built with [Hugo](https://gohugo.io/) and the [HB Card Theme](https://github.com/hbstack/theme-cards).
 
+## Requirements
+
+* Hugo >= 0.127.0
+* Node.js >= 20
+* Python >= 3.12
+
+I use mixed environment(Node.js + Python) because I want to focus more on writing article, rather than spending time solving various problems in Javascript.
+
+After cloning, run these commands in order:
+```bash
+# Setup Node dependencies
+npm ci
+# Setup Python dependencies
+python -m venv .venv
+# Activate Python virtual environment (Windows)
+# for Linux: source .venv/bin/activate
+call .venv\Scripts\activate.bat
+# Install Python dependencies in virtual environment
+pip install -r requirements.txt
+```
+
+NPM script will run Python.
+
 ## Note
 
 This is a note for myself for later use.

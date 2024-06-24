@@ -3,12 +3,8 @@
   "description": "TetraLog blog made with HB Cards Theme",
   "author": "TetraTheta",
   "dependencies": {
-    "@minify-html/node": "^0.15.0",
     "autoprefixer": "^10.4.19",
-    "cheerio": "^1.0.0-rc.12",
-    "minify-xml": "^4.4.1",
     "postcss-cli": "^11.0.0",
-    "rimraf": "^5.0.7",
     "rtlcss": "^4.1.1"
   },
   "devDependencies": {
@@ -25,12 +21,12 @@
   "scripts": {
     "build": "hugo --gc --minify -e production",
     "check-update": "npx --yes npm-check-updates",
-    "clean": "rimraf public && rimraf resources",
-    "deslash": "node ./.scripts/deslash.mjs",
+    "clean": "python ./.script/cli.py clean",
+    "deslash": "python ./.script/cli.py deslash",
     "dev": "hugo server --renderToMemory --disableFastRender -D -p 44",
     "dev.prod": "hugo server --gc --minify --renderToMemory --disableFastRender -D -e production -p 44",
-    "new": "node ./.scripts/new.mjs",
-    "publish": "node --env-file=./.scripts/.env ./.scripts/publish.mjs",
-    "publish.local": "node --env-file=./.scripts/.env ./.scripts/publish.local.mjs"
+    "new": "python ./.script/cli.py new",
+    "publish": "python ./.script/cli.py publish",
+    "publish.local": "python ./.script/cli.py publish --local"
   }
 }
