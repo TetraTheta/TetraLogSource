@@ -5,7 +5,7 @@ import subprocess
 import sys
 from argparse import ArgumentParser
 from collections import namedtuple
-from os import chdir, environ, path
+from os import chdir, environ
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import List, Optional
@@ -84,7 +84,7 @@ class Kind:
             raise ValueError("Alias must be a list of strings")
         if not (isinstance(kind, str)):
             raise ValueError("Kind must be a string")
-        if not (isinstance(path, str)):
+        if not (isinstance(argpath, str)):
             raise ValueError("Path must be a string")
         self.name = name
         self.alias = alias
@@ -197,7 +197,7 @@ def new(args):
     Kinds.add(Kind("wuthering-waves-misc", ["wuthering-misc", "wuthering-waves-misc", "ww-misc"], "wuthering-waves", "b/game/wuthering-waves/misc"))
 
     kind = Kinds.get(args.kind)
-    title = "-".join(args.TITLE).strip()
+    title = "-".join(args.TITLE).strip().lower()
     content_path = Path(root / "content" / kind.path).resolve()
 
     print(f"{Fore.YELLOW}-------- Input Information --------{Style.RESET_ALL}")
