@@ -60,7 +60,7 @@ div.hb-blog-post-content {
     // Twitter embed (Not sure why this doesn't work)
     &.twitter-tweet { font-family: var(--hb-font-sans-serif) !important; }
   }
-  img.img-fluid { margin: 0.5rem 0; }
+  img.img-fluid { margin: 0.5rem 0 0 0; }
   // Headings
   h1, h2, h3, h4, h5, h6 { margin-top: 2rem; }
   // Horizontal Line
@@ -99,7 +99,8 @@ div.hb-blog-post-content div.gallery {
   }
 }
 @media (max-width: 767.98px) {
-  div.hb-blog-post-content div[id^='gallery-container-'] { width: 100% !important; }
+  //div.hb-blog-post-content div[id^='gallery-container-'] { width: 100% !important; }
+  div.hb-blog-post-content div.gallery { width: 100% !important; }
 }
 // Youtube
 div.hb-blog-post-content div.youtube-container {

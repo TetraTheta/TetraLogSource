@@ -4,7 +4,6 @@
 {{- $width := default "100%" (.Get "width") -}}
 {{- $caption := default "" (.Get "caption") -}}
 
-{{- $id := delimit (shuffle (seq 1 9)) "" -}}
 {{- $page := .Page -}}
 {{- $style := "" -}}
 
@@ -28,7 +27,7 @@
   {{- $style = "width: 32.5%" -}}
 {{- end -}}
 <div class="gallery" align="{{ $align }}">
-  <div id="gallery-container-{{ $id }}" style="width: {{ $width }}">
+  <div style="width: {{ $width }}">
     <figure class="gallery-figure">
       <div class="gallery-container">
         {{- range $srcset -}}

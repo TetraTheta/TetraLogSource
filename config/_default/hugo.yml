@@ -44,6 +44,8 @@ markup:
         enable: true
         eastAsianLineBreaks: true
       extras:
+        delete:
+          enable: true
         insert:
           enable: true
         mark:
@@ -52,6 +54,7 @@ markup:
           enable: true
         superscript:
           enable: true
+      strikethrough: false
       typographer:
         disable: false
         apostrophe: "\'"

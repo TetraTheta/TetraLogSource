@@ -34,8 +34,8 @@ github.com/hbstack/bootstrap v0.2.2 h1:Kiy+XEiyDvH9KVfuS7uWYTDoTLbiww0PWTheEXO/f
 github.com/hbstack/bootstrap v0.2.2/go.mod h1:2Qd2g72fKgje8fCMSaz8KlKIv60c6PAak59Zg2FJHs0=
 github.com/hbstack/breadcrumb v0.7.3 h1:HVwTFf8ZOW4PkSUH2phx33DwMa2hmjpn2GHN1/nCEyk=
 github.com/hbstack/breadcrumb v0.7.3/go.mod h1:Xh93KE3dzXP7fYKcV7mjiMgw7P4JUOFfFgsx28jTo5o=
-github.com/hbstack/carousel v0.2.6 h1:yQ9Pv0kTYZluDd07I7V27In89JU9/e3wBb3LF8W7dwQ=
-github.com/hbstack/carousel v0.2.6/go.mod h1:XWL7LkRRjyy4g/NF83cnLi49NpWBgW554HGb52lvrzc=
+github.com/hbstack/carousel v0.2.7 h1:CeAYTFjFfVd8NSU0/iWLwmRwAnZBuzWn+2Own1eKkp0=
+github.com/hbstack/carousel v0.2.7/go.mod h1:jjsMHn99vOq5Vbu9WVyPOq9vm+0NBgWuGaNW6vjumZE=
 github.com/hbstack/code-block-panel v0.1.2 h1:7ZW54ZA7tBNr5oQSWrBrAvEyXfm0Usk9+Nsp7X7Xhko=
 github.com/hbstack/code-block-panel v0.1.2/go.mod h1:VK2kn+hD3pr5HPz8izFAUyFG0lB/nXybe8ix5uc/LLs=
 github.com/hbstack/content-panel v0.10.1 h1:DB0sg3nNWD4oy7RMCxe3xXYjAzhy3G58r6QlM324bEA=
@@ -68,8 +68,8 @@ github.com/hbstack/header v0.14.6 h1:HyRbRtn8ckakpW+TRwYzYXXLfYbx3+pt50uacE7qgnA
 github.com/hbstack/header v0.14.6/go.mod h1:L/d+aYCUxWqzvdGzsVUI8hWJNESs1qw4emI4Gobvda4=
 github.com/hbstack/header/modules/search v0.1.37 h1:V8mNq94Edah7uuWbzUJ45joo++X5yMs8NrUAUQODOtc=
 github.com/hbstack/header/modules/search v0.1.37/go.mod h1:6B9LOCIzdWw4AE6N2xzQ0mwHHuU1z3DPZly6uyVrVAc=
-github.com/hbstack/header/modules/socials v0.2.1 h1:Zvq/DuKHq71frqojlERYP88ScuVRh8IvGj9DHxYK2Q4=
-github.com/hbstack/header/modules/socials v0.2.1/go.mod h1:ntNP1E47dOuqKNPsw5XGsg0Wr9nAJhiGU8ZtZ33Ur8s=
+github.com/hbstack/header/modules/socials v0.2.2 h1:HZzeJg3Ncf0vv2QipccYYhSADVTG4Aqt1rYLml23u40=
+github.com/hbstack/header/modules/socials v0.2.2/go.mod h1:oy5kARWoEresORePUcmtFax0wTgCA4U7jsxExltgHC0=
 github.com/hbstack/header/themes/pills v0.2.18 h1:3g2LmC8jPjmx51afWGLymoOwy9lfmBSk6sV8Hsg0Nk4=
 github.com/hbstack/header/themes/pills v0.2.18/go.mod h1:hzka2CZXFw7AkI19tOKawCosanb9qDKAHEP3hECsRfQ=
 github.com/hbstack/heading-sign v0.2.0 h1:yXKZQEjPn/+jKyQxCJh34X+wXbiG4Bnr1VVF6lgMhi8=
@@ -80,8 +80,8 @@ github.com/hbstack/noscript v0.7.0 h1:PxHaeCInP9SFofMOS+QUmAxujwP+Nh2D1kO5C0IlZI
 github.com/hbstack/noscript v0.7.0/go.mod h1:F0qU9/caEaqa45OfHiL+8nTCohs2rg97Hek2KQUzK8M=
 github.com/hbstack/pagination v0.8.0 h1:xnrLD6c7HalpQFQKN9pcQi1M8H0o8b3yrjbjBFs/03o=
 github.com/hbstack/pagination v0.8.0/go.mod h1:XaYSS/iReEFQo+fbVAx2YfjP4muWEraVNGeaTcVA35o=
-github.com/hbstack/progress-bar v0.1.0 h1:2ZiGS3RFZbZYBUbT2nFCoU9SJsbD9jtV4A7ab41B4jg=
-github.com/hbstack/progress-bar v0.1.0/go.mod h1:JZt160XK62FxThzt+RmokjOww3De8ZL0ITcxMJLVE7g=
+github.com/hbstack/progress-bar v0.1.1 h1:lDnWvTMzPfzJedmUBkPmD+PHzioSMDR7rDBIIuK8D0M=
+github.com/hbstack/progress-bar v0.1.1/go.mod h1:FIGc4o/OJjz79uyjOenyjKfinWu2r7oUzI+XRSRMaOM=
 github.com/hbstack/search v0.2.2 h1:OcGCw2cVzZlB48wogNatcbaHk2BB7Boc/ESt9txI4Gw=
 github.com/hbstack/search v0.2.2/go.mod h1:sVNCCvokrCfydqCNF/q7kcAd+U73a7Y/0P+v8vJaC0I=
 github.com/hbstack/slide v0.4.0 h1:rWrbEmL1bKW1VF1coMtMblDUwzMvVcm1MgvauFX6vMg=
@@ -162,7 +162,6 @@ github.com/hugomods/snackbar v0.1.2 h1:SLpfH9jlYwf81epH7DvM2XTZHo+3fXXpk6XKtxmo9
 github.com/hugomods/snackbar v0.1.2/go.mod h1:ykFm0IFibeQPuPAm8Gaa27xJS/bNZcSez4omVSl2gQ0=
 github.com/krisk/Fuse v7.0.0+incompatible h1:jVyg6No+Joc51Rn97QQYJZIpCxzd4ywACn/4+FKWjvo=
 github.com/krisk/Fuse v7.0.0+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
-github.com/twbs/bootstrap v5.3.2+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.3+incompatible h1:goFoqinzdHfkeegpFP7pvhbd0g+A3O2hbU3XCjuNrEQ=
 github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=

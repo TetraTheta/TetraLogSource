@@ -220,7 +220,7 @@ images:
 
 {{< gallery/image src="114|115|116" >}}
 
-{{< gallery/image src="017|018" >}}
+{{< gallery/image src="117|118" >}}
 
 아, 알토는 검은 해안의 초청 멤버였구나. 앙코도 마찬가지로 초청 멤버인지는 잘 모르겠다.
 
