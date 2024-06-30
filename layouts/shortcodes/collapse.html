@@ -1,5 +1,12 @@
 {{/* Local alternative to 'bs/collapse' */}}
-{{- $id := printf "collapse-%s" (delimit (shuffle (seq 1 9)) "") -}}
+
+{{- if not (.Page.Scratch.Get "collapseCounter") -}}
+  {{- .Page.Scratch.Set "collapseCounter" 0 -}}
+{{- end -}}
+{{- .Page.Scratch.Add "collapseCounter" 1 -}}
+{{- $counter := printf "%03d" (.Page.Scratch.Get "collapseCounter") -}}
+{{- $id := printf "collapse-%s" $counter -}}
+
 {{- $heading := "" -}}
 {{- $style := "primary" -}}
 {{- $expand := false -}}
