@@ -55,7 +55,7 @@ require (
 	github.com/hbstack/toc-scrollspy v0.1.0 // indirect
 	github.com/hugomods/ascii v0.1.0 // indirect
 	github.com/hugomods/base v0.7.2 // indirect
-	github.com/hugomods/bootstrap v0.22.2 // indirect
+	github.com/hugomods/bootstrap v0.22.3 // indirect
 	github.com/hugomods/code-block-panel v0.7.0 // indirect
 	github.com/hugomods/font-awesome v6.5.2+incompatible // indirect
 	github.com/hugomods/fuse-js v0.1.0 // indirect
@@ -72,7 +72,7 @@ require (
 	github.com/hugomods/images v0.11.0 // indirect
 	github.com/hugomods/katex v0.3.2 // indirect
 	github.com/hugomods/masonry-js v0.1.0 // indirect
-	github.com/hugomods/mermaid v0.1.1 // indirect
+	github.com/hugomods/mermaid v0.1.4 // indirect
 	github.com/hugomods/microsoft-clarity v0.1.0 // indirect
 	github.com/hugomods/search v0.14.0 // indirect
 	github.com/hugomods/seo/modules/alternatives v0.1.1 // indirect
@@ -82,7 +82,7 @@ require (
 	github.com/hugomods/seo/modules/schema v0.1.3 // indirect
 	github.com/hugomods/seo/modules/twitter-cards v0.1.1 // indirect
 	github.com/hugomods/shortcodes v0.21.0 // indirect
-	github.com/hugomods/simple-icons v12.4.0+incompatible // indirect
+	github.com/hugomods/simple-icons v13.0.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
 	github.com/twbs/bootstrap v5.3.3+incompatible // indirect
