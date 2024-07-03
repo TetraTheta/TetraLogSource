@@ -19,7 +19,7 @@
     }
   },
   "scripts": {
-    "build": "hugo --gc --minify -e production && python ./.script/cli.py deslash",
+    "build": "python ./.script/cli.py clean && hugo --gc --minify -e production && python ./.script/cli.py deslash",
     "check-update": "npx --yes npm-check-updates",
     "clean": "python ./.script/cli.py clean",
     "deslash": "python ./.script/cli.py deslash",

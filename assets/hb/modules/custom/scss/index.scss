@@ -29,19 +29,17 @@ b, strong { font-weight: 700; }
 
 // Taxonomy
 .hb-blog-post-taxonomy-tag::before { content: '#'; }
-.hb-blog-post-taxonomy-series::before { content: '§'; }
+.hb-blog-post-taxonomy-series::before { content: '§ '; }
 
 // Post Card without image
 div.hb-blog-post-card-img-none {
-  font-size: 3rem;
+  font-size: 5rem;
   filter: blur(2px);
   text-transform: none;
 }
 
 // Hide Post Meta in article
-.hb-blog-post {
-  .hb-blog-post-section { display: none; }
-}
+.hb-blog-post .hb-blog-post-section { display: none; }
 
 // Post style
 div.hb-blog-post-content {
@@ -49,7 +47,7 @@ div.hb-blog-post-content {
   p:not(:first-child) { margin: 0.7rem 0; }
   p:last-child { margin-bottom: 0; }
   blockquote {
-    & { margin: 0 0 0.7rem 0; }
+    & { margin: 0.7rem 0 0.7rem 0; }
     &.block-quote {
       padding: 0.5rem 1rem;
       border: 1px var(--hb-tertiary-color) dashed;
