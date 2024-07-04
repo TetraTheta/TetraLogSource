@@ -5,14 +5,13 @@ import subprocess
 import sys
 from argparse import ArgumentParser
 from collections import namedtuple
-from os import chdir, environ
+import os
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import List, Optional
 
 root = Path(__file__).resolve().parent.parent
-chdir(root)
-
+os.chdir(root)
 
 #######################
 # Virtual Environment #
@@ -51,7 +50,7 @@ def info(msg, header="INFO", color=Fore.GREEN):
 
 
 def getenv(envvar: str) -> str:
-    ev = environ[envvar]
+    ev = os.environ[envvar]
     if ev is None or ev == "":
         error(f"{envvar} is not set!")
         sys.exit(1)
@@ -59,18 +58,16 @@ def getenv(envvar: str) -> str:
 
 
 def run(cmd, silent=False):
-    process = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, shell=True) if silent else subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, encoding="utf-8", errors="replace")
+    proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL if silent else subprocess.PIPE, stderr=subprocess.DEVNULL if silent else subprocess.STDOUT, shell=True, encoding="utf-8", errors="replace", text=False)
 
     while True:
-        if silent:
-            if process.poll() is not None:
-                break
-        else:
-            realtime_output = process.stdout.readline()
-            if realtime_output == "" and process.poll() is not None:
-                break
-            if realtime_output:
-                print(realtime_output.rstrip("\n"), flush=True)
+        if proc.poll() is not None:
+            break
+        elif not silent:
+            with os.fdopen(os.dup(proc.stdout.fileno()), newline="", encoding="utf-8") as output:
+                for line in output:
+                    print(line, end="", flush=True)
+    proc.wait()
 
 
 #########
@@ -223,7 +220,7 @@ def new(args):
     new_dir_name = f"{str(next_num).zfill(3)}-{title}"
     new_file_name = Path(content_path / new_dir_name / "index.md").resolve()
 
-    chdir(root)
+    os.chdir(root)
     new_cmd = f"hugo new content -k {kind.kind} {str(new_file_name)}"
     info(new_cmd, "COMMAND", Fore.YELLOW)
     run(new_cmd)
@@ -244,11 +241,11 @@ def publish(args):
         GIT_PULL_URL = getenv("GIT_PULL_URL")
         run(f"git clone --progress --depth 1 {GIT_PULL_URL} {str(publish_root)}")
 
-    chdir(publish_root)
+    os.chdir(publish_root)
     info("Building site...")
     run("npm ci")
-    run("npm run clean")
-    run("npm run build")
+    clean(None)
+    run("hugo --gc --minify -e production")
 
     info("Removing trailing slash...")
     args = namedtuple("args", ["PATH"])
@@ -258,13 +255,13 @@ def publish(args):
     PUBLISH_SSH_KEY = getenv("PUBLISH_SSH_KEY")
     PUBLISH_USER_IP = getenv("PUBLISH_USER_IP")
     PUBLISH_DIR = getenv("PUBLISH_DIR")
-    run(f'rsync -vrmzh --del --force -p --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r -e "ssh -o StrictHostKeyChecking=no -i {PUBLISH_SSH_KEY}" ./public/ {PUBLISH_USER_IP}:{PUBLISH_DIR}')
+    run(f'rsync -vcrmzh --progress --del --force -e "ssh -o StrictHostKeyChecking=no -i {PUBLISH_SSH_KEY}" --rsync-path="sudo rsync" --chown=www-data:www-data --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r "./public/" {PUBLISH_USER_IP}:{PUBLISH_DIR}')
 
     info("Cleaning directories...")
     if local:
         clean({})
     else:
-        chdir(root)
+        os.chdir(root)
         tempdir.cleanup()
 
     info("Done!")
