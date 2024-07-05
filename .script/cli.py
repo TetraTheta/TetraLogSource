@@ -127,6 +127,8 @@ def deslash(args):
             content = file.read()
             soup = BeautifulSoup(content, "lxml")
             for tag_a in soup.find_all("a"):
+                if tag_a["href"] == "/":
+                    continue
                 tag_a["href"] = re.sub(r"\/+$", "", tag_a["href"])
             for tag_meta in soup.find_all("meta", attrs={"property": True}):
                 if tag_meta["property"] == "og:url":
