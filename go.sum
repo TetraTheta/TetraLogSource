@@ -12,8 +12,8 @@ github.com/hbstack/back-to-top v0.2.0 h1:oVGYYL34PL4OX2O725YmRL9kHjZuxBuyT33/ZG1
 github.com/hbstack/back-to-top v0.2.0/go.mod h1:lVnZhVZ8pabJJ/M27APUyayelJO5yr9jkwsVnxk1O4k=
 github.com/hbstack/base v0.6.1 h1:WqzfSNGE3jtauNS5QWyXiwweWa+InP63D+klz61IJIU=
 github.com/hbstack/base v0.6.1/go.mod h1:rDOIrQy8GKXqam3dvHPQnrvwadQByiGcDY1Q35wBrT4=
-github.com/hbstack/blog v0.37.0 h1:+zuGY2pc35R2a8uj+6iKAQaz19Xts6IsAntF4Vl3IW8=
-github.com/hbstack/blog v0.37.0/go.mod h1:9yZB+gkRkINisP5uWk5CllGJ4bv211KjkHdsTtvEdjM=
+github.com/hbstack/blog v0.37.1 h1:PbOFTfoWS6xvmo+s1ZkIti/X28afD7zdPiWhe2dJgdI=
+github.com/hbstack/blog v0.37.1/go.mod h1:X4Wo3ClIdrMNXiZ7JbI65pKLNCVt5HJeidFMSIFIwb8=
 github.com/hbstack/blog/modules/breadcrumb v0.1.23 h1:MgUR88vv4cs/M1/cVBKUInFw3DcRw0W2AlmmcdhxewY=
 github.com/hbstack/blog/modules/breadcrumb v0.1.23/go.mod h1:smQySqXDtUv2pP7bb+XBr+QGNFxhDGN0fLmQkOIWa5g=
 github.com/hbstack/blog/modules/content-panel v0.1.21 h1:g43IVjn3O6QCQSvCbgr9iYCgZcI5XG8YAiuVPb269Ok=
@@ -128,8 +128,8 @@ github.com/hugomods/icons/vendors/bootstrap v0.5.7 h1:k2oXx7EOqiqPv9SRb2mtSiPtdW
 github.com/hugomods/icons/vendors/bootstrap v0.5.7/go.mod h1:bTxiIPJ/idHEc35EtvtwSODLpjI+R54BkGdikO3gCmY=
 github.com/hugomods/icons/vendors/font-awesome v0.6.7 h1:ClgvOsbHwl/I2tBhKAJs9iLveNLryjeBze4J4N0E0VA=
 github.com/hugomods/icons/vendors/font-awesome v0.6.7/go.mod h1:aVL3nnSpH24/y4NJTNow1IWDbkLewDUuZUc1EYJIQAg=
-github.com/hugomods/icons/vendors/simple-icons v1.0.44 h1:xibHEtNIvTOrofctNjRgZu39stg1mf5y2pu/zMsKpCc=
-github.com/hugomods/icons/vendors/simple-icons v1.0.44/go.mod h1:7LcqEe8I+bPorVukiTA8m+HHKH/i413NgyItgGuhtRQ=
+github.com/hugomods/icons/vendors/simple-icons v1.0.45 h1:vctbGh89SbzB3gdzwn9ONJhmnKC9AmBtE5uTU8ET9Ys=
+github.com/hugomods/icons/vendors/simple-icons v1.0.45/go.mod h1:uCOLQy1qICLIFyWZMPUG5FCH2nJEFvZRjEZ4UM4Pvto=
 github.com/hugomods/images v0.11.0 h1:njtKxqLmKIRXwzriosh13aj9BK3iBgJXeQFpYXIzQTM=
 github.com/hugomods/images v0.11.0/go.mod h1:U6Gwj16LKvk66rOMyGFrnF6f0aV8lT89lqOsckOAjYY=
 github.com/hugomods/katex v0.3.3 h1:TX6Tl5jgYXAXcNWKTC/0vI8p9MSBfwkVMTgJfakM3XA=
@@ -156,8 +156,8 @@ github.com/hugomods/seo/modules/twitter-cards v0.1.1 h1:1cxNnftQ8MdajH48tB46DQ6e
 github.com/hugomods/seo/modules/twitter-cards v0.1.1/go.mod h1:KA6MA3GbyQZdd3vloDgcTFBoztmqEJI8R59whcSxpf4=
 github.com/hugomods/shortcodes v0.21.0 h1:h8Vulwd3Kiff5FERe3KaAXsI9GWW3msNof6XjNgGGEo=
 github.com/hugomods/shortcodes v0.21.0/go.mod h1:EnVopbZMNI/HeteM3Lp3phBTCRLvPSe7l142qhRFFPY=
-github.com/hugomods/simple-icons v13.0.0+incompatible h1:wEI4BRcMXehE2DqIokd+u8+UhE58hpxQyE2RaCLlvx8=
-github.com/hugomods/simple-icons v13.0.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
+github.com/hugomods/simple-icons v13.1.0+incompatible h1:Za4+J+EOjMOAlsm0vNS2AhYhfidyyOmJH37AM0HR0i4=
+github.com/hugomods/simple-icons v13.1.0+incompatible/go.mod h1:1Lvymol7AMVY7ji/o88jMoDHHZIJ5Wc+WwNe5hjmk+U=
 github.com/hugomods/snackbar v0.1.2 h1:SLpfH9jlYwf81epH7DvM2XTZHo+3fXXpk6XKtxmo964=
 github.com/hugomods/snackbar v0.1.2/go.mod h1:ykFm0IFibeQPuPAm8Gaa27xJS/bNZcSez4omVSl2gQ0=
 github.com/krisk/Fuse v7.0.0+incompatible h1:jVyg6No+Joc51Rn97QQYJZIpCxzd4ywACn/4+FKWjvo=

@@ -69,6 +69,8 @@ div.hb-blog-post-content {
   ul, ol { li p { margin-bottom: 0; } }
   // Table
   table, .table { --hb-table-color: var(--hb-body-color) }
+  // Ruby
+  ruby > rt { font-size: 75%; }
 }
 
 //
@@ -82,8 +84,9 @@ div.hb-blog-post-content div.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 0.5rem;
   }
-  
+  img.img-fluid { margin: 0; }
   figure {
     & { margin: 0; }
     figcaption {
@@ -93,6 +96,7 @@ div.hb-blog-post-content div.gallery {
       min-height: 20px;
       text-align: center;
       word-break: break-word;
+      margin-top: 0.5rem;
     }
   }
 }
