@@ -68,7 +68,7 @@ require (
 	github.com/hugomods/icons v0.6.4 // indirect
 	github.com/hugomods/icons/vendors/bootstrap v0.5.7 // indirect
 	github.com/hugomods/icons/vendors/font-awesome v0.6.8 // indirect
-	github.com/hugomods/icons/vendors/simple-icons v1.0.45 // indirect
+	github.com/hugomods/icons/vendors/simple-icons v1.0.46 // indirect
 	github.com/hugomods/images v0.11.0 // indirect
 	github.com/hugomods/katex v0.3.3 // indirect
 	github.com/hugomods/masonry-js v0.1.0 // indirect
@@ -82,7 +82,7 @@ require (
 	github.com/hugomods/seo/modules/schema v0.1.3 // indirect
 	github.com/hugomods/seo/modules/twitter-cards v0.1.1 // indirect
 	github.com/hugomods/shortcodes v0.21.0 // indirect
-	github.com/hugomods/simple-icons v13.1.0+incompatible // indirect
+	github.com/hugomods/simple-icons v13.2.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
 	github.com/twbs/bootstrap v5.3.3+incompatible // indirect
