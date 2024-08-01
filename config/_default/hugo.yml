@@ -20,6 +20,8 @@ timeout: 120s # images processing takes a long time, it's recommended to commit 
 
 timeZone: 'Asia/Seoul'
 
+disqusShortname: 'tetralog'
+
 build:
   writeStats: true # required by PurgeCSS.
 
