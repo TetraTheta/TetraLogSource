@@ -114,37 +114,49 @@ main:
     identifier: wuthering-waves-main
     weight: 31
     url: /b/game/wuthering-waves/main/
-    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub-main-pixel.png"></div>'
+    #pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub-main-pixel.png"></div>'
     params:
       header: 명조 조수 임무 이야기
       description: 원신 조수 임무 이야기
+      icon:
+        vendor: custom
+        name: wuwa-main
   - name: 얽힌 별 임무
     parent: wuthering-waves
     identifier: wuthering-waves-companion
     weight: 32
     url: /b/game/wuthering-waves/companion/
-    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub-companion-pixel.png"></div>'
+    #pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub-companion-pixel.png"></div>'
     params:
       header: 명조 얽힌 별 임무 이야기
       description: 원신 엵힌 별 임무 이야기
+      icon:
+        vendor: custom
+        name: wuwa-companion
   - name: 위험한 임무
     parent: wuthering-waves
     identifier: wuthering-waves-exploration
     weight: 33
     url: /b/game/wuthering-waves/exploration/
-    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub-exploration-pixel.png"></div>'
+    #pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub-exploration-pixel.png"></div>'
     params:
       header: 명조 위험한 임무 이야기
       description: 원신 위험한 임무 이야기
+      icon:
+        vendor: custom
+        name: wuwa-exploration
   - name: 기타
     parent: wuthering-waves
     identifier: wuthering-waves-misc
     weight: 34
     url: /b/game/wuthering-waves/misc/
-    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub.png"></div>'
+    #pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub.png"></div>'
     params:
       header: 기타 명조 이야기
       description: 기타 명조 이야기
+      icon:
+        vendor: custom
+        name: wuwa-misc
   - name: separator-main
     weight: 40
     identifier: separator-main
