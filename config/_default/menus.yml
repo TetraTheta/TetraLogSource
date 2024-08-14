@@ -85,10 +85,14 @@ main:
       icon:
         vendor: font-awesome-solid
         name: gamepad
+  - parent: game
+    weight: 26
+    params:
+      divider: true
   - name: '붕괴: 스타레일'
     parent: game
     identifier: honkai-star-rail
-    weight: 26
+    weight: 27
     url: /b/game/honkai-star-rail/
     params:
       header: '붕괴: 스타레일 이야기'
@@ -141,9 +145,74 @@ main:
     params:
       header: 기타 명조 이야기
       description: 기타 명조 이야기
+  - name: separator-main
+    weight: 40
+    identifier: separator-main
+    params:
+      divider: true
+  - name: PIVOX
+    identifier: pivox
+    weight: 50
+    url: /d/
+    params:
+      header: 각종 강좌 및 팁
+      description: 각종 강좌 및 팁
+      columns: 2
+      icon:
+        vendor: font-awesome-solid
+        name: lightbulb
+  - name: 데스크톱
+    parent: pivox
+    identifier: pivox-desktop
+    weight: 51
+    url: /d/desktop/
+    params:
+      header: 데스크톱 관련 강좌 및 팁
+      description: 데스크톱 관련 강좌 및 팁
+      icon:
+        vendor: font-awesome-solid
+        name: computer
+  - name: 모바일
+    parent: pivox
+    identifier: pivox-mobile
+    weight: 52
+    url: /d/mobile/
+    params:
+      header: 모바일 관련 강좌 및 팁
+      description: 모바일 관련 강좌 및 팁
+      icon:
+        vendor: bootstrap
+        name: phone-fill
+  - name: 웹
+    parent: pivox
+    identifier: pivox-web
+    weight: 53
+    url: /d/web/
+    params:
+      header: 웹 관련 강좌 및 팁
+      description: 웹 관련 강좌 및 팁
+      icon:
+        vendor: font-awesome-solid
+        name: globe
+  - name: 기타
+    parent: pivox
+    identifier: pivox-misc
+    weight: 54
+    url: /d/misc/
+    params:
+      header: 기타 강좌 및 팁
+      description: 기타 강좌 및 팁
+      icon:
+        vendor: lucide
+        name: notebook-text
+  - name: separator-pivox
+    weight: 60
+    identifier: separator-pivox
+    params:
+      divider: true
   - name: 원신
     identifier: genshin
-    weight: 40
+    weight: 70
     url: /b/game/genshin-impact/
     pre: '<img class="hb-header-menu-icon-image me-1" src="/icons/custom-png/genshin-impact.png">'
     params:
@@ -153,7 +222,7 @@ main:
   - name: 마신 임무
     parent: genshin
     identifier: genshin-archon
-    weight: 41
+    weight: 71
     url: /b/game/genshin-impact/archon/
     params:
       header: 원신 마신 임무 이야기
@@ -164,7 +233,7 @@ main:
   - name: 전설 임무
     parent: genshin
     identifier: genshin-story
-    weight: 42
+    weight: 72
     url: /b/game/genshin-impact/story/
     params:
       header: 원신 전설 임무 이야기
@@ -175,7 +244,7 @@ main:
   - name: 월드 임무
     parent: genshin
     identifier: genshin-world
-    weight: 43
+    weight: 73
     url: /b/game/genshin-impact/world/
     params:
       header: 원신 월드 임무 이야기
@@ -186,7 +255,7 @@ main:
   - name: 이벤트 임무
     parent: genshin
     identifier: genshin-event
-    weight: 44
+    weight: 74
     url: /b/game/genshin-impact/event/
     params:
       header: 원신 이벤트 임무 이야기
@@ -197,7 +266,7 @@ main:
   - name: 기타
     parent: genshin
     identifier: genshin-misc
-    weight: 45
+    weight: 75
     url: /b/game/genshin-impact/misc/
     params:
       header: 기타 원신 이야기

@@ -4,21 +4,33 @@ hb:
   back_to_top:
     icon_name: 'arrow-up-circle'
   blog:
-    giscus:
-      category: 'Giscus'
-      category_id: 'DIC_kwDOKakTSM4CZxf_'
-      languages_mapping.ko: ko
-      repo: 'TetraTheta/TetraLogComment'
-      repo_id: 'R_kgDOKakTSA'
+    #giscus:
+    #  category: 'Giscus'
+    #  category_id: 'DIC_kwDOKakTSM4CZxf_'
+    #  languages_mapping.ko: ko
+    #  repo: 'TetraTheta/TetraLogComment'
+    #  repo_id: 'R_kgDOKakTSA'
     home:
       featured_posts: 3 # the number of the featured posts.
     paginate: 12
     post_read_more: false
     related_posts:
       list_style: slide
+    sidebar:
+      position: end
+      posts:
+        recent_posts: 10
+      sticky: false
+      taxonomies:
+        authors:
+          disable: true
+        separate: true
     terms:
       paginate: 12
   color: 'dark'
+  docs:
+    meta:
+      authors: false
   footer:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:

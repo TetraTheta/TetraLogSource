@@ -21,6 +21,13 @@ b, strong { font-weight: 700; }
   .hb-header-menu-icon { width: 1rem; }
   .hb-header-menu-icon-image { width: 1rem; margin-right: 4px; }
   .hb-header-menu-icon-image-sub { width: 2rem; }
+  // Grey out some elements
+  a[href*="honkai-star-rail"], a[href*="genshin"] {
+    filter: grayscale(90%) brightness(75%);
+  }
+  a[href*="honkai-star-rail"]:hover, a[href*="genshin"]:hover {
+    filter: none;
+  }
 }
 
 // Main header taxonomy
