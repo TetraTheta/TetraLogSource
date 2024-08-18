@@ -191,6 +191,7 @@ def new(args):
     Kinds.add(Kind("the-division", ["d", "division", "td", "td2", "the-division"], "the-division", "b/game/the-division"))
     Kinds.add(Kind("tower-of-fantasy", ["tf", "tof", "tower-of-fantasy"], "tower-of-fantasy", "b/game/tower-of-fantasy"))
     Kinds.add(Kind("wuthering-waves-companion", ["wc", "wcq", "wuthering-companion", "wuthering-waves-companion", "wuthering-waves-companion-quest", "wuthering-waves-companion-quests", "ww-companion", "ww-companion-quest", "ww-companion-quests", "wwc", "wwcq"], "wuthering-waves", "b/game/wuthering-waves/companion"))
+    Kinds.add(Kind("wuthering-waves-event", ["wuthering-event", "wuthering-waves-event", "ww-event"], "wuthering-waves", "b/game/wuthering-waves/event"))
     Kinds.add(Kind("wuthering-waves-exploration", ["we", "weq", "wuthering-exploration", "wuthering-waves-exploration", "wuthering-waves-exploration-quest", "wuthering-waves-exploration-quests", "ww-exploration", "ww-exploration-quest", "ww-exploration-quests", "wwe", "wweq"], "wuthering-waves", "b/game/wuthering-waves/exploration"))
     Kinds.add(Kind("wuthering-waves-main", ["wm", "wmq", "wuthering-main", "wuthering-waves-main", "wuthering-waves-main-quest", "wuthering-waves-main-quests", "ww-main", "ww-main-quest", "ww-main-quests", "wwm", "wwmq"], "wuthering-waves", "b/game/wuthering-waves/main"))
     Kinds.add(Kind("wuthering-waves-misc", ["wuthering-misc", "wuthering-waves-misc", "ww-misc"], "wuthering-waves", "b/game/wuthering-waves/misc"))
