@@ -99,7 +99,7 @@ images:
 > this is just a reminder text file to myself to remind myself not to upload Homesick to steam with a save game file still in the directory (because it would overrite every player's own save game file)
 > &nbsp;
 > \- Barrett
-{.block-quote}
+{.bq}
 
 뭔가 사람 냄새 나는 내용이라서 피식 웃음이 나더라.
 

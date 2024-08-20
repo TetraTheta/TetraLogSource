@@ -25,7 +25,7 @@ images:
 {{< gallery/image src="001|002" >}}
 
 > `OS_Windows_Product_1.0.0_1474282_1.0.15_1606058`
-{.block-quote}
+{.bq}
 
 1.0.0이라는 이 파릇파릇한 버전 넘버를 보라. 정말 가슴이 웅장해진다.
 

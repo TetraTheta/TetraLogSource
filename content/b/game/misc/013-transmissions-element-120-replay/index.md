@@ -68,7 +68,7 @@ images:
 
 > THE BREATHLESS CANNOT SEE IN THE DARK
 > 숨 못 쉬는 것들은 어둠 속에서 보지 못한다
-{.block-quote}
+{.bq}
 
 왜 내가 '숨 못 쉬는 것'이라고 번역했는지는 조금 나중에 알 수 있을 것이다.
 
@@ -86,7 +86,7 @@ images:
 
 > THEY CAN'T SEE IN THE DARK EITHER
 > 놈들도 어둠 속에서 보지 못하는 것은 매한가지다
-{.block-quote}
+{.bq}
 
 정말로 그렇다. 다만 빛이 조금이라도 새어 들어오면 곧바로 우리를 발견한다.
 
@@ -94,7 +94,7 @@ images:
 
 > DO NOT GO GENTLE INTO THAT GOOD LIGHT
 > CALM CALM WITH THE GUARD OF THE LIGHT
-{.block-quote}
+{.bq}
 
 빛을 피해 다니면 적은 나를 발견하지 못한다.
 
@@ -106,7 +106,7 @@ images:
 > 노년은 날이 저물수록 불타고 포효해야 하므로,
 > Rage, rage against the dying of the light.
 > 꺼져가는 빛을 향해 분노하고, 또 분노하세요.
-{.block-quote}
+{.bq}
 
 그래봤자 무슨 뜻인지 잘 모르겠다는 건 여전하지만.
 
@@ -128,7 +128,7 @@ images:
 
 > ZOMBIES CAN'T SEE IN THE DARK
 > 좀비들은 어둠 속에서 보지 못한다
-{.block-quote}
+{.bq}
 
 ![](015.webp)
 
@@ -142,7 +142,7 @@ images:
 
 > VEILED IN THE BLACK OF NIGHT
 > THE WOLF MOVES FREELY AMONGST THE FLOCK
-{.block-quote}
+{.bq}
 
 이 구절 역시 다른 시에서 가져온 것으로 생각해 검색해 보았지만, 원본이 되는 시를 찾을 수 없었다.
 
@@ -178,7 +178,7 @@ images:
 > This could cost us our lives. He's never given up hope, that they're still alive and Jill. It's why he has us risking our lives putting up those damn codes.
 > He thinks they can find us. I hope he's right. We could sure use their help
 > --- JT
-{.block-quote}
+{.bq}
 
 완벽히 해석할 수 있는 건 아니지만, EP라는 것이 언급된다. 이게 무엇인지는 조금 더 가보면 알 수 있겠지. 아마 중력건처럼 생긴 무기가 아닐지 생각된다.
 
@@ -215,7 +215,7 @@ Mike는 분명 Michael의 애칭일 것이고, JT는 아까 그 문서의 JT겠�
 > He's remarkable! By utilizing combine technology Fredrick has managed to not only stabilize and create element 120 but sustain it for longer than we ever thought possible. So far the tests on Unbinilium are stunning!
 > The energy it transmits not only deforms time & space, but also dimensionality! We don't yet fully understand the outcomes of this effect but I suspect it will be of great use on our struggles.
 > One known side effect so far, the build up of deadly radiation, but it is nothing that can't be overcome with the right equipment.
-{.block-quote}
+{.bq}
 
 EP를 만든 후, '이거 개쩌는데?'라고 감탄하는 것이 아닐까?
 
@@ -330,7 +330,7 @@ EP를 만든 후, '이거 개쩌는데?'라고 감탄하는 것이 아닐까?
 > We have orders to bunker here for the night. Too many of us are hurt or worse. I never thought we could have survived that last horde. It cost us the last of our turrents.
 > We made too much fucking noise working our way here. If the combine heard us we will be slaughtered. We have no cnoice but to press our luck. We'll do no good beginning the assault in this condision.
 > -- JT
-{.block-quote}
+{.bq}
 
 아까 밑에서 좀비 무리를 해치울 때, 터렛을 몇 개 발견했었다.
 

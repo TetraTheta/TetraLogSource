@@ -68,7 +68,7 @@ images:
 ![](005.webp)
 
 > First train design
-{.block-quote}
+{.bq}
 
 아주 옛날의 사진이다. 이 정도면 사진이라고 하기보다는 그림이라고 하는 편이 더 정확하겠지.
 

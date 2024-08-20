@@ -55,7 +55,7 @@ div.hb-blog-post-content {
   p:last-child { margin-bottom: 0; }
   blockquote {
     & { margin: 0.7rem 0 0.7rem 0; }
-    &.block-quote {
+    &.bq {
       padding: 0.5rem 1rem;
       border: 1px var(--hb-tertiary-color) dashed;
       background-color: var(--hb-tertiary-bg);

@@ -101,7 +101,7 @@ images:
 그리고 그 재련 아이템인 '동심의 단편'의 아이템 이미지에는 문자가 적혀있다. 그 문자를 해독하면 다음 내용이 된다고 한다.
 
 > (th)ey betray you, you may just blow them up. And therefore, the best friend that will never turn their back on you is...
-{.block-quote}
+{.bq}
 
 누군가가 클레를 배신하면, 그냥 폭탄으로 날려버리란 말이 적혀있다. 도도코 이야기집은 앨리스가 만들어준 것이니, 앨리스가 클레에게 하는 말이나 다름없다.
 

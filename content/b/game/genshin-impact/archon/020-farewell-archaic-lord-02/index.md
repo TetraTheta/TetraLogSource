@@ -64,7 +64,7 @@ images:
 > 모라 한 주머니
 > ***
 > 「타르탈리아」가 제공한 경비. 주머니에서 나는 짤랑거리는 소리는 기분을 좋게 한다.
-{.block-quote}
+{.bq}
 
 {{< gallery/image src="money_right" caption="돈은 항상 옳다" >}}
 

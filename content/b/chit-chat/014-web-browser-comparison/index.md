@@ -355,12 +355,12 @@ SRWare Iron은 웹 브라우저의 기본 User Agent를 변경한다.
 Chromium의 User Agent:
 
 > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
-{.block-quote}
+{.bq}
 
 SRWare Iron의 User Agent:
 
 > Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 <mark>Iron</mark> Safari/537.36
-{.block-quote}
+{.bq}
 
 대부분의 경우, 이는 큰 문제가 되지 않는다.
 

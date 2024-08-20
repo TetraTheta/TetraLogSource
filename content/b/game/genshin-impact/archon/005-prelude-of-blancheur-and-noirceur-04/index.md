@@ -146,7 +146,7 @@ images:
 > ***
 > *상쾌한 폰타, 가슴까지 뽕 따!*
 > 폰타인 특산 음료. 폰타인 과학원에서 발명되었으며, 공개된 이후로 대중에게 큰 인기를 끌고 있다.
-{.block-quote}
+{.bq}
 
 생긴 건 마치 콜라처럼 생겼다. 음료의 이름까지 같이 고려한다면, 환타와 비슷한 음료라고 생각하면 되겠지? 폰타인이 Fontaine이고 환타가 Fanta이니, 둘의 스펠링도 매우 비슷하다.
 
@@ -161,7 +161,7 @@ images:
 {{< youtube id="keAAUx5Yv3o" start="104" end="115" width="500px" >}}
 
 > AnYoNe ThErE? hElLo
-{.block-quote}
+{.bq}
 
 ![](056.webp)
 

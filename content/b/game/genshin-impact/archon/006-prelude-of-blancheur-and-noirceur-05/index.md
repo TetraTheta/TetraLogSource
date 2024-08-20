@@ -25,7 +25,7 @@ images:
 > * 넌 질문하기 전에 생각이라는 걸 안 하는 것 같아서, 생각할 시간을 준거야.
 > * 네가 정답을 맞히리라 기대도 안 했지만, 그 말은 사실과 거리가 멀군.
 > * 며칠 전에 눈을 맑게 해주는 안구 체조 자료를 본 적 있는데, 혹시 필요한가?
-{.block-quote}
+{.bq}
 
 이렇게 대놓고 페이몬을 멍청하다고 놀려댄 알하이탐에게 페이몬은 제대로 된 반격조차 하지 못했다. 자기 마음에 안 드는 사람에게 으레 붙이던, 우스꽝스러운 별명조차 제대로 지어주지 못했거든.
 
@@ -91,7 +91,7 @@ images:
 
 > Please keep your limbs inside the train at all times. Do not attempt to open the door until the train has come to a complete halt at the station platform.
 > 열차 밖으로 손이나 발을 내밀지 마시고, 열차가 완전히 멈추기 전에는 문을 열지 마시기 바랍니다.
-{.block-quote}
+{.bq}
 
 물론, 멜뤼진이 귀여운 목소리로 또박또박 읽어주는 저 안내문이 더 귀엽다.
 

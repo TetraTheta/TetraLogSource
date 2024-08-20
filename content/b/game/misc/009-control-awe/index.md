@@ -153,7 +153,7 @@ images:
 ![](020.webp)
 
 > 빛이 당신을 불태울 것입니다!
-{.block-quote}
+{.bq}
 
 어둠이 녹아 사라질 때 내뿜는 빛이 너무 강하다. 어둠이 빛에 불타올라 사라지는 모습을 표현하고자 한 것 같은데, 누가 보면 저게 어둠이 아니라 마그네슘 덩어리인 줄 알 것이다.
 
@@ -357,7 +357,7 @@ SHUM을 완료하면 그 옆의 SHUM 2를 플레이할 수 있다.
 > A copy of a copy of a copy.
 > ***Orange peel***.
 > The picture is you holding the picture.
-{.block-quote}
+{.bq}
 
 내가 추측하는 모든 일의 인과관계는 다음과 같다.
 

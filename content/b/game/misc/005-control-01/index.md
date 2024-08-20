@@ -186,7 +186,7 @@ images:
 
 > FOR WHO AMONG US HAS TOUCHED THE FOUNDATIONS OF THIS WORLD AND DEEMED THEM SOLID?
 > 우리 중에 이 세상의 기초를 만지고 그것들이 견고하다고 생각한 사람은 누구인가?
-{.block-quote}
+{.bq}
 
 무슨 뜻인지 잘 몰라 번역기를 돌렸다. 저 말은 이 세상의 기초가 사실은 불안정하다는 걸까?
 
@@ -208,13 +208,13 @@ images:
 
 > Do as you're told
 > don't ea[이하 생략]
-{.block-quote}
+{.bq}
 
 아마 가려진 부분을 추측하자면 이렇게 될 것이다.
 
 > Do as you're told
 > don't eat mold!
-{.block-quote}
+{.bq}
 
 곰팡이를 먹지 말라는 이야기이다. 곰팡이를 왜 먹어?
 

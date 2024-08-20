@@ -47,7 +47,7 @@ Catch em all 도전과제는 이미 몇 번이고 모든 QR코드를 다 찾았�
 > This could cost us our lives. He's never given up hope, that they're still alive and Jill. It's why he has us risking our lives putting up those damn codes.
 > He thinks they can find us. I hope he's right. We could sure use their help.
 > -- JT
-{.block-quote}
+{.bq}
 
 여기서 말하는 'codes'는 분명 QR코드를 의미하는 것일 테다. EP는 우리가 게임을 하며 정말 잘 써먹는 Energy Projector를 말하는 거고.
 
@@ -63,7 +63,7 @@ Catch em all 도전과제는 이미 몇 번이고 모든 QR코드를 다 찾았�
 
 > For years I've been down here working on this, for what?! All it takes is one mistake and boom! That's it. It's no good. I'm no good.
 > Back to the drawing board.
-{.block-quote}
+{.bq}
 
 EP를 개발한 사람으로 추정되는 사람이 거듭되는 실험 실패로 인한 한탄을 늘어놓고 있다.
 
@@ -74,7 +74,7 @@ EP를 개발한 사람으로 추정되는 사람이 거듭되는 실험 실패�
 > It's remarkable! By utilizing combine technology Fredrick has managed to not only stabilize and create element 120 but sustain it for longer than we ever thought possible. So far the tests on Unbinilium are stunning!
 > The energy it transmits not only deforms time & space, but also dimentionality! We don't yet fully understand the outdomes of this effect but I suspect it will be of great use in our struggles.
 > One known side effect so far, the build up of deadly radiation, but it is nothing that can't be overcome with the right equipment.
-{.block-quote}
+{.bq}
 
 Fredrick이 결국 120번 원소의 안정화에 성공한 것 같다. 아까 그 저널을 쓴 사람이 Fredrick이었던 건가?
 
@@ -108,7 +108,7 @@ Fredrick이 결국 120번 원소의 안정화에 성공한 것 같다. 아까 �
 > We made too much fucking noise working our way here. If the combine heard us we will be slaughtered. We have no choice but to press our luck.
 > We'll do no good beginning the assault in this condition.
 > -- JT
-{.block-quote}
+{.bq}
 
 내가 그러했듯, 이들도 여기까지 오면서 좀비 무리를 상대해야 했고, 그 과정에서 너무 큰 소음을 내 콤바인을 자극해 버렸다.
 

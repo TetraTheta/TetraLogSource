@@ -103,14 +103,14 @@ IDEA에서 Gradle task는 물론이요, Gradle sync조차 하지 못했다.
 AMI 바이오스에서 '삐익 삑 삑'하는 비프음이 뭐가 있나 검색해 보았다. 정확한 답이 나오지 않는다. 가장 가까운 비프음은 다음과 같았다.
 
 > 3 beeps - Base 64K memory failure - bad memory
-{.block-quote}
+{.bq}
 
 메모리 문제일 리가 없다. 윈도우가 멀쩡히 구동되었으니까. 최근 컴퓨터를 쓰며 메모리 문제를 겪은 적도 전혀 없고.
 
 그래서 다른 바이오스의 비프음을 찾아보았다. AWARD 바이오스에 정확히 들어맞는 비프음이 있었다.
 
 > 1 long 2 short - Monitor or display card error
-{.block-quote}
+{.bq}
 
 아니, MSI 너 AMI 바이오스 쓴다면서.
 

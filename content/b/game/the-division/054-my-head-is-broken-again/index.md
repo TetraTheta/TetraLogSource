@@ -19,7 +19,7 @@ images:
 > YEAR 5
 > INCURSION: PARADISE LOST
 > AVAILABLE NOW
-{.block-quote}
+{.bq}
 
 뭐라고? 지금 즉시 이용 가능이라고?
 

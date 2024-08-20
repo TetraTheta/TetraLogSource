@@ -21,7 +21,7 @@ _build:
 {{< audio path="isac.ogg" loop="true" >}}
 
 > Transmission jammed. Proximity coverage only. Backup activated. System rebooted.
-{.block-quote}
+{.bq}
 
 ***
 
