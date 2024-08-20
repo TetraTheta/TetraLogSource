@@ -61,8 +61,8 @@ markup:
         disable: false
         apostrophe: "\'"
         ellipsis: "…" # ...
-        emDash: "—" # --
-        enDash: "–" # ---
+        emDash: "—" # ---
+        enDash: "–" # --
         leftAngleQuote: "《"
         leftDoubleQuote: "\""
         leftSingleQuote: "\'"

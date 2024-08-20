@@ -202,10 +202,21 @@ main:
       icon:
         vendor: bootstrap
         name: phone-fill
+  - name: 서버
+    parent: pivox
+    identifier: pivox-server
+    weight: 53
+    url: /d/server/
+    params:
+      header: 서버 관련 강좌 및 팁
+      description: 서버 관련 강좌 및 팁
+      icon:
+        vendor: font-awesome-solid
+        name: server
   - name: 웹
     parent: pivox
     identifier: pivox-web
-    weight: 53
+    weight: 54
     url: /d/web/
     params:
       header: 웹 관련 강좌 및 팁
@@ -216,7 +227,7 @@ main:
   - name: 기타
     parent: pivox
     identifier: pivox-misc
-    weight: 54
+    weight: 55
     url: /d/misc/
     params:
       header: 기타 강좌 및 팁

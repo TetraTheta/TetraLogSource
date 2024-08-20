@@ -3,7 +3,7 @@
   "description": "TetraLog blog made with HB Cards Theme",
   "author": "TetraTheta",
   "dependencies": {
-    "@hbstack/node-packages": "^0.1.3"
+    "@hbstack/node-packages": "^0.1.5"
   },
   "overrides": {
     "postcss-cli": {
