@@ -14,3 +14,17 @@ window.addEventListener('beforeunload', function() {
   sessionStorage.setItem('scrollPos', scrollPos.toString())
   sessionStorage.setItem('scrollUrl', location.href)
 })
+// Add title to footnote link
+document.addEventListener('DOMContentLoaded', function() {
+  const tempTextArea = document.createElement('textarea')
+  const fnRefs = document.querySelectorAll('.footnote-ref')
+  fnRefs.forEach(function(ref) {
+    const fnID = ref.getAttribute('href').substring(1).replace(/:/g, "\\:")
+    let fnContent = document.querySelector('#' + fnID + ' p').innerHTML
+    tempTextArea.innerHTML = fnContent
+    fnContent = tempTextArea.value
+    fnContent = fnContent.replace(/<[^>]+>/g, '').replace(/↩︎/g, '').trim()
+    console.log(fnContent)
+    ref.setAttribute('title', fnContent)
+  })
+})

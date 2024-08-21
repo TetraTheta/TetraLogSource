@@ -14,6 +14,7 @@ imports:
   - path: github.com/hugomods/icons/vendors/bootstrap
   - path: github.com/hugomods/icons/vendors/font-awesome
   - path: github.com/hugomods/icons/vendors/lucide
+  - path: github.com/hugomods/icons/vendors/mdi
 
   # blog
   - path: github.com/hbstack/blog/modules/content-panel
