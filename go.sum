@@ -34,8 +34,8 @@ github.com/hbstack/blog/modules/toc-scrollspy v0.2.0 h1:UgA7UxoHTOzFDRp1XxhCmCNi
 github.com/hbstack/blog/modules/toc-scrollspy v0.2.0/go.mod h1:61D0fK0cilgwUzQm4fhVqfAc0cFYkvTE4pVSP6+FvHI=
 github.com/hbstack/bootstrap v0.2.2 h1:Kiy+XEiyDvH9KVfuS7uWYTDoTLbiww0PWTheEXO/fdM=
 github.com/hbstack/bootstrap v0.2.2/go.mod h1:2Qd2g72fKgje8fCMSaz8KlKIv60c6PAak59Zg2FJHs0=
-github.com/hbstack/breadcrumb v0.7.3 h1:HVwTFf8ZOW4PkSUH2phx33DwMa2hmjpn2GHN1/nCEyk=
-github.com/hbstack/breadcrumb v0.7.3/go.mod h1:Xh93KE3dzXP7fYKcV7mjiMgw7P4JUOFfFgsx28jTo5o=
+github.com/hbstack/breadcrumb v0.7.4 h1:+AN+vB5yAIbaJVQlfa0M7bxREQa1SLxqqgKxPZPkMqk=
+github.com/hbstack/breadcrumb v0.7.4/go.mod h1:PuwTpChVZHvvcEEEf7XmSNr4vwKEgVJxxSLKUuD5TUc=
 github.com/hbstack/carousel v0.2.7 h1:CeAYTFjFfVd8NSU0/iWLwmRwAnZBuzWn+2Own1eKkp0=
 github.com/hbstack/carousel v0.2.7/go.mod h1:jjsMHn99vOq5Vbu9WVyPOq9vm+0NBgWuGaNW6vjumZE=
 github.com/hbstack/code-block-panel v0.1.2 h1:7ZW54ZA7tBNr5oQSWrBrAvEyXfm0Usk9+Nsp7X7Xhko=

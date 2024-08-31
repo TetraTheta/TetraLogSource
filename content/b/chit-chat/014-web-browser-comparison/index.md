@@ -443,6 +443,60 @@ Firefox에는 그러한 개인정보 추적기능이 훨씬 적게 들어가 있
 
 Google 로그인이나 Paypal처럼 리다이렉트를 이용하는 로그인 방식을 사용할 수 없다. Google 로그인의 경우 '오류가 발생했습니다'라는 메시지만 표시할 뿐이었고, Paypal은 아예 사이트가 불러와지지 않았다.
 
+### 미지원 포맷{id="unsupported-media-format"}
+
+Firefox로 인터넷을 돌아다닐 때 마주할 수 있는 가장 불편한 점이 바로 미지원 포맷이다.
+
+{{< gallery/image src="unsupported-media" caption="↑ 실제 오류가 아닙니다" >}}
+
+> "video/3gpp"의 HTTP "Content-Type"은 지원되지 않습니다.
+> 미디어 리소스 https\://example.com/video.mp4 로드에 실패했습니다.
+{.bq}
+
+뭐가 문제인가 궁금해서 해당 오류가 발생한 파일을 받아 살펴보았다.
+
+{{% collapse heading="미디어 정보" %}}
+
+<table>
+  <tr><td style="text-align:center" colspan="2">일반</td></tr>
+  <tr><td style="text-align:center">포맷</td><td>MPEG-4</td></tr>
+  <tr><td style="text-align:center">포맷 프로파일</td><td>3GPP Media Release 5</td></tr>
+  <tr><td style="text-align:center">코덱 ID</td><td>3gp5 (3gp5/isom)</td></tr>
+  <tr><td style="text-align:center" colspan="2">비디오</td></tr>
+  <tr><td style="text-align:center">포맷</td><td>AVC(Advanced Video Codec) High@L3.1</td></tr>
+  <tr><td style="text-align:center">포맷 설정</td><td>CABAC / 1 Ref Frames</td></tr>
+  <tr><td style="text-align:center">코덱 ID</td><td>avc1(Advanced Video Coding)</td></tr>
+  <tr><td style="text-align:center">색 공간</td><td>YUV 4:2:0</td></tr>
+  <tr><td style="text-align:center" colspan="2">오디오</td></tr>
+  <tr><td style="text-align:center">포맷</td><td>AAC LC(Advanced Audio Codec Low Complexity)</td></tr>
+  <tr><td style="text-align:center">코덱 ID</td><td>mp4a-40-2</td></tr>
+  <tr><td style="text-align:center">채널</td><td>2 채널</td></tr>
+</table>
+
+{{% /collapse %}}
+
+이후 검색을 해보니, Firefox는 3GP 포맷을 지원하지 않는다고 하더라. 이외에도 Firefox가 지원하는 포맷에는 한계가 있다.
+
+<table style="text-align:center;width:50%;min-width:400px">
+  <thead><tr><th>코덱 이름</th><th>소프트웨어 디코딩</th><th>하드웨어 디코딩</th></tr></thead>
+  <tbody>
+    <tr><td>H264</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#326e5a">지원됨</td></tr>
+    <tr><td>VP9</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#326e5a">지원됨</td></tr>
+    <tr><td>VP8</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#326e5a">지원됨</td></tr>
+    <tr><td>AV1</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#6b585d"><a href="ms-windows-store://pdp/?ProductId=9MVZQVXJBQ9V">확장 기능 설치</a></td></tr>
+    <tr><td>HEVC</td><td style="background-color:#6b585d">지원 안 됨</td><td style="background-color:#326e5a">지원됨</td></tr>
+    <tr><td>Theora</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#6b585d">지원 안 됨</td></tr>
+    <tr><td>AAC</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#6b585d">지원 안 됨</td></tr>
+    <tr><td>MP3</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#6b585d">지원 안 됨</td></tr>
+    <tr><td>Opus</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#6b585d">지원 안 됨</td></tr>
+    <tr><td>Vorbis</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#6b585d">지원 안 됨</td></tr>
+    <tr><td>FLAC</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#6b585d">지원 안 됨</td></tr>
+    <tr><td>Wave</td><td style="background-color:#326e5a">지원됨</td><td style="background-color:#6b585d">지원 안 됨</td></tr>
+  </tbody>
+</table>
+
+여기 없는 포맷은 Firefox가 지원하지 않는다고 보면 된다.
+
 ***
 
 이외에도 Naver Whale 등의 다른 웹 브라우저도 사용해 보았지만, 마지막으로 그것들을 사용한 것이 오래되어 따로 여기에 적진 않았다.
