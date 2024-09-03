@@ -132,8 +132,8 @@ github.com/hugomods/icons/vendors/lucide v0.3.38 h1:Tgd7ukLN41MSEsYOHJfkHp9Uyn9z
 github.com/hugomods/icons/vendors/lucide v0.3.38/go.mod h1:SE34c2Z0QmYILU9gKRyU++s7Tra8datrpuVQaClX3so=
 github.com/hugomods/icons/vendors/mdi v0.3.6 h1:CGMCi7aEHKBOYMdyKJF8FmEt1+9vV5Hvptp3qHY25Bo=
 github.com/hugomods/icons/vendors/mdi v0.3.6/go.mod h1:XDQZ9k0Xmxy6Xh7idvjUkfb5DhDJmQPHCavlRHymSg8=
-github.com/hugomods/icons/vendors/simple-icons v1.0.51 h1:yW4ppQqqWZ7Hqrmnsy7wHXvSDVMqr0tpey0/r6+824c=
-github.com/hugomods/icons/vendors/simple-icons v1.0.51/go.mod h1:Uk4BMaWL6ohfjicOQEPZJuhCgWD9beDOkJ8+3zD0m2Q=
+github.com/hugomods/icons/vendors/simple-icons v1.0.52 h1:rykT8rYS9stY++jFbd55rJAyLgVlGnNGCPfuXYXJ7fc=
+github.com/hugomods/icons/vendors/simple-icons v1.0.52/go.mod h1:JkyLPirnYf5HbI2GUZ4O2PGDMA9BsBfNSakPfrOoG00=
 github.com/hugomods/images v0.11.2 h1:d7u3c/ePboeOGx8OI5eUnilpA79YvD7KJjUgqVMR83Y=
 github.com/hugomods/images v0.11.2/go.mod h1:U6Gwj16LKvk66rOMyGFrnF6f0aV8lT89lqOsckOAjYY=
 github.com/hugomods/katex v0.3.3 h1:TX6Tl5jgYXAXcNWKTC/0vI8p9MSBfwkVMTgJfakM3XA=
@@ -168,7 +168,7 @@ github.com/hugomods/snackbar v0.1.2 h1:SLpfH9jlYwf81epH7DvM2XTZHo+3fXXpk6XKtxmo9
 github.com/hugomods/snackbar v0.1.2/go.mod h1:ykFm0IFibeQPuPAm8Gaa27xJS/bNZcSez4omVSl2gQ0=
 github.com/krisk/Fuse v7.0.0+incompatible h1:jVyg6No+Joc51Rn97QQYJZIpCxzd4ywACn/4+FKWjvo=
 github.com/krisk/Fuse v7.0.0+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
-github.com/twbs/bootstrap v5.3.4-0.20240827123645-e3e00b500213+incompatible h1:u9cw0UhXzQlb6S4HAi+cSE46AynA2kU048SvdZtbzbY=
-github.com/twbs/bootstrap v5.3.4-0.20240827123645-e3e00b500213+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/twbs/bootstrap v5.3.4-0.20240903094720-e1b48d253c7d+incompatible h1:tioYQS4yDpP+TwB/+ZVGWGX/g6nCt02153QqIFl1yXA=
+github.com/twbs/bootstrap v5.3.4-0.20240903094720-e1b48d253c7d+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
 github.com/twbs/icons v1.11.3/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=

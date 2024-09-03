@@ -70,7 +70,7 @@ require (
 	github.com/hugomods/icons/vendors/font-awesome v0.6.8 // indirect
 	github.com/hugomods/icons/vendors/lucide v0.3.38 // indirect
 	github.com/hugomods/icons/vendors/mdi v0.3.6 // indirect
-	github.com/hugomods/icons/vendors/simple-icons v1.0.51 // indirect
+	github.com/hugomods/icons/vendors/simple-icons v1.0.52 // indirect
 	github.com/hugomods/images v0.11.2 // indirect
 	github.com/hugomods/katex v0.3.3 // indirect
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
@@ -88,6 +88,6 @@ require (
 	github.com/hugomods/simple-icons v13.8.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20240827123645-e3e00b500213+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20240903094720-e1b48d253c7d+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )

@@ -31,22 +31,10 @@ main:
       icon:
         vendor: font-awesome-solid
         name: gamepad
-  - name: 더 디비전
-    parent: game
-    identifier: the-division
-    weight: 21
-    url: /b/game/the-division/
-    params:
-      header: 더 디비전 시리즈 이야기
-      description: 더 디비전 시리즈 이야기
-      icon:
-        vendor: custom
-        name: division
-        color: FF9800
   - name: 마인크래프트
     parent: game
     identifier: minecraft
-    weight: 22
+    weight: 21
     url: /b/game/minecraft/
     params:
       header: 마인크래프트 이야기
@@ -57,7 +45,7 @@ main:
   - name: 블루 아카이브
     parent: game
     identifier: blue-archive
-    weight: 23
+    weight: 22
     url: /b/game/blue-archive/
     params:
       header: 블루 아카이브 이야기
@@ -65,6 +53,18 @@ main:
       icon:
         vendor: custom
         name: blue-archive
+  - name: 더 디비전
+    parent: game
+    identifier: the-division
+    weight: 23
+    url: /b/game/the-division/
+    params:
+      header: 더 디비전 시리즈 이야기
+      description: 더 디비전 시리즈 이야기
+      icon:
+        vendor: custom
+        name: division
+        color: FF9800
   - name: 타워 오브 판타지
     parent: game
     identifier: tower-of-fantasy
