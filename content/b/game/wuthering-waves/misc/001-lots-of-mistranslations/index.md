@@ -182,7 +182,7 @@ Stygian은 그리스 신화의 '스틱스 강'에서 온 단어로, 부정적인
 | 无冠者(무관자)<br />(관위 없는 자) | Crownless | 크라운리스 |
 | 无妄者(무망자)<br />(꿈꾸지 않는 자) | Dreamless | 무망자 |
 | 无相燹主(무상선주)<br />(형태 없는 들불의 주인) | Ovathrax | 더 엑시온 |
-{style="vertical-align: middle; table-layout: fixed"}
+{style="table-layout: fixed"}
 
 무상선주의 영어명, Ovathrax의 Thrax는 그리스 신화의 전신, [아레스의 아들](https://en.wikipedia.org/wiki/Thrax_(mythology))이라고 하니, 전쟁의 명식인 무상선주와 전혀 관련 없는 이름은 아닌 셈이다.
 
@@ -204,7 +204,7 @@ Stygian은 그리스 신화의 '스틱스 강'에서 온 단어로, 부정적인
 |:---:|:---:|:---:|:---:|
 | 黑咩(흑미) | Cosmos | 黒メェ(쿠로메) | 그늘이 |
 | 白咩(백미) | Cloudy | 白メェ(시로메) | 구름이 |
-{style="vertical-align: middle; table-layout: fixed"}
+{style="table-layout: fixed"}
 
 여기서 咩는 '미에~' 하는 양 울음소리를 뜻한다. 그래서 중국어와 일본어 번역은 양 울음소리를 살린 번역을 했으며, 한국어 번역은 '그늘이', '구름이'라는 색깔과 잘 어울리는 초월 번역을 했다.
 

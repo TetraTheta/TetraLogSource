@@ -10,8 +10,9 @@ require (
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
 	github.com/hbstack/announcement-bar v0.4.1 // indirect
 	github.com/hbstack/back-to-top v0.2.0 // indirect
-	github.com/hbstack/base v0.6.1 // indirect
-	github.com/hbstack/blog v0.37.3 // indirect
+	github.com/hbstack/base v0.6.2 // indirect
+	github.com/hbstack/blockquote-alerts v0.1.0 // indirect
+	github.com/hbstack/blog v0.37.4 // indirect
 	github.com/hbstack/blog/modules/breadcrumb v0.1.23 // indirect
 	github.com/hbstack/blog/modules/content-panel v0.1.21 // indirect
 	github.com/hbstack/blog/modules/disqus v0.1.20 // indirect
@@ -36,7 +37,7 @@ require (
 	github.com/hbstack/docs/modules/toc-scrollspy v0.1.8 // indirect
 	github.com/hbstack/footer v0.4.1 // indirect
 	github.com/hbstack/footer/modules/socials v0.3.0 // indirect
-	github.com/hbstack/hb v0.13.0 // indirect
+	github.com/hbstack/hb v0.14.0 // indirect
 	github.com/hbstack/header v0.15.0 // indirect
 	github.com/hbstack/header/modules/search v0.1.37 // indirect
 	github.com/hbstack/header/modules/socials v0.2.2 // indirect
@@ -84,10 +85,10 @@ require (
 	github.com/hugomods/seo/modules/open-graph v0.1.1 // indirect
 	github.com/hugomods/seo/modules/schema v0.1.3 // indirect
 	github.com/hugomods/seo/modules/twitter-cards v0.1.1 // indirect
-	github.com/hugomods/shortcodes v0.21.0 // indirect
+	github.com/hugomods/shortcodes v0.22.0 // indirect
 	github.com/hugomods/simple-icons v13.8.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20240903094720-e1b48d253c7d+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20240904080123-6f87fce7962b+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )

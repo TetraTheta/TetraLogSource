@@ -51,6 +51,8 @@ hb:
     siblings: 3
   progress_bar:
     height: '4px'
+  tables:
+    align: 'middle'
   terms:
     paginate: 12
     profile: false

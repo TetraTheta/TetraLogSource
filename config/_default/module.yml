@@ -6,6 +6,7 @@ imports:
   # my custom things
   - path: github.com/hbstack/announcement-bar
   #- path: github.com/hbstack/bs-tooltip/modules/abbr # Disabled for a while (needs SCSS update)
+  - path: github.com/hbstack/blockquote-alerts
 
   # syntax highlighting
   - path: github.com/hbstack/syntax-highlighting/styles/xcode-dark
