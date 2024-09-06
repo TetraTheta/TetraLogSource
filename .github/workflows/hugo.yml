@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
 permissions:
   contents: write
   pages: write
@@ -30,15 +34,15 @@ jobs:
           #path: checkout_path
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
           submodules: recursive
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      
+
       - name: Install Python dependencies
         run: pip install -r requirements.txt
-          
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -46,22 +50,22 @@ jobs:
           cache: 'npm'
           check-latest: true
           node-version: 'lts/*'
-      
+
       - name: Allow unicode file names
         run: git config core.quotePath false
 
       - name: Set up Node.js dependencies
         run: npm ci
-      
+
       - name: Set up Dart Sass
         run: sudo snap install dart-sass
-      
+
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
-        
+
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
@@ -69,7 +73,7 @@ jobs:
 
       - name: Build site
         run: npm run build
-      
+
       - name: Deploy to TetraLog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
