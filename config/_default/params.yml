@@ -1,5 +1,7 @@
 google_adsense: ca-pub-4833500762608350
 
+ParamSummaryLength: 25 # Keep this value same with 'summaryLength' in 'hugo.yml'. I can't access it in template.
+
 hb:
   back_to_top:
     icon_name: 'arrow-up-circle'

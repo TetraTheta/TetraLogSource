@@ -31,17 +31,28 @@ This is a note for myself for later use.
 
 ### Theme Overrides
 
-For various reasons, I've overridden the Hugo and HB Card Themes' files. Here is a list of files that I've overridden and their original sources.
+For various reasons, I've overridden the files of Hugo and HB Card Theme. Here is a list of files that I've overridden and their original sources.
 
 <pre><code>layouts
 ├─partials
 │ ├─base
 │ │   <a target="_blank" href="https://github.com/hugomods/base/blob/main/layouts/partials/base/title.html">title.html</a>
-│ └─hb/modules
-│   ├─breadcrumb
-│   │   <a target="_blank" href="https://github.com/hbstack/breadcrumb/blob/main/layouts/partials/hb/modules/breadcrumb/index.html">index.html</a>
-│   └─footer
-│       <a target="_blank" href="https://github.com/hbstack/footer/blob/main/layouts/partials/hb/modules/footer/powered-by.html">powered-by.html</a>
+│ ├─hb/modules
+│ │ ├─blog/post
+│ │ │   <a target="_blank" href="https://github.com/hbstack/blog/blob/main/layouts/partials/hb/modules/blog/post/summary.html">summary.html</a> (Temporary fix for Summary)
+│ │ ├─breadcrumb
+│ │ │   <a target="_blank" href="https://github.com/hbstack/breadcrumb/blob/main/layouts/partials/hb/modules/breadcrumb/index.html">index.html</a>
+│ │ └─footer
+│ │     <a target="_blank" href="https://github.com/hbstack/footer/blob/main/layouts/partials/hb/modules/footer/powered-by.html">powered-by.html</a>
+│ └─seo/modules
+│   ├─base
+│   │   <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/base/layouts/partials/seo/modules/base/index.html">index.html</a> (Temporary fix for Summary)
+│   ├─open-graph
+│   │   <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/open-graph/layouts/partials/seo/modules/open-graph/index.html">index.html</a> (Temporary fix for Summary)
+│   ├─schema
+│   │   <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/schema/layouts/partials/seo/modules/schema/index.html">index.html</a> (Temporary fix for Summary)
+│   └─twitter-cards
+│       <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/twitter-cards/layouts/partials/seo/modules/twitter-cards/index.html">index.html</a> (Temporary fix for Summary)
 └─shortcodes
   │ <a target="_blank" href="https://github.com/hugomods/bootstrap/blob/main/layouts/partials/bootstrap/collapse.html">collapse.html</a>
   │ imgref.html
