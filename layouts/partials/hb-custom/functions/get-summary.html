@@ -1,19 +1,14 @@
 {{/* [Temporary Fix] Returns summary | Accepts: Page */}}
-{{/* type checking */}}
 {{- $summary := "" -}}
-{{- $type := (printf "%T" .) -}}
-{{- if eq $type "string" -}}
-  {{- warnf "%s" . -}}
-  {{- $summary = replaceRE "&[^;]+;" "" . -}}
-  {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
-{{- else if .IsPage -}}
+{{- if .IsPage -}}
   {{- $page := .Page -}}
   {{- $summary = replaceRE "&[^;]+;" "" ($page.Summary | plainify | htmlUnescape | chomp) -}}
   {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
   {{- $summaryLength := mul (int $page.Site.Params.ParamSummaryLength) 8 -}}
   {{/* check summary in front matter */}}
   {{- if $page.Params.summary -}}
-    {{- $summary = $page.Params.summary -}}
+    {{- $summary = replaceRE "&[^;]+;" "" $page.Params.summary -}}
+    {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
   {{- else if lt (len $summary) $summaryLength -}}
     {{- $summary = replaceRE "&[^;]+;" "" ($page.Content | plainify | htmlUnescape | chomp) -}}
     {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
