@@ -120,4 +120,4 @@ THE FLAT EARTH THEORY라면서 다른 행성들은 둥근 와중에 혼자서만
 
 ![](017.webp)
 
-블랙 터스크 중갑병의 탐스러운 엉덩이. <span style="color: gray">~~*ANG*~~</span>
+블랙 터스크 중갑병의 탐스러운 엉덩이. ~~*ANG*~~

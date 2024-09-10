@@ -53,12 +53,16 @@ div.hb-blog-post-content {
   p:first-child { margin-top: 0; margin-bottom: 0.7rem; }
   p:not(:first-child) { margin: 0.7rem 0; }
   p:last-child { margin-bottom: 0; }
+  del { color: grey; }
   blockquote {
-    & { margin: 0.7rem 0 0.7rem 0; }
+    & { font-size: 1.15rem; margin: 0.7rem 0 0.7rem 0; }
     &.bq {
-      padding: 0.5rem 1rem;
-      border: 1px var(--hb-tertiary-color) dashed;
-      background-color: var(--hb-tertiary-bg);
+      // Prevent overrides from other classes added by theme
+      padding: 0.5rem 1rem !important;
+      border-color: var(--hb-tertiary-color) !important;
+      border-style: dashed !important;
+      border-width: 1px !important;
+      background-color: var(--hb-tertiary-bg) !important;
     }
     p, ul:last-child, ol:last-child { margin-bottom: 0; }
     hr { margin: 0.5rem 0; }
