@@ -9,7 +9,7 @@ defaultContentLanguageInSubdir: false
 languageCode: ko
 
 hasCJKLanguage: false
-summaryLength: 25
+summaryLength: 25 # [Summary Fix] Not used. Use params.ParamSummaryLength instead.
 
 enableEmoji: true
 enableGitInfo: true

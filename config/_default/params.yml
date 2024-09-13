@@ -1,6 +1,6 @@
 google_adsense: ca-pub-4833500762608350
 
-ParamSummaryLength: 25 # Keep this value same with 'summaryLength' in 'hugo.yml'. I can't access it in template.
+ParamSummaryLength: 200 # This is what is used for generating summary. Do not use 'summaryLength'.
 
 hb:
   back_to_top:
