@@ -655,7 +655,7 @@ images:
 
 일단 지금까지 모은 정보를 정리해 보자.
 
-{{% collapse heading="지금까지 모은 정보 모음" %}}
+{{< collapse heading="지금까지 모은 정보 모음" >}}
 
 {{< gallery/image src="263|264|265" >}}
 
@@ -708,7 +708,7 @@ images:
 > _페이몬: 저 크기라면 난 가능할 것 같은데._
 {.bq}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ![](272.webp#center)
 

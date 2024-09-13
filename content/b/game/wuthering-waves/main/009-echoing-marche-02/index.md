@@ -102,7 +102,7 @@ images:
 
 ![](061.webp)
 
-{{% collapse heading="엄청 바쁘시네요?" %}}
+{{< collapse heading="엄청 바쁘시네요?" >}}
 
 {{< gallery/image src="062|063|064" >}}
 
@@ -114,17 +114,17 @@ images:
 
 말만 들어도 막막함이 화면 너머로 전해져 온다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="도와드릴까요?" %}}
+{{< collapse heading="도와드릴까요?" >}}
 
 {{< gallery/image src="065|066" >}}
 
 음, 그 마음, 잘 알 것 같다. 그럼 어쩔 수 없지.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="(사람을 찾는 일에 대해 설명한다)" %}}
+{{< collapse heading="(사람을 찾는 일에 대해 설명한다)" >}}
 
 {{< gallery/image src="067|068|069" >}}
 
@@ -134,7 +134,7 @@ images:
 
 치원이 하도 달라붙는 바람에, 하는 수없이 후방 지원을 맡겼다고 한다. 하지만 전선이 위험해지자, 핑계를 대어 치원을 다시 돌려보내려 하고 있었다고 한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 {{< gallery/image src="074|075" >}}
 
@@ -146,7 +146,7 @@ images:
 
 ![](079.webp)
 
-{{% collapse heading="유탄?" %}}
+{{< collapse heading="유탄?" >}}
 
 {{< gallery/image src="080|081|082" >}}
 
@@ -154,9 +154,9 @@ images:
 
 우리가 아는 그 '유탄'과 비슷하지만, 매우 불안정한 폭발물 같다. 니트로글리세린 유탄이라고 이해하면 되는 걸까?
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="망고스틴에 대해 아는 것이 있나요?" %}}
+{{< collapse heading="망고스틴에 대해 아는 것이 있나요?" >}}
 
 {{< gallery/image src="083|084|085" >}}
 
@@ -166,7 +166,7 @@ images:
 
 앞서 말했다시피, 유탄과 혼동하기 쉬운 생김새 때문에, 군용 보급품에는 들어가지 않는다고 한다. 보존기간이 짧은 것도 한몫하겠지만.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 {{< gallery/image src="086" width="50%" >}}
 

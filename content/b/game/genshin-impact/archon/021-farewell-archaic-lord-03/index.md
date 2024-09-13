@@ -20,7 +20,7 @@ images:
 
 ![](002.webp)
 
-{{% collapse heading="암왕제군의 죽음에 대해..." %}}
+{{< collapse heading="암왕제군의 죽음에 대해..." >}}
 
 {{< gallery/image src="003" >}}
 
@@ -38,9 +38,9 @@ images:
 
 그런데 셀레스티아로 가는 거나, 죽는 거나, 거기서 거기 아닌가?
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="당신은?" %}}
+{{< collapse heading="당신은?" >}}
 
 {{< gallery/image src="008" >}}
 
@@ -70,7 +70,7 @@ images:
 
 산 사람을 위해 향을 피워도 되는 걸까?
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 음, 아무런 관련 없는 평범한 NPC일 뿐이었다.
 

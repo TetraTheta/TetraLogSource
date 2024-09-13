@@ -82,7 +82,7 @@ images:
 
 ![](020.webp)
 
-{{% collapse heading="경책 산장에 대해" %}}
+{{< collapse heading="경책 산장에 대해" >}}
 
 {{< gallery/image src="021" >}}
 
@@ -94,9 +94,9 @@ images:
 
 경책 산장에 사는 사람 대다수가 노인이기도 하고...
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="사부님에 대해" %}}
+{{< collapse heading="사부님에 대해" >}}
 
 {{< gallery/image src="024" >}}
 
@@ -110,9 +110,9 @@ images:
 
 평 할머니가 요요에게 지금은 없는 옛 선인들에 대한 이야기를 종종 해주었나 보다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="드보르작 씨에 대해" %}}
+{{< collapse heading="드보르작 씨에 대해" >}}
 
 {{< gallery/image src="029" >}}
 
@@ -124,7 +124,7 @@ images:
 
 아, 귀여워라...
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 # 연비 & 평 할머니{id="yanfei-madame-ping"}
 
@@ -160,7 +160,7 @@ images:
 
 ![](042.webp)
 
-{{% collapse heading="공연에 대해" %}}
+{{< collapse heading="공연에 대해" >}}
 
 {{< gallery/image src="043" >}}
 
@@ -170,9 +170,9 @@ images:
 
 음악회 때 평 할머니의 연주를 말하는 거겠지. 확실히 마지막의 합주 부분은 정말 아름다웠다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="이후의 계획에 대해" %}}
+{{< collapse heading="이후의 계획에 대해" >}}
 
 {{< gallery/image src="046" >}}
 
@@ -184,9 +184,9 @@ images:
 <br>
 이번 음악회가 무지갯빛 투어가 리월에서 열린 것이니, 아예 해등절과 분리해서 정기적으로 투어를 리월에 유치하는 것도 생각해 볼 수 있겠다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="「선녀」에 대해" %}}
+{{< collapse heading="「선녀」에 대해" >}}
 
 {{< gallery/image src="049" >}}
 
@@ -198,7 +198,7 @@ images:
 
 음악회가 끝나자마자 곧바로 평 할머니에게 가서 감사 인사를 전했나 보다. 평 할머니의 말을 듣고 '우리 시대에 걸맞은 음악을 만들어내겠다'라고 각오를 다지는 모습이 매우 보기 좋다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ***
 
@@ -284,7 +284,7 @@ images:
 
 이 넷은 리월 부둣가에 모여 있다. 너무 길어서 이건 접은 글에 넣기로 했다.
 
-{{% collapse heading="중운 & 향릉 & 행추 & 호두" %}}
+{{< collapse heading="중운 & 향릉 & 행추 & 호두" >}}
 
 {{< gallery/image src="080" >}}
 
@@ -346,7 +346,7 @@ images:
 
 그나저나 중운 역시 행추의 필명에 대해 알고 있었구나. 난 왜 이렇게 까먹은 게 많은 거지?
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ***
 
@@ -356,7 +356,7 @@ images:
 
 벤티와 카즈하는 사조성 호 위에 있다. 역시 벤티가 만나러 가는 사람은 카즈하였어.
 
-{{% collapse heading="벤티 & 카즈하" %}}
+{{< collapse heading="벤티 & 카즈하" >}}
 
 {{< gallery/image src="109" >}}
 
@@ -396,7 +396,7 @@ images:
 
 아아, 벤티. 너는 술을 마시고 싶어도 마실 수 없는 운명이야! 어림도 없지!
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ***
 

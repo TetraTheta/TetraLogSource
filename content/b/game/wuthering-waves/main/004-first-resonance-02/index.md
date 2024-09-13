@@ -44,7 +44,7 @@ images:
 
 ![](019.webp)
 
-{{% collapse heading="(검은 열매를 집어 든다)" %}}
+{{< collapse heading="(검은 열매를 집어 든다)" >}}
 
 {{< gallery/image src="020|021|022" >}}
 
@@ -52,9 +52,9 @@ images:
 
 다만 잔상류로 인해 일어나는 전투 때문에 교통이 종종 끊겨, 항상 볼 수 있는 열매는 아니라고 한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="(나뭇잎을 집어 든다)" %}}
+{{< collapse heading="(나뭇잎을 집어 든다)" >}}
 
 {{< gallery/image src="023|024" >}}
 
@@ -62,9 +62,9 @@ images:
 
 양양이 착각처럼 느낄 만큼 미미한 뭔가를 느꼈지만, 이게 뭔지는 잘 모르겠다고 한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="(소형 장치를 집어 든다)" %}}
+{{< collapse heading="(소형 장치를 집어 든다)" >}}
 
 {{< gallery/image src="027|028|029" >}}
 
@@ -76,9 +76,9 @@ images:
 
 해시계는 햇빛이 없으면 아무 쓸모가 없다... 이것도 어떤 힌트인 걸까?
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="(사탕을 집어 든다)" %}}
+{{< collapse heading="(사탕을 집어 든다)" >}}
 
 {{< gallery/image src="035|036|037" >}}
 
@@ -86,7 +86,7 @@ images:
 
 양양과 치샤는 어릴 적 종종 캡슐 사탕을 먹었다고 한다. 다만 이 사탕은 지금은 나오지 않는 사탕이라고 한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 {{< gallery/image src="041|042|043" >}}
 

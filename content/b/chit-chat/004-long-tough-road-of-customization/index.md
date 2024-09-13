@@ -57,7 +57,7 @@ XDA에서 커스텀 롬을 이것저것 내려받아서 썼는데, 죄다 아쉬
 XDA에 올라온 커스텀 롬 중 내가 살펴본 것은 다음과 같다. 애당초 XDA에 올라온 커스텀 롬 중, 최근까지 개발 혹은 업데이트를 한 커스텀 롬이 별로 없다.
 
 <div class="table-responsive">
-<table>
+<table class="table table-bordered align-middle table-hover table-striped">
   <tr>
     <th style="width: 33.3333%; text-align: center;">커스텀 롬 이름</th>
     <th style="width: 33.3333%; text-align: center;">안드로이드 버전</th>

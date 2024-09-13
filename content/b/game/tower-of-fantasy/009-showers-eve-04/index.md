@@ -215,7 +215,7 @@ images:
 
 물어볼 수 있는 게 굉장히 많다.
 
-{{% collapse heading="나인에 대해" %}}
+{{< collapse heading="나인에 대해" >}}
 
 {{< gallery/image src="103|104" >}}
 
@@ -243,9 +243,9 @@ images:
 
 덧붙여, 아마 나인은 처음부터 외계 문명의 의지에 대항해 맞서 싸우고 있었을 거라고 말한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="하이브 마더에 대해" %}}
+{{< collapse heading="하이브 마더에 대해" >}}
 
 {{< gallery/image src="117|118" >}}
 
@@ -285,9 +285,9 @@ images:
 
 현재 봉인된 나인은 루벨리아조차 기운을 분별할 수 없을 정도로 약해졌다고 한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="구주의 미래에 대해" %}}
+{{< collapse heading="구주의 미래에 대해" >}}
 
 {{< gallery/image src="134|135|136" >}}
 
@@ -311,7 +311,7 @@ images:
 
 우희는 나인의 죄와 희생을 모두에게 알리고, 그에 대한 판단은 각자에게 맡기겠다고 말한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ![](147.webp)
 

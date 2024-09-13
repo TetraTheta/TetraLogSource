@@ -442,7 +442,7 @@ images:
 
 임무가 끝난 후, 제트와 말을 할 수 있길래 해보았다.
 
-{{% collapse heading="「영원의 오아시스」에 대해..." %}}
+{{< collapse heading="「영원의 오아시스」에 대해..." >}}
 
 ![](125.webp)
 
@@ -484,15 +484,15 @@ images:
 
 글쎄... 내 직감은 바벨이 곧 여행자의 뒤통수를 거하게 칠 거라고 속삭이고 있거든.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="붐붐에 대해..." %}}
+{{< collapse heading="붐붐에 대해..." >}}
 
 ![](141.webp)
 
 ![](142.webp)
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ![](143.webp)
 

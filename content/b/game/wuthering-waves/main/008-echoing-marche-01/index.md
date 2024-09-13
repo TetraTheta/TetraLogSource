@@ -194,7 +194,7 @@ images:
 
 ![](070.webp)
 
-{{% collapse heading="찾고 있는 사람과는 어떤 관계죠?" %}}
+{{< collapse heading="찾고 있는 사람과는 어떤 관계죠?" >}}
 
 {{< gallery/image src="071|072" >}}
 
@@ -206,9 +206,9 @@ images:
 
 생판 모르는 사람을 친절하게 안전한 곳까지 모셔다 드렸다니, 양양 말처럼 참 좋은 사람이다. 보통은 그런 사람을 봐도 모른 척하고 지나가거든.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="왜 집요하게 그 사람을 찾는 거죠?" %}}
+{{< collapse heading="왜 집요하게 그 사람을 찾는 거죠?" >}}
 
 {{< gallery/image src="076|077" >}}
 
@@ -216,9 +216,9 @@ images:
 
 치샤에게 들어온 실종 신고는 감심이 한 것이었다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="혹시 망고스틴에 대해 알고 있나요?" %}}
+{{< collapse heading="혹시 망고스틴에 대해 알고 있나요?" >}}
 
 {{< gallery/image src="078|079" >}}
 
@@ -226,7 +226,7 @@ images:
 
 어, 음... 그런 답변을 바란 게 아니었는데.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 {{< gallery/image src="080|081" >}}
 

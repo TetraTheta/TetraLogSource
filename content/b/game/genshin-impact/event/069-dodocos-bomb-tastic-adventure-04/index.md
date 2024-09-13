@@ -28,7 +28,7 @@ images:
 
 「폭탄 부대」? 몬드도 드디어 척탄병을 도입하는 건가?
 
-{{% collapse heading="당신은..." %}}
+{{< collapse heading="당신은..." >}}
 
 {{< gallery/image src="004|005" >}}
 
@@ -77,11 +77,11 @@ images:
 
 너무 일만 생각하다가 몸을 축내기 딱 좋은 성격이다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 아무래도 이 대화 선택지는 「도도코 쾅쾅 모험기」 게임을 다 끝내기 전에 들었어야 하는 것 같다. 다음 대화 선택지의 존재를 생각해 본다면 말이다.
 
-{{% collapse heading="임무는 어떻게 진행되고 있어요?" %}}
+{{< collapse heading="임무는 어떻게 진행되고 있어요?" >}}
 
 {{< gallery/image src="021|022" >}}
 
@@ -135,13 +135,13 @@ images:
 
 이 정도면 진짜 클레의 광팬 아닐까?
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 {{< gallery/image src="043|044" >}}
 
 그다음으로 &lt;수사대 신호관&gt; 파니아에게 말을 걸어보자.
 
-{{% collapse heading="「침입 뿔복어 섬멸전」이요?" %}}
+{{< collapse heading="「침입 뿔복어 섬멸전」이요?" >}}
 
 {{< gallery/image src="045|046" >}}
 
@@ -173,9 +173,9 @@ images:
 
 딱 봐도 어려워 보이는 임무였지만, 이번 임무에서 뭔가 배워간 것이 있는 모양이다. 그럼 다행이네.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="상황이 어때요?" %}}
+{{< collapse heading="상황이 어때요?" >}}
 
 {{< gallery/image src="055|056|057" >}}
 
@@ -245,7 +245,7 @@ images:
 
 아, 그야 여행자는 장병기나 활이 아닌 한손검을 쓰는걸...
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ![](082.webp)
 

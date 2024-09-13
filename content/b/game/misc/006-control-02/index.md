@@ -56,7 +56,7 @@ images:
 
 위키를 찾아보니 핀란드의 밴드 'Poets of the Fall'의 노래라고 한다. 재떨이 미로에서 나왔던 노래의 제목은 'Take Control'이고.
 
-{{% collapse heading="Take Control 가사" %}}
+{{< collapse heading="Take Control 가사" >}}
 
 Take control, take control
 
@@ -108,7 +108,7 @@ Potency is my new reality
 Polaris living now inside of me  
 I control, I control
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 이다음에는 그토록 찾던 헤드론을 찾을 수 있었다.
 

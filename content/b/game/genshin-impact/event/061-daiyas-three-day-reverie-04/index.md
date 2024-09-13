@@ -172,7 +172,7 @@ images:
 
 「총감독」 방울이와 대화를 시도하면 이렇게 다양한 대화 선택지를 볼 수 있다.
 
-{{% collapse heading="「방울이」가 말을 한다!" %}}
+{{< collapse heading="「방울이」가 말을 한다!" >}}
 
 {{< gallery/image src="083|084" >}}
 
@@ -202,9 +202,9 @@ images:
 
 그래. 생각해 보면 여긴 온갖 일들이 태연하게 일어나는 세계 아닌가. 무슨 일이 일어나도 그런가 보다 해야지, 뭐...
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="왜 「대행」인 건가요?" %}}
+{{< collapse heading="왜 「대행」인 건가요?" >}}
 
 {{< gallery/image src="091|092|093" >}}
 
@@ -238,9 +238,9 @@ images:
 
 하겠다는 말을 한 적 없건만, 어째서인지 여행자 역시 연극 제작에 참여하는 모양새가 되어버렸다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="「3일의 공상」 연출 기법에 대해..." %}}
+{{< collapse heading="「3일의 공상」 연출 기법에 대해..." >}}
 
 {{< gallery/image src="111|112|113" >}}
 
@@ -286,9 +286,9 @@ images:
 
 다들 연기를 하고 싶어 하지만, 각자 맡은 일을 끝낼 수 없어 연기를 하지 못한다니... 안타까운 일이다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="다른 제작팀 동료에 대해..." %}}
+{{< collapse heading="다른 제작팀 동료에 대해..." >}}
 
 {{< gallery/image src="137|138" >}}
 
@@ -306,7 +306,7 @@ images:
 
 이 부분은 그냥 직접 가서 물어보는 것이 더 빠를지도 모르겠다. 거기에 대해서는 음성 처리가 미리 되어있기를 바라자.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ***
 
@@ -519,7 +519,7 @@ images:
 
 오, 너도 할 말이 많은 녀석이구나.
 
-{{% collapse heading="왜 「임시 각본가」인가요?" %}}
+{{< collapse heading="왜 「임시 각본가」인가요?" >}}
 
 {{< gallery/image src="224|225" >}}
 
@@ -575,9 +575,9 @@ images:
 
 음... 아마 조시모스 본인은 그 책을 제대로 읽지 않았을 것만 같다. 「조시모스」를 만났을 때를 생각해 본다면 말이다...
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="그럼 각본가님이 가르침을 좀 주실래요?" %}}
+{{< collapse heading="그럼 각본가님이 가르침을 좀 주실래요?" >}}
 
 {{< gallery/image src="255|256" >}}
 
@@ -623,9 +623,9 @@ images:
 
 처음 말을 걸 때에만 대사를 돌려쓰는 줄 알았는데, 대화를 마무리할 때에도 대사를 돌려쓰는구나...
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="소재를 제공하러 왔는데요..." %}}
+{{< collapse heading="소재를 제공하러 왔는데요..." >}}
 
 {{< gallery/image src="276|277" >}}
 
@@ -643,7 +643,7 @@ images:
 
 나도 기대되긴 하네. 우리가 그 이야기를 볼 날이 올진 잘 모르겠지만...
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ***
 

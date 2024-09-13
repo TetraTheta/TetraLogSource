@@ -167,7 +167,7 @@ DS220+, DS420+, DS920+.
 일단 내가 중요하게 생각하는 것들만 따로 뽑아왔다.
 
 <div class="table-responsive">
-  <table>
+  <table class="table table-bordered align-middle table-hover table-striped">
     <tr>
       <td style="width: 25%; text-align: center;">&nbsp;</td>
       <td style="width: 25%; text-align: center;">

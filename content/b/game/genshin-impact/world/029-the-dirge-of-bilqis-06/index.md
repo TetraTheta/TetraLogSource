@@ -222,7 +222,7 @@ images:
 
 하지만 그전에 물어볼 건 물어봐야지.
 
-{{% collapse heading="배신자에 대해..." %}}
+{{< collapse heading="배신자에 대해..." >}}
 
 ![](062.webp)
 
@@ -234,9 +234,9 @@ images:
 
 글쎄... 잘 모르겠다. 속이 시원하긴 한데, 과연 이게 맞나 싶기도 하거든.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="제트에 대해..." %}}
+{{< collapse heading="제트에 대해..." >}}
 
 ![](066.webp)
 
@@ -252,9 +252,9 @@ images:
 
 지금까지의 제트의 행동을 보면 정말 그런 것인지 좀 의심스럽다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="아자릭에 대해..." %}}
+{{< collapse heading="아자릭에 대해..." >}}
 
 ![](071.webp)
 
@@ -272,7 +272,7 @@ images:
 
 그나저나 아자릭을 아들 같은 녀석이라 해놓고 밤새 응앗응앗을 했다고?
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ***
 

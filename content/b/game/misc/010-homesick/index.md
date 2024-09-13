@@ -12,7 +12,7 @@ images:
   - 001.webp
 ---
 
-{{% youtube id="KvgtKB6MLSw" %}}
+{{< youtube id="KvgtKB6MLSw" >}}
 
 &nbsp;
 

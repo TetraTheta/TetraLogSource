@@ -25,53 +25,33 @@ images:
 
 `?tag noheroku` 명령어를 입력하면 다음과 같은 메시지가 출력된다.
 
-<blockquote>
-- Bots are not what the platform is designed for. Heroku is designed to provide web servers (like Django, Flask, etc). This is why they give you a domain name and open a port on their local emulator.
-
-&nbsp;
-
-\- Heroku's environment is heavily containerized, making it significantly underpowered for a standard use case.
-
-&nbsp;
-
-\- Heroku's environment is volatile. In order to handle the insane amount of users trying to use it for their own applications, Heroku will dispose your environment every time your application dies unless you pay.
-
-&nbsp;
-
-\- Heroku has minimal system dependency control. If any of your Python requirements need C bindings (such as PyNaCl binding to libsodium, or lxml binding to libxml), they are unlikely to function properly, if at all, in a native environment. As such, you often need to resort to adding third-party buildpacks to facilitate otherwise normal CPython extension functionality. (This is the reason why voice doesn't work natively on heroku.)
-
-&nbsp;
-
-\- Heroku only offers a limited amount of time on their free programme for your applications. If you exceed this limit, which you probably will, they'll shut down your application until your free credit resets.
-</blockquote>
+> \- Bots are not what the platform is designed for. Heroku is designed to provide web servers (like Django, Flask, etc). This is why they give you a domain name and open a port on their local emulator.
+> &nbsp;
+> \- Heroku's environment is heavily containerized, making it significantly underpowered for a standard use case.
+> &nbsp;
+> \- Heroku's environment is volatile. In order to handle the insane amount of users trying to use it for their own applications, Heroku will dispose your environment every time your application dies unless you pay.
+> &nbsp;
+> \- Heroku has minimal system dependency control. If any of your Python requirements need C bindings (such as PyNaCl binding to libsodium, or lxml binding to libxml), they are unlikely to function properly, if at all, in a native environment. As such, you often need to resort to adding third-party buildpacks to facilitate otherwise normal CPython extension functionality. (This is the reason why voice doesn't work natively on heroku.)
+> &nbsp;
+> \- Heroku only offers a limited amount of time on their free programme for your applications. If you exceed this limit, which you probably will, they'll shut down your application until your free credit resets.
+{.bq}
 
 그리고 `?tag hosting` 명령어를 입력하면 Heroku의 대안 서비스를 소개해 준다.
 
-<blockquote>
-Need to run your bot 24/7? Get a cheap VPS.
-
-https://www&#46;scaleway&#46;com/ EU
-
-https://www&#46;linode&#46;com/ US/EU/Asia
-
-https://www&#46;digitalocean&#46;com/ US
-
-https://www&#46;vultr&#46;com/ US
-
-https://www&#46;ovh&#46;co&#46;uk/ EU/Canada
-
-https://www&#46;hetzner&#46;com/ Germany
-
-https://www&#46;time4vps&#46;eu/ Lithuania
-
-&nbsp;
-
-Self-hosting: Any computer.
-
-Free hosting: No. Not even heroku.
-
-Kinda free: GCP, AWS have one year free micros.
-</blockquote>
+> Need to run your bot 24/7? Get a cheap VPS.
+> &nbsp;
+> https://www&#46;scaleway&#46;com/ EU
+> https://www&#46;linode&#46;com/ US/EU/Asia
+> https://www&#46;digitalocean&#46;com/ US
+> https://www&#46;vultr&#46;com/ US
+> https://www&#46;ovh&#46;co&#46;uk/ EU/Canada
+> https://www&#46;hetzner&#46;com/ Germany
+> https://www&#46;time4vps&#46;eu/ Lithuania
+> &nbsp;
+> Self-hosting: Any computer.
+> Free hosting: No. Not even heroku.
+> Kinda free: GCP, AWS have one year free micros.
+{.bq}
 
 'Free Hosting'에 대해서는 'No. Not even heroku.'라면서 선을 긋는다.
 

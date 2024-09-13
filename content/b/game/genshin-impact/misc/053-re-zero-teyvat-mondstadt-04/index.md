@@ -91,7 +91,7 @@ images:
 
 &nbsp;
 
-{{% collapse heading="그리고 이어지는 다이루크의 TMI 시간." %}}
+{{< collapse heading="그리고 이어지는 다이루크의 TMI 시간." >}}
 
 {{< gallery/image src="028|029|030" >}}
 
@@ -101,7 +101,7 @@ images:
 
 {{< gallery/image src="036|037" >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 동풍의 용 유적지에서 누군가가 훔쳐 간 보물인, 바람 신의 「기운」을 담은 작은 병을 다이루크와 우인단이 동시에 노렸고, 서로 간의 돈지랄이 시작되었다.
 

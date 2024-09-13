@@ -294,7 +294,7 @@ images:
 
 ![](169.webp)
 
-{{% collapse heading="착공으로 직접 명식을 포격할 수는 없나요?" %}}
+{{< collapse heading="착공으로 직접 명식을 포격할 수는 없나요?" >}}
 
 {{< gallery/image src="170|171|172" >}}
 
@@ -302,9 +302,9 @@ images:
 
 하지만 착공은 무상선주의 보호막만큼은 확실히 찢을 수 있다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="어떻게 쓰는 건가요? 여전히 구시대의 에너지인가요?" %}}
+{{< collapse heading="어떻게 쓰는 건가요? 여전히 구시대의 에너지인가요?" >}}
 
 {{< gallery/image src="173|174|175" >}}
 
@@ -314,9 +314,9 @@ images:
 
 착공에 들어가는 에너지를 금주성으로 돌리면 금주성을 천공도시로 만들 수도 있을 거라고 한다. 흠... 왜 자꾸 드라켄 레이저 천공기가 생각나는 거지?
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="착공을 몇 개 더 만들 수는 없나요?" %}}
+{{< collapse heading="착공을 몇 개 더 만들 수는 없나요?" >}}
 
 {{< gallery/image src="176|177" >}}
 
@@ -324,7 +324,7 @@ images:
 
 착공으로 명식에게 치명상을 줄 수 없다면 착공을 더 만들어 더 많은 화력을 투사하면 될 거라 생각했는데, 그 방법도 불가능하다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 {{< gallery/image src="178|179|180" >}}
 

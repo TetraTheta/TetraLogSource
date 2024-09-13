@@ -250,7 +250,7 @@ images:
 
 ![](114.webp)
 
-{{% collapse heading="영윤 대인은 어디 있나요?" %}}
+{{< collapse heading="영윤 대인은 어디 있나요?" >}}
 
 {{< gallery/image src="115|116|117" >}}
 
@@ -258,9 +258,9 @@ images:
 
 자신은 달리 볼 일이 있어 자리를 비우지만, 방랑자에게 줄 선물과 「신물」은 산화에게 맡겨, 대신 전달하도록 하였다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="왜 사흘인 거죠?" %}}
+{{< collapse heading="왜 사흘인 거죠?" >}}
 
 {{< gallery/image src="118|119" >}}
 
@@ -272,15 +272,15 @@ images:
 
 '일단 날 도와줘!'라고 말하지 않는 점이 마음에 든다. 여러 게임을 하며 '사정 판단은 나중에 하고, 일단 지금 날 먼저 도와줘!'라고 말하는 캐릭터들을 너무 많이 봤거든.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="이 신물이 무엇을 가리키는지 제가 어떻게 알 수 있나요?" %}}
+{{< collapse heading="이 신물이 무엇을 가리키는지 제가 어떻게 알 수 있나요?" >}}
 
 {{< gallery/image src="122|123|124" >}}
 
 「신물」은 수수께끼가 아니라 증거이자 신호라고 한다. 이건 무슨 말인지 잘 모르겠는 걸. 나중에 한번 확인해 봐야겠다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 {{< gallery/image src="125|126|127" >}}
 
@@ -332,11 +332,11 @@ images:
 
 그래, 이런 게 있을 줄 알았지. 이대로 그냥 변정을 나갔으면 이 질문을 하지 못하게 되었을 것 아닌가.
 
-{{% collapse heading="금주에 관한 일을 묻고 싶어요" %}}
+{{< collapse heading="금주에 관한 일을 묻고 싶어요" >}}
 
 ![](150.webp)
 
-{{% collapse heading="아귀는 무엇인가요?" expand=true %}}
+{{< collapse heading="아귀는 무엇인가요?" expand=true >}}
 
 {{< gallery/image src="151|152|153" >}}
 
@@ -344,9 +344,9 @@ images:
 
 군인 -- 「야귀」를 말하는 거겠지? -- 대부분은 공명자라고 한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="금주를 소개해 주시겠어요?" expand=true %}}
+{{< collapse heading="금주를 소개해 주시겠어요?" expand=true >}}
 
 {{< gallery/image src="154|155|156" >}}
 
@@ -356,15 +356,15 @@ images:
 
 산화에게 특별한 사람이 있다고 하는데, 내 장담컨대, 바로 금희일 것이다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="영윤 대인에 관한 일을 묻고 싶어요" %}}
+{{< collapse heading="영윤 대인에 관한 일을 묻고 싶어요" >}}
 
 ![](159.webp)
 
-{{% collapse heading="영윤에 대해 더 알고 싶어요" expand=true %}}
+{{< collapse heading="영윤에 대해 더 알고 싶어요" expand=true >}}
 
 {{< gallery/image src="160|161" >}}
 
@@ -372,9 +372,9 @@ images:
 
 '영윤 대인'이라 불리는 경우가 많은 건 그게 금희의 직책이니까, 당연한 일일테고.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="금주 영윤과 용은 어떤 관계인가요?" expand=true %}}
+{{< collapse heading="금주 영윤과 용은 어떤 관계인가요?" expand=true >}}
 
 {{< gallery/image src="162|163|164" >}}
 
@@ -384,9 +384,9 @@ images:
 
 다만 이건 금희가 산화에게 알려준 정보를 통해 추측한 거라, 확실하진 않다고 한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="금주 영윤은 언제 돌아오나요?" expand=true %}}
+{{< collapse heading="금주 영윤은 언제 돌아오나요?" expand=true >}}
 
 {{< gallery/image src="165|166|167" >}}
 
@@ -394,23 +394,23 @@ images:
 
 잘은 모르겠지만, 금희가 본인만으로는 완벽히 통제할 수 없는 상황에 빠진 모양이다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="신물에 관한 일을 묻고 싶어요" %}}
+{{< collapse heading="신물에 관한 일을 묻고 싶어요" >}}
 
 ![](168.webp)
 
-{{% collapse heading="어떻게 신물을 조사해야 하는 건가요?" expand=true %}}
+{{< collapse heading="어떻게 신물을 조사해야 하는 건가요?" expand=true >}}
 
 {{< gallery/image src="169|170" >}}
 
 신물이 담고 있는 메시지는 출처와 관련이 있으며, 신물의 출처와 가리키는 장소, 사건을 알아내면 방랑자가 알고 싶어 하는 정보와 금희가 전하는 정보를 찾을 수 있을 거라고 한다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="신물에 대해 조사하지 않아도 되나요?" expand=true %}}
+{{< collapse heading="신물에 대해 조사하지 않아도 되나요?" expand=true >}}
 
 ![](171.webp)
 
@@ -418,11 +418,11 @@ images:
 
 그렇게 말하니까 더 궁금한데. 이것마저도 금희의 노림수라면 정말 훌륭하다고밖에 말할 수 없다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="당신과 관련된 일을 묻고 싶어요" %}}
+{{< collapse heading="당신과 관련된 일을 묻고 싶어요" >}}
 
 {{< gallery/image src="172|173|174" >}}
 
@@ -430,7 +430,7 @@ images:
 
 뭐... 금희처럼 왜곡되지 않고 순수한, 본연 그대로의 주파수를 지닌 사람을 산화가 잊었을 리 없긴 하겠다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 {{< gallery/image src="175|176" >}}
 

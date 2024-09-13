@@ -250,7 +250,7 @@ images:
 
 프롤로그라서 그런가, 다른 지역의 마신 임무에서는 일일이 집정관에게 물어야 했던 걸 자동으로 물어보네.
 
-{{% collapse heading="드발린에 대해..." %}}
+{{< collapse heading="드발린에 대해..." >}}
 
 {{< gallery/image src="100|101" >}}
 
@@ -260,9 +260,9 @@ images:
 
 거기서 '자유로워져 봐'라고 말해보았자, 그건 또 하나의 구속일 테니까.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="심연 교단에 대해..." %}}
+{{< collapse heading="심연 교단에 대해..." >}}
 
 {{< gallery/image src="104" >}}
 
@@ -276,9 +276,9 @@ images:
 
 벤티가 처음 들을 정도의 이야기면, 심연 교단에 「왕자」가 나타난 건 비교적 최근의 일일 것이다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="「시뇨라」에 대해..." %}}
+{{< collapse heading="「시뇨라」에 대해..." >}}
 
 {{< gallery/image src="109|110" >}}
 
@@ -302,9 +302,9 @@ images:
 
 최소한 우인단의 일에 직접적으로 개입하지는 않는 것 같던데…
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="신령에 대해..." %}}
+{{< collapse heading="신령에 대해..." >}}
 
 {{< gallery/image src="119|120" >}}
 
@@ -332,7 +332,7 @@ images:
 
 으휴... 페이몬, 이 눈치 없는 녀석...
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ![](128.webp)
 

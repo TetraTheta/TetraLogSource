@@ -16,21 +16,21 @@ images:
 
 예정된 점검 종료 시각은 오후 7시 30분.
 
-{{% collapse heading="트윗 보기" %}}
+{{< collapse heading="트윗 보기" >}}
 
 {{< twitter user="TheDivisionGame" id="1666475119026348032" >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 예정 점검 종료 시각을 5분 앞둔 오후 7시 25분, 갑자기 점검이 3시간 연장되었다. 늘 있어왔던 일이니, 놀랍지 않았다.
 
 연장된 점검 종료 시각은 오후 10시 30분.
 
-{{% collapse heading="트윗 보기" %}}
+{{< collapse heading="트윗 보기" >}}
 
 {{< twitter user="TheDivisionGame" id="1666752894115127297" >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 하지만 오후 10시 30분이 되어도 서버는 열리지 않았다. 공식 디스코드에도 아무런 말이 없었고, 공식 트위터 역시 잠잠했다.
 
@@ -42,19 +42,19 @@ images:
 
 변경된 점검 종료 시각은 6월 9일 오전 5시 30분.
 
-{{% collapse heading="트윗 보기" %}}
+{{< collapse heading="트윗 보기" >}}
 
 {{< twitter user="TheDivisionGame" id="1666810856129327107" >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 6월 9일 오전 3시, 매시브는 '극적인 진전이 있었으나 내일 마저 이어서 하겠다'라며 점검을 무기한 연장했다. 서버를 닫아둔 채로 말이다.
 
-{{% collapse heading="트윗 보기" %}}
+{{< collapse heading="트윗 보기" >}}
 
 {{< twitter user="TheDivisionGame" id="1666868115106299914" >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 상상조차 하기 힘든 조치였다. 점검을 하다가 퇴근 시간이 다 되었으니 그대로 퇴근을 한다고? 닫힌 서버는 그대로 내버려 두고?
 
@@ -72,11 +72,11 @@ images:
 
 시즌 첫 주에는 시즌 레벨 15 레벨을 달성하기 전까지 모든 경험치를 2배로 얻는데, 오랜 점검으로 인해 하루를 손해 보았으니, 황금 탄환 글로벌 이벤트를 시즌 일정에 추가했다고 한다.
 
-{{% collapse heading="트윗 보기" %}}
+{{< collapse heading="트윗 보기" >}}
 
 {{< twitter user="TheDivisionGame" id="1667084399928590336" >}}
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 어이가 없더라.
 

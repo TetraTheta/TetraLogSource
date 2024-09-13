@@ -229,7 +229,7 @@ images:
 
 ![](105.webp)
 
-{{% collapse heading="캡슐 사탕에 관한 기사에 대해 대화한다" %}}
+{{< collapse heading="캡슐 사탕에 관한 기사에 대해 대화한다" >}}
 
 {{< gallery/image src="106|107|108" >}}
 
@@ -243,9 +243,9 @@ images:
 
 어쩌면 금희가 알리고자 했던 건 보고서 속 「제1호 공명자」였을지도 모른다. 방랑자와 닮은 점이 있잖아? 20년 전 공명자는 제1호 공명자와 방랑자를 이어주는 연결고리고.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="금주 건립에 대한 정보에 대해 대화한다" %}}
+{{< collapse heading="금주 건립에 대한 정보에 대해 대화한다" >}}
 
 {{< gallery/image src="114|115|116" >}}
 
@@ -261,15 +261,15 @@ images:
 
 운릉 협곡 전쟁 이전에 명식 전쟁이란 것도 있었나 보다.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
-{{% collapse heading="해시계가 가리키는 시간에 대해 대화한다" %}}
+{{< collapse heading="해시계가 가리키는 시간에 대해 대화한다" >}}
 
 {{< gallery/image src="121|122|123" >}}
 
 일단 해시계를 여는 데 필요한 시간 정보가 '미'라는 것은 확인했다. 아직 방위 정보는 모르지만.
 
-{{% /collapse %}}
+{{< /collapse >}}
 
 ![](124.webp)
 
