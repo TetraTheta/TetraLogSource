@@ -3,7 +3,7 @@ title: "스카이블록 싱글플레이 - 01"
 slug: ssp-skyblock-01
 date: 2024-05-19T21:17:56+09:00
 series:
-#  - 
+  - "TMS S1: 스카이블록"
 categories:
   - 마인크래프트
 tags:
