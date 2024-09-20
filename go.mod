@@ -61,7 +61,7 @@ require (
 	github.com/hugomods/code-block-panel v0.7.1 // indirect
 	github.com/hugomods/font-awesome v6.6.0+incompatible // indirect
 	github.com/hugomods/fuse-js v0.1.0 // indirect
-	github.com/hugomods/google-adsense v0.1.0 // indirect
+	github.com/hugomods/google-adsense v0.2.1 // indirect
 	github.com/hugomods/google-analytics v0.2.1 // indirect
 	github.com/hugomods/gravatar v0.2.0 // indirect
 	github.com/hugomods/hugopress v0.5.0 // indirect
@@ -71,7 +71,7 @@ require (
 	github.com/hugomods/icons/vendors/font-awesome v0.6.8 // indirect
 	github.com/hugomods/icons/vendors/lucide v0.3.38 // indirect
 	github.com/hugomods/icons/vendors/mdi v0.3.6 // indirect
-	github.com/hugomods/icons/vendors/simple-icons v1.0.52 // indirect
+	github.com/hugomods/icons/vendors/simple-icons v1.0.53 // indirect
 	github.com/hugomods/images v0.11.2 // indirect
 	github.com/hugomods/katex v0.3.3 // indirect
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
@@ -86,9 +86,9 @@ require (
 	github.com/hugomods/seo/modules/schema v0.1.3 // indirect
 	github.com/hugomods/seo/modules/twitter-cards v0.1.1 // indirect
 	github.com/hugomods/shortcodes v0.22.0 // indirect
-	github.com/hugomods/simple-icons v13.8.0+incompatible // indirect
+	github.com/hugomods/simple-icons v13.10.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20240912074508-fecd21998353+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20240918133528-523493d096d7+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
