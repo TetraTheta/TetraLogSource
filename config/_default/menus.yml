@@ -27,7 +27,7 @@ main:
     params:
       header: 게임 이야기
       description: 게임 이야기
-      columns: 2
+      columns: 1
       icon:
         vendor: font-awesome-solid
         name: gamepad
@@ -108,7 +108,7 @@ main:
     params:
       header: 명조 이야기
       description: 명조 이야기
-      columns: 2
+      columns: 1
   - name: 조수 임무
     parent: wuthering-waves
     identifier: wuthering-waves-main
@@ -176,7 +176,7 @@ main:
     params:
       header: 각종 강좌 및 팁
       description: 각종 강좌 및 팁
-      columns: 2
+      columns: 1
       icon:
         vendor: font-awesome-solid
         name: lightbulb
@@ -248,7 +248,7 @@ main:
     params:
       header: 원신 이야기
       description: 원신 이야기
-      columns: 2
+      columns: 1
   - name: 마신 임무
     parent: genshin
     identifier: genshin-archon
