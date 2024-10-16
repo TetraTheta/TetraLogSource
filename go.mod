@@ -25,9 +25,9 @@ require (
 	github.com/hbstack/breadcrumb v0.7.4 // indirect
 	github.com/hbstack/carousel v0.2.7 // indirect
 	github.com/hbstack/code-block-panel v0.1.2 // indirect
-	github.com/hbstack/content-panel v0.10.1 // indirect
+	github.com/hbstack/content-panel v0.10.2 // indirect
 	github.com/hbstack/disqus v0.1.1 // indirect
-	github.com/hbstack/docs v0.19.0 // indirect
+	github.com/hbstack/docs v0.20.1 // indirect
 	github.com/hbstack/docs/modules/breadcrumb v0.1.10 // indirect
 	github.com/hbstack/docs/modules/content-panel v0.1.8 // indirect
 	github.com/hbstack/docs/modules/disqus v0.1.8 // indirect
@@ -38,7 +38,7 @@ require (
 	github.com/hbstack/footer v0.4.1 // indirect
 	github.com/hbstack/footer/modules/socials v0.3.0 // indirect
 	github.com/hbstack/hb v0.15.3 // indirect
-	github.com/hbstack/header v0.16.0 // indirect
+	github.com/hbstack/header v0.16.2 // indirect
 	github.com/hbstack/header/modules/search v0.1.37 // indirect
 	github.com/hbstack/header/modules/socials v0.2.2 // indirect
 	github.com/hbstack/header/themes/pills v0.2.18 // indirect
@@ -51,7 +51,7 @@ require (
 	github.com/hbstack/slide v0.4.0 // indirect
 	github.com/hbstack/snackbar v0.1.2 // indirect
 	github.com/hbstack/social-share-buttons v0.4.0 // indirect
-	github.com/hbstack/socials v0.16.0 // indirect
+	github.com/hbstack/socials v0.17.0 // indirect
 	github.com/hbstack/syntax-highlighting v0.2.0 // indirect
 	github.com/hbstack/syntax-highlighting/styles/xcode-dark v0.1.1 // indirect
 	github.com/hbstack/toc-scrollspy v0.2.0 // indirect
@@ -77,7 +77,7 @@ require (
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
 	github.com/hugomods/masonry-js v0.1.0 // indirect
 	github.com/hugomods/mermaid v0.1.4 // indirect
-	github.com/hugomods/microsoft-clarity v0.1.0 // indirect
+	github.com/hugomods/microsoft-clarity v0.3.0 // indirect
 	github.com/hugomods/search v0.17.2 // indirect
 	github.com/hugomods/seo/modules/alternatives v0.1.1 // indirect
 	github.com/hugomods/seo/modules/base v0.1.3 // indirect
@@ -85,10 +85,10 @@ require (
 	github.com/hugomods/seo/modules/open-graph v0.1.1 // indirect
 	github.com/hugomods/seo/modules/schema v0.1.3 // indirect
 	github.com/hugomods/seo/modules/twitter-cards v0.1.1 // indirect
-	github.com/hugomods/shortcodes v0.22.0 // indirect
-	github.com/hugomods/simple-icons v13.13.0+incompatible // indirect
+	github.com/hugomods/shortcodes v0.23.0 // indirect
+	github.com/hugomods/simple-icons v13.14.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20241008064223-fee9dc243873+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20241016150625-5796e152a47d+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
