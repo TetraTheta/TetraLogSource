@@ -48,6 +48,11 @@ div.hb-blog-post-card-img-none {
 // Hide Post Meta in article
 .hb-blog-post .hb-blog-post-section { display: none; }
 
+// KaTeX
+div.katex-output {
+  overflow: initial;
+}
+
 // Post style
 div.hb-blog-post-content {
   p:first-child { margin-top: 0; margin-bottom: 0.7rem; }

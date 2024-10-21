@@ -89,6 +89,6 @@ require (
 	github.com/hugomods/simple-icons v13.14.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20241016150625-5796e152a47d+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20241017071832-5c2f2e7e0ec4+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
