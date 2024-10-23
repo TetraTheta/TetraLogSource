@@ -66,12 +66,12 @@ require (
 	github.com/hugomods/gravatar v0.2.0 // indirect
 	github.com/hugomods/hugopress v0.5.0 // indirect
 	github.com/hugomods/i18n-js v0.2.1 // indirect
-	github.com/hugomods/icons v0.6.4 // indirect
+	github.com/hugomods/icons v0.6.5 // indirect
 	github.com/hugomods/icons/vendors/bootstrap v0.5.7 // indirect
 	github.com/hugomods/icons/vendors/font-awesome v0.6.8 // indirect
 	github.com/hugomods/icons/vendors/lucide v0.3.38 // indirect
 	github.com/hugomods/icons/vendors/mdi v0.3.6 // indirect
-	github.com/hugomods/icons/vendors/simple-icons v1.0.56 // indirect
+	github.com/hugomods/icons/vendors/simple-icons v1.0.57 // indirect
 	github.com/hugomods/images v0.11.2 // indirect
 	github.com/hugomods/katex v0.3.3 // indirect
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
@@ -86,9 +86,9 @@ require (
 	github.com/hugomods/seo/modules/schema v0.1.3 // indirect
 	github.com/hugomods/seo/modules/twitter-cards v0.1.1 // indirect
 	github.com/hugomods/shortcodes v0.23.0 // indirect
-	github.com/hugomods/simple-icons v13.14.0+incompatible // indirect
+	github.com/hugomods/simple-icons v13.14.1+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20241017071832-5c2f2e7e0ec4+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20241021134739-30e015256703+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
