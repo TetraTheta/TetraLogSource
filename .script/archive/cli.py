@@ -57,8 +57,8 @@ def getenv(envvar: str) -> str:
     return ev
 
 
-def run(cmd, cwd=root, silent=False):
-    proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL if silent else subprocess.PIPE, stderr=subprocess.DEVNULL if silent else subprocess.STDOUT, cwd=cwd, shell=True, encoding="utf-8", errors="replace", text=False)
+def run(cmd, silent=False):
+    proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL if silent else subprocess.PIPE, stderr=subprocess.DEVNULL if silent else subprocess.STDOUT, shell=True, encoding="utf-8", errors="replace", text=False)
 
     while True:
         if proc.poll() is not None:
@@ -257,39 +257,20 @@ def publish(args):
 
     info("Removing trailing slash...")
     args = namedtuple("args", ["PATH"])
-    PUBLIC_PATH = Path(publish_root / "public")
-    deslash(args(PATH=PUBLIC_PATH))
+    deslash(args(PATH=Path(publish_root / "public")))
 
-    info("Removing previous site files...")
-    PUBLISH_REPO_DIR = Path(getenv("PUBLISH_REPO_DIR")).resolve()
-    for item in PUBLISH_REPO_DIR.iterdir():
-        if item.name != ".git":
-            if item.is_dir():
-                shutil.rmtree(item)
-            else:
-                item.unlink()
+    info("Publish site with rsync...")
+    PUBLISH_SSH_KEY = getenv("PUBLISH_SSH_KEY")
+    PUBLISH_USER_IP = getenv("PUBLISH_USER_IP")
+    PUBLISH_DIR = getenv("PUBLISH_DIR")
+    run(f'rsync -vcrmzh --progress --del --force -e "ssh -o StrictHostKeyChecking=no -i {PUBLISH_SSH_KEY}" --rsync-path="sudo rsync" --chown=www-data:www-data --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r "./public/" {PUBLISH_USER_IP}:{PUBLISH_DIR}')
 
-    info("Moving site files to another repository...")
-    for item in PUBLIC_PATH.iterdir():
-        shutil.move(item, PUBLISH_REPO_DIR)
-
-    info("Creating required files...")
-    with (PUBLISH_REPO_DIR / ".nojekyll").open("w") as f:
-        f.write("")
-    with (PUBLISH_REPO_DIR / "CNAME").open("w") as f:
-        f.write(getenv("CUSTOM_DOMAIN"))
-
-    info("Tracking changes with Git...")
-    os.chdir(PUBLISH_REPO_DIR)
-    run("git add -A", cwd=PUBLISH_REPO_DIR)
-
-    from datetime import datetime
-
-    commit_message = datetime.now().strftime("Deploy: %Y-%m-%d %H:%M:%S")
-    run(f'git commit -m "{commit_message}"', cwd=PUBLISH_REPO_DIR)
-
-    info("Pushing changes to remote...")
-    run("git push origin main --force", cwd=PUBLISH_REPO_DIR)
+    info("Cleaning directories...")
+    if local:
+        clean({})
+    else:
+        os.chdir(root)
+        tempdir.cleanup()
 
     info("Done!")
 

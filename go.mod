@@ -12,7 +12,7 @@ require (
 	github.com/hbstack/back-to-top v0.2.0 // indirect
 	github.com/hbstack/base v0.6.2 // indirect
 	github.com/hbstack/blockquote-alerts v0.1.1 // indirect
-	github.com/hbstack/blog v0.38.0 // indirect
+	github.com/hbstack/blog v0.38.1 // indirect
 	github.com/hbstack/blog/modules/breadcrumb v0.1.23 // indirect
 	github.com/hbstack/blog/modules/content-panel v0.1.21 // indirect
 	github.com/hbstack/blog/modules/disqus v0.1.20 // indirect
@@ -27,7 +27,7 @@ require (
 	github.com/hbstack/code-block-panel v0.1.2 // indirect
 	github.com/hbstack/content-panel v0.10.2 // indirect
 	github.com/hbstack/disqus v0.1.1 // indirect
-	github.com/hbstack/docs v0.20.1 // indirect
+	github.com/hbstack/docs v0.21.0 // indirect
 	github.com/hbstack/docs/modules/breadcrumb v0.1.10 // indirect
 	github.com/hbstack/docs/modules/content-panel v0.1.8 // indirect
 	github.com/hbstack/docs/modules/disqus v0.1.8 // indirect
@@ -38,7 +38,7 @@ require (
 	github.com/hbstack/footer v0.4.1 // indirect
 	github.com/hbstack/footer/modules/socials v0.3.0 // indirect
 	github.com/hbstack/hb v0.15.3 // indirect
-	github.com/hbstack/header v0.16.3 // indirect
+	github.com/hbstack/header v0.16.4 // indirect
 	github.com/hbstack/header/modules/search v0.1.38 // indirect
 	github.com/hbstack/header/modules/socials v0.2.2 // indirect
 	github.com/hbstack/header/themes/pills v0.2.18 // indirect
@@ -57,9 +57,9 @@ require (
 	github.com/hbstack/toc-scrollspy v0.2.0 // indirect
 	github.com/hugomods/ascii v0.1.0 // indirect
 	github.com/hugomods/base v0.7.2 // indirect
-	github.com/hugomods/bootstrap v0.22.3 // indirect
+	github.com/hugomods/bootstrap v0.23.0 // indirect
 	github.com/hugomods/code-block-panel v0.7.1 // indirect
-	github.com/hugomods/font-awesome v6.6.0+incompatible // indirect
+	github.com/hugomods/font-awesome v6.7.0+incompatible // indirect
 	github.com/hugomods/fuse-js v0.1.0 // indirect
 	github.com/hugomods/google-adsense v0.2.1 // indirect
 	github.com/hugomods/google-analytics v0.2.1 // indirect
@@ -67,19 +67,19 @@ require (
 	github.com/hugomods/hugopress v0.5.0 // indirect
 	github.com/hugomods/i18n-js v0.2.1 // indirect
 	github.com/hugomods/icons v0.6.6 // indirect
-	github.com/hugomods/icons/vendors/bootstrap v0.5.8 // indirect
-	github.com/hugomods/icons/vendors/font-awesome v0.6.9 // indirect
-	github.com/hugomods/icons/vendors/lucide v0.3.39 // indirect
-	github.com/hugomods/icons/vendors/mdi v0.3.7 // indirect
-	github.com/hugomods/icons/vendors/simple-icons v1.0.59 // indirect
+	github.com/hugomods/icons/vendors/bootstrap v0.5.9 // indirect
+	github.com/hugomods/icons/vendors/font-awesome v0.6.11 // indirect
+	github.com/hugomods/icons/vendors/lucide v0.3.40 // indirect
+	github.com/hugomods/icons/vendors/mdi v0.3.8 // indirect
+	github.com/hugomods/icons/vendors/simple-icons v1.0.60 // indirect
 	github.com/hugomods/images v0.11.2 // indirect
 	github.com/hugomods/katex v0.3.3 // indirect
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
 	github.com/hugomods/masonry-js v0.1.0 // indirect
 	github.com/hugomods/mermaid v0.1.4 // indirect
 	github.com/hugomods/microsoft-clarity v0.3.0 // indirect
-	github.com/hugomods/search v0.18.1 // indirect
-	github.com/hugomods/search-index v0.1.0 // indirect
+	github.com/hugomods/search v0.18.3 // indirect
+	github.com/hugomods/search-index v0.1.1 // indirect
 	github.com/hugomods/seo/modules/alternatives v0.1.1 // indirect
 	github.com/hugomods/seo/modules/base v0.1.3 // indirect
 	github.com/hugomods/seo/modules/favicons v0.2.2 // indirect
@@ -90,6 +90,6 @@ require (
 	github.com/hugomods/simple-icons v13.15.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20241025054014-c2a7d686de56+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20241114101233-cacbdc680ecd+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
