@@ -148,7 +148,7 @@ images:
 
 이 구절은 제작자가 직접 창작한 모양이다.
 
-해석하면 늑대--고든--이 양 떼--좀비 무리-- 사이를 어둠 속에서 자유로이 누빈다는 이야기이다.
+해석하면 늑대(고든)이 양 떼(좀비 무리) 사이를 어둠 속에서 자유로이 누빈다는 이야기이다.
 
 ![](019.webp)
 
@@ -329,7 +329,7 @@ EP를 만든 후, '이거 개쩌는데?'라고 감탄하는 것이 아닐까?
 
 > We have orders to bunker here for the night. Too many of us are hurt or worse. I never thought we could have survived that last horde. It cost us the last of our turrents.
 > We made too much fucking noise working our way here. If the combine heard us we will be slaughtered. We have no cnoice but to press our luck. We'll do no good beginning the assault in this condision.
-> -- JT
+> --- JT
 {.bq}
 
 아까 밑에서 좀비 무리를 해치울 때, 터렛을 몇 개 발견했었다.
