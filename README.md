@@ -91,3 +91,32 @@ I tried Git LFS to see if it is really efficient. Now I despise Git LFS.
 
 * Very slow push speed  
   I tried to push repository to other machine in private network. Its uploading speed was ~250KB/s which is very unbearable. I couldn't find any way to speed up the uploading speed.
+
+### Website Host Comparison
+
+#### GitHub Pages
+
+* Pros
+  * Free of Charge  
+    GitHub Pages is free unless the website is heavily used. This is OK for my blog.
+  * Very Fast Response Time  
+    Since GitHub Pages is on CDN, which ensures the fastest response time.
+  * Very Big Bandwidth  
+    I don't know about how much GitHub Pages allows, but it is big enough.
+* Cons
+  * Total Site Size Limit  
+    GitHub Pages limits the total website size to 1 GB. My blog exceeds the limit (>= 2 GB).  
+    My blog is still built and uploaded, but GitHub might stop my blog from being built someday.
+
+#### Render
+
+[Render](https://render.com/) allows me to host a static website.
+
+* Pros
+  * Free of Charge  
+    If the website is static ― which Hugo produces ―, it doesn't cost for hosting the website.
+  * Very Fast Response Time  
+    Render hosts websites on CDN, which ensures the fastest response time.
+* Cons
+  * Limited build time  
+    I can only use 500 minutes ― less than 1 day (1,440 minutes) ― per month for building sites in the free tier. It takes 10 minutes to build my blog, so I can only do 50 builds per month.
