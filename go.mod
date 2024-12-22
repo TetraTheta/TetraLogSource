@@ -3,7 +3,7 @@ module github.com/hbstack/theme
 go 1.21.5
 
 require (
-	github.com/KaTeX/KaTeX v0.16.15 // indirect
+	github.com/KaTeX/KaTeX v0.16.18 // indirect
 	github.com/Templarian/MaterialDesign-SVG v7.4.47+incompatible // indirect
 	github.com/desandro/masonry v4.2.2+incompatible // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
@@ -12,7 +12,7 @@ require (
 	github.com/hbstack/back-to-top v0.2.0 // indirect
 	github.com/hbstack/base v0.6.2 // indirect
 	github.com/hbstack/blockquote-alerts v0.1.1 // indirect
-	github.com/hbstack/blog v0.38.1 // indirect
+	github.com/hbstack/blog v0.39.0 // indirect
 	github.com/hbstack/blog/modules/breadcrumb v0.1.23 // indirect
 	github.com/hbstack/blog/modules/content-panel v0.1.21 // indirect
 	github.com/hbstack/blog/modules/disqus v0.1.20 // indirect
@@ -27,7 +27,7 @@ require (
 	github.com/hbstack/code-block-panel v0.1.2 // indirect
 	github.com/hbstack/content-panel v0.10.2 // indirect
 	github.com/hbstack/disqus v0.1.1 // indirect
-	github.com/hbstack/docs v0.21.0 // indirect
+	github.com/hbstack/docs v0.22.0 // indirect
 	github.com/hbstack/docs/modules/breadcrumb v0.1.10 // indirect
 	github.com/hbstack/docs/modules/content-panel v0.1.8 // indirect
 	github.com/hbstack/docs/modules/disqus v0.1.8 // indirect
@@ -73,7 +73,7 @@ require (
 	github.com/hugomods/icons/vendors/mdi v0.3.8 // indirect
 	github.com/hugomods/icons/vendors/simple-icons v1.0.61 // indirect
 	github.com/hugomods/images v0.11.2 // indirect
-	github.com/hugomods/katex v0.3.4 // indirect
+	github.com/hugomods/katex v0.3.5 // indirect
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
 	github.com/hugomods/masonry-js v0.1.0 // indirect
 	github.com/hugomods/mermaid v0.1.4 // indirect
@@ -90,6 +90,6 @@ require (
 	github.com/hugomods/simple-icons v13.19.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20241210120318-ff7d1be0b73d+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20241219072357-0cbfe13adf66+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
