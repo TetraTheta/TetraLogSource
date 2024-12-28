@@ -94,8 +94,8 @@ github.com/hbstack/snackbar v0.1.2 h1:/9R2CdWnLcOBobxzdpe30cgM1gcKJAXtbVbZtp2pgm
 github.com/hbstack/snackbar v0.1.2/go.mod h1:4uZSGpI9ZtR9by0bA8yJW2y61sRks2W4a8VvyMluXuo=
 github.com/hbstack/social-share-buttons v0.4.0 h1:ygMO2h7X7lx6FzAqIzZf+d9HUYvIMpmT31aVpOvW9p8=
 github.com/hbstack/social-share-buttons v0.4.0/go.mod h1:WAXsqPI+12QA67fA/IWLvxVubuvbW8kzLwTo0pZW41E=
-github.com/hbstack/socials v0.17.0 h1:xa4CRhQNmN9QJzE3wVbeA2HZix4TYa8TE5FGxQT+8Zw=
-github.com/hbstack/socials v0.17.0/go.mod h1:bGfRrGxVWfvwseOzJ+13vHhHpZ+e+f2z8k4ypPBhH10=
+github.com/hbstack/socials v0.17.2 h1:iv7KCdveM1ZkE19qQVIJzvfBpLx7U1XfoK+sKN6wUuY=
+github.com/hbstack/socials v0.17.2/go.mod h1:SxsgrMkupTV3fHpGpWZQ7HAaeGUvENZPW5z+0ywJ5ao=
 github.com/hbstack/syntax-highlighting v0.2.0 h1:BP5SR/AbVlJyAFtVdgYjeqVZKmncEmuplTR5R2AUbw8=
 github.com/hbstack/syntax-highlighting v0.2.0/go.mod h1:6IoaM+tSIkKZblIrT1i5L3zVH68nt4UScU9JB30FQsc=
 github.com/hbstack/syntax-highlighting/styles/xcode-dark v0.1.1 h1:eUwhTLY2aKhixftqCfJ5VrlUAJMGT1MwUe7RKZQKPU4=
