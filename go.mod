@@ -3,7 +3,7 @@ module github.com/hbstack/theme
 go 1.21.5
 
 require (
-	github.com/KaTeX/KaTeX v0.16.18 // indirect
+	github.com/KaTeX/KaTeX v0.16.19 // indirect
 	github.com/Templarian/MaterialDesign-SVG v7.4.47+incompatible // indirect
 	github.com/desandro/masonry v4.2.2+incompatible // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
@@ -52,8 +52,8 @@ require (
 	github.com/hbstack/snackbar v0.1.2 // indirect
 	github.com/hbstack/social-share-buttons v0.4.0 // indirect
 	github.com/hbstack/socials v0.17.2 // indirect
-	github.com/hbstack/syntax-highlighting v0.2.0 // indirect
-	github.com/hbstack/syntax-highlighting/styles/xcode-dark v0.1.1 // indirect
+	github.com/hbstack/syntax-highlighting v0.2.1 // indirect
+	github.com/hbstack/syntax-highlighting/styles/xcode-dark v0.1.2 // indirect
 	github.com/hbstack/toc-scrollspy v0.2.0 // indirect
 	github.com/hugomods/ascii v0.1.0 // indirect
 	github.com/hugomods/base v0.7.2 // indirect
@@ -71,9 +71,9 @@ require (
 	github.com/hugomods/icons/vendors/font-awesome v0.6.12 // indirect
 	github.com/hugomods/icons/vendors/lucide v0.3.40 // indirect
 	github.com/hugomods/icons/vendors/mdi v0.3.8 // indirect
-	github.com/hugomods/icons/vendors/simple-icons v1.0.61 // indirect
+	github.com/hugomods/icons/vendors/simple-icons v1.1.0 // indirect
 	github.com/hugomods/images v0.11.2 // indirect
-	github.com/hugomods/katex v0.3.5 // indirect
+	github.com/hugomods/katex v0.3.6 // indirect
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
 	github.com/hugomods/masonry-js v0.1.0 // indirect
 	github.com/hugomods/mermaid v0.1.4 // indirect
@@ -87,7 +87,7 @@ require (
 	github.com/hugomods/seo/modules/schema v0.1.3 // indirect
 	github.com/hugomods/seo/modules/twitter-cards v0.1.1 // indirect
 	github.com/hugomods/shortcodes v0.24.0 // indirect
-	github.com/hugomods/simple-icons v13.19.0+incompatible // indirect
+	github.com/hugomods/simple-icons v13.21.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
 	github.com/twbs/bootstrap v5.3.4-0.20241219072357-0cbfe13adf66+incompatible // indirect
