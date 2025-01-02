@@ -3,7 +3,7 @@ title: "운명적인 첫 만남 - 04"
 slug: first-resonance-04
 date: 2024-05-25T00:42:43+09:00
 series:
-  - "운명적인 첫 만남: 황룡 제1장 제1막"
+  - "운명적인 첫 만남: 제1장 황룡 제1막"
 categories:
   - 명조
 tags:

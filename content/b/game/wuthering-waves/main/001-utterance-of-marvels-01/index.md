@@ -3,7 +3,7 @@ title: "새로운 소리 - 01"
 slug: utterance-of-marvels-01
 date: 2024-05-24T19:33:06+09:00
 series:
-  - "새로운 소리: 프롤로그 서막"
+  - "새로운 소리: 프롤로그"
 categories:
   - 명조
 tags:

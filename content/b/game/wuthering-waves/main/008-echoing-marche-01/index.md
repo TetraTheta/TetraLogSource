@@ -3,7 +3,7 @@ title: "퇴각의 북소리 - 01"
 slug: echoing-marche-01
 date: 2024-05-27T22:25:31+09:00
 series:
-  - "퇴각의 북소리: 황룡 제1장 제2막"
+  - "퇴각의 북소리: 제1장 황룡 제2막"
 categories:
   - 명조
 tags:

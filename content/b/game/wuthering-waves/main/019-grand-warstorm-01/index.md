@@ -3,7 +3,7 @@ title: "멀리 날아가는 군기 - 01"
 slug: grand-warstorm-01
 date: 2024-06-09T17:02:45+09:00
 series:
-  - "멀리 날아가는 군기: 황룡 제1장 제6막"
+  - "멀리 날아가는 군기: 제1장 황룡 제6막"
 categories:
   - 명조
 tags:

@@ -3,7 +3,7 @@ title: "곧 내리는 비 - 01"
 slug: rewinding-raindrops-01
 date: 2024-06-06T19:12:50+09:00
 series:
-  - "곧 내리는 비: 황룡 제1장 제5막"
+  - "곧 내리는 비: 제1장 황룡 제5막"
 categories:
   - 명조
 tags:
