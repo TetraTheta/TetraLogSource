@@ -1,0 +1,11 @@
+{{/* [Temporary Fix] Returns full content summary (for RSS) | Accepts: Page */}}
+{{- $summary := "" -}}
+{{- if .IsPage -}}
+  {{- $page := .Page -}}
+  {{- $summary = $page.Content | plainify | transform.XMLEscape -}}
+  {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
+{{- else -}}
+  {{- $summary = .Summary -}}
+{{- end -}}
+{{- $summary = trim ($summary | transform.XMLEscape) " " -}}
+{{- return $summary -}}

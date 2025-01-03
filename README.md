@@ -34,6 +34,7 @@ This is a note for myself for later use.
 For various reasons, I've overridden the files of Hugo and HB Card Theme. Here is a list of files that I've overridden and their original sources.
 
 <pre><code>layouts
+│ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml">rss.xml</a>
 ├─partials
 │ │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/opengraph.html">opengraph.html</a> (Summary Fix)
 │ │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/schema.html">schema.html</a> (Summary Fix)
@@ -89,7 +90,7 @@ I can use a PNG image as a menu icon instead of an SVG image, but it must follow
 
 I tried Git LFS to see if it is really efficient. Now I despise Git LFS.
 
-* Very slow push speed  
+* Very slow push speed<br>
   I tried to push repository to other machine in private network. Its uploading speed was ~250KB/s which is very unbearable. I couldn't find any way to speed up the uploading speed.
 
 ### Website Host Comparison
@@ -97,15 +98,15 @@ I tried Git LFS to see if it is really efficient. Now I despise Git LFS.
 #### GitHub Pages
 
 * Pros
-  * Free of Charge  
+  * Free of Charge<br>
     GitHub Pages is free unless the website is heavily used. This is OK for my blog.
-  * Very Fast Response Time  
+  * Very Fast Response Time<br>
     Since GitHub Pages is on CDN, which ensures the fastest response time.
-  * Very Big Bandwidth  
+  * Very Big Bandwidth<br>
     I don't know about how much GitHub Pages allows, but it is big enough.
 * Cons
-  * Total Site Size Limit  
-    GitHub Pages limits the total website size to 1 GB. My blog exceeds the limit (>= 2 GB).  
+  * Total Site Size Limit<br>
+    GitHub Pages limits the total website size to 1 GB. My blog exceeds the limit (>= 2 GB).<br>
     My blog is still built and uploaded, but GitHub might stop my blog from being built someday.
 
 #### Render
@@ -113,10 +114,10 @@ I tried Git LFS to see if it is really efficient. Now I despise Git LFS.
 [Render](https://render.com/) allows me to host a static website.
 
 * Pros
-  * Free of Charge  
+  * Free of Charge<br>
     If the website is static ― which Hugo produces ―, it doesn't cost for hosting the website.
-  * Very Fast Response Time  
+  * Very Fast Response Time<br>
     Render hosts websites on CDN, which ensures the fastest response time.
 * Cons
-  * Limited build time  
+  * Limited build time<br>
     I can only use 500 minutes ― less than 1 day (1,440 minutes) ― per month for building sites in the free tier. It takes 10 minutes to build my blog, so I can only do 50 builds per month.

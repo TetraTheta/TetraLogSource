@@ -122,7 +122,7 @@ def deslash(args):
 
     from bs4 import BeautifulSoup
 
-    def removeSlashHTML(f: Path):
+    def cleanupHTML(f: Path):
         with f.open("r", encoding="utf-8") as file:
             content = file.read()
             soup = BeautifulSoup(content, "lxml")
@@ -138,7 +138,7 @@ def deslash(args):
             file.write(new_content)
         info(str(f), "DESLASH", Fore.YELLOW)
 
-    def removeSlashXML(f: Path):
+    def cleanupXML(f: Path):
         with f.open("r", encoding="utf-8") as file:
             content = file.read()
             soup = BeautifulSoup(content, "xml")
@@ -151,6 +151,9 @@ def deslash(args):
             for tag_loc in soup.find_all("loc"):
                 if tag_loc.string is not None:
                     tag_loc.string = re.sub(r"\/+$", "", tag_loc.string)
+            for tag_description in soup.find_all("description"):
+                if tag_description.string is not None:
+                    tag_description.string = re.sub(r"(?m)^\s*\n", "", tag_description.string)
             new_content = str(soup)
         with f.open("w", encoding="utf-8") as file:
             file.write(new_content)
@@ -163,15 +166,15 @@ def deslash(args):
 
     if argpath.is_file():
         if argpath.suffix in [".html", ".htm"]:
-            removeSlashHTML(argpath)
+            cleanupHTML(argpath)
         elif argpath.suffix == ".xml":
-            removeSlashXML(argpath)
+            cleanupXML(argpath)
     elif argpath.is_dir():
         for file_path in argpath.rglob("*"):
             if file_path.suffix in [".htm", ".html"]:
-                removeSlashHTML(file_path)
+                cleanupHTML(file_path)
             elif file_path.suffix == ".xml":
-                removeSlashXML(file_path)
+                cleanupXML(file_path)
 
 
 def new(args):
