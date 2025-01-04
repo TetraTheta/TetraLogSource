@@ -2,18 +2,18 @@ google_adsense: ca-pub-4833500762608350
 google_adsense_ad_blocking_detector: true
 google_adsense_ad_blocking_detector_fail_safe: true
 
-ParamSummaryLength: 125 # This is what is used for generating summary. Do not use 'summaryLength'.
+ParamSummaryLength: 150 # This is what is used for generating summary. Do not use 'summaryLength'.
 
 hb:
   back_to_top:
-    icon_name: 'arrow-up-circle'
+    icon_name: arrow-up-circle
   blog:
     #giscus:
-    #  category: 'Giscus'
-    #  category_id: 'DIC_kwDOKakTSM4CZxf_'
+    #  category: Giscus
+    #  category_id: DIC_kwDOKakTSM4CZxf_
     #  languages_mapping.ko: ko
-    #  repo: 'TetraTheta/TetraLogComment'
-    #  repo_id: 'R_kgDOKakTSA'
+    #  repo: TetraTheta/TetraLogComment
+    #  repo_id: R_kgDOKakTSA
     home:
       featured_posts: 3 # the number of the featured posts.
     paginate: 12
@@ -31,7 +31,7 @@ hb:
         separate: true
     terms:
       paginate: 12
-  color: 'dark'
+  color: dark
   docs:
     meta:
       authors: false
@@ -39,24 +39,24 @@ hb:
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
       _color: true # when false, remove the color of social icons.
-      github: 'TetraTheta'
+      github: TetraTheta
       rss: true
   full_width: false
   header:
-    brand: 'TetraLog' # the brand name, leave it empty to use site's title.
-    logo_bg: '#00000000' # logo background color, used by logo with transparent background.
+    brand: TetraLog # the brand name, leave it empty to use site's title.
+    logo_bg: "#00000000" # logo background color, used by logo with transparent background.
     # see https://hbstack.dev/en/docs/modules/socials/.
     socials:
-      github: 'TetraTheta'
+      github: TetraTheta
       rss: true
   heading_sign:
-    symbol: '¶'
+    symbol: "¶"
   pagination:
     siblings: 3
   progress_bar:
-    height: '4px'
+    height: 4px
   tables:
-    align: 'middle'
+    align: middle
   terms:
     paginate: 12
     profile: false
@@ -74,18 +74,18 @@ hugopress:
 
 # Default Open Graph / Twitter Cards image
 images:
-  - 'images/card-twitter.png'
+  - images/card-twitter.png
 
 mermaid:
-  js_url: 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
+  js_url: https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs
 
 # PWA settings, see https://hugomods.com/en/docs/pwa/#site-parameters.
 pwa:
   debug: false
   manifest:
-    background_color: '#712cf9'
-    theme_color: '#712cf9'
-    short_name: 'TetraLog'
+    background_color: "#712cf9"
+    theme_color: "#712cf9"
+    short_name: TetraLog
 
 # see https://hugomods.com/en/docs/search/#site-parameters
 search:
@@ -99,4 +99,4 @@ search:
 
 seo:
   favicons:
-    icon: 'images/logo.png'
+    icon: images/logo.png
