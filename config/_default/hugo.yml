@@ -2,7 +2,7 @@ title: TetraLog
 baseURL: https://tetralog.haipa.xyz/
 
 # Copyright, the {year} is the placeholder of this year.
-copyright: "Copyright © {year}. All Rights Reserved."
+copyright: "Copyright © {year}. TetraTheta All Rights Reserved."
 
 defaultContentLanguage: ko
 defaultContentLanguageInSubdir: false
@@ -125,6 +125,10 @@ security:
       - ^HUGO
       - CI$
       - PWD
+
+sitemap:
+  changeFreq: hourly
+  priority: 0.5
 
 taxonomies:
   #authors: authors # multiple authors.
