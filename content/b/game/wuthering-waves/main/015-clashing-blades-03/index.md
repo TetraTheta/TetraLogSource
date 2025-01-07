@@ -4,6 +4,7 @@ slug: clashing-blades-03
 date: 2024-05-30T19:13:01+09:00
 series:
   - "변정에서 울리는 칼날의 소리: 제1장 황룡 제4막"
+  - "과거보다 더욱 빛나는 금주: 명조 조수 임무 제1장"
 categories:
   - 명조
 tags:

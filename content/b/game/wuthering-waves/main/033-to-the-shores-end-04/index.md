@@ -4,6 +4,7 @@ slug: to-the-shores-end-04
 date: 2025-01-05T18:22:20+09:00
 series:
   - "해안의 끝을 찾아서: 제1장 검은 해안 제8막"
+  - "과거보다 더욱 빛나는 금주: 명조 조수 임무 제1장"
 categories:
   - 명조
 tags:

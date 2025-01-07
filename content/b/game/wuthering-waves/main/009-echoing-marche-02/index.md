@@ -4,6 +4,7 @@ slug: echoing-marche-02
 date: 2024-05-27T22:25:45+09:00
 series:
   - "퇴각의 북소리: 제1장 황룡 제2막"
+  - "과거보다 더욱 빛나는 금주: 명조 조수 임무 제1장"
 categories:
   - 명조
 tags:

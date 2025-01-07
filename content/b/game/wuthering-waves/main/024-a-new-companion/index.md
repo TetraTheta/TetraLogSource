@@ -4,6 +4,7 @@ slug: a-new-companion
 date: 2024-08-18T13:13:21+09:00
 series:
   - "새로운 만남의 길: 제1장 황룡 막간"
+  - "과거보다 더욱 빛나는 금주: 명조 조수 임무 제1장"
 categories:
   - 명조
 tags:

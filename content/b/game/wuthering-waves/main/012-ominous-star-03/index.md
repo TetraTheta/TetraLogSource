@@ -4,6 +4,7 @@ slug: ominous-star-03
 date: 2024-05-27T22:26:06+09:00
 series:
   - "첫 마주치는 잔성: 제1장 황룡 제3막"
+  - "과거보다 더욱 빛나는 금주: 명조 조수 임무 제1장"
 categories:
   - 명조
 tags:

@@ -4,6 +4,7 @@ slug: first-resonance-03
 date: 2024-05-24T23:42:10+09:00
 series:
   - "운명적인 첫 만남: 제1장 황룡 제1막"
+  - "과거보다 더욱 빛나는 금주: 명조 조수 임무 제1장"
 categories:
   - 명조
 tags:

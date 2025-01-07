@@ -4,6 +4,7 @@ slug: grand-warstorm-02
 date: 2024-06-09T17:02:49+09:00
 series:
   - "멀리 날아가는 군기: 제1장 황룡 제6막"
+  - "과거보다 더욱 빛나는 금주: 명조 조수 임무 제1장"
 categories:
   - 명조
 tags:

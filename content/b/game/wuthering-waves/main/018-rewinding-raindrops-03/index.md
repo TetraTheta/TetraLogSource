@@ -4,6 +4,7 @@ slug: rewinding-raindrops-03
 date: 2024-06-06T19:12:57+09:00
 series:
   - "곧 내리는 비: 제1장 황룡 제5막"
+  - "과거보다 더욱 빛나는 금주: 명조 조수 임무 제1장"
 categories:
   - 명조
 tags:
