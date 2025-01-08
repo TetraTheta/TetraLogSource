@@ -143,7 +143,7 @@ images:
 
 그런데, 케이아가 준다는 「여명신검」, 고작 3성짜리다.
 
-![](harbinger_of_dawn.webp#center)
+![](harbinger_of_dawn.webp)
 
 > 여명신검
 > ***

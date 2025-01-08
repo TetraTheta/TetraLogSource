@@ -74,7 +74,9 @@ div.hb-blog-post-content {
     // Twitter embed (Not sure why this doesn't work)
     &.twitter-tweet { font-family: var(--hb-font-sans-serif) !important; }
   }
-  img.img-fluid { margin: 0.5rem 0 0 0; }
+  // Image (Prevents usage of '#center', '#float-start', and '#float-end' because '#center' is applied forcibly)
+  img.img-fluid { margin: 0; }
+  picture:has(img.img-fluid) { display: flex; justify-content: center; }
   // Headings
   h1, h2, h3, h4, h5, h6 { margin-top: 2rem; }
   // Horizontal Line
@@ -82,7 +84,10 @@ div.hb-blog-post-content {
   // Code Block
   pre { background-color: var(--hb-secondary-bg); }
   // List
-  ul, ol { li p { margin-bottom: 0; } }
+  ul, ol {
+    & { margin-top: 0.7rem; margin-bottom: 0.7rem; }
+    li p { margin-bottom: 0; }
+  }
   // Table
   table, .table { --hb-table-color: var(--hb-body-color) }
   // Ruby

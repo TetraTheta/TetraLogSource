@@ -156,7 +156,7 @@ images:
 
 {{< gallery/image src="060|061" >}}
 
-![](062.webp#center)
+![](062.webp)
 
 먼저 왔던 사람이 남긴 버섯고기말이 레시피를 얻었다.
 
@@ -166,7 +166,7 @@ images:
 
 {{< gallery/image src="065|066" >}}
 
-![](067.webp#center)
+![](067.webp)
 
 그다음 장소에선 진주비취백옥탕 레시피를 얻었다.
 

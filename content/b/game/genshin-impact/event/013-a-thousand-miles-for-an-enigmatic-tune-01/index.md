@@ -48,7 +48,7 @@ images:
 
 '새로 돋아난 죽순'을 이야기하는 걸 보니 종려의 특제 요리가 생각난다.
 
-![](slow-cooked-bamboo-shoot-soup.webp#center)
+![](slow-cooked-bamboo-shoot-soup.webp)
 
 > 약불로 천천히 끓인 죽순 수프
 > ***

@@ -134,7 +134,7 @@ images:
 
 대체 공방 사장이 얼마나 수다스럽길래, 프레미네가 무서워하는 걸까?
 
-![](053.webp#center)
+![](053.webp)
 
 &nbsp;
 
@@ -309,7 +309,7 @@ images:
 
 어, 타르탈리아. 가서 날뛰고 와.
 
-![](https://media.tenor.com/Crhr2uZV7PwAAAAC/hulk-smash-smash.gif#center)
+![](https://media.tenor.com/Crhr2uZV7PwAAAAC/hulk-smash-smash.gif)
 
 {{< gallery/image src="102|103" >}}
 

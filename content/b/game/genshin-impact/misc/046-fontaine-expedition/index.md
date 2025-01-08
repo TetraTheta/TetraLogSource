@@ -554,7 +554,7 @@ images:
 
 내가이겼어내가이겼어내가이겼어내가이겼어내가이겼어내가이겼어내가이겼어내가이겼어내가이겼어내가이겼어
 
-![](shiroko.webp#center)
+![](shiroko.webp)
 
 {{< gallery/image src="117|118" >}}
 
@@ -580,7 +580,7 @@ images:
 
 설마 폰타인성 안에서 이 승강기를 타면 여기까지 곧바로 올라올 수 있었던 거야? 그런 거야? 나 괜히 등반한 거야? 머리가 나빠서 몸이 고생한 거야?
 
-![](mutsuki.webp#center)
+![](mutsuki.webp)
 
 ![](122.webp)
 

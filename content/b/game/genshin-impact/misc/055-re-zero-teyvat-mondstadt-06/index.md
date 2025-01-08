@@ -230,7 +230,7 @@ images:
 
 &nbsp;
 
-![](hcg.webp#center)
+![](hcg.webp)
 
 > 허니캐럿그릴
 > ***

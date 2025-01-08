@@ -101,14 +101,14 @@ images:
 
 몬드의 달빛 파이와 리월의 연꽃 파이는 생긴 게 다르던데, 둘 다 페이스트리 기법을 사용했다고?
 
-![](moon_pie.webp#center)
+![](moon_pie.webp)
 
 > 달빛 파이
 > ***
 > 몬드의 전통 주식. 소금에 절인 고기는 진한 풍미를 풍긴다. 껍질을 굽고 나면 더욱 향기롭고 촉촉하다. 몬드의 명절에 빠질 수 없는 요리이다.
 {.bq}
 
-![](lotus_flower_crisp.webp#center)
+![](lotus_flower_crisp.webp)
 
 > 연꽃 파이
 > ***

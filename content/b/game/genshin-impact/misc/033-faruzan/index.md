@@ -20,5 +20,5 @@ images:
 
 돈이 없어서.
 
-![](002.webp#center)
+![](002.webp)
 
