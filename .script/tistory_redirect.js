@@ -412,35 +412,44 @@ const mapObj = new Map([
 
 function confirmRedirect(newURL) {
   const userDecision = new Promise((resolve, reject) => {
-    const timeout = setTimeout(() => { reject() }, 10000)
-    const userConfirmed = confirm(`본 블로그는 새 사이트로 이전했습니다.\n새 링크로 이동하시겠습니까?\n\n${newLink}`)
+    const timeout = setTimeout(() => { reject() }, 10000);
+    const userConfirmed = confirm(`본 블로그는 새 사이트로 이전했습니다.\n새 링크로 이동합니다.\n\n${newLink}`);
     if (userConfirmed) {
-      clearTimeout(timeout)
-      resolve()
+      clearTimeout(timeout);
+      resolve();
     } else {
-      clearTimeout(timeout)
-      reject()
+      clearTimeout(timeout);
+      reject();
     }
   })
-  userDecision.then(() => { window.location.replace(newLink); })
+  userDecision.then(() => window.location.replace(newLink));
 }
 
-// Detect search crawler
-const isBot = (new RegExp('/bot|crawl|spider|baidu|bing|daum|google|msn|naver|slurp|teoma|yandex|yeti/gi').test(window.navigator.userAgent)) | window.navigator.webdriver;
-
-const postNum = Number(window.location.pathname.replace(/\//, ''));
+// Add canonical link to HEAD
+const postNum = Number(window.location.pathname.replace(/\//g, ''));
 const newPost = mapObj.get(postNum) || '';
 const newLink = newSite + newPost;
 
-let link = !!document.querySelector('link[rel="canonical"]') ? document.querySelector('link[rel="canonical"]') : document.createElement('link');
+let link = document.querySelector('link[rel="canonical"]') || document.createElement('link');
 link.setAttribute('rel', 'canonical');
 link.setAttribute('href', newLink);
 document.head.appendChild(link);
 
-if (isBot) window.location.href = newLink;
-else {
-  let msgLink = document.getElementById('tr-new-post-link');
-  msgLink.setAttribute('href', newLink);
-  //window.location.replace(newLink);
+// Detect bot
+const isBot = /bot|crawl|spider|baidu|bing|daum|google|msn|naver|slurp|teoma|yandex|yeti/i.test(window.navigator.userAgent) || window.navigator.webdriver;
+
+if (isBot) {
+  //window.location.href = newLink;
+  window.location.replace(newLink);
+} else {
+  const meta = document.createElement('meta');
+  meta.setAttribute('http-equiv', 'refresh');
+  meta.setAttribute('content', `0; URL=${newLink}`);
+  document.head.appendChild(meta);
+  
+  const msgLink = document.getElementById('tr-new-post-link');
+  if (msgLink) {
+    msgLink.setAttribute('href', newLink);
+  }
   confirmRedirect(newLink)
 }
