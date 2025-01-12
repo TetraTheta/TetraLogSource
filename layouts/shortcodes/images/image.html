@@ -1,0 +1,43 @@
+{{/* This requires github.com/hugomods/images */}}
+{{- $params := dict -}}
+{{- if (.Get 0) -}}
+  {{- $params = merge $params (dict "Filename" (.Get 0)) -}}
+{{- end -}}
+{{- if (.Get "Filename") -}}
+  {{- $params = merge $params (dict "Filename" (.Get "Filename")) -}}
+{{- end -}}
+{{- if (.Get "Alt") -}}
+  {{- $params = merge $params (dict "Alt" (.Get "Alt")) -}}
+{{- end -}}
+{{- if (.Get "Caption") -}}
+  {{- $params = merge $params (dict "Caption" (.Get "Caption")) -}}
+{{- end -}}
+{{- if (.Get "Page") -}}
+  {{- $pagePath := relURL (.Get "Page") -}}
+  {{- $page := .Site.GetPage $pagePath -}}
+  {{- $params = merge $params (dict "Page" $page) -}}
+{{- else -}}
+  {{- $params = merge $params (dict "Page" .Page) -}}
+{{- end -}}
+{{- if (.Get "ClassName") -}}
+  {{- $params = merge $params (dict "ClassName" (.Get "ClassName")) -}}
+{{- end -}}
+{{- if (.Get "Original") -}}
+  {{- $params = merge $params (dict "Original" (.Get "Original")) -}}
+{{- end -}}
+{{- if (.Get "LazyLoading") -}}
+  {{- $params = merge $params (dict "LazyLoading" (.Get "LazyLoading")) -}}
+{{- end -}}
+{{- if (.Get "Style") -}}
+  {{- $params = merge $params (dict "Style" (.Get "Style")) -}}
+{{- end -}}
+{{- if (.Get "Height") -}}
+  {{- $params = merge $params (dict "Height" (.Get "Height")) -}}
+{{- end -}}
+{{- if (.Get "Width") -}}
+  {{- $params = merge $params (dict "Width" (.Get "Width")) -}}
+{{- end -}}
+{{- if (.Get "Alignment") -}}
+  {{- $params = merge $params (dict "Alignment" (.Get "Alignment")) -}}
+{{- end -}}
+{{- partial "images/image" $params -}}

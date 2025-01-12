@@ -9,7 +9,7 @@ categories:
 tags:
 #  - 
 images:
-#  - 001.webp
+  - 920+.webp
 ---
 
 뜬금없이 NAS가 갖고 싶다고 이야기하는 것이 아니다.
@@ -171,13 +171,13 @@ DS220+, DS420+, DS920+.
     <tr>
       <td style="width: 25%; text-align: center;">&nbsp;</td>
       <td style="width: 25%; text-align: center;">
-        {{< imgref src="220+.webp" style="width: 100%" >}}
+        {{< images/image "220+.webp" >}}
       </td>
       <td style="width: 25%; text-align: center;">
-        {{< imgref src="420+.webp" style="width: 100%" >}}
+        {{< images/image "420+.webp" >}}
       </td>
       <td style="width: 25%; text-align: center;">
-        {{< imgref src="920+.webp" style="width: 100%" >}}
+        {{< images/image "920+.webp" >}}
       </td>
     </tr>
     <tr>
