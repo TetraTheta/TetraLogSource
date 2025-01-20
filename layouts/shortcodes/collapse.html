@@ -1,10 +1,10 @@
 {{/* Local alternative to 'bs/collapse' */}}
 
-{{- if not (.Page.Scratch.Get "collapseCounter") -}}
-  {{- .Page.Scratch.Set "collapseCounter" 0 -}}
+{{- if not (.Page.Store.Get "collapseCounter") -}}
+  {{- .Page.Store.Set "collapseCounter" 0 -}}
 {{- end -}}
-{{- .Page.Scratch.Add "collapseCounter" 1 -}}
-{{- $counter := printf "%03d" (.Page.Scratch.Get "collapseCounter") -}}
+{{- .Page.Store.Add "collapseCounter" 1 -}}
+{{- $counter := printf "%03d" (.Page.Store.Get "collapseCounter") -}}
 {{- $id := printf "collapse-%s" $counter -}}
 
 {{- $heading := "" -}}

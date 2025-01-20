@@ -1,5 +1,5 @@
 title: TetraLog
-baseURL: https://tetralog.haipa.xyz/
+baseURL: https://tetralog.onrender.com/
 
 # Copyright, the {year} is the placeholder of this year.
 copyright: "Copyright © {year}. TetraTheta All Rights Reserved."
@@ -96,10 +96,6 @@ outputs:
 #permalinks:
 #  blog: /blog/:year/:month/:title
 
-privacy:
-  twitter:
-    enableDNT: true
-
 # see https://gohugo.io/content-management/related/#configure-related-content
 related:
   includeNewer: true
@@ -135,3 +131,15 @@ taxonomies:
   tags: tags
   categories: categories
   series: series
+
+# Google Analytics / Google Adsense / Microsoft Clarity
+services:
+  googleAnalytics:
+    ID: G-55SKNHT67C
+params:
+  google_adsense: ca-pub-4833500762608350
+  google_adsense_ad_blocking_detector: true
+  google_adsense_ad_blocking_detector_fail_safe: true
+  services:
+    microsoft_clarity:
+      id: jrzug2ijm6

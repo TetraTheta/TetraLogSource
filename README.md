@@ -1,6 +1,6 @@
 # TetraLogSource
 
-This is the source of my blog, [TetraLog](https://tetralog.haipa.xyz/), built with [Hugo](https://gohugo.io/) and the [HB Card Theme](https://github.com/hbstack/theme-cards).
+This is the source of my blog, [TetraLog](https://tetralog.onrender.com/), built with [Hugo](https://gohugo.io/) and the [HB Card Theme](https://github.com/hbstack/theme-cards).
 
 ## Requirements
 
@@ -63,8 +63,8 @@ For various reasons, I've overridden the files of Hugo and HB Card Theme. Here i
   │ <a target="_blank" href="https://github.com/hugomods/bootstrap/blob/main/layouts/partials/bootstrap/collapse.html">collapse.html</a>
   │ imgref.html
   │ <a target="_blank" href="https://github.com/hbstack/shortcodes/blob/main/layouts/shortcodes/spoiler-tag.html">spoiler.html</a>
-  │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/twitter.html">twitter.html</a>
-  │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/twitter_simple.html">twitter_simple.html</a>
+  │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/x.html">x.html</a>
+  │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/x_simple.html">x.html</a>
   │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/shortcodes/youtube.html"></a>youtube.html</a>
   └─gallery
       image.html

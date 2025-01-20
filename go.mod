@@ -3,7 +3,7 @@ module github.com/hbstack/theme
 go 1.21.5
 
 require (
-	github.com/KaTeX/KaTeX v0.16.19 // indirect
+	github.com/KaTeX/KaTeX v0.16.21 // indirect
 	github.com/Templarian/MaterialDesign-SVG v7.4.47+incompatible // indirect
 	github.com/desandro/masonry v4.2.2+incompatible // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20200 // indirect
@@ -23,6 +23,8 @@ require (
 	github.com/hbstack/blog/modules/toc-scrollspy v0.2.0 // indirect
 	github.com/hbstack/bootstrap v0.2.2 // indirect
 	github.com/hbstack/breadcrumb v0.8.0 // indirect
+	github.com/hbstack/bs-tooltip v0.1.1 // indirect
+	github.com/hbstack/bs-tooltip/modules/abbr v0.1.1 // indirect
 	github.com/hbstack/carousel v0.2.7 // indirect
 	github.com/hbstack/code-block-panel v0.1.2 // indirect
 	github.com/hbstack/content-panel v0.10.2 // indirect
@@ -38,7 +40,7 @@ require (
 	github.com/hbstack/footer v0.4.1 // indirect
 	github.com/hbstack/footer/modules/socials v0.3.0 // indirect
 	github.com/hbstack/hb v0.16.0 // indirect
-	github.com/hbstack/header v0.16.4 // indirect
+	github.com/hbstack/header v0.16.5 // indirect
 	github.com/hbstack/header/modules/search v0.1.38 // indirect
 	github.com/hbstack/header/modules/socials v0.2.2 // indirect
 	github.com/hbstack/header/themes/pills v0.2.18 // indirect
@@ -90,6 +92,6 @@ require (
 	github.com/hugomods/simple-icons v13.21.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20241231080859-a5d430d526dc+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20250115114415-5210c9b24c44+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )

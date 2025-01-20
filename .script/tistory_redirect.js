@@ -1,5 +1,5 @@
 // Define redirects
-const newSite = 'https://tetralog.haipa.xyz/'
+const newSite = 'https://tetralog.onrender.com/'
 const mapObj = new Map([
   [750, 'b/game/the-division/happy-picture-mode'],
   [751, 'b/game/the-division/todays-division-2'],

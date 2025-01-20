@@ -49,7 +49,7 @@ images:
 
 이거, 나 트위터에서 봤어!
 
-{{< twitter user="inkkubox" id="1794758325508440492" >}}
+{{< x user="inkkubox" id="1794758325508440492" >}}
 
 ![](016.webp)
 

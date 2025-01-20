@@ -12,7 +12,7 @@ images:
   - https://i1.ytimg.com/vi/LNHZ9WAertc/maxresdefault.jpg
 ---
 
-{{< tweet user="freegame_kr" id="1474772338583678978" >}}
+{{< x user="freegame_kr" id="1474772338583678978" >}}
 
 에픽 스토어에서 Prey를 27일 새벽 1시까지 무료로 배포 중이다. 뭔가... 감회가 새롭다.
 

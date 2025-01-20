@@ -1,7 +1,3 @@
-google_adsense: ca-pub-4833500762608350
-google_adsense_ad_blocking_detector: true
-google_adsense_ad_blocking_detector_fail_safe: true
-
 ParamSummaryLength: 150 # This is what is used for generating summary. Do not use 'summaryLength'.
 
 hb:

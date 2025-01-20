@@ -18,7 +18,7 @@ images:
 
 {{< collapse heading="트윗 보기" >}}
 
-{{< twitter user="TheDivisionGame" id="1666475119026348032" >}}
+{{< x user="TheDivisionGame" id="1666475119026348032" >}}
 
 {{< /collapse >}}
 
@@ -28,7 +28,7 @@ images:
 
 {{< collapse heading="트윗 보기" >}}
 
-{{< twitter user="TheDivisionGame" id="1666752894115127297" >}}
+{{< x user="TheDivisionGame" id="1666752894115127297" >}}
 
 {{< /collapse >}}
 
@@ -44,7 +44,7 @@ images:
 
 {{< collapse heading="트윗 보기" >}}
 
-{{< twitter user="TheDivisionGame" id="1666810856129327107" >}}
+{{< x user="TheDivisionGame" id="1666810856129327107" >}}
 
 {{< /collapse >}}
 
@@ -52,7 +52,7 @@ images:
 
 {{< collapse heading="트윗 보기" >}}
 
-{{< twitter user="TheDivisionGame" id="1666868115106299914" >}}
+{{< x user="TheDivisionGame" id="1666868115106299914" >}}
 
 {{< /collapse >}}
 
@@ -74,7 +74,7 @@ images:
 
 {{< collapse heading="트윗 보기" >}}
 
-{{< twitter user="TheDivisionGame" id="1667084399928590336" >}}
+{{< x user="TheDivisionGame" id="1667084399928590336" >}}
 
 {{< /collapse >}}
 
