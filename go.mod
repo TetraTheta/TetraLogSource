@@ -52,7 +52,7 @@ require (
 	github.com/hbstack/search v0.2.2 // indirect
 	github.com/hbstack/slide v0.4.0 // indirect
 	github.com/hbstack/snackbar v0.1.2 // indirect
-	github.com/hbstack/social-share-buttons v0.4.0 // indirect
+	github.com/hbstack/social-share-buttons v0.5.0 // indirect
 	github.com/hbstack/socials v0.17.2 // indirect
 	github.com/hbstack/syntax-highlighting v0.2.1 // indirect
 	github.com/hbstack/syntax-highlighting/styles/xcode-dark v0.1.2 // indirect
@@ -73,7 +73,7 @@ require (
 	github.com/hugomods/icons/vendors/font-awesome v0.6.12 // indirect
 	github.com/hugomods/icons/vendors/lucide v0.3.40 // indirect
 	github.com/hugomods/icons/vendors/mdi v0.3.8 // indirect
-	github.com/hugomods/icons/vendors/simple-icons v1.1.0 // indirect
+	github.com/hugomods/icons/vendors/simple-icons v1.1.1 // indirect
 	github.com/hugomods/images v0.11.2 // indirect
 	github.com/hugomods/katex v0.3.6 // indirect
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
@@ -92,6 +92,6 @@ require (
 	github.com/hugomods/simple-icons v13.21.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20250115114415-5210c9b24c44+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20250123065739-5708adc816b9+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
