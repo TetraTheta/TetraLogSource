@@ -192,6 +192,7 @@ def new(args):
     Kinds.add(Kind("minecraft", ["mc", "minecraft"], "minecraft", "b/game/minecraft"))
     Kinds.add(Kind("music", ["music"], "music", "b/chit-chat/music"))
     Kinds.add(Kind("pivox-desktop", ["pd", "pivox-desktop"], "pivox", "d/desktop"))
+    Kinds.add(Kind("pivox-game", ["pg", "pivox-game"], "pivox", "d/game"))
     Kinds.add(Kind("pivox-misc", ["pivox-misc"], "pivox", "d/misc"))
     Kinds.add(Kind("pivox-mobile", ["pivox-mobile", "pm"], "pivox", "d/mobile"))
     Kinds.add(Kind("pivox-server", ["pivox-server", "ps"], "pivox", "d/server"))

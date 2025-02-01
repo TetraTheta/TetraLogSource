@@ -180,6 +180,17 @@ main:
       icon:
         vendor: font-awesome-solid
         name: lightbulb
+  - name: 게임
+    parent: pivox
+    identifier: pivox-game
+    weight: 51
+    url: /d/game/
+    params:
+      header: 게임 관련 강좌 및 팁
+      description: 게임 관련 강좌 및 팁
+      icon:
+        vendor: mdi
+        name: gamepad
   - name: 데스크톱
     parent: pivox
     identifier: pivox-desktop
