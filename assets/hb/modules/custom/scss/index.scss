@@ -1,8 +1,8 @@
 // This SCSS styles will be compiled into the CSS bundle automatically.
 /*! purgecss start ignore */
-//
-// Main
-//
+/**
+ *  Main
+ */
 
 // Font
 :root {
@@ -94,9 +94,9 @@ div.hb-blog-post-content {
   ruby > rt { font-size: 75%; }
 }
 
-//
-// Shortcodes
-//
+/**
+ *  Shortcodes
+ */
 
 // Gallery
 div.hb-blog-post-content div.gallery {
@@ -122,9 +122,9 @@ div.hb-blog-post-content div.gallery {
   }
 }
 @media (max-width: 767.98px) {
-  //div.hb-blog-post-content div[id^='gallery-container-'] { width: 100% !important; }
   div.hb-blog-post-content div.gallery { width: 100% !important; }
 }
+
 // Youtube
 div.hb-blog-post-content div.youtube-container {
   & { margin: 0 auto; }
@@ -147,5 +147,79 @@ div.hb-blog-post-content div.youtube-container {
 @media (max-width: 767.98px) {
   div.hb-blog-post-content div.youtube-container { max-width: 100% !important; }
 }
+
+// Link Preview (defined in 'index.ts')
+div.hb-blog-post-content link-preview {
+  & { display: block; height: 200px; }
+  figure.link-preview a.lp-link {
+    & {
+      border: 1px solid transparent;
+      box-sizing: border-box;
+      display: block;
+      height: 200px;
+      position: relative;
+      text-decoration: none;
+      z-index: 1;
+    }
+    
+    .lp-image {
+      background-position: center;
+      background-size: cover;
+      border-right-width: 0;
+      border-right: 1px solid transparent;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      width: 200px;
+    }
+    
+    .lp-text {
+      & {
+        background-color: var(--hb-tertiary-bg);
+        bottom: 0;
+        box-sizing: border-box;
+        left: 201px;
+        padding: 33px 46px 0 39px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      .lp-title {
+        color: var(--hb-dark-text-emphasis);
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        margin: 0 0 10px 0 !important;
+        max-width: 95%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      
+      .lp-desc {
+        color: var(--hb-secondary-color);
+        display: -webkit-box;
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0;
+        max-height: 3rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .lp-host {
+        bottom: 24px;
+        color: var(--hb-tertiary-color);
+        font-size: 0.9rem;
+        margin: 0;
+        position: absolute;
+      }
+    }
+  }
+}
+
 
 /*! purgecss end ignore */
