@@ -31,24 +31,42 @@ document.addEventListener('DOMContentLoaded', function () {
 // <link-preview> HTML Tag
 // @ts-ignore
 class LinkPreviewElem extends HTMLElement {
-  static get observedAttributes() {
-    return ['url']
-  }
+  static observedAttributes = ['url', 'title', 'desc', 'image']
 
   constructor() {
     super()
-    //this.attachShadow({ mode: 'open' })
   }
 
   attributeChangedCallback(name: string, _oldValue: string, newValue: string) {
     if (name == 'url') {
-      this.fetchOpenGraphData(newValue)
+      this.checkAndFetchOpenGraphData(newValue)
+    } else if (name === 'title' || name === 'desc' || name === 'image') {
+      this.renderFromAttributes()
     }
+  }
+
+  checkAndFetchOpenGraphData(url: string) {
+    if (this.hasAttribute('title') && this.hasAttribute('desc') && this.hasAttribute('image')) {
+      this.renderFromAttributes()
+    } else {
+      this.fetchOpenGraphData(url)
+    }
+  }
+
+  renderFromAttributes() {
+    const url = this.getAttribute('url')
+    if (!url) return
+
+    const title = this.getAttribute('title') || ''
+    const desc = this.getAttribute('desc') || ''
+    const image = this.getAttribute('image') || ''
+
+    this.render({ title, desc, image }, url)
   }
 
   // @ts-ignore
   async fetchOpenGraphData(url: string): Promise<void> {
-    const cachedData = localStorage.getItem(url)
+    const cachedData = localStorage.getItem(`LinkPreview: ${url}`)
     if (cachedData) {
       this.render(JSON.parse(cachedData), url)
       return
@@ -56,12 +74,17 @@ class LinkPreviewElem extends HTMLElement {
 
     try {
       const response = await fetch(`https://open-graph-api-coral.vercel.app/api/opengraph?url=${encodeURIComponent(url)}`)
-      if (!response.ok) {
-        throw new Error('Network response was not ok')
-      }
+      if (!response.ok) throw new Error('Network response was not ok')
       const data = await response.json()
-      localStorage.setItem(url, JSON.stringify(data))
-      this.render(data, url)
+
+      const title = data.title && data.title.trim() !== '' ? data.title : this.getAttribute('title') || ''
+      const desc = data.desc && data.desc.trim() !== '' ? data.desc : this.getAttribute('desc') || ''
+      const image = data.image && data.image.trim() !== '' ? data.image : this.getAttribute('image') || ''
+
+      const storedData = { title, desc, image }
+
+      localStorage.setItem(`LinkPreview: ${url}`, JSON.stringify(storedData))
+      this.render(storedData, url)
     } catch (e) {
       console.error('Fetch error: ', e)
     }
@@ -69,7 +92,6 @@ class LinkPreviewElem extends HTMLElement {
 
   render(data: object, url: string) {
     const {title, desc, image} = data as { title?: string; desc?: string; image?: string }
-    //this.shadowRoot.innerHTML = `
     this.innerHTML = `
     <figure class="link-preview">
       <a class="lp-link" href="${url}" target="_blank" rel="noopener">

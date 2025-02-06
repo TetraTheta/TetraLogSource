@@ -429,8 +429,8 @@ DS220+, DS420+, DS920+.
     <tr>
       <td style="width: 25%; text-align: center;">보증 기간</td>
       <td style="width: 25%; text-align: center;">2년</td>
-      <td style="width: 25%; text-align: center;">3년 (하드웨어 보증) <br />5년 ( <a href="https://www.synology.com/ko-kr/products/Extended_Warranty" target="_blank" rel="noopener">연장 가능</a>) </td>
-      <td style="width: 25%; text-align: center;">3년 (하드웨어 보증) <br />5년 ( <a href="https://www.synology.com/ko-kr/products/Extended_Warranty">연장 가능</a>) </td>
+      <td style="width: 25%; text-align: center;">3년 (하드웨어 보증) <br />5년 (<a href="https://www.synology.com/ko-kr/products/Extended_Warranty" target="_blank" rel="noopener">연장 가능</a>) </td>
+      <td style="width: 25%; text-align: center;">3년 (하드웨어 보증) <br />5년 (<a href="https://www.synology.com/ko-kr/products/Extended_Warranty">연장 가능</a>) </td>
     </tr>
     <tr>
       <td style="width: 25%; text-align: center;">
