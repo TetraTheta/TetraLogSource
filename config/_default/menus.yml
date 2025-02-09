@@ -108,7 +108,7 @@ main:
     params:
       header: 명조 이야기
       description: 명조 이야기
-      columns: 1
+      columns: 2
   - name: 조수 임무
     parent: wuthering-waves
     identifier: wuthering-waves-main
@@ -176,14 +176,25 @@ main:
     params:
       header: 각종 강좌 및 팁
       description: 각종 강좌 및 팁
-      columns: 1
+      columns: 2
       icon:
         vendor: font-awesome-solid
         name: lightbulb
+  - name: 개발
+    parent: pivox
+    identifier: pivox-development
+    weight: 51
+    url: /d/development/
+    params:
+      header: 개발 및 프로그래밍 관련 강좌 및 팁
+      description: 개발 및 프로그래밍 관련 강좌 및 팁
+      icon:
+        vendor: bootstrap
+        name: keyboard-fill
   - name: 게임
     parent: pivox
     identifier: pivox-game
-    weight: 51
+    weight: 52
     url: /d/game/
     params:
       header: 게임 관련 강좌 및 팁
@@ -194,7 +205,7 @@ main:
   - name: 데스크톱
     parent: pivox
     identifier: pivox-desktop
-    weight: 51
+    weight: 53
     url: /d/desktop/
     params:
       header: 데스크톱 관련 강좌 및 팁
@@ -205,7 +216,7 @@ main:
   - name: 모바일
     parent: pivox
     identifier: pivox-mobile
-    weight: 52
+    weight: 54
     url: /d/mobile/
     params:
       header: 모바일 관련 강좌 및 팁
@@ -216,7 +227,7 @@ main:
   - name: 서버
     parent: pivox
     identifier: pivox-server
-    weight: 53
+    weight: 55
     url: /d/server/
     params:
       header: 서버 관련 강좌 및 팁
@@ -227,7 +238,7 @@ main:
   - name: 웹
     parent: pivox
     identifier: pivox-web
-    weight: 54
+    weight: 56
     url: /d/web/
     params:
       header: 웹 관련 강좌 및 팁
@@ -238,7 +249,7 @@ main:
   - name: 기타
     parent: pivox
     identifier: pivox-misc
-    weight: 55
+    weight: 57
     url: /d/misc/
     params:
       header: 기타 강좌 및 팁

@@ -81,7 +81,7 @@ require (
 	github.com/hugomods/mermaid v0.1.4 // indirect
 	github.com/hugomods/microsoft-clarity v0.3.0 // indirect
 	github.com/hugomods/search v0.19.0 // indirect
-	github.com/hugomods/search-index v0.1.1 // indirect
+	github.com/hugomods/search-index v0.1.2 // indirect
 	github.com/hugomods/seo/modules/alternatives v0.1.1 // indirect
 	github.com/hugomods/seo/modules/base v0.1.3 // indirect
 	github.com/hugomods/seo/modules/favicons v0.2.2 // indirect
@@ -91,7 +91,7 @@ require (
 	github.com/hugomods/shortcodes v0.24.0 // indirect
 	github.com/hugomods/simple-icons v13.21.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
-	github.com/krisk/Fuse v7.0.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20250123065739-5708adc816b9+incompatible // indirect
+	github.com/krisk/Fuse v7.1.0+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20250208173752-b7f3d6a6beec+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )
