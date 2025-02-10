@@ -18,7 +18,8 @@
   {{- $request := printf "https://publish.x.com/oembed?%s" $query -}}
   {{- with try (resources.GetRemote $request) -}}
     {{- with .Err -}}
-      {{- errorf "%s" . -}}
+      {{- warnf "%s" . -}}
+      {{- return -}}
     {{- else with .Value -}}
       {{- (. | transform.Unmarshal).html | safeHTML -}}
     {{- else -}}

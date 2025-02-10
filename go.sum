@@ -176,7 +176,7 @@ github.com/hugomods/snackbar v0.1.2 h1:SLpfH9jlYwf81epH7DvM2XTZHo+3fXXpk6XKtxmo9
 github.com/hugomods/snackbar v0.1.2/go.mod h1:ykFm0IFibeQPuPAm8Gaa27xJS/bNZcSez4omVSl2gQ0=
 github.com/krisk/Fuse v7.1.0+incompatible h1:WKrE7/HvvQQnysvOcOXk+KDlKoH+Z6S0KJcAtbglvXs=
 github.com/krisk/Fuse v7.1.0+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
-github.com/twbs/bootstrap v5.3.4-0.20250208173752-b7f3d6a6beec+incompatible h1:SF1Pca7jKWriuORVok//MwfPRQlvwyNn2Z/VtjwaHNE=
-github.com/twbs/bootstrap v5.3.4-0.20250208173752-b7f3d6a6beec+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/twbs/bootstrap v5.3.4-0.20250209095020-c5be828d99a4+incompatible h1:KUKmzRoOOByekU+iSTmz1mNs++IxvBTCEoTOlX3lRBY=
+github.com/twbs/bootstrap v5.3.4-0.20250209095020-c5be828d99a4+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
 github.com/twbs/icons v1.11.3/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=

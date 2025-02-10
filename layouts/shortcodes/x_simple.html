@@ -13,7 +13,8 @@
   {{- $request := printf "https://publish.x.com/oembed?%s" $query -}}
   {{- with try (resources.GetRemote $request) -}}
     {{- with .Err -}}
-      {{- errorf "%s" . -}}
+      {{- warnf "%s" . -}}
+      {{- return -}}
     {{- else with .Value -}}
       {{- /* Always inline CSS */ -}}
       {{- template "__h_simple_x_css" (dict "ctx" $.ctx) -}}
