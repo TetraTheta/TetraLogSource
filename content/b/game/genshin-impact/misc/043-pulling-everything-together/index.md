@@ -116,7 +116,7 @@ images:
 
 &nbsp;
 
-PS.
+P.S.
 
 ![](012.webp)
 

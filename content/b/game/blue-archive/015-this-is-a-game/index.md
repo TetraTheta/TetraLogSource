@@ -20,7 +20,7 @@ images:
 
 &nbsp;
 
-PS.
+P.S.
 
 ![](003.webp)
 

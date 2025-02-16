@@ -80,7 +80,7 @@ images:
 
 &nbsp;
 
-PS.
+P.S.
 
 {{< gallery/image src="017|018" >}}
 
