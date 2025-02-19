@@ -120,20 +120,38 @@ def clean(_):
 def deslash(args):
     import re
 
-    from bs4 import BeautifulSoup
+    from bs4 import BeautifulSoup, Tag
+    from bs4.formatter import HTMLFormatter
+
+    class CustomHTMLFormatter(HTMLFormatter):
+        ATTR_ORDER = ["itemprop", "name", "property", "content", "id", "class", "src", "rel", "type", "href", "width", "height", "alt", "crossorigin", "async"]
+
+        def attributes(self, tag: Tag):
+            new_order = []
+            for attr in self.ATTR_ORDER:
+                if attr in tag.attrs:
+                    new_order.append((attr, tag[attr]))
+            for pair in tag.attrs.items():
+                if pair not in new_order:
+                    new_order.append(pair)
+            return new_order
+        
+        def format_tag(self, tag: Tag):
+            return tag.decode(formatter=None).strip()
+
 
     def cleanupHTML(f: Path):
         with f.open("r", encoding="utf-8") as file:
             content = file.read()
             soup = BeautifulSoup(content, "lxml")
             for tag_a in soup.find_all("a"):
-                if tag_a["href"] == "/":
-                    continue
-                tag_a["href"] = re.sub(r"\/+$", "", tag_a["href"])
+                if tag_a.get("href") and tag_a["href"] != "/":
+                    tag_a["href"] = re.sub(r"\/+$", "", tag_a["href"])
             for tag_meta in soup.find_all("meta", attrs={"property": True}):
                 if tag_meta["property"] == "og:url":
                     tag_meta["content"] = re.sub(r"\/+$", "", tag_meta["content"])
-            new_content = str(soup)
+            new_content = soup.encode(formatter=CustomHTMLFormatter()).decode("utf-8")
+            # TODO: Find good HTML minifier (not 'minify-html' which is broken)
         with f.open("w", encoding="utf-8") as file:
             file.write(new_content)
         info(str(f), "DESLASH", Fore.YELLOW)
