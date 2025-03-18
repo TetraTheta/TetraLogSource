@@ -92,6 +92,8 @@ div.hb-blog-post-content {
   table, .table { --hb-table-color: var(--hb-body-color) }
   // Ruby
   ruby > rt { font-size: 75%; }
+  // Tab Size
+  & { tab-size: 2; }
 }
 
 /**
