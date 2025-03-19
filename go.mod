@@ -29,7 +29,7 @@ require (
 	github.com/hbstack/code-block-panel v0.1.2 // indirect
 	github.com/hbstack/content-panel v0.10.2 // indirect
 	github.com/hbstack/disqus v0.1.1 // indirect
-	github.com/hbstack/docs v0.22.0 // indirect
+	github.com/hbstack/docs v0.23.0 // indirect
 	github.com/hbstack/docs/modules/breadcrumb v0.1.10 // indirect
 	github.com/hbstack/docs/modules/content-panel v0.1.8 // indirect
 	github.com/hbstack/docs/modules/disqus v0.1.8 // indirect
@@ -80,7 +80,7 @@ require (
 	github.com/hugomods/masonry-js v0.1.0 // indirect
 	github.com/hugomods/mermaid v0.1.4 // indirect
 	github.com/hugomods/microsoft-clarity v0.3.0 // indirect
-	github.com/hugomods/search v0.19.2 // indirect
+	github.com/hugomods/search v0.20.0 // indirect
 	github.com/hugomods/search-index v0.1.2 // indirect
 	github.com/hugomods/seo/modules/alternatives v0.1.1 // indirect
 	github.com/hugomods/seo/modules/base v0.1.3 // indirect
@@ -92,6 +92,6 @@ require (
 	github.com/hugomods/simple-icons v13.21.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.1.0+incompatible // indirect
-	github.com/twbs/bootstrap v5.3.4-0.20250315073437-1b869e889aaa+incompatible // indirect
+	github.com/twbs/bootstrap v5.3.4-0.20250318111047-0a56558b5fd3+incompatible // indirect
 	github.com/twbs/icons v1.11.3 // indirect
 )

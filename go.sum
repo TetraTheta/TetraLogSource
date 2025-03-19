@@ -50,8 +50,8 @@ github.com/hbstack/content-panel v0.10.2 h1:rga9bbr2hiFd0Lzuq36cZQ43yvTWr2s9+VyG
 github.com/hbstack/content-panel v0.10.2/go.mod h1:KwqGZkheSR7BfSBzuP13oAurMSaIh2atCeweNRFUUqA=
 github.com/hbstack/disqus v0.1.1 h1:lNIpdC8XU2PbV7Fahd9vUNg471B6gIEkRr0cZ6kadK4=
 github.com/hbstack/disqus v0.1.1/go.mod h1:DY7oRsTTkvcVCdYFQqgUkJLTicLgwku/RQV+Y6OpxlQ=
-github.com/hbstack/docs v0.22.0 h1:zgss2k9qIIJqXDNZ/rOJhCKKFMwLs6p31PF+b2EsK1g=
-github.com/hbstack/docs v0.22.0/go.mod h1:hAPrZzKLNTYYzcDDpKoaskXaQLzRHz4rgM0ajFjxg+w=
+github.com/hbstack/docs v0.23.0 h1:cLTKXJlVnVkCOQfqzemUF6nR/OHCQe7s1swZIzrsROk=
+github.com/hbstack/docs v0.23.0/go.mod h1:8MmOryl2Ko6LRXzcRpHC8Qg5InSx958JXTZ2Rk05EhI=
 github.com/hbstack/docs/modules/breadcrumb v0.1.10 h1:Ryp68WkRdOxL2UlGNYtN5ZJUxbbHv7bWe0NdzDt2Obg=
 github.com/hbstack/docs/modules/breadcrumb v0.1.10/go.mod h1:pTh43gl04dPERZZVDQ70KVU0j0Z4hmPK7GrxUfLw15s=
 github.com/hbstack/docs/modules/content-panel v0.1.8 h1:jdvI05iKD3awcCFx9UoGNh7DfNK60jWLJjVAspqEH+o=
@@ -152,8 +152,8 @@ github.com/hugomods/mermaid v0.1.4 h1:/u0FZRSBMpqTbDh4XPBL7c6p0DUjvIkoo9cC89GASS
 github.com/hugomods/mermaid v0.1.4/go.mod h1:GOID2Ko1vdrX03ZMaFNQL/vdTU1tZmGcVjOgBN8O42Y=
 github.com/hugomods/microsoft-clarity v0.3.0 h1:le5nM+2SWVtQfHrrLd8IHw4Cos7iMjtkLMTNFd38Ijw=
 github.com/hugomods/microsoft-clarity v0.3.0/go.mod h1:CsSVKpJIt6BxS7yhqZeyXTwnYLTaseg37kbRpOY09Qs=
-github.com/hugomods/search v0.19.2 h1:ZTiff1TB6g7bHoXurVXx+qyp4Il73ruBo3FMkMN36lc=
-github.com/hugomods/search v0.19.2/go.mod h1:xPnDGjP/HCdEWJrJBwwdI2mEtdxFxp+wHBwSl/r2m00=
+github.com/hugomods/search v0.20.0 h1:zko3/0UqsB5SiW30eK0KgDfs4Eczeis25FFLDPrjARA=
+github.com/hugomods/search v0.20.0/go.mod h1:xPnDGjP/HCdEWJrJBwwdI2mEtdxFxp+wHBwSl/r2m00=
 github.com/hugomods/search-index v0.1.2 h1:ZYMT7YMhWxH5/vomtxZtJUgdu9/QAQbNnKRLi2CCXvA=
 github.com/hugomods/search-index v0.1.2/go.mod h1:2owtATJ1XxWAvK/trnNoUC1EoBimAtRYVa7F+JO/s9c=
 github.com/hugomods/seo/modules/alternatives v0.1.1 h1:Y8NdyBhvkSfr43ZKtXvQBgOW9lHL0a6vC1UIZFNbMpo=
@@ -176,7 +176,7 @@ github.com/hugomods/snackbar v0.1.2 h1:SLpfH9jlYwf81epH7DvM2XTZHo+3fXXpk6XKtxmo9
 github.com/hugomods/snackbar v0.1.2/go.mod h1:ykFm0IFibeQPuPAm8Gaa27xJS/bNZcSez4omVSl2gQ0=
 github.com/krisk/Fuse v7.1.0+incompatible h1:WKrE7/HvvQQnysvOcOXk+KDlKoH+Z6S0KJcAtbglvXs=
 github.com/krisk/Fuse v7.1.0+incompatible/go.mod h1:3moWv8rDjwoKic9nwiPLgZjldkbdTAbtzJHCu/Vsj4A=
-github.com/twbs/bootstrap v5.3.4-0.20250315073437-1b869e889aaa+incompatible h1:odB+3a7WHEXhl3l1riIaz3tJWP9fZGLGPvQpnRS9c/8=
-github.com/twbs/bootstrap v5.3.4-0.20250315073437-1b869e889aaa+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
+github.com/twbs/bootstrap v5.3.4-0.20250318111047-0a56558b5fd3+incompatible h1:DIce8d4d31B28buy1PnSgDC7Kk9A6d/iM1aC0XtLOlQ=
+github.com/twbs/bootstrap v5.3.4-0.20250318111047-0a56558b5fd3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=
 github.com/twbs/icons v1.11.3/go.mod h1:GnRlymgVWp5iVJCMa0Me5b6tFyGpVc2bSxPMRGIJmyA=

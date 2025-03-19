@@ -118,6 +118,7 @@ def clean(_):
 
 
 def deslash(args):
+    import html
     import re
 
     from bs4 import BeautifulSoup, Tag
@@ -144,6 +145,9 @@ def deslash(args):
         with f.open("r", encoding="utf-8") as file:
             content = file.read()
             soup = BeautifulSoup(content, "lxml")
+            for tag_code in soup.find_all("code"):
+                if tag_code.string:
+                    tag_code.string.replace_with(html.escape(html.unescape(tag_code.string), quote=False))
             for tag_a in soup.find_all("a"):
                 if tag_a.get("href") and tag_a["href"] != "/":
                     tag_a["href"] = re.sub(r"\/+$", "", tag_a["href"])
