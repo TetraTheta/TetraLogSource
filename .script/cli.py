@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # Internal dependencies
+import os
 import shutil
 import subprocess
 import sys
 from argparse import ArgumentParser
 from collections import namedtuple
-import os
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import List, Optional
@@ -121,7 +121,7 @@ def deslash(args):
     import html
     import re
 
-    from bs4 import BeautifulSoup, Tag
+    from bs4 import BeautifulSoup, NavigableString, Tag
     from bs4.formatter import HTMLFormatter
 
     class CustomHTMLFormatter(HTMLFormatter):
@@ -136,21 +136,25 @@ def deslash(args):
                 if pair not in new_order:
                     new_order.append(pair)
             return new_order
-        
+
         def format_tag(self, tag: Tag):
             return tag.decode(formatter=None).strip()
-
 
     def cleanupHTML(f: Path):
         with f.open("r", encoding="utf-8") as file:
             content = file.read()
             soup = BeautifulSoup(content, "lxml")
-            for tag_code in soup.find_all("code"):
-                if tag_code.string:
-                    tag_code.string.replace_with(html.escape(html.unescape(tag_code.string), quote=False))
+            # <code>, <pre>: Properly preserve content
+            for tags_code in soup.find_all(["code", "pre"]):
+                if tags_code.string:
+                    raw_text = tags_code.string
+                    escaped_text = html.escape(html.unescape(raw_text), quote=False)
+                    tags_code.string.replace_with(NavigableString(escaped_text))
+            # <a>: Remove trailing slash from href
             for tag_a in soup.find_all("a"):
                 if tag_a.get("href") and tag_a["href"] != "/":
                     tag_a["href"] = re.sub(r"\/+$", "", tag_a["href"])
+            # <meta>: Remove trailing slash from URL
             for tag_meta in soup.find_all("meta", attrs={"property": True}):
                 if tag_meta["property"] == "og:url":
                     tag_meta["content"] = re.sub(r"\/+$", "", tag_meta["content"])
@@ -164,18 +168,14 @@ def deslash(args):
         with f.open("r", encoding="utf-8") as file:
             content = file.read()
             soup = BeautifulSoup(content, "xml")
-            for tag_guid in soup.find_all("guid"):
-                if tag_guid.string is not None:
-                    tag_guid.string = re.sub(r"\/+$", "", tag_guid.string)
-            for tag_link in soup.find_all("link"):
-                if tag_link.string is not None:
-                    tag_link.string = re.sub(r"\/+$", "", tag_link.string)
-            for tag_loc in soup.find_all("loc"):
-                if tag_loc.string is not None:
-                    tag_loc.string = re.sub(r"\/+$", "", tag_loc.string)
+            # <guid>, <link>, <loc>: Remove trailing slash from URL
+            for tag_url in soup.find_all(["guid", "link", "loc"]):
+                if tag_url.string:
+                    tag_url.string.replace_with(NavigableString(re.sub(r"\/+$", "", tag_url.string)))
+            # <description>: Remove new line from content
             for tag_description in soup.find_all("description"):
-                if tag_description.string is not None:
-                    tag_description.string = re.sub(r"(?m)^\s*\n", "", tag_description.string)
+                if tag_description.string:
+                    tag_description.string.replace_with(NavigableString(re.sub(r"(?m)^\s*\n", "", tag_description.string)))
             new_content = str(soup)
         with f.open("w", encoding="utf-8") as file:
             file.write(new_content)
