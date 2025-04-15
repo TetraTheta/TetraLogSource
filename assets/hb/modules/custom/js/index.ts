@@ -39,6 +39,7 @@ class LinkPreviewElem extends HTMLElement {
 
   attributeChangedCallback(name: string, _oldValue: string, newValue: string) {
     if (name == 'url') {
+      this.renderSkeleton(newValue)
       this.checkAndFetchOpenGraphData(newValue)
     } else if (name === 'title' || name === 'desc' || name === 'image') {
       this.renderFromAttributes()
@@ -51,6 +52,21 @@ class LinkPreviewElem extends HTMLElement {
     } else {
       this.fetchOpenGraphData(url)
     }
+  }
+  
+  renderSkeleton(url: string) {
+    this.innerHTML = `
+    <figure class="link-preview">
+      <a class="lp-link" href="${url}" target="_blank" rel="noopener">
+        <div class="lp-image lp-placeholder">&nbsp;</div>
+        <div class="lp-text">
+          <p class="lp-title lp-placeholder">Loading title...</p>
+          <p class="lp-desc lp-placeholder">Loading description...</p>
+          <p class="lp-host">${new URL(url).host}</p>
+        </div>
+      </a>
+    </figure>
+    `
   }
 
   renderFromAttributes() {
@@ -77,9 +93,9 @@ class LinkPreviewElem extends HTMLElement {
       if (!response.ok) throw new Error('Network response was not ok')
       const data = await response.json()
 
-      const title = data.title && data.title.trim() !== '' ? data.title : this.getAttribute('title') || ''
-      const desc = data.desc && data.desc.trim() !== '' ? data.desc : this.getAttribute('desc') || ''
-      const image = data.image && data.image.trim() !== '' ? data.image : this.getAttribute('image') || ''
+      const title = data.title?.trim() || this.getAttribute('title') || ''
+      const desc = data.desc?.trim() || this.getAttribute('desc') || ''
+      const image = data.image?.trim() || this.getAttribute('image') || ''
 
       const storedData = { title, desc, image }
 
