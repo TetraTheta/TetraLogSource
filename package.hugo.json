@@ -2,14 +2,8 @@
   "name": "tetralog",
   "description": "TetraLog blog made with HB Cards Theme",
   "author": "TetraTheta",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "@hbstack/node-packages": "^0.1.5"
-  },
-  "overrides": {
-    "postcss-cli": {
-      "braces": ">=3.0.3"
-    }
   },
   "scripts": {
     "build": "python ./.script/cli.py clean && hugo --gc --minify -e production && python ./.script/cli.py deslash",

@@ -4,22 +4,24 @@ This is the source of my blog, [TetraLog](https://tetralog.onrender.com/), built
 
 ## Requirements
 
-* Hugo >= 0.127.0
-* Node.js >= 20
-* Python >= 3.12
+* Hugo ≥ 0.145.0
+* Node.js ≥ 22<br>
+  (or) Bun ≥ 1.2.10 (Any version that is compatible with Node.js 22)
+* Python ≥ 3.13
 
 I use mixed environment(Node.js + Python) because I want to focus more on writing article, rather than spending time solving various problems in Javascript.
 
 After cloning, run these commands in order:
 ```bash
-# Setup Node dependencies
+# 1. Setup Node dependencies
 npm ci
-# Setup Python dependencies
+# (or) bun install --frozen-lockfile
+# 2. Setup Python dependencies
 python -m venv .venv
-# Activate Python virtual environment (Windows)
+# 3. Activate Python virtual environment (Windows)
 # for Linux: source .venv/bin/activate
 call .venv\Scripts\activate.bat
-# Install Python dependencies in virtual environment
+# 4. Install Python dependencies in virtual environment
 pip install -r requirements.txt
 ```
 
