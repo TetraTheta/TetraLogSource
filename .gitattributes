@@ -1,7 +1,3 @@
 * text=auto
-*.lock eol=lf
-*.mod eol=lf
 *.ps1 eol=crlf
-*.sh eol=lf
-*.sum eol=lf
 *.webp binary

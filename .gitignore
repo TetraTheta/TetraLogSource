@@ -409,3 +409,6 @@ pip-selfcheck.json
 
 # Misc files
 public.zip
+
+# Ignore NPM's lock file
+package-lock.json

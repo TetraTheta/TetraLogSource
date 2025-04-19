@@ -95,6 +95,6 @@ cd "$HOME/project/src" || {
   echo "Failed to change directory to build directory"
   exit 1
 }
-python "$HOME/project/src/.script/cli.py" clean
+bun run cli clean
 "$HUGO_BIN" --gc --minify -e production
-python "$HOME/project/src/.script/cli.py" deslash
+bun run cli deslash
