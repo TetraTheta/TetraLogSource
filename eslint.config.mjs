@@ -1,7 +1,7 @@
-import eslint from '@eslint/js'
-import prettierConfig from 'eslint-config-prettier'
-import prettier from 'eslint-plugin-prettier'
-import tseslint from 'typescript-eslint'
+import eslint from '@eslint/js';
+import prettierConfig from 'eslint-config-prettier';
+import prettier from 'eslint-plugin-prettier';
+import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -9,6 +9,6 @@ export default tseslint.config(
   ...tseslint.configs.stylisticTypeChecked,
   ...prettierConfig,
   {
-    files: ['**/*.ts']
-  }
-)
+    files: ['**/*.ts'],
+  },
+);

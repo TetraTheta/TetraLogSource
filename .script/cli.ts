@@ -267,10 +267,18 @@ program
   .command('clean')
   .description('Remove temporary directories')
   .action(() => {
+    // directories
     printInfo(`Removing ${dirPublic}`);
     rmSync(dirPublic, { force: true, maxRetries: 5, recursive: true, retryDelay: 150 });
     printInfo(`Removing ${dirResources}`);
     rmSync(dirResources, { force: true, maxRetries: 5, recursive: true, retryDelay: 150 });
+    // files
+    const hugo_stats = join(dirRoot, 'hugo_stats.json');
+    printInfo(`Removing ${hugo_stats}`);
+    rmSync(hugo_stats, { force: true, maxRetries: 5, recursive: false, retryDelay: 150 });
+    const hugo_build = join(dirRoot, '.hugo_build.lock');
+    printInfo(`Removing ${hugo_build}`);
+    rmSync(hugo_build, { force: true, maxRetries: 5, recursive: false, retryDelay: 150 });
   });
 
 // deslash

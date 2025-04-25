@@ -1,17 +1,15 @@
 {
   "name": "tetralog",
+  "private": true,
   "description": "TetraLog blog made with HB Cards Theme",
   "author": "TetraTheta",
   "type": "module",
   "scripts": {
     "build": "bun run cli clean && hugo --gc --minify -e production && bun run cli deslash",
     "check-update": "bun x --bun npm-check-updates",
-    "clean": "bun run cli clean",
     "cli": "bun run --bun ./.script/cli.ts",
-    "deslash": "bun run cli deslash",
     "dev": "hugo server --renderToMemory --disableFastRender -D -p 44",
-    "dev.prod": "hugo server --gc --minify --renderToMemory --disableFastRender -D -e production -p 44",
-    "new": "bun run cli new"
+    "dev.prod": "hugo server --gc --minify --renderToMemory --disableFastRender -D -e production -p 44"
   },
   "dependencies": {
     "@hbstack/node-packages": "^0.1.5",
@@ -22,13 +20,13 @@
     "minify-xml": "^4.5.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.25.0",
+    "@eslint/js": "^9.26.0",
     "@types/html-minifier-terser": "^7.0.2",
-    "@types/node": "^22.14.1",
-    "eslint": "^9.25.0",
+    "@types/node": "^22.15.3",
+    "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.2",
-    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-prettier": "^5.3.1",
     "prettier": "^3.5.3",
-    "typescript-eslint": "^8.30.1"
+    "typescript-eslint": "^8.31.1"
   }
 }
