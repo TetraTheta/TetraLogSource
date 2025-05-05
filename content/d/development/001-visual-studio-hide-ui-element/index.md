@@ -22,7 +22,7 @@ Visual Studio는 매우 훌륭한 IDE입니다만, 사소한 부분에서 부족
 
 먼저 [Visual Commander](https://marketplace.visualstudio.com/items?itemName=SergeyVlasov.VisualCommander) 확장 패키지 설치가 필요합니다.
 
-<link-preview url="https://marketplace.visualstudio.com/items?itemName=SergeyVlasov.VisualCommander"></link-preview>
+<link-preview url="https://marketplace.visualstudio.com/items?itemName=SergeyVlasov.VisualCommander" title="Visual Commander - Visual Studio Marketplace" desc="Extension for Visual Studio - Automate repetitive tasks in Visual Studio IDE. Reuse your existing Visual Studio macros or create new commands and extensions in C# or VB. Record and playback text editing macros." image="https://SergeyVlasov.gallerycdn.vsassets.io/extensions/sergeyvlasov/visualcommander/3.4.1/1738562624414/Microsoft.VisualStudio.Services.Icons.Default"></link-preview>
 
 Visual Studio를 연 뒤, '확장 - 확장 관리' 메뉴를 눌러 확장 관리자를 엽니다.
 

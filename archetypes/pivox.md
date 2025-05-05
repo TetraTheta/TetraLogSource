@@ -9,7 +9,7 @@ categories:
 tags:
 #  - 
 images:
-#  - 001.webp
+#  - logo.webp
 ---
 
 Content.

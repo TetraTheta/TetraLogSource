@@ -71,7 +71,7 @@ div.hb-blog-post-content {
   // Code Block
   pre { background-color: var(--hb-secondary-bg); }
   // Headings
-  h1, h2, h3, h4, h5, h6 { margin-top: 2rem; }
+  h1, h2, h3, h4, h5, h6 { margin-top: 2rem !important; }
   // Horizontal Line
   hr { margin: 1.5rem 0; }
   // Image (Prevents usage of '#center', '#float-start', and '#float-end' because '#center' is applied forcibly)
