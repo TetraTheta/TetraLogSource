@@ -173,6 +173,8 @@ VoiceMeeter에는 여러 에디션이 있다.
     <Bus index='4' mute='0' vaio='0' mono='0' cross='0' BusMode='0' EQon='0' SEL='0' monitor='0' dblevel='0.00' />
     <Bus index='5' mute='0' vaio='0' mono='0' cross='0' BusMode='0' EQon='0' SEL='0' monitor='0' dblevel='0.00' />
     <K7BUSRoute busa='1' busa2='1' busa3='1' busb='1' busb2='1' dblevel='0.00' />
+    <LabelVirtualStrip1>기본 출력</LabelVirtualStrip1>
+    <LabelVirtualStrip2>방송 출력</LabelVirtualStrip2>
     <PatchComposite c1='0' c2='0' c3='1' c4='3' c5='5' c6='7' c7='15' c8='16' mode='0' />
     <PatchInsert c1='0' c2='0' c3='0' c4='0' c5='0' c6='0' c7='0' c8='0' c9='0' c10='0' c11='0' c12='0' c13='0' c14='0' c15='0' c16='0' c17='0' c18='0' c19='0' c20='0' c21='0' c22='0' mode='0' />
     <Strip index='1' mute='0' vaio='0' solo='0' mono='0' muc='0' prg_c='0' prg_g='0' busa='1' busa2='0' busa3='0' busb='1' busb2='0' karaoke='0' dblevel='0.00' dblimit='12.00' />
@@ -201,16 +203,16 @@ VoiceMeeter에는 여러 에디션이 있다.
 
 녹음 장치는 다음을 제외한 나머지를 모두 '사용 안 함'으로 설정했다.
 
-* 무선 헤드셋 마이크
-* Voicemeeter Out B3: 기본 장치 + 기본 통신 장치
+* 무선 헤드셋 마이크: 기본 장치 + 기본 통신 장치
   \[고급-기본 형식\]: 2 채널, 24비트, 48000Hz
+* Voicemeeter Out B1
+* Voicemeeter Out B2
 
 듣자 하니, 비트 수준이 48000Hz를 넘어갈 경우, 일부 게임에서 소리가 나오지 않을 수도 있다고 하더라.
 
 ## 게임 설정{id="configure-game"}
 
-필요하다면 오디오 출력 장치를 Voicemeeter Input으로 설정한다.
-Voicemeeter Input이 기본 재생 장치로 설정되어 있기 때문에, 대부분의 경우 별도의 설정은 필요 없을 것이다.
+설정 가능한 경우, 재생 장치를 Voicemeeter AUX Input로 설정한다.
 
 ## OBS 설정{id="configure-obs"}
 
@@ -236,7 +238,7 @@ RGB10A2 색 공간은 그냥 sRGB로 했다. 별 이유는 없고, 어차피 내
 
 <h3 id="audio-input-capture">오디오 입력 캡쳐</h3>
 
-시스템 기본 재생 장치가 이미 Voicemeeter Input으로 설정되어 있기에, 장치는 '기본 장치'로 설정한다.
+Voicemeeter Out B2로 설정한다.
 
 <h3 id="advanced-audio-setting">오디오 고급 설정</h3>
 
@@ -246,11 +248,20 @@ RGB10A2 색 공간은 그냥 sRGB로 했다. 별 이유는 없고, 어차피 내
 
 오디오 입력 캡쳐의 '오디오 모니터링'을 '모니터링과 출력'으로 변경한다.
 
+만약 방송에서 게임 오디오가 나오지 않는다면, 해당 옵션을 '모니터링 끔'으로 변경한 후 다시 '모니터링과 출력'으로 변경한다.
+
 <h3 id="audio-setting">오디오 설정</h3>
+
+![](obs-setting.webp)
 
 \[설정-오디오\]에서 모니터링 장치를 Voicemeeter In 5로 설정한다. 바로 이것 때문에 Voicemeeter In 5를 더미로 살려둔 것이다.
 
 ## 디스코드 방송{id="discord-broadcast"}
+
+\[음성 및 비디오\]의 녹음 장치와 출력 장치를 다음과 같이 설정한다.
+
+* 녹음 장치: 기본(무선 헤드셋 마이크)
+* 출력 장치: 기본(Voicemeeter Input)
 
 ![](obs-main-preview.webp)
 
