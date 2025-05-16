@@ -31,6 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
     ref.setAttribute('title', fnContent);
   });
 });
+// Remove 'disabled' property from '<input type=checkbox>' and prevent toggle
+document.addEventListener('DOMContentLoaded', function () {
+  const checkboxes = document.getElementsByClassName('hb-blog-post-content')[0].getElementsByTagName('input');
+  Array.from(checkboxes).forEach(function (cb) {
+    cb.removeAttribute('disabled');
+    cb.addEventListener('click', function (e) {
+      e.preventDefault();
+    });
+  });
+});
 //
 // <link-preview> HTML Tag
 // @ts-ignore

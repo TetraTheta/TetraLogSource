@@ -77,6 +77,12 @@ div.hb-blog-post-content {
   // Image (Prevents usage of '#center', '#float-start', and '#float-end' because '#center' is applied forcibly)
   img.img-fluid { margin: 0; }
   picture:has(img.img-fluid) { display: flex; justify-content: center; }
+  // Input
+  input[type=checkbox] {
+    transform: scale(1.25);
+    transform-origin: top left;
+    margin-right: 0.4rem;
+  }
   // KBD
   kbd { .apple { font-size: 200%; line-height: 50%; vertical-align: sub; } }
   // List
