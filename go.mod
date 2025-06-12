@@ -12,7 +12,7 @@ require (
 	github.com/hbstack/back-to-top v0.2.0 // indirect
 	github.com/hbstack/base v0.6.2 // indirect
 	github.com/hbstack/blockquote-alerts v0.1.1 // indirect
-	github.com/hbstack/blog v0.40.2 // indirect
+	github.com/hbstack/blog v0.40.3 // indirect
 	github.com/hbstack/blog/modules/breadcrumb v0.1.23 // indirect
 	github.com/hbstack/blog/modules/content-panel v0.1.21 // indirect
 	github.com/hbstack/blog/modules/disqus v0.1.20 // indirect
@@ -74,7 +74,7 @@ require (
 	github.com/hugomods/icons/vendors/lucide v0.3.40 // indirect
 	github.com/hugomods/icons/vendors/mdi v0.3.8 // indirect
 	github.com/hugomods/icons/vendors/simple-icons v1.1.1 // indirect
-	github.com/hugomods/images v0.11.2 // indirect
+	github.com/hugomods/images v0.12.1 // indirect
 	github.com/hugomods/katex v0.3.6 // indirect
 	github.com/hugomods/lucide-icons v0.331.0 // indirect
 	github.com/hugomods/masonry-js v0.1.0 // indirect
@@ -88,7 +88,7 @@ require (
 	github.com/hugomods/seo/modules/open-graph v0.1.1 // indirect
 	github.com/hugomods/seo/modules/schema v0.1.3 // indirect
 	github.com/hugomods/seo/modules/twitter-cards v0.1.1 // indirect
-	github.com/hugomods/shortcodes v0.25.0 // indirect
+	github.com/hugomods/shortcodes v0.25.1 // indirect
 	github.com/hugomods/simple-icons v13.21.0+incompatible // indirect
 	github.com/hugomods/snackbar v0.1.2 // indirect
 	github.com/krisk/Fuse v7.1.0+incompatible // indirect
