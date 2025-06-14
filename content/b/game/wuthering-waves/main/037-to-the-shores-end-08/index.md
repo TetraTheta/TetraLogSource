@@ -40,9 +40,9 @@ images:
 그나저나 테티스 시스템의 로고를 어디서 본 것 같다 생각했는데, 의외로 여러 곳에서 본 문양이었다.
 
 <div class="gallery" align="center"><div style="width: 100%"><figure class="gallery-figure"><div class="gallery-container">
-<div class="gallery-inner" style="width: 32.5%">{{< images/image Filename="004.webp" Page="b/game/wuthering-waves/main/001-utterance-of-marvels-01" >}}</div>
-<div class="gallery-inner" style="width: 32.5%">{{< images/image Filename="070.webp" Page="b/game/wuthering-waves/main/023-grand-warstorm-05" >}}</div>
-<div class="gallery-inner" style="width: 32.5%">{{< images/image Filename="022.webp" Page="b/game/wuthering-waves/main/024-a-new-companion" >}}</div>
+<div class="gallery-inner" style="width: 32.5%">{{< img "../001-utterance-of-marvels-01/004.webp" >}}</div>
+<div class="gallery-inner" style="width: 32.5%">{{< img "../023-grand-warstorm-05/070.webp" >}}</div>
+<div class="gallery-inner" style="width: 32.5%">{{< img "../024-a-new-companion/022.webp" >}}</div>
 </div></figure></div></div>
 
 대체 저 문양은 무슨 뜻일까? 프롤로그에서 나타난 문양이 명식에게서도 비슷하게 나타났고, 방랑자와 포포의 관계성을 설명할 때에도 나왔다.

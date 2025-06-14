@@ -9,7 +9,7 @@ categories:
 tags:
 #  - 
 images:
-  - 920+.webp
+  - 920p.webp
 ---
 
 뜬금없이 NAS가 갖고 싶다고 이야기하는 것이 아니다.
@@ -171,13 +171,13 @@ DS220+, DS420+, DS920+.
     <tr>
       <td style="width: 25%; text-align: center;">&nbsp;</td>
       <td style="width: 25%; text-align: center;">
-        {{< images/image "220+.webp" >}}
+        {{< img "220p" >}}
       </td>
       <td style="width: 25%; text-align: center;">
-        {{< images/image "420+.webp" >}}
+        {{< img "420p" >}}
       </td>
       <td style="width: 25%; text-align: center;">
-        {{< images/image "920+.webp" >}}
+        {{< img "920p" >}}
       </td>
     </tr>
     <tr>
@@ -577,13 +577,13 @@ DS220+, DS420+, DS920+.
 
 NAS용 HDD를 알아보았다.
 
-* Seagate IronWolf Pro  
+* Seagate IronWolf Pro
   ST4000NE0025 (4TB, 7200 RPM, 128MB) : 최저 248,000원 (22.07.03 기준)
-* Seagate IronWolf  
+* Seagate IronWolf
   ST4000VN008 (4TB, 7200 RPM, 64MB) : 최저 157,000원 (22.07.03 기준)
-* Western Digital Ultrastar DC HC310  
+* Western Digital Ultrastar DC HC310
   HUS726T4TALA6L4 (4TB, 7200 RPM, 256MB) : 최저 157,000원 (22.07.03 기준)
-* TOSHIBA N300  
+* TOSHIBA N300
   HDWQ140 (4TB, 7200RPM, 128MB) : 최저 127,000원 (22.07.03 기준)
 
 HDD 하나에 15만 원이 든다고 대충 가정할 때, DS220+는 추가로 30만 원, DS420+이나 DS920+는 추가로 60만 원이 들어가는 셈이다.
