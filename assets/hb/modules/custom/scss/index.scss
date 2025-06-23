@@ -101,7 +101,10 @@ div.hb-blog-post-content {
   // Tab Size
   & { tab-size: 2; }
   // Table
-  table, .table { --hb-table-color: var(--hb-body-color) }
+  table, .table {
+    --hb-table-color: var(--hb-body-color);
+    margin-bottom: 0.5rem;
+  }
 }
 
 // ############################## SHORTCODE ##############################
