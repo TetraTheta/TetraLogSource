@@ -12,7 +12,7 @@ require (
 	github.com/hbstack/back-to-top v0.2.0 // indirect
 	github.com/hbstack/base v0.6.2 // indirect
 	github.com/hbstack/blockquote-alerts v0.1.1 // indirect
-	github.com/hbstack/blog v0.41.0 // indirect
+	github.com/hbstack/blog v0.42.1 // indirect
 	github.com/hbstack/blog/modules/breadcrumb v0.1.23 // indirect
 	github.com/hbstack/blog/modules/content-panel v0.1.21 // indirect
 	github.com/hbstack/blog/modules/disqus v0.1.20 // indirect
@@ -60,7 +60,7 @@ require (
 	github.com/hugomods/ascii v0.1.0 // indirect
 	github.com/hugomods/base v0.7.3 // indirect
 	github.com/hugomods/bootstrap v0.24.1 // indirect
-	github.com/hugomods/code-block-panel v0.8.0 // indirect
+	github.com/hugomods/code-block-panel v0.9.0 // indirect
 	github.com/hugomods/font-awesome v6.7.1+incompatible // indirect
 	github.com/hugomods/fuse-js v0.1.0 // indirect
 	github.com/hugomods/google-adsense v0.2.1 // indirect
