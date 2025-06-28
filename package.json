@@ -20,13 +20,13 @@
     "minify-xml": "^4.5.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.29.0",
+    "@eslint/js": "^9.30.0",
     "@types/html-minifier-terser": "^7.0.2",
-    "@types/node": "^24.0.3",
-    "eslint": "^9.29.0",
+    "@types/node": "^24.0.7",
+    "eslint": "^9.30.0",
     "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-prettier": "^5.5.0",
-    "prettier": "^3.6.0",
+    "eslint-plugin-prettier": "^5.5.1",
+    "prettier": "^3.6.2",
     "typescript-eslint": "^8.35.0"
   }
 }

@@ -234,15 +234,15 @@ images:
 
 선행 공약에 있는 지인의 공명 어빌리티가 이 일에 도움이 될지 모른다며, 젠니가 선행 공약으로 가볼 것을 제안한다.
 
-{{< gallery/image src="137" width="50%" >}}
+{{< gallery/image src="137|138" >}}
 
-{{< gallery/image src="138|139|140" >}}
+{{< gallery/image src="139|140|141" >}}
 
-{{< gallery/image src="141|142|143" >}}
+{{< gallery/image src="142|143|144" >}}
 
-{{< gallery/image src="144|145|146" >}}
+{{< gallery/image src="145|146|147" >}}
 
-{{< gallery/image src="147|148|149" >}}
+{{< gallery/image src="148|149" >}}
 
 ![](150.webp)
 
