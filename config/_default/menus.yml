@@ -53,31 +53,10 @@ main:
       icon:
         vendor: custom
         name: blue-archive
-  - name: 더 디비전
-    parent: game
-    identifier: the-division
-    weight: 23
-    url: /b/game/the-division/
-    params:
-      header: 더 디비전 시리즈 이야기
-      description: 더 디비전 시리즈 이야기
-      icon:
-        vendor: custom
-        name: division
-        color: FF9800
-  - name: 타워 오브 판타지
-    parent: game
-    identifier: tower-of-fantasy
-    weight: 24
-    url: /b/game/tower-of-fantasy/
-    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/tower-of-fantasy-sub.png"></div>'
-    params:
-      header: 타워 오브 판타지 이야기
-      description: 타워 오브 판타지 이야기
   - name: 기타
     parent: game
     identifier: game-misc
-    weight: 25
+    weight: 23
     url: /b/game/misc/
     params:
       header: 기타 게임 이야기
@@ -86,13 +65,25 @@ main:
         vendor: font-awesome-solid
         name: gamepad
   - parent: game
-    weight: 26
+    weight: 24
     params:
       divider: true
+  - name: 더 디비전
+    parent: game
+    identifier: the-division
+    weight: 25
+    url: /b/game/the-division/
+    params:
+      header: 더 디비전 시리즈 이야기
+      description: 더 디비전 시리즈 이야기
+      icon:
+        vendor: custom
+        name: division
+        color: FF9800
   - name: '붕괴: 스타레일'
     parent: game
     identifier: honkai-star-rail
-    weight: 27
+    weight: 26
     url: /b/game/honkai-star-rail/
     params:
       header: '붕괴: 스타레일 이야기'
@@ -100,6 +91,15 @@ main:
       icon:
         vendor: custom
         name: honkai-star-rail
+  - name: 타워 오브 판타지
+    parent: game
+    identifier: tower-of-fantasy
+    weight: 27
+    url: /b/game/tower-of-fantasy/
+    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/tower-of-fantasy-sub.png"></div>'
+    params:
+      header: 타워 오브 판타지 이야기
+      description: 타워 오브 판타지 이야기
   - name: 명조
     identifier: wuthering-waves
     weight: 30
@@ -116,7 +116,7 @@ main:
     url: /b/game/wuthering-waves/main/
     params:
       header: 명조 조수 임무 이야기
-      description: 원신 조수 임무 이야기
+      description: 명조 조수 임무 이야기
       icon:
         vendor: custom
         name: wuwa-main
@@ -127,7 +127,7 @@ main:
     url: /b/game/wuthering-waves/companion/
     params:
       header: 명조 얽힌 별 임무 이야기
-      description: 원신 엵힌 별 임무 이야기
+      description: 명조 엵힌 별 임무 이야기
       icon:
         vendor: custom
         name: wuwa-companion
@@ -138,7 +138,7 @@ main:
     url: /b/game/wuthering-waves/exploration/
     params:
       header: 명조 위험한 임무 이야기
-      description: 원신 위험한 임무 이야기
+      description: 명조 위험한 임무 이야기
       icon:
         vendor: custom
         name: wuwa-exploration
@@ -149,7 +149,7 @@ main:
     url: /b/game/wuthering-waves/event/
     params:
       header: 명조 이벤트 임무 이야기
-      description: 원신 이벤트 임무 이야기
+      description: 명조 이벤트 임무 이야기
       icon:
         vendor: custom
         name: wuwa-tutorial
