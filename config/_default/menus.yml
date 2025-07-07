@@ -1,0 +1,328 @@
+main:
+  - name: 잡담
+    identifier: chit-chat
+    weight: 10
+    url: /b/chit-chat/
+    params:
+      header: 기타 잡담
+      description: 기타 잡담
+      icon:
+        vendor: font-awesome-solid
+        name: message
+  - name: 음악
+    parent: chit-chat
+    identifier: music
+    weight: 11
+    url: /b/chit-chat/music/
+    params:
+      header: 음악 이야기
+      description: 음악 이야기
+      icon:
+        vendor: font-awesome-solid
+        name: music
+  - name: 게임
+    identifier: game
+    weight: 20
+    url: /b/game/
+    params:
+      header: 게임 이야기
+      description: 게임 이야기
+      columns: 1
+      icon:
+        vendor: font-awesome-solid
+        name: gamepad
+  - name: 마인크래프트
+    parent: game
+    identifier: minecraft
+    weight: 21
+    url: /b/game/minecraft/
+    params:
+      header: 마인크래프트 이야기
+      description: 마인크래프트 이야기
+      icon:
+        vendor: custom
+        name: minecraft
+  - name: 블루 아카이브
+    parent: game
+    identifier: blue-archive
+    weight: 22
+    url: /b/game/blue-archive/
+    params:
+      header: 블루 아카이브 이야기
+      description: 블루 아카이브 이야기
+      icon:
+        vendor: custom
+        name: blue-archive
+  - name: 더 디비전
+    parent: game
+    identifier: the-division
+    weight: 23
+    url: /b/game/the-division/
+    params:
+      header: 더 디비전 시리즈 이야기
+      description: 더 디비전 시리즈 이야기
+      icon:
+        vendor: custom
+        name: division
+        color: FF9800
+  - name: 타워 오브 판타지
+    parent: game
+    identifier: tower-of-fantasy
+    weight: 24
+    url: /b/game/tower-of-fantasy/
+    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/tower-of-fantasy-sub.png"></div>'
+    params:
+      header: 타워 오브 판타지 이야기
+      description: 타워 오브 판타지 이야기
+  - name: 기타
+    parent: game
+    identifier: game-misc
+    weight: 25
+    url: /b/game/misc/
+    params:
+      header: 기타 게임 이야기
+      description: 기타 게임 이야기
+      icon:
+        vendor: font-awesome-solid
+        name: gamepad
+  - parent: game
+    weight: 26
+    params:
+      divider: true
+  - name: '붕괴: 스타레일'
+    parent: game
+    identifier: honkai-star-rail
+    weight: 27
+    url: /b/game/honkai-star-rail/
+    params:
+      header: '붕괴: 스타레일 이야기'
+      description: '붕괴: 스타레일 이야기'
+      icon:
+        vendor: custom
+        name: honkai-star-rail
+  - name: 명조
+    identifier: wuthering-waves
+    weight: 30
+    url: /b/game/wuthering-waves/
+    pre: '<img class="hb-header-menu-icon-image me-1" src="/icons/custom-png/wuthering-waves.png">'
+    params:
+      header: 명조 이야기
+      description: 명조 이야기
+      columns: 2
+  - name: 조수 임무
+    parent: wuthering-waves
+    identifier: wuthering-waves-main
+    weight: 31
+    url: /b/game/wuthering-waves/main/
+    params:
+      header: 명조 조수 임무 이야기
+      description: 원신 조수 임무 이야기
+      icon:
+        vendor: custom
+        name: wuwa-main
+  - name: 얽힌 별 임무
+    parent: wuthering-waves
+    identifier: wuthering-waves-companion
+    weight: 32
+    url: /b/game/wuthering-waves/companion/
+    params:
+      header: 명조 얽힌 별 임무 이야기
+      description: 원신 엵힌 별 임무 이야기
+      icon:
+        vendor: custom
+        name: wuwa-companion
+  - name: 위험한 임무
+    parent: wuthering-waves
+    identifier: wuthering-waves-exploration
+    weight: 33
+    url: /b/game/wuthering-waves/exploration/
+    params:
+      header: 명조 위험한 임무 이야기
+      description: 원신 위험한 임무 이야기
+      icon:
+        vendor: custom
+        name: wuwa-exploration
+  - name: 이벤트 임무
+    parent: wuthering-waves
+    identifier: wuthering-waves-event
+    weight: 34
+    url: /b/game/wuthering-waves/event/
+    params:
+      header: 명조 이벤트 임무 이야기
+      description: 원신 이벤트 임무 이야기
+      icon:
+        vendor: custom
+        name: wuwa-tutorial
+  - name: 기타
+    parent: wuthering-waves
+    identifier: wuthering-waves-misc
+    weight: 35
+    url: /b/game/wuthering-waves/misc/
+    params:
+      header: 기타 명조 이야기
+      description: 기타 명조 이야기
+      icon:
+        vendor: custom
+        name: wuwa-misc
+  - name: separator-main
+    weight: 40
+    identifier: separator-main
+    params:
+      divider: true
+  - name: PIVOX
+    identifier: pivox
+    weight: 50
+    url: /d/
+    params:
+      header: 각종 강좌 및 팁
+      description: 각종 강좌 및 팁
+      columns: 2
+      icon:
+        vendor: font-awesome-solid
+        name: lightbulb
+  - name: 개발
+    parent: pivox
+    identifier: pivox-development
+    weight: 51
+    url: /d/development/
+    params:
+      header: 개발 및 프로그래밍 관련 강좌 및 팁
+      description: 개발 및 프로그래밍 관련 강좌 및 팁
+      icon:
+        vendor: bootstrap
+        name: keyboard-fill
+  - name: 게임
+    parent: pivox
+    identifier: pivox-game
+    weight: 52
+    url: /d/game/
+    params:
+      header: 게임 관련 강좌 및 팁
+      description: 게임 관련 강좌 및 팁
+      icon:
+        vendor: mdi
+        name: gamepad
+  - name: 데스크톱
+    parent: pivox
+    identifier: pivox-desktop
+    weight: 53
+    url: /d/desktop/
+    params:
+      header: 데스크톱 관련 강좌 및 팁
+      description: 데스크톱 관련 강좌 및 팁
+      icon:
+        vendor: font-awesome-solid
+        name: computer
+  - name: 모바일
+    parent: pivox
+    identifier: pivox-mobile
+    weight: 54
+    url: /d/mobile/
+    params:
+      header: 모바일 관련 강좌 및 팁
+      description: 모바일 관련 강좌 및 팁
+      icon:
+        vendor: bootstrap
+        name: phone-fill
+  - name: 서버
+    parent: pivox
+    identifier: pivox-server
+    weight: 55
+    url: /d/server/
+    params:
+      header: 서버 관련 강좌 및 팁
+      description: 서버 관련 강좌 및 팁
+      icon:
+        vendor: font-awesome-solid
+        name: server
+  - name: 웹
+    parent: pivox
+    identifier: pivox-web
+    weight: 56
+    url: /d/web/
+    params:
+      header: 웹 관련 강좌 및 팁
+      description: 웹 관련 강좌 및 팁
+      icon:
+        vendor: font-awesome-solid
+        name: globe
+  - name: 기타
+    parent: pivox
+    identifier: pivox-misc
+    weight: 57
+    url: /d/misc/
+    params:
+      header: 기타 강좌 및 팁
+      description: 기타 강좌 및 팁
+      icon:
+        vendor: lucide
+        name: notebook-text
+  - name: separator-pivox
+    weight: 60
+    identifier: separator-pivox
+    params:
+      divider: true
+  - name: 원신
+    identifier: genshin
+    weight: 70
+    url: /b/game/genshin-impact/
+    pre: '<img class="hb-header-menu-icon-image me-1" src="/icons/custom-png/genshin-impact.png">'
+    params:
+      header: 원신 이야기
+      description: 원신 이야기
+      columns: 1
+  - name: 마신 임무
+    parent: genshin
+    identifier: genshin-archon
+    weight: 71
+    url: /b/game/genshin-impact/archon/
+    params:
+      header: 원신 마신 임무 이야기
+      description: 원신 마신 임무 이야기
+      icon:
+        vendor: custom
+        name: genshin_archon_quest
+  - name: 전설 임무
+    parent: genshin
+    identifier: genshin-story
+    weight: 72
+    url: /b/game/genshin-impact/story/
+    params:
+      header: 원신 전설 임무 이야기
+      description: 원신 전설 임무 이야기
+      icon:
+        vendor: custom
+        name: genshin_story_quest
+  - name: 월드 임무
+    parent: genshin
+    identifier: genshin-world
+    weight: 73
+    url: /b/game/genshin-impact/world/
+    params:
+      header: 원신 월드 임무 이야기
+      description: 원신 월드 임무 이야기
+      icon:
+        vendor: custom
+        name: genshin_world_quest
+  - name: 이벤트 임무
+    parent: genshin
+    identifier: genshin-event
+    weight: 74
+    url: /b/game/genshin-impact/event/
+    params:
+      header: 원신 이벤트 임무 이야기
+      description: 원신 이벤트 임무 이야기
+      icon:
+        vendor: custom
+        name: genshin_event_quest
+  - name: 기타
+    parent: genshin
+    identifier: genshin-misc
+    weight: 75
+    url: /b/game/genshin-impact/misc/
+    params:
+      header: 기타 원신 이야기
+      description: 기타 원신 이야기
+      icon:
+        vendor: custom
+        name: genshin_normal_quest
