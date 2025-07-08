@@ -133,7 +133,7 @@ images:
 
 금희가 흰색 구체에 손을 뻗는 모습이 어디서 많이 본 것 같다 생각했는데, RE 엔진 로고 그림과 거의 똑같다.
 
-{{< gallery/image src="re" caption="아무리 봐도 비슷한 것 같은데" >}}
+{{< gallery/image src="re" caption="아무리 봐도 비슷한 것 같은데" width="350px" >}}
 
 정작 명조는 RE 엔진이 아닌 언리얼 엔진으로 만든 게임이란 말이지.
 
