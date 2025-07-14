@@ -112,30 +112,30 @@ div.hb-blog-post-content {
 
 // ############################## SHORTCODE ##############################
 // Gallery
-div.hb-blog-post-content div.gallery {
-  div.gallery-container {
-    align-items: baseline;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 0.5rem;
-  }
-  img.img-fluid { margin: 0; }
-  figure {
-    & { margin: 0; }
-    figcaption {
-      caption-side: bottom;
-      color: #9999A1;
-      font-size: 1rem;
-      min-height: 20px;
-      text-align: center;
-      word-break: break-word;
+div.hb-blog-post-content {
+  div.gallery {
+    div.gallery-container {
+      align-items: baseline;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       margin-top: 0.5rem;
     }
+    img.img-fluid { margin: 0; }
+    figure { margin: 0; }
   }
-}
-@media (max-width: 767.98px) {
-  div.hb-blog-post-content div.gallery { width: 100% !important; }
+  @media (max-width: 767.98px) {
+    div.gallery { width: 100% !important; }
+  }
+  figcaption.gallery-figcaption {
+    caption-side: bottom;
+    color: #9999A1;
+    font-size: 1rem;
+    min-height: 20px;
+    text-align: center;
+    word-break: break-word;
+    margin-top: 0.5rem;
+  }
 }
 
 // Youtube

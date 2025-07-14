@@ -61,7 +61,7 @@
         {{- end -}}
       </div>
       {{- if ne $caption "" -}}
-      <figcaption>{{ (printf "%s" $caption) | markdownify }}</figcaption>
+      <figcaption class="gallery-figcaption">{{ (printf "%s" $caption) | markdownify }}</figcaption>
       {{- end -}}
     </figure>
   </div>
