@@ -63,6 +63,7 @@ div.hb-blog-post-content {
       border-width: 1px !important;
       background-color: var(--hb-tertiary-bg) !important;
     }
+    ul:first-child, ol:first-child { margin-top: 0; }
     p, ul:last-child, ol:last-child { margin-bottom: 0; }
     hr { margin: 0.5rem 0; }
     // Twitter embed (Not working)
