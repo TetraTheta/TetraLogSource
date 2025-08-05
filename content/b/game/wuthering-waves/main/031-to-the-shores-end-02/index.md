@@ -88,7 +88,7 @@ images:
 
 잠깐. 그러고 보니, 이 로봇들 생긴 모습이 쿠로 게임즈 로고랑 비슷하게 생겼는데.
 
-{{< gallery/image src="https://kurogames.com/_nuxt/img/logo.9460104.png" width="400px" caption="맞네" >}}
+{{< gallery/image src="kurogames" width="400px" caption="맞네" >}}
 
 &nbsp;
 

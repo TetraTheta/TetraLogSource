@@ -16,7 +16,7 @@ b, strong { font-weight: 700; }
 .hb-header-menus {
   .dropdown-item-icon { background-image: none !important; }
   .hb-header-menu-icon { width: 1rem; }
-  .hb-header-menu-icon-image { width: 1rem; margin-right: 4px; }
+  .hb-header-menu-icon-image { margin-right: 4px; width: 1rem; }
   .hb-header-menu-icon-image-sub { width: 2rem; }
   // Grey out some elements
   a[href*="honkai-star-rail"], a[href*="genshin"] {
@@ -37,8 +37,8 @@ b, strong { font-weight: 700; }
 
 // Post Card without image
 div.hb-blog-post-card-img-none {
-  font-size: 5rem;
   filter: blur(2px);
+  font-size: 5rem;
   text-transform: none;
 }
 
@@ -57,14 +57,14 @@ div.hb-blog-post-content {
     & { font-size: 1.15rem; margin: 0.7rem 0 0.7rem 0; }
     &.bq {
       // Prevent theme-class override
-      padding: 0.5rem 1rem !important;
+      background-color: var(--hb-tertiary-bg) !important;
       border-color: var(--hb-tertiary-color) !important;
       border-style: dashed !important;
       border-width: 1px !important;
-      background-color: var(--hb-tertiary-bg) !important;
+      padding: 0.5rem 1rem !important;
     }
-    ul:first-child, ol:first-child { margin-top: 0; }
-    p, ul:last-child, ol:last-child { margin-bottom: 0; }
+    ol:first-child, ul:first-child { margin-top: 0; }
+    ol:last-child, ul:last-child, p { margin-bottom: 0; }
     hr { margin: 0.5rem 0; }
     // Twitter embed (Not working)
     &.twitter-tweet { font-family: var(--hb-font-sans-serif) !important; }
@@ -83,19 +83,19 @@ div.hb-blog-post-content {
   picture:has(img.img-fluid) { display: flex; justify-content: center; }
   // Input
   input[type=checkbox] {
-    transform: scale(1.25);
-    transform-origin: top left;
     margin-right: 0.4rem;
+    transform-origin: top left;
+    transform: scale(1.25);
   }
   // KBD
   kbd { .apple { font-size: 200%; line-height: 50%; vertical-align: sub; } }
   // List
   ul, ol {
-    & { margin-top: 0.7rem; margin-bottom: 0.7rem; }
+    & { margin-bottom: 0.7rem; margin-top: 0.7rem; }
     li p { margin-bottom: 0; }
   }
   // Paragraph margin
-  p:first-child { margin-top: 0; margin-bottom: 0.7rem; }
+  p:first-child { margin-bottom: 0.7rem; margin-top: 0; }
   p:not(:first-child) { margin: 0.7rem 0; }
   p:last-child { margin-bottom: 0; }
   // Strikethrough color
@@ -116,7 +116,7 @@ div.hb-blog-post-content {
 div.hb-blog-post-content {
   div.gallery {
     div.gallery-container {
-      align-items: baseline;
+      align-items: center;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -125,17 +125,17 @@ div.hb-blog-post-content {
     img.img-fluid { margin: 0; }
     figure { margin: 0; }
   }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768px) {
     div.gallery { width: 100% !important; }
   }
   figcaption.gallery-figcaption {
     caption-side: bottom;
     color: #9999A1;
     font-size: 1rem;
+    margin-top: 0.5rem;
     min-height: 20px;
     text-align: center;
     word-break: break-word;
-    margin-top: 0.5rem;
   }
 }
 
@@ -158,7 +158,7 @@ div.hb-blog-post-content div.youtube-container {
     word-break: break-word;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   div.hb-blog-post-content div.youtube-container { max-width: 100% !important; }
 }
 
