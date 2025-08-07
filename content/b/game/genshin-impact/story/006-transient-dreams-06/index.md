@@ -129,7 +129,7 @@ images:
 
 그런데 이 장면도 굉장히 멋지더라.
 
-{{< gallery/video src="mangou" width="350px" caption="이 연출을 보고 감탄하지 않을 사람이 과연 있을까?" >}}
+{{< gallery/video src="mangou" w=350px c="이 연출을 보고 감탄하지 않을 사람이 과연 있을까?" >}}
 
 {{< gallery/image src="032|033" >}}
 

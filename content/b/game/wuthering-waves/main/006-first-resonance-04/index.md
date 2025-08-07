@@ -177,7 +177,7 @@ images:
 
 그나저나 「황룡 아카이브」라니, 뭔가 좀 깨는 이름인걸.
 
-{{< gallery/image src="084" width="350px" >}}
+{{< gallery/image src="084" w=350px >}}
 
 > **해시계**
 > ***
@@ -318,7 +318,7 @@ images:
 
 나머지 신물에 담긴 수수께끼를 풀면 어떤 정보가 어느 분류에 속하는지 알 수 있을 것 같다.
 
-{{< gallery/image src="139" width="350px" >}}
+{{< gallery/image src="139" w=350px >}}
 
 > **캡슐 사탕**
 > ***

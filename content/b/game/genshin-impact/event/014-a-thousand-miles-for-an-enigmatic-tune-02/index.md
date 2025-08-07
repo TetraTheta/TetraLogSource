@@ -50,10 +50,10 @@ images:
 
 <div align="center"><div style="display: flex; justify-content: space-between;">
 <div style="width: 49.5%">
-{{< youtube id="jVDofBFtvwA" width="100%" >}}
+{{< youtube id="jVDofBFtvwA" w=100% >}}
 </div>
 <div style="width: 49.5%">
-{{< youtube id="rJeBuEjQeoI" width="100%" >}}
+{{< youtube id="rJeBuEjQeoI" w=100% >}}
 </div>
 </div></div>
 

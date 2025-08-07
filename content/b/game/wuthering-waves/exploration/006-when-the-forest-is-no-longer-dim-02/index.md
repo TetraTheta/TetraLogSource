@@ -4,6 +4,7 @@ slug: when-the-forest-is-no-longer-dim-02
 date: 2024-07-01T22:14:21+09:00
 series:
   - "숲이 더 이상 어둡지 않을 때: 암흑 밀림 제1막"
+  - "명조 위험한 임무: 금주"
 categories:
   - 명조
 tags:

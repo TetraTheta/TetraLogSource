@@ -158,7 +158,7 @@ images:
 
 이 대사를 들으니 이 영상이 생각나네.
 
-{{< youtube id="keAAUx5Yv3o" start="104" end="115" width="500px" >}}
+{{< youtube id="keAAUx5Yv3o" start=104 end=115 w=500px >}}
 
 > AnYoNe ThErE? hElLo
 {.bq}
@@ -235,7 +235,7 @@ images:
 
 이 중 우리가 가장 흔하게 접하는 상환방식은 '원리금 균등상환'이다.
 
-{{< gallery/image src="equidated_monthly_installment.webp" caption="원리금 균등상환" width="500px" >}}
+{{< gallery/image src="equidated_monthly_installment.webp" c="원리금 균등상환" w=500px >}}
 
 원리금 균등상환에서 채무자, 즉 돈을 빌린 사람이 매 상환기일마다 갚아야 할 돈은 늘 동일하다. 매번 일정한 금액의 돈을 갚는 것이다.
 

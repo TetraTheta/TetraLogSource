@@ -142,7 +142,7 @@ UI가 꽤 이쁘장하다.
 
 그러자 푸리나가 '그렇다면 대체 누가 범인인가?'라며 여행자를 몰아세운다.
 
-{{< youtube id="0D7hFHfLEyk" width="50%" start="184" end="192" caption="엥? 그건 나도 모르는데..." >}}
+{{< youtube id="0D7hFHfLEyk" start=184 end=192 w=50% c="엥? 그건 나도 모르는데..." >}}
 
 {{< gallery/image src="059|060|061" >}}
 

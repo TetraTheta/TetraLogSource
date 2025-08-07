@@ -131,7 +131,7 @@ ShareX의 설정을 조금 많이 손봐, 사진을 찍을 때 자동으로 UID 
 어떻게 ㅋㅋ 사람 이름이 ㅋㅋ '야베' ㅋㅋ
 
 <div align="center"><div style="max-width: 250px">
-{{< gallery/video src="yabe.mp4" caption="야! 베!" >}}
+{{< gallery/video src="yabe.mp4" c="야! 베!" >}}
 </div></div>
 
 내가 버튜버는 안 보지만, 이 YABE 밈은 좀 안다.

@@ -123,7 +123,7 @@ images:
 
 뭐? 클레를 혼자 수메르에 보낸다고?
 
-{{< gallery/image src="030" width="300px" caption="[원본](https://www.pixiv.net/artworks/99736563)" >}}
+{{< gallery/image src="030" w=300px c="[원본](https://www.pixiv.net/artworks/99736563)" >}}
 
 분명 이 모양 이 꼴이 날 걸?
 

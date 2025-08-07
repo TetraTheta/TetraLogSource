@@ -58,7 +58,7 @@ images:
 
 에이가 둘이라고? 그러면...
 
-{{< gallery/image src="double_a" width="25%" caption="에이가 둘이면 더블에이" >}}
+{{< gallery/image src="double_a" w=25% c="에이가 둘이면 더블에이" >}}
 
 '노 잼 예스 스트레스' 개그를 한번 쳐보고 싶었다.
 

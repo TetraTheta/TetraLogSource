@@ -34,14 +34,14 @@ images:
 
 {{< gallery/image src="015|016" >}}
 
-{{< gallery/image src="017" width="50%" >}}
+{{< gallery/image src="017" w=50% >}}
 
 조금 전까지만 해도 성당 지하 정원에 있었는데, 엘리베이터를 타고 올라가니 드넓은 리나시타의 풍경이 방랑자를 반겨준다.
 어... 이걸 어떻게 해석해야 하는 거지? 이쁘긴 한데!
 
 제2장 리나시타 제2막 \[밤과 낮, 모두 베일을 벗는다\] 시작.
 
-{{< gallery/image src="018" width="50%" >}}
+{{< gallery/image src="018" w=50% >}}
 
 {{< gallery/image src="019|020" >}}
 
@@ -49,7 +49,7 @@ images:
 
 {{< gallery/image src="024|025" >}}
 
-{{< gallery/image src="026" width="50%" >}}
+{{< gallery/image src="026" w=50% >}}
 
 {{< gallery/image src="027|028" >}}
 
@@ -104,7 +104,7 @@ images:
 
 {{< gallery/image src="056|057" >}}
 
-{{< gallery/image src="058" width="50%" >}}
+{{< gallery/image src="058" w=50% >}}
 
 {{< gallery/image src="059|060" >}}
 
@@ -151,7 +151,7 @@ images:
 
 {{< gallery/image src="090|091" >}}
 
-{{< gallery/image src="092" width="50%" >}}
+{{< gallery/image src="092" w=50% >}}
 
 {{< gallery/image src="093|094|095" >}}
 
@@ -188,11 +188,11 @@ images:
 
 강력한 공명자가 아닌 질베트로가 에코를 조종할 수 있었던 건 순전히 플로로가 건네준 피안화 덕분이었던 것으로 보인다.
 
-{{< gallery/image src="114" width="50%" >}}
+{{< gallery/image src="114" w=50% >}}
 
 {{< gallery/image src="115|116" >}}
 
-{{< gallery/image src="117" width="50%" >}}
+{{< gallery/image src="117" w=50% >}}
 
 젠니는 이 일을 폭로해 피살리아 가문과의 협상에서 이익을 볼 생각인 것 같은데... 왠지 그게 그렇게 쉽게 될 것 같지가 않다.
 

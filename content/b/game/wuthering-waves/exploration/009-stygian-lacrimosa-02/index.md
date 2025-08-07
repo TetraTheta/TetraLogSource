@@ -4,6 +4,7 @@ slug: stygian-lacrimosa-02
 date: 2024-07-03T19:06:24+09:00
 series:
   - "저편의 통곡: 울음새 늪 제1막"
+  - "명조 위험한 임무: 금주"
 categories:
   - 명조
 tags:

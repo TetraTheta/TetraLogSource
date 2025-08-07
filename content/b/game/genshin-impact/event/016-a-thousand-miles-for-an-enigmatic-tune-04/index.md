@@ -103,7 +103,7 @@ images:
 
 마... 마망!
 
-{{< gallery/image src="lalah" width="400px" caption="요요는 내 어머니가 되어 줬을지도 모르는 여성이었다" >}}
+{{< gallery/image src="lalah" w=400px c="요요는 내 어머니가 되어 줬을지도 모르는 여성이었다" >}}
 
 ![](027.webp)
 

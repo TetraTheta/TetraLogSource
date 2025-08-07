@@ -3,7 +3,7 @@ title: "달빛의 소원 - 경영 일화 - 03"
 slug: by-moons-grace-characters-03
 date: 2024-10-29T17:59:42+09:00
 series:
-  - "달빛의 소원"
+  - "달빛의 소원: 명조 이벤트 임무"
 categories:
   - 명조
 tags:

@@ -18,10 +18,10 @@ images:
 
 <div align="center"><div style="display: flex; justify-content: space-between;">
 <div style="width: 49.5%">
-{{< youtube id="Ywc_6wpB0ho" width="100%" >}}
+{{< youtube id="Ywc_6wpB0ho" w=100% >}}
 </div>
 <div style="width: 49.5%">
-{{< youtube id="KJXBHDSnd-M" width="100%" >}}
+{{< youtube id="KJXBHDSnd-M" w=100% >}}
 </div>
 </div></div>
 

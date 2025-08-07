@@ -16,7 +16,7 @@ images:
 
 그리고 아니나 다를까, 누군가가 NPC 위치를 이미 다 정리해서 이미지로 만들기까지 했더라.
 
-{{< gallery/image width="500px" src="001" >}}
+{{< gallery/image w=500px src="001" >}}
 
 ***
 

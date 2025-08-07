@@ -19,7 +19,7 @@ images:
 
 ![](002.webp)
 
-{{< gallery/image src="003|004" width="720px" >}}
+{{< gallery/image src="003|004" w=720px >}}
 
 검은 해안에 자라 있는 이 산호, 어째 여파의 산호나 잔진의 산호처럼 생겼다. 여파의 산호나 잔진의 산호처럼 투박하게 모가 난 것은 아니지만, 색 조합이라 해야 할까, 그런 부분에서 닮았다고 생각한다.
 
@@ -88,7 +88,7 @@ images:
 
 잠깐. 그러고 보니, 이 로봇들 생긴 모습이 쿠로 게임즈 로고랑 비슷하게 생겼는데.
 
-{{< gallery/image src="kurogames" width="400px" caption="맞네" >}}
+{{< gallery/image src="kurogames" w=400px c="맞네" >}}
 
 &nbsp;
 
@@ -166,9 +166,9 @@ images:
 
 어우, 머리야.
 
-{{< gallery/image src="094" width="350px" >}}
+{{< gallery/image src="094" w=350px >}}
 
-{{< gallery/image src="095" width="50%" >}}
+{{< gallery/image src="095" w=50% >}}
 
 쿠 머니가 엄선한 음악을 들을 수 있는 음악 플레이어를 얻었다. 17초짜리 음악이 하나 들어있긴 한데... 대체 이걸 어디다 쓰는 거지?
 

@@ -169,7 +169,7 @@ images:
 
 {{< /collapse >}}
 
-{{< gallery/image src="086" width="350px" >}}
+{{< gallery/image src="086" w=350px >}}
 
 > **망고스틴**
 > ***
@@ -290,7 +290,7 @@ images:
 
 직접 해봤는데, 저스트 회피는 여전히 어렵더라고. 패링 역시 어렵긴 마찬가지지만.
 
-{{< gallery/image src="157" width="350px" >}}
+{{< gallery/image src="157" w=350px >}}
 
 > **「비명 이상 현상」의 영향을 받은 나뭇잎**
 > ***

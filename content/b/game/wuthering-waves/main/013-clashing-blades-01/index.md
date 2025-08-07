@@ -169,7 +169,7 @@ images:
 
 제1장 황룡 제4막 \[변정에서 울리는 칼날의 소리\] 오픈!
 
-{{< gallery/image src="066|067" width="720px" >}}
+{{< gallery/image src="066|067" w=720px >}}
 
 > **해제된 해시계**
 > ***

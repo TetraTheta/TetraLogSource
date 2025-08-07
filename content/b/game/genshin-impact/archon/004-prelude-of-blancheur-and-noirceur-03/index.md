@@ -138,7 +138,7 @@ images:
 
 주변을 잠시 둘러보던 여자는 선원의 뒷주머니에 손을 슬쩍 가져다 대더니, 다시 주변을 살피곤 어디론가 유유히 사라진다.
 
-{{< gallery/image src="dogshit" width="400px" >}}
+{{< gallery/image src="dogshit" w=400px >}}
 
 {{< gallery/image src="044|045|046" >}}
 

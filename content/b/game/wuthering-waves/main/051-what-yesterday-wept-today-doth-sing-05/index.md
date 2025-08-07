@@ -14,13 +14,13 @@ images:
 toc: false
 ---
 
-{{< gallery/image src="001" width="50%" >}}
+{{< gallery/image src="001" w=50% >}}
 
 {{< gallery/image src="002|003|004" >}}
 
 {{< gallery/image src="005|006|007" >}}
 
-{{< gallery/image src="008" width="50%" >}}
+{{< gallery/image src="008" w=50% >}}
 
 젠니를 비롯한 몬텔리 가문 사람들은 서쪽 광장에서 대기 중이고, 동쪽 광장은 페비가 맡고 있다.
 리허설 때처럼, 로코코가 장면 분위기 연출과 조명을 맡고, 브렌트가 내레이션을 맡았다.
@@ -39,7 +39,7 @@ toc: false
 
 {{< gallery/image src="023|024|025" >}}
 
-{{< gallery/image src="026" width="50%" >}}
+{{< gallery/image src="026" w=50% >}}
 
 {{< gallery/image src="027|028|029" >}}
 
@@ -170,14 +170,14 @@ toc: false
 
 플로로는 순순히 잡히지 않겠다는 듯이, 제멋대로 이야기의 결말에 손을 댄 다음, 방랑자 일행을 환상 속에 빠트리고 그 틈을 타 무대 뒤 공간 속으로 사라졌다.
 
-{{< gallery/image src="107" width="50%" >}}
+{{< gallery/image src="107" w=50% >}}
 
 {{< gallery/image src="108|109|110" >}}
 
 
 # 공연자의 대관식
 
-{{< gallery/image src="111" width="50%" >}}
+{{< gallery/image src="111" w=50% >}}
 
 > **마지막 무대 · 붉은 종막**
 > ***
@@ -185,7 +185,7 @@ toc: false
 > 뒤숭숭한 광란 속에서, 그녀는 당신에게 함께 춤을 추자는 초대를 보내 당신과 이야기를 주고받으며 막후의 진실을 밝혀주려 한다.
 {.bq}
 
-{{< gallery/image src="112" width="50%" >}}
+{{< gallery/image src="112" w=50% >}}
 
 {{< gallery/image src="113|114|115" >}}
 
@@ -203,7 +203,7 @@ toc: false
 
 {{< gallery/image src="126|127" >}}
 
-{{< gallery/image src="128" width="50%" >}}
+{{< gallery/image src="128" w=50% >}}
 
 > 어두운 밤은 사람을 눈멀게 하고, 즐거운 잔치는 사람을 도취시키나니. 신하여, 오직 너만이 아직 깨어있구나.
 > 밀주는 인간을 취하게 하고 그들의 욕망을 지우지만... 네 용기는 고개를 들어 마음의 불을 지폈구나.
@@ -270,7 +270,7 @@ toc: false
 
 방랑자가 로코코의 로켓과 함께 솟아오르는 장면에서 나도 모르게 이 장면을 떠올리고 말았다.
 
-{{< gallery/video src="https://i.imgur.com/kjCTUOn.mp4" width="480px" >}}
+{{< gallery/video src="https://i.imgur.com/kjCTUOn.mp4" w=480px >}}
 
 음... 메탈 슬러그, 역시 최고의 게임이야...
 
@@ -305,7 +305,7 @@ toc: false
 
 {{< gallery/image src="198|199|200" >}}
 
-{{< gallery/image src="201" width="50%" >}}
+{{< gallery/image src="201" w=50% >}}
 
 회유의 고래 역시 카니발 우승을 축하한다는 듯 라군나성에 아름다운 무지개를 장식해 준다.
 

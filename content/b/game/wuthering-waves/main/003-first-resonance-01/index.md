@@ -119,7 +119,7 @@ images:
 
 변정으로 가던 중 발견한 소형 비콘을 찍기 위해 이동하던 중, 문워크를 하는 고양이를 발견했다.
 
-{{< youtube id="tk0HFvTE33k" width="50%" >}}
+{{< youtube id="tk0HFvTE33k" w=50% >}}
 
 아니, 이 녀석이 정말로 문워크를 하고 있었다니까?
 
@@ -433,9 +433,9 @@ images:
 
 {{< /collapse >}}
 
-{{< gallery/image src="175|176" width="720px" >}}
+{{< gallery/image src="175|176" w=720px >}}
 
-{{< gallery/image src="177|178" width="720px" >}}
+{{< gallery/image src="177|178" w=720px >}}
 
 > **검은 열매**
 > ***

@@ -16,7 +16,7 @@ images:
 
 현재, 명조의 스토리와 번역은 빈말로도 좋다 할 수 없다.
 
-{{< gallery/image src="map_01|map_02" caption="노선도? 루트 맵?" >}}
+{{< gallery/image src="map_01|map_02" c="노선도? 루트 맵?" >}}
 
 똑같은 임무 아이템을 한쪽은 '노선도', 다른 한쪽은 '루트 맵'이라고 부르는 등, 곳곳에서 오역이 발견되고 있다.
 
@@ -34,13 +34,13 @@ images:
 
 [^^정보 출처^^](https://arca.live/b/wutheringwaves/107812560)
 
-{{< gallery/image src="logi_01|logi_02" caption="붕붕물류? 무무물류?" >}}
+{{< gallery/image src="logi_01|logi_02" c="붕붕물류? 무무물류?" >}}
 
 얼핏 보기에 '붕붕물류'와 '무무물류'는 별개의 회사로 보이지만, 사실 이 둘은 동일한 회사이다.
 
 중국어 원문은 '呜呜物流'이라 되어 있는데, 발음이 \[wūwūwùIiú\]이다.
 
-{{< gallery/image src="logi_meaning" caption="呜呜의 뜻" >}}
+{{< gallery/image src="logi_meaning" c="呜呜의 뜻" >}}
 
 처음 呜呜物流을 번역할 때, 4번 뜻인 '붕붕'을 따와 '붕붕물류'로 번역했지만, 呜呜物流는 발음을 이용한 말장난이기 때문에 이후 '무무물류'로 번역을 바꾸었다. 하지만 아이템 플레이버 텍스트는 미처 번역을 바꾸지 않은 모양이다.
 
@@ -48,7 +48,7 @@ images:
 
 ## 「용의 별자리」{id="horn"}
 
-{{< gallery/image src="jinhsi_lounge" caption="[네이버 라운지 - 금희 캐릭터 DB](https://game.naver.com/lounge/WutheringWaves/db/yangyang/CH_AD_8910_31)" >}}
+{{< gallery/image src="jinhsi_lounge" c="[네이버 라운지 - 금희 캐릭터 DB](https://game.naver.com/lounge/WutheringWaves/db/yangyang/CH_AD_8910_31)" >}}
 
 현재 한국어 번역에서는 금주의 수호신을 단순히 「용의 별자리」라고 번역했지만, 중국어 원문은 「角」이다. 네이버 라운지에 있는 금희 캐릭터 DB 역시 '수호신 「각」'이라고 부르고 있다. 제대로 된 번역이라면 '「용의 뿔」' 정도로 번역했을 것이다.
 
@@ -70,7 +70,7 @@ images:
 
 [^^정보 출처^^](https://arca.live/b/wutheringwaves/107645970)
 
-{{< gallery/image src="skill" caption="공감 스킬?" >}}
+{{< gallery/image src="skill" c="공감 스킬?" >}}
 
 '공명 스킬'의 초기 번역은 '공감 스킬'이었나 보다. 이것 역시 중간에 바뀐 번역을 통일하지 못한 결과로 추측된다.
 
@@ -80,7 +80,7 @@ images:
 
 [^^정보 출처^^](https://arca.live/b/wutheringwaves/107767440)
 
-{{< gallery/image src="makta" caption="막...타?" >}}
+{{< gallery/image src="makta" c="막...타?" >}}
 
 '막타'는 게임 용어라, 일상 대화에 쓰기 적합하지 않은 용어이다.
 
@@ -94,7 +94,7 @@ images:
 
 한 커뮤니티 유저가 '왜 명조 스토리가 이렇게 되었나'에 대해 추측한 글을 내 방식대로 옮겨 적어보았다.
 
-{{< gallery/image src="hints_01" caption="이거 다 의미 없다" >}}
+{{< gallery/image src="hints_01" c="이거 다 의미 없다" >}}
 
 방랑자와 만나기 전, 금주의 상황은 다음과 같다.
 
@@ -114,7 +114,7 @@ images:
 
 방랑자가 잔성회 간부, 스카와 소원 연못 마을에서 처음 만나 싸우는 모습을 산화가 멀리서 지켜보고 있었으며, 이를 통해 산화는 잔성회가 자신들보다 한발 늦게 방랑자와 접촉했음을 알게 되었다.
 
-{{< gallery/image src="hints_02" caption="괜히 두 번이나 강조했던 게 아니었다" >}}
+{{< gallery/image src="hints_02" c="괜히 두 번이나 강조했던 게 아니었다" >}}
 
 바둑 이야기는 괜히 나왔던 것이 아니었다. 만약 방랑자가 잔성회에 포섭되었다는 가정을 하고, 그 시기에 따라 금희가 어떻게 대응해야 할지를 정리해 보자.
 
@@ -139,7 +139,7 @@ images:
 
 [^^정보 출처^^](https://arca.live/b/wutheringwaves/107692304)
 
-{{< gallery/image src="stygian_lacrimosa" caption="나쁜 번역은 아닌데..." >}}
+{{< gallery/image src="stygian_lacrimosa" c="나쁜 번역은 아닌데..." >}}
 
 영어 번역인 'Stygian Lacrimosa'와 비교하면 아쉬움이 드는 번역이다.
 
@@ -151,7 +151,7 @@ Stygian은 그리스 신화의 '스틱스 강'에서 온 단어로, 부정적인
 
 ## 까부는 원숭이{id="hoochief"}
 
-{{< gallery/image src="monkey" caption="시끄러운 | 까부는" >}}
+{{< gallery/image src="monkey" c="시끄러운 | 까부는" >}}
 
 '까부는 원숭이'가 '시끄러운 원숭이'로 번역이 바뀌었는데, 나머지 부분은 여전히 '까부는 원숭이'이다.
 
@@ -159,7 +159,7 @@ Stygian은 그리스 신화의 '스틱스 강'에서 온 단어로, 부정적인
 
 [^^정보 출처^^](https://arca.live/b/wutheringwaves/107752789)
 
-{{< gallery/image src="coral" caption="보라색? 테티스?" >}}
+{{< gallery/image src="coral" c="보라색? 테티스?" >}}
 
 '테티스 산호'를 먹었는데 '보라색 산호'를 먹었다고 메시지가 뜬다.
 
@@ -167,7 +167,7 @@ Stygian은 그리스 신화의 '스틱스 강'에서 온 단어로, 부정적인
 
 [^^정보 출처^^](https://arca.live/b/wutheringwaves/107807445)
 
-{{< gallery/image src="heron" caption="음험한 | 음흉한 | 흉폭한" >}}
+{{< gallery/image src="heron" c="음험한 | 음흉한 | 흉폭한" >}}
 
 서로 다른 세 번역이 동시에 나타났다...
 
@@ -218,7 +218,7 @@ Stygian은 그리스 신화의 '스틱스 강'에서 온 단어로, 부정적인
 
 [^^정보 출처^^](https://arca.live/b/wutheringwaves/107130762)
 
-{{< gallery/image src="lake" caption="앙코 뱃속에서 배를 탈 수 있어!" >}}
+{{< gallery/image src="lake" c="앙코 뱃속에서 배를 탈 수 있어!" >}}
 
 알토가 눈앞에 펼쳐진 광경을 보고 멋진 시를 지으려는 찰나, 앙코가 그걸 이용해 말장난을 하는 개그가 있다.
 

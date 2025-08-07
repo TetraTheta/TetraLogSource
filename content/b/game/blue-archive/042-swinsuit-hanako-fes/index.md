@@ -134,7 +134,7 @@ images:
 
 이거, 맞아? 맞냐고! 전부 통상 아니었어?
 
-{{< gallery/image src="no" caption="'통언뜬'은 환상이다!" >}}
+{{< gallery/image src="no" c="'통언뜬'은 환상이다!" >}}
 
 {{< gallery/image src="030|031|032" >}}
 

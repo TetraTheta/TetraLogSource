@@ -20,7 +20,7 @@ images:
 
 여태껏 나온 이벤트 중 상당수가 선행 조건으로 특정 마신 임무 완료를 달고 나왔으니, 곧 있을 4.0 버전 이벤트 역시 그럴 것이라는 추측 때문이었다.
 
-{{< gallery/image src="nahida" caption="미안해, 나히다" >}}
+{{< gallery/image src="nahida" c="미안해, 나히다" >}}
 
 ***
 
@@ -273,7 +273,7 @@ images:
 
 그리하여 내 머릿속 푸리나에 대한 이미지는 '물 피슬'이 되어버렸다. 느비예트의 이미지가 '푸리나 옆에서 침을 초당 1회 뱉는 물 오즈'가 된 것은 덤이다.
 
-{{< gallery/image src="gung-ye-fischl" caption="피슬 하면 솔직히 이것밖에 생각나지 않는다." >}}
+{{< gallery/image src="gung-ye-fischl" c="피슬 하면 솔직히 이것밖에 생각나지 않는다." >}}
 
 게다가 「마스코트」라고? 분명 저번 이벤트에서 이디이야가 마스코트에 대해 이렇게 이야기했는데.
 
@@ -424,7 +424,7 @@ images:
 
 ![](107.webp)
 
-{{< youtube id="NFumK_S3mW4" width="50%" >}}
+{{< youtube id="NFumK_S3mW4" w=50% >}}
 
 에헷떼난다요!
 

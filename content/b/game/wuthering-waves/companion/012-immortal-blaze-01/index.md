@@ -66,7 +66,7 @@ images:
 
 얽힌 별 임무 · 장리 \[이화로부터 벗어난 장생\] 오픈!
 
-{{< gallery/image src="037|038" width="720px" >}}
+{{< gallery/image src="037|038" w=720px >}}
 
 > **깃털 장식품**
 > ***

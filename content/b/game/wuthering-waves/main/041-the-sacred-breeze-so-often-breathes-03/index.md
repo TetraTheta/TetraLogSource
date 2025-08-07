@@ -127,7 +127,7 @@ images:
 
 {{< gallery/image src="054|055|056" >}}
 
-{{< gallery/image src="057" width="50%" >}}
+{{< gallery/image src="057" w=50% >}}
 
 > 그 사제가 「마음대로」 해도 좋다고 했으니까, 그 호의를 저버리지 않도록 찾아봐야겠죠.
 
@@ -150,7 +150,7 @@ images:
 
 {{< gallery/image src="069|070" >}}
 
-{{< gallery/image src="071" width="50%" >}}
+{{< gallery/image src="071" w=50% >}}
 
 길을 따라 도착한 곳은 고해소로 올라가는 엘리베이터였다.
 

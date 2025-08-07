@@ -91,13 +91,13 @@ images:
 
 분명 오늘 경매 때문에 아베라르도 금고에 몬텔리 가문 상층부가 전부 모일 예정이라 들었는데... 그만큼 일이 바쁘다는 건가?
 
-{{< gallery/image src="044" width="50%" >}}
+{{< gallery/image src="044" w=50% >}}
 
 {{< gallery/image src="045|046" >}}
 
 {{< gallery/image src="047|048" >}}
 
-{{< gallery/image src="049" width="50%" >}}
+{{< gallery/image src="049" w=50% >}}
 
 {{< gallery/image src="050|051|052" >}}
 
@@ -124,7 +124,7 @@ images:
 
 당연한 일이겠지만, 방랑자와 카를로타가 조율실로 향한 틈을 타 배신자들이 증거물을 없애는 걸 막기 위해 젠니를 보관실 경비로 세웠다.
 
-{{< gallery/image src="066" width="50%" >}}
+{{< gallery/image src="066" w=50% >}}
 
 {{< gallery/image src="067|068" >}}
 
@@ -135,7 +135,7 @@ images:
 
 {{< gallery/image src="072|073|074" >}}
 
-{{< gallery/image src="075" width="50%" >}}
+{{< gallery/image src="075" w=50% >}}
 
 방랑자를 필드에 내버려 두고 다른 캐릭터를 조작하는 건 이번이 처음이지 않나? 뭔가 생소하면서 새롭네...
 
@@ -180,7 +180,7 @@ images:
 
 {{< gallery/image src="101|102|103" >}}
 
-{{< gallery/image src="104" width="50%" >}}
+{{< gallery/image src="104" w=50% >}}
 
 카를로타가 기믹을 이용한 퍼즐 쪽이었다면, 방랑자는 단순한 전투다.
 별의별 에코가 다 나오더라고.
@@ -205,7 +205,7 @@ images:
 아마 어드벤처 게임의 하위분류 중 하나였던 것 같은데, 아무튼 그런 게임을 하는 느낌이었다.
 옛날에 플래시 게임으로 많이 했는데.
 
-{{< gallery/image src="126" width="50%" >}}
+{{< gallery/image src="126" w=50% >}}
 
 카를로타도 심심하지 말라고 전투를 넣어줬네.
 
@@ -253,7 +253,7 @@ images:
 
 {{< gallery/image src="166|167" >}}
 
-{{< gallery/image src="168" width="50%" >}}
+{{< gallery/image src="168" w=50% >}}
 
 배신자들이 미리 조율실 앞에 깔아 둔 에코 경비원은 별다른 문제가 되지 않았다.
 

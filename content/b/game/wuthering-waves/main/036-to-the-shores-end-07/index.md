@@ -90,7 +90,7 @@ images:
 
 저번에도 말했지만, 파수인의 사랑이 너무 무거워...! 방랑자가 파수인의 행동을 만류하자 "당신의 기쁨이 가장 중요해요"라며 납득하는 것조차 무겁게만 느껴진다.
 
-{{< gallery/image src="048" width="50%" >}}
+{{< gallery/image src="048" w=50% >}}
 
 찻집이라고 하기에 차나 커피, 케이크같이 음료와 디저트를 파는 가게라고 생각했는데, 여기는 마파두부 같은 식사도 같이 팔고 있다.
 음료와 디저트만으로는 가게 월세를 내기 빠듯한가 보다.
@@ -229,7 +229,7 @@ images:
 
 {{< collapse heading="요새 '모멘텀' 하면 이 영상만 계속 생각난단 말이지..." >}}
 
-{{< youtube id="YJWSAJjkTsI" width="50%" >}}
+{{< youtube id="YJWSAJjkTsI" w=50% >}}
 
 > Once you're at this point, move them slowly from side to side and eventually the **momentum** will end up with...
 
@@ -373,7 +373,7 @@ images:
 
 ![](215.webp)
 
-{{< gallery/image src="216" width="350px" >}}
+{{< gallery/image src="216" w=350px >}}
 
 > **「뭇별」**
 > ***

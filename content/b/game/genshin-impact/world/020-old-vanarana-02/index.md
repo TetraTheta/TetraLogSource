@@ -148,7 +148,7 @@ images:
 
 그런데 왜 난 여기서 이 이미지가 생각난 걸까?
 
-![](minji.webp?width=300)
+{{< gallery/image src="minji" w=300px >}}
 
 ![](040.webp)
 

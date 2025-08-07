@@ -65,7 +65,7 @@ images:
 
 아, 공식 설정상, 게임에서 로코코가 장착하는 권갑 무기는 사실 로코코가 착용하는 게 아니라 펠로가 착용하는 것이라고 한다.
 
-{{< gallery/image src="pero" width="40%" >}}
+{{< gallery/image src="pero" w=40% >}}
 
 그래서 로코코 무기 탭을 열어보면 이렇게 로코코가 아닌 펠로가 권갑을 끼고 있다.
 
@@ -83,7 +83,7 @@ images:
 
 그나저나 대체 방랑자는 무슨 페로몬을 뿌리고 다니길래, 온갖 생물들이 방랑자를 좋아하는 걸까?
 
-{{< gallery/image src="044" width="50%" >}}
+{{< gallery/image src="044" w=50% >}}
 
 {{< gallery/image src="045|046" >}}
 
@@ -120,7 +120,7 @@ images:
 
 {{< gallery/image src="065|066|067" >}}
 
-{{< gallery/image src="068" width="50%" >}}
+{{< gallery/image src="068" w=50% >}}
 
 {{< gallery/image src="069|070" >}}
 
@@ -143,7 +143,7 @@ images:
 
 {{< gallery/image src="074|075" >}}
 
-{{< gallery/image src="076" width="50%" >}}
+{{< gallery/image src="076" w=50% >}}
 
 저 고룡 녀석은 무슨 억하심정이 있길래 방랑자를 이리도 괴롭히는 걸까.
 
@@ -161,7 +161,7 @@ images:
 ... 이렇게 적고 나니까 금주에서도 비슷한 일이 있었던 것 같은데...
 금주에서 비슷한 일을 일으켰던 게 명식이었으니, 아마 이 바다 안개, 그리고 바다 안개의 원인이 된 흑조 역시 명식이 일으켰던 게 아닐까?
 
-{{< gallery/image src="081" width="50%" >}}
+{{< gallery/image src="081" w=50% >}}
 
 {{< gallery/image src="082|083|084" >}}
 
@@ -189,7 +189,7 @@ images:
 
 {{< gallery/image src="105|106" >}}
 
-{{< gallery/image src="107" width="50%" >}}
+{{< gallery/image src="107" w=50% >}}
 
 {{< gallery/image src="108|109|110" >}}
 
@@ -316,11 +316,11 @@ images:
 
 {{< gallery/image src="169|170|171" >}}
 
-{{< gallery/image src="172" width="50%" >}}
+{{< gallery/image src="172" w=50% >}}
 
 {{< gallery/image src="173|174|175" >}}
 
-{{< gallery/image src="176" width="50%" >}}
+{{< gallery/image src="176" w=50% >}}
 
 사람들을 구하기 위해 케루브를 타고 산꼭대기로 향한다.
 

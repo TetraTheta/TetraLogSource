@@ -15,7 +15,7 @@ images:
 
 ![](001.webp)
 
-{{< gallery/image src="002" width="50%" >}}
+{{< gallery/image src="002" w=50% >}}
 
 {{< gallery/image src="003|004" >}}
 
@@ -23,9 +23,9 @@ images:
 
 {{< gallery/image src="008|009" >}}
 
-{{< gallery/image src="010" width="350px" >}}
+{{< gallery/image src="010" w=350px >}}
 
-{{< gallery/image src="011" width="50%" >}}
+{{< gallery/image src="011" w=50% >}}
 
 기다리던 카니발 축제 당일이 되었다.
 거리 곳곳에는 축제 장식이 걸렸고, 광장에서 에코들이 공연을 펼치고 있다.
@@ -58,13 +58,13 @@ images:
 
 젠니 역시 카니발에 참여하고 싶은 마음은 굴뚝같았으나, 이번 카니발이 순조롭게 진행되도록 하는 게 당장의 최우선이란 걸 알고 있기에 애써 참고 있다고 한다.
 
-{{< gallery/image src="022" width="50%" >}}
+{{< gallery/image src="022" w=50% >}}
 
 {{< gallery/image src="023|024|025" >}}
 
 {{< gallery/image src="026|027" >}}
 
-{{< gallery/image src="028" width="50%" >}}
+{{< gallery/image src="028" w=50% >}}
 
 선행 공약의 「시모스 선생」이 다른 사람들의 사진을 찍는 와중에 자신과 친구들의 사진을 찍지 못하는 것에 서운해하고 있다.
 

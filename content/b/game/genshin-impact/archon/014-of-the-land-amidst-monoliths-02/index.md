@@ -36,7 +36,7 @@ images:
 
 향로가 빛나는 것이, 마치 '접수 완료'라고 말하는 것 같다.
 
-{{< gallery/image src="accepted" caption="그게 이거라서 문제지" >}}
+{{< gallery/image src="accepted" c="그게 이거라서 문제지" >}}
 
 ![](009.webp)
 

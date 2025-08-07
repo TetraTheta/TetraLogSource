@@ -64,7 +64,7 @@ images:
 
 포머가 '알겠나?'라고 하니 갑자기 떠오른 것.
 
-{{< gallery/image src="008" caption="ANG GET NA?" >}}
+{{< gallery/image src="008" c="ANG GET NA?" >}}
 
 데스티니를 너무 많이 플레이했다.
 

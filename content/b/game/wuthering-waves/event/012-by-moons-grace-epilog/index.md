@@ -3,7 +3,7 @@ title: "달빛의 소원 - 후일담"
 slug: by-moons-grace-epilog
 date: 2024-11-20T17:48:11+09:00
 series:
-  - "달빛의 소원"
+  - "달빛의 소원: 명조 이벤트 임무"
 categories:
   - 명조
 tags:

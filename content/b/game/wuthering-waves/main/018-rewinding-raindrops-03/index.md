@@ -349,7 +349,7 @@ images:
 
 데이터 비콘을 검사하던 알토가 뭔가 이상을 느끼더니 바깥으로 뛰쳐나갔다.
 
-{{< gallery/image src="185" width="350px" >}}
+{{< gallery/image src="185" w=350px >}}
 
 > 알림
 > ***

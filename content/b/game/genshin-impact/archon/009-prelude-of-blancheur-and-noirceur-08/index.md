@@ -505,7 +505,7 @@ images:
 
 와우, 여윽시 폰타인이야! '상식은 깨라고 있는 거야'라고 말하며 조리 기구를 휴대하고 다니네!
 
-{{< gallery/image src="202|203" caption="여행자의 배낭 상황" >}}
+{{< gallery/image src="202|203" c="여행자의 배낭 상황" >}}
 
 ... 뭐, 살다 보면 조리 기구를 들고 다닐 수도 있지! 다들 배낭에 조리 기구 하나씩은 다 있잖아?
 
@@ -728,7 +728,7 @@ images:
 
 악! 나가게 해 줘! LET ME OUT!
 
-{{< gallery/image src="letmeout" caption="LET ME OUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUT" >}}
+{{< gallery/image src="letmeout" c="LET ME OUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUT" >}}
 
 ![](274.webp)
 

@@ -34,7 +34,7 @@ images:
 
 클레가 하도 호수에 폭탄을 던져댄 탓에, 클레의 특제 요리조차 폭탄 때문에 물고기가 도망한 것을 어부들에게 사과하기 위해 만든 요리가 되었다.
 
-{{< gallery/image src="Fish-Flavored Toast" caption="어향 토스트" >}}
+{{< gallery/image src="Fish-Flavored Toast" c="어향 토스트" >}}
 
 > 어향 토스트 (Fish-Flavored Toast)
 > ***

@@ -447,7 +447,7 @@ Google 로그인이나 Paypal처럼 리다이렉트를 이용하는 로그인 �
 
 Firefox로 인터넷을 돌아다닐 때 마주할 수 있는 가장 불편한 점이 바로 미지원 포맷이다.
 
-{{< gallery/image src="unsupported-media" caption="↑ 실제 오류가 아닙니다" >}}
+{{< gallery/image src="unsupported-media" c="↑ 실제 오류가 아닙니다" >}}
 
 > "video/3gpp"의 HTTP "Content-Type"은 지원되지 않습니다.
 > 미디어 리소스 https\://example.com/video.mp4 로드에 실패했습니다.

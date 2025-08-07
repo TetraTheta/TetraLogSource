@@ -112,7 +112,7 @@ images:
 
 신의 눈동자를 모으기 위해 다흐리의 폐허에 왔다가 츄츄왕 둘이 서로 마주 보고 있는 장면을 발견했다.
 
-{{< gallery/image src="aggro" width="400px" caption="가슴이 웅장해지는 장면" >}}
+{{< gallery/image src="aggro" w=400px c="가슴이 웅장해지는 장면" >}}
 
 아무리 봐도 저 장면을 패러디한 것 같은데...
 

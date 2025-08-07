@@ -104,7 +104,7 @@ images:
 
 그나마 이해가 가는 건 녹음 장치의 이름이다. 하지만 재생 장치의 이름은 대체 왜 저렇게 중구난방인 건지 아직도 잘 모르겠다.
 
-{{< gallery/image src="vm-banana" width="500px" caption="보이스미터 바나나의 설정 화면" >}}
+{{< gallery/image src="vm-banana" w=500px c="보이스미터 바나나의 설정 화면" >}}
 
 다른 사람들은 보이스미터의 설정 화면이 꽤 직관적으로 구성되어 있다고 말하는데, 이런 쪽에 완전히 문외한인 내 눈에는 그냥 어렵다.
 
@@ -135,13 +135,13 @@ images:
 아래에서 위로 갈수록 설정할 수 있는 가상 입출력 장치의 개수가 늘어난다.
 상위 에디션에 하위 에디션이 포함되어 있는 구조이기 때문에, 극한의 미니멀리즘을 추구하거나 스튜디오 수준의 복잡한 설정을 하려는 게 아니라면 적당한 수준의 에디션인 Banana를 설치하는 편이다.
 
-{{< gallery/image src="vm-default|vm-banana" caption="Standard와 Banana의 설정 화면 비교" >}}
+{{< gallery/image src="vm-default|vm-banana" c="Standard와 Banana의 설정 화면 비교" >}}
 
 내가 원하는 설정을 Standard만으로 구현할 수 있을까 잠깐 살펴봤는데, 불가능할 것 같더라고...
 
 ## VoiceMeeter 설정{id="configure-voicemeeter"}
 
-{{< gallery/image src="vm-banana" width="750px" >}}
+{{< gallery/image src="vm-banana" w=750px >}}
 
 일단 우측 상단의 HARDWARE OUT의 A1과 A2를 각각 스피커와 무선 헤드셋으로 설정했다.
 가장 많이 쓰는 오디오 출력 장치가 스피커이기 때문에 스피커를 우선으로 둔 것이다.
@@ -254,11 +254,11 @@ Gain은 +7.0dB, Gate는 1.2로 설정했다.
 다만 이 방법은 <kbd>Alt</kbd>+<kbd>Tab</kbd> 목록에 전체화면 프로젝터 창이 하나 추가된다는 단점이 있다.
 게임 화면과 거의 동일한 모습이기 때문에, 자칫하다간 게임 창으로 전환한다는 것이 프로젝터 창으로 전환하는 사고가 생길 수 있다.
 
-{{< gallery/image src="obs-main" width="750px" >}}
+{{< gallery/image src="obs-main" w=750px >}}
 
 <h3 id="obs-game-capture">게임 캡쳐</h3>
 
-{{< gallery/image src="obs-capture-game" width="600px" >}}
+{{< gallery/image src="obs-capture-game" w=600px >}}
 
 다음과 같이 설정한다.
 
@@ -278,7 +278,7 @@ Voicemeeter Out B2로 설정한다.
 
 \[오디오 믹서\] 하단의 설정 버튼을 누르면 오디오 고급 설정 창을 열 수 있다.
 
-{{< gallery/image src="obs-advaudio" width="900px" >}}
+{{< gallery/image src="obs-advaudio" w=900px >}}
 
 오디오 입력 캡쳐의 '오디오 모니터링'을 '모니터링과 출력'으로 변경한다.
 
@@ -287,7 +287,7 @@ Voicemeeter Out B2로 설정한다.
 
 <h3 id="obs-audio-setting">오디오 설정</h3>
 
-{{< gallery/image src="obs-setting" width="750px" >}}
+{{< gallery/image src="obs-setting" w=750px >}}
 
 \[설정-오디오\]에서 모니터링 장치를 Voicemeeter In 5로 설정한다.
 바로 이것 때문에 Voicemeeter In 5를 더미로 살려둔 것이다.
@@ -301,7 +301,7 @@ Voicemeeter Out B2로 설정한다.
 * 녹음 장치: 기본 (Voicemeeter Out B2)
 * 출력 장치: 기본 (Voicemeeter Input)
 
-{{< gallery/image src="obs-main-preview" width="750px" >}}
+{{< gallery/image src="obs-main-preview" w=750px >}}
 
 OBS 메인 창의 미리 보기를 우클릭하면 '전체화면 프로젝터 (미리보기)'가 있고, 그 옆에 현재 사용 중인 모니터가 나온다.
 이를 클릭하면 방송 미리 보기가 전체화면으로 나오는데, 디스코드에서 이 창을 잡아 방송하면 된다.
@@ -315,14 +315,14 @@ OBS 메인 창의 미리 보기를 우클릭하면 '전체화면 프로젝터 (�
 
 <h3 id="voicemeeter-hook">Hook 사용</h3>
 
-{{< gallery/image src="vm-windows-hook" width="500px" >}}
+{{< gallery/image src="vm-windows-hook" w=500px >}}
 
 보이스미터 설정 창의 Menu를 누르면 나오는 메뉴의 Shortcut Key (Hook)에서 다음 항목 중 하나를 체크한다.
 
 * Hook Volume Keys (For Level Output A1)
 * Hook Volume Keys (For Level Input #1)
 
-{{< gallery/image src="vm-windows-hook-panel" width="500px" caption="붉은색: Level Input #1<br>초록색: Level Output A1" >}}
+{{< gallery/image src="vm-windows-hook-panel" w=500px c="붉은색: Level Input #1<br>초록색: Level Output A1" >}}
 
 다만 이 방법은 키 입력 자체에 훅을 거는 방식이라, Windows가 제공하는 볼륨 슬라이더가 나타나지 않는다.
 
@@ -335,7 +335,7 @@ OBS 메인 창의 미리 보기를 우클릭하면 '전체화면 프로젝터 (�
 C:\Program Files (x86)\VB\Voicemeeter\VBVoicemeeterVAIO_ControlPanel.exe
 ```
 
-{{< gallery/image src="vm-windows-cp" width="500px" >}}
+{{< gallery/image src="vm-windows-cp" w=500px >}}
 
 상단 메뉴의 Options를 누르면 나오는 'Enable Windows Volume Control'을 체크한다.
 

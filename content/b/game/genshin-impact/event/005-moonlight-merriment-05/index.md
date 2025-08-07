@@ -102,7 +102,7 @@ images:
 
 나만 이 장면을 보고 아래 영상을 생각한 것은 아닐 것이다.
 
-{{< gallery/image src="032.webp" caption="美味!" >}}
+{{< gallery/image src="032.webp" c="美味!" >}}
 
 {{< gallery/image src="033|034" >}}
 

@@ -62,7 +62,7 @@ images:
 
 지갑을 탈탈 털어 월세를 어떻게든 만들어 내는 모나.
 
-{{< gallery/image src="012" caption="'가벼운' 돈주머니." >}}
+{{< gallery/image src="012" c="'가벼운' 돈주머니." >}}
 
 &nbsp;
 

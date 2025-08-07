@@ -174,7 +174,7 @@ images:
 
 {{< gallery/image src="103|104|105" >}}
 
-{{< gallery/image src="106" width="50%" >}}
+{{< gallery/image src="106" w=50% >}}
 
 아, 저 꽃 이름이 피안화였구나.
 
@@ -207,7 +207,7 @@ images:
 
 개인 단말기와 개인 에코가 좋은 사업 아이템이 될 거라 생각한 몬텔리 가문은 이번에 재개최 되는 카니발을 통해 개인 단말기를 홍보하려 한다.
 
-{{< gallery/image src="121" width="50%" >}}
+{{< gallery/image src="121" w=50% >}}
 
 {{< gallery/image src="122|123|124" >}}
 

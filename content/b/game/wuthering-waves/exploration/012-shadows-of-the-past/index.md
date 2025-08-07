@@ -4,6 +4,7 @@ slug: shadows-of-the-past
 date: 2024-07-06T22:38:39+09:00
 series:
   - "옛날의 그림자: 호환 산맥 제2막"
+  - "명조 위험한 임무: 금주"
 categories:
   - 명조
 tags:

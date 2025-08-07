@@ -64,7 +64,7 @@ images:
 
 돌이켜 생각해 보면, 스타레일을 시작한 것이 바로 이 영상 때문이었다.
 
-{{< youtube id="6yI7nTRbSNI" width="500px" >}}
+{{< youtube id="6yI7nTRbSNI" w=500px >}}
 
 > 아빠 없어. 엄마도 없어.
 

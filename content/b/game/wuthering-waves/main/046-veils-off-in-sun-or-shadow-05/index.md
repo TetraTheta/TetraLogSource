@@ -64,7 +64,7 @@ images:
 어떤 종교의 교리와 경전이 결정되는 건 종교 성립 후 얼마 지나지 않은 극초창기이다. 당장 기독교에서 '성경'이라 일컫는 정경 목록은 419년 카르타고 공의회에서 결정된 것이니까 말이다.
 그러니 성전 대신 스테인드글라스에 전설을 기록한 탑이 세워진 것도 수도회가 생기고 얼마 되지 않은 때였을 거다. 그러니 거기 남아있는 자료 역시 이후의 개입 없는 날것일 확률이 크겠지.
 
-{{< gallery/image src="035" width="50%" >}}
+{{< gallery/image src="035" w=50% >}}
 
 {{< gallery/image src="036|037" >}}
 
@@ -80,14 +80,14 @@ images:
 아무튼, 임무를 성공적으로 완수한 젠니는 후한 보상과 더불어 포상 휴가를 받게 되었다.
 젠니의 다크 서클이 이제 곧 사라지는 건가?
 
-{{< gallery/image src="043" width="50%" >}}
+{{< gallery/image src="043" w=50% >}}
 
 {{< gallery/image src="044|045" >}}
 
 그 순간, 금고 전체에 경계 태세 경보가 울렸다.
 어째 일이 잘 풀린다 싶더니만...
 
-{{< gallery/image src="046" width="50%" >}}
+{{< gallery/image src="046" w=50% >}}
 
 {{< gallery/image src="047|048|049" >}}
 
@@ -105,7 +105,7 @@ images:
 
 {{< gallery/image src="060|061" >}}
 
-{{< gallery/image src="062" width="50%" >}}
+{{< gallery/image src="062" w=50% >}}
 
 {{< gallery/image src="063|064" >}}
 
@@ -119,7 +119,7 @@ images:
 
 현장의 뒷수습은 포상 휴가를 받자마자 잘린(...) 젠니에게 맡기고, 방랑자와 카를로타는 스테인드글라스 탑으로 향했다.
 
-{{< gallery/image src="074" width="50%" >}}
+{{< gallery/image src="074" w=50% >}}
 
 {{< gallery/image src="075|076|077" >}}
 
@@ -334,7 +334,7 @@ images:
 
 「무덤」이 어디를 말하는 건지는 잘 모르겠지만, 아까 카를로타가 말한 대로 북쪽의 섬으로 향하기로 했다.
 
-{{< gallery/image src="238" width="350px" >}}
+{{< gallery/image src="238" w=350px >}}
 
 > **카를로타의 「보석」**
 > ***

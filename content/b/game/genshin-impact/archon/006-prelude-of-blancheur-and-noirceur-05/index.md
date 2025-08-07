@@ -87,7 +87,7 @@ images:
 
 저 안내 대사를 듣자마자 자연스럽게 하프라이프 트램 안내 대사가 떠올랐다.
 
-{{< youtube id="60eS6Ng7Vzg" start="187" end="199" width="500px" >}}
+{{< youtube id="60eS6Ng7Vzg" start=187 end=199 w=500px >}}
 
 > Please keep your limbs inside the train at all times. Do not attempt to open the door until the train has come to a complete halt at the station platform.
 > 열차 밖으로 손이나 발을 내밀지 마시고, 열차가 완전히 멈추기 전에는 문을 열지 마시기 바랍니다.
@@ -115,7 +115,7 @@ images:
 
 저렇게 공중에 물이 떠있는 걸 보니, Atomic Heart 트레일러의 한 장면이 떠오른다.
 
-{{< youtube id="_tEgeZrOOHM" width="500px" >}}
+{{< youtube id="_tEgeZrOOHM" w=500px >}}
 
 정확한 이유는 모르지만, Atomic Heart에는 물이 공중을 떠다니는 묘사가 자주 보인다. 폰타인 과학원을 볼 때마다 그 묘사가 떠오른다.
 

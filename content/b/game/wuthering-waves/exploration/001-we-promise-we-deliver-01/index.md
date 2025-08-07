@@ -4,6 +4,7 @@ slug: we-promise-we-deliver-01
 date: 2024-06-18T19:46:41+09:00
 series:
   - "반드시 임무완수!: 귀허항시 제1막"
+  - "명조 위험한 임무: 금주"
 categories:
   - 명조
 tags:

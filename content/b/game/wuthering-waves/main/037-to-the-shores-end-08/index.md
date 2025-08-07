@@ -114,7 +114,7 @@ images:
 
 정말 통쾌하더라고!
 
-{{< youtube id="2YObKo1tlkw" start="2251" end="2284" >}}
+{{< youtube id="2YObKo1tlkw" start=2251 end=2284 >}}
 
 솔직히, 이 부분이 이번 조수 임무에서 제일 마음에 들었다. 어, 그러니까 액션 부분에서.
 

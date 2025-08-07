@@ -263,7 +263,7 @@ images:
 
 이미 직접 가서 해제한 지 오래다.
 
-{{< gallery/image src="142" width="350px" >}}
+{{< gallery/image src="142" w=350px >}}
 
 > **기이한 모양의 검은 꽃**
 > ***

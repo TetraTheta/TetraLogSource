@@ -62,6 +62,6 @@ images:
 
 빵ㅋㅋㅋㅋㅋㅋ
 
-{{< gallery/image src="new_pickup" width="700px" >}}
+{{< gallery/image src="new_pickup" w=700px >}}
 
 이제 조금 있으면 수영복 하나코 페스가 시작된다.

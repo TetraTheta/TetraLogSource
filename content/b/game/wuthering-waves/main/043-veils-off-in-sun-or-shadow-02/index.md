@@ -13,7 +13,7 @@ images:
   - 069.webp
 ---
 
-{{< gallery/image src="001" width="50%" >}}
+{{< gallery/image src="001" w=50% >}}
 
 {{< gallery/image src="002|003|004" >}}
 
@@ -54,7 +54,7 @@ images:
 
 물론 내가 너무 지나치게 생각하고 있는 걸 수도 있지만...
 
-{{< gallery/image src="020" width="50%" >}}
+{{< gallery/image src="020" w=50% >}}
 
 {{< gallery/image src="021|022" >}}
 
@@ -64,7 +64,7 @@ images:
 
 페비에게 최근 있었던 에코 실종 및 폭주 사건의 용의자가 피살리아 가문의 질베르토임을 알려주자, 평소 수호신을 아주 경건하게 여기던 피살리아 가문의 사람이 수호신이 하사한 에코를 모욕할 리 없다며 믿기 어려워한다.
 
-{{< gallery/image src="025" width="50%" >}}
+{{< gallery/image src="025" w=50% >}}
 
 {{< gallery/image src="026|027" >}}
 
@@ -95,13 +95,13 @@ images:
 
 '벱페'로 보이는 에코가 황급히 어디론가 도망가고 있다. 대체 저기에 무슨 일이 있었기에 저렇게 정신없이 도망치는 거지?
 
-{{< gallery/image src="037" width="50%" >}}
+{{< gallery/image src="037" w=50% >}}
 
 {{< gallery/image src="038|039|040" >}}
 
 {{< gallery/image src="041|042" >}}
 
-{{< gallery/image src="043" width="50%" >}}
+{{< gallery/image src="043" w=50% >}}
 
 {{< gallery/image src="044|045|046" >}}
 

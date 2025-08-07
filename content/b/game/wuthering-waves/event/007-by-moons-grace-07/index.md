@@ -3,7 +3,7 @@ title: "달빛의 소원 - 07"
 slug: by-moons-grace-07
 date: 2024-10-10T18:00:32+09:00
 series:
-  - "달빛의 소원"
+  - "달빛의 소원: 명조 이벤트 임무"
 categories:
   - 명조
 tags:

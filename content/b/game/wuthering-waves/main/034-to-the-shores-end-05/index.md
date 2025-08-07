@@ -87,7 +87,7 @@ images:
 
 {{< gallery/image src="051|052|053" >}}
 
-{{< gallery/image src="054" width="49.5%" >}}
+{{< gallery/image src="054" w=49.5% >}}
 
 {{< gallery/image src="055|056|057" >}}
 
@@ -356,7 +356,7 @@ images:
 파수인이 포포때문에 몸에 느껴지는 이상 증상이 없냐 물었지만, 잘 모르겠다.
 오히려 이상 증상은 포포가 더 많이 느끼는 것 같던데. 틈만 나면 배가 고프다고 하질 않나, 매번 나올 때마다 졸리다고 하질 않나...
 
-{{< gallery/image src="234" width="350px" >}}
+{{< gallery/image src="234" w=350px >}}
 
 > **스텔라 매트릭스 코어**
 > ***

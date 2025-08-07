@@ -4,6 +4,7 @@ slug: hidden-dangers-in-peaceful-life
 date: 2024-07-05T19:34:47+09:00
 series:
   - "평온한 일상 하의 위기: 호환 산맥 제1막"
+  - "명조 위험한 임무: 금주"
 categories:
   - 명조
 tags:

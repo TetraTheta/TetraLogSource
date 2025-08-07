@@ -99,7 +99,7 @@ images:
 
 '오늘 포럼에 오르면, 세상을 알게 될 거야'라는 말이 무슨 말인진 모르겠지만, 한 스레드에서 누군가가 임상 실험 중인 제품을 사적으로 판매하려다 밴해머에 얻어맞은 건 잘 알겠다.
 
-{{< gallery/image src="gaban" width="400px" caption="GABAN!" >}}
+{{< gallery/image src="gaban" w=400px c="GABAN!" >}}
 
 {{< gallery/image src="056|057" >}}
 
@@ -201,7 +201,7 @@ images:
 
 저 달에는 대기가 있는 것처럼 보이는데, LOCAL58의 Skywatching 영상이 떠오른다.
 
-{{< youtube id="2BD-ba-aXQo" width="50%" >}}
+{{< youtube id="2BD-ba-aXQo" w=50% >}}
 
 여기서 나온 '달'도 대기를 갖고 있거든...
 

@@ -20,7 +20,7 @@ images:
 
 ***
 
-{{< gallery/image src="003" width="50%" >}}
+{{< gallery/image src="003" w=50% >}}
 
 아니, 입구 컷은 너무한 거 아냐?
 

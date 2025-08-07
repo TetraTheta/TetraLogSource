@@ -4,6 +4,7 @@ slug: stygian-lacrimosa-01
 date: 2024-07-03T19:06:19+09:00
 series:
   - "저편의 통곡: 울음새 늪 제1막"
+  - "명조 위험한 임무: 금주"
 categories:
   - 명조
 tags:
@@ -181,7 +182,7 @@ images:
 
 초음파 펄스 칩의 진동을 통해 진흙을 제거할 수 있다고 하는데, 그냥 물로 씻어내면 안 되는 걸까? 진흙이 그렇게 끈적거리나?
 
-{{< gallery/image src="094" width="350px" >}}
+{{< gallery/image src="094" w=350px >}}
 
 > **초음파 펄스 칩**
 > ***

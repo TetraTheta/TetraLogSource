@@ -50,10 +50,10 @@ Prey는 공식 한국어 지원을 하지 않는다. 그걸 다이렉트게임�
 
 <div align="center"><div style="display: flex; justify-content: space-between;">
 <div style="width: 49%">
-{{< youtube id="LNHZ9WAertc" width="100%" >}}
+{{< youtube id="LNHZ9WAertc" w=100% >}}
 </div>
 <div style="width: 49%">
-{{< youtube id="yZf6khoZQsc" width="100%" >}}
+{{< youtube id="yZf6khoZQsc" w=100% >}}
 </div>
 </div></div>
 

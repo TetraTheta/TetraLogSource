@@ -174,7 +174,7 @@ images:
 
 ...
 
-{{< youtube id="mbmEhoG99P8" width="50%" >}}
+{{< youtube id="mbmEhoG99P8" w=50% >}}
 
 다행스럽게도 사이러스와는 이미 대화를 한 상태라, 그대로 진행이 가능했다.
 

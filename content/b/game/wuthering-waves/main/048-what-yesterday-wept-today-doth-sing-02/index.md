@@ -13,7 +13,7 @@ images:
   - 128.webp
 ---
 
-{{< gallery/image src="001" width="50%" >}}
+{{< gallery/image src="001" w=50% >}}
 
 {{< gallery/image src="002|003|004" >}}
 
@@ -87,13 +87,13 @@ images:
 또 수도회 너야?
 금주에서 흉참한 일이 생길 때마다 잔성회를 지목하면 대부분 들어맞았듯이, 리나시타에서는 흉참한 일이 생길 때마다 수도회를 지목하면 대강 들어맞는 느낌이다.
 
-{{< gallery/image src="044" width="50%" >}}
+{{< gallery/image src="044" w=50% >}}
 
 {{< gallery/image src="045|046|047" >}}
 
 {{< gallery/image src="048|049|050" >}}
 
-{{< gallery/image src="051" width="50%" >}}
+{{< gallery/image src="051" w=50% >}}
 
 {{< gallery/image src="052|053" >}}
 
@@ -137,7 +137,7 @@ images:
 
 「전설의 선장 스패로우」... 아무리 봐도 이거, '캐리비안의 해적'에 나오는 '잭 스패로우'를 말하는 것 같은데.
 
-{{< youtube id="JZeNYaTmVP4" width="50%" >}}
+{{< youtube id="JZeNYaTmVP4" w=50% >}}
 
 캐릭터도, 테마곡도 정말 내 마음에 들었는데 말이다.
 
@@ -288,7 +288,7 @@ images:
 
 구름 제조기를 통해 구름 쿠션을 만들어 바도리오가 안전하게 내려올 수 있도록 해야 한다.
 
-{{< gallery/image src="139" width="50%" >}}
+{{< gallery/image src="139" w=50% >}}
 
 레비토라는 이름의 극단원이 노래를 부르고 있다.
 
@@ -360,7 +360,7 @@ images:
 
 구름 제조기의 공진 장치를 음정 및 리듬 교정에 썼다고...?
 
-{{< gallery/image src="168" width="50%" >}}
+{{< gallery/image src="168" w=50% >}}
 
 바티르라는 이름의 남자가 낚시를 하고 있다.
 
@@ -402,13 +402,13 @@ images:
 
 {{< gallery/image src="180|181" >}}
 
-{{< gallery/image src="182" width="50%" >}}
+{{< gallery/image src="182" w=50% >}}
 
 {{< gallery/image src="183|184" >}}
 
 대체 구름 제조기의 공진 장치는 뭐로 만들었기에 음정 및 리듬 교정에 쓸 수 있고, 사람들의 노래와 공명해 출력이 높아지는 거야?
 
-{{< gallery/image src="185" width="50%" >}}
+{{< gallery/image src="185" w=50% >}}
 
 {{< gallery/image src="186|187" >}}
 
@@ -500,7 +500,7 @@ images:
 
 {{< gallery/image src="242|243|244" >}}
 
-{{< gallery/image src="245" width="50%" >}}
+{{< gallery/image src="245" w=50% >}}
 
 {{< gallery/image src="246|247" >}}
 

@@ -96,7 +96,7 @@ images:
 
 이름을 보자마자 흠칫했던 '치세'.
 
-{{< gallery/image src="chise" caption="이 치세가 아니다" >}}
+{{< gallery/image src="chise" c="이 치세가 아니다" >}}
 
 치세는 뇌석을 모두 켜야만 성불시킬 수 있다.
 
@@ -134,7 +134,7 @@ images:
 
 한참 동안 뇌석만 찾다 보니 저절로 머릿속에 한 짤이 떠오르더라.
 
-{{< gallery/image src="kurae" width="50%" caption="쿠~ 라~ 에~" >}}
+{{< gallery/image src="kurae" w=50% c="쿠~ 라~ 에~" >}}
 
 치세가 날 엿먹이는 것이 분명했다.
 

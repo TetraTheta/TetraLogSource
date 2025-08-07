@@ -3,7 +3,7 @@ title: "달빛의 소원 - 03"
 slug: by-moons-grace-03
 date: 2024-09-10T18:02:43+09:00
 series:
-  - "달빛의 소원"
+  - "달빛의 소원: 명조 이벤트 임무"
 categories:
   - 명조
 tags:
@@ -199,7 +199,7 @@ WHO는 '번아웃 증후군'을 실제 질병으로 분류하진 않았지만, �
 
 재범의 말을 몰래 듣고 있던 국진이 나타나, 재범을 한 대 후려갈긴다.
 
-{{< youtube id="3w6uyU3t_oQ" width="50%" loop="true" caption="그런 찐따, 수정해 주겠어!" >}}
+{{< youtube id="3w6uyU3t_oQ" w=50% loop="true" c="그런 찐따, 수정해 주겠어!" >}}
 
 그런데 아무리 봐도... 이거 같단 말이지.
 

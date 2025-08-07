@@ -36,7 +36,7 @@ images:
 
 뭔가 느낌이 좋아서, 이치카에 도전해 보기로 했다. 이 운이라면 분명 천장 전에 이치카가 나올 거야!
 
-{{< gallery/video src="stay" caption="안 돼! 그런 미친 짓은 하면 안 돼!" >}}
+{{< gallery/video src="stay" c="안 돼! 그런 미친 짓은 하면 안 돼!" >}}
 
 {{< gallery/image src="007|008" >}}
 

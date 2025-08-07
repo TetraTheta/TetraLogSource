@@ -45,7 +45,7 @@ images:
 
 마을에서 찾은 반쪽짜리 나무패의 나머지 반쪽을 찾았다.
 
-{{< gallery/image src="021" width="350px" >}}
+{{< gallery/image src="021" w=350px >}}
 
 > **완전한 나무패**
 > ***
@@ -90,7 +90,7 @@ images:
 
 마지막에 적힌, "보아하니, 너는 행운이 많은 것 같아"는 분명 스카가 적은 것일 테다.
 
-{{< gallery/image src="034" width="350px" >}}
+{{< gallery/image src="034" w=350px >}}
 
 > **일기**
 > ***

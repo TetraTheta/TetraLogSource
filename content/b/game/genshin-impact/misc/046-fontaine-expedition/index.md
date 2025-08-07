@@ -158,7 +158,7 @@ images:
 
 아마 저기에 들어가면 순식간에 '잘 익은 야자염소'가 되어버리겠지?
 
-{{< youtube id="67y_TO1pZiw" width="50%" >}}
+{{< youtube id="67y_TO1pZiw" w=50% >}}
 
 &nbsp;
 
@@ -716,7 +716,7 @@ PV에서 처음 이곳을 봤을 때 '에이, 그래도 정말 그렇게까지 �
 
 길 오른편에 새 두 마리가 폴짝폴짝 대고 있다.
 
-{{< gallery/image src="miyu" width="400px" >}}
+{{< gallery/image src="miyu" w=400px >}}
 
 마치 이 모습처럼 폴짝폴짝 뛰고 있더라고.
 

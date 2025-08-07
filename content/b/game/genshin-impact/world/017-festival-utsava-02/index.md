@@ -120,7 +120,7 @@ images:
 
 음... 이 화관... 분명 저번 PV에서 이 화관을 쓴 여행자가 어떤 검은 구체에게서 IMA FIRIN MAH LAZOR를 당했던 것 같은데...
 
-{{< youtube id="ouTXZFEEBiQ" width="50%" >}}
+{{< youtube id="ouTXZFEEBiQ" w=50% >}}
 
 아무튼. 그건 나중에 가서 보면 알겠지.
 

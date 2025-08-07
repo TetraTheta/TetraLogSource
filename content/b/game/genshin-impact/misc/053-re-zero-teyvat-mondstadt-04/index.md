@@ -41,13 +41,13 @@ images:
 
 왜 "아주 익숙한 느낌이야..."라는 대사가 "아아, 이 서늘하고도 묵직한 감각. 2년 만이구만."라고 들리는 걸까?
 
-{{< gallery/image src="010|011|012" caption="에헷떼난다요!">}}
+{{< gallery/image src="010|011|012" c="에헷떼난다요!">}}
 
 한국어 더빙도 나쁘지 않지만, 역시 일본어 더빙이 이 부분에 있어서는 최고지.
 
 위키를 뒤적이다 발견한 [에헷떼난다요 리믹스](https://youtu.be/bIPZcwDTa30?t=101)가 아주 죽여주더라.
 
-{{< youtube id="bIPZcwDTa30" start="101" end="236" >}}
+{{< youtube id="bIPZcwDTa30" start=101 end=236 >}}
 
 ![](013.webp)
 

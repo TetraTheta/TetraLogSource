@@ -34,7 +34,7 @@ images:
 
 아무튼 저 긴 숲의 책의 스토리라인을 모두 끝냈다는 게 제일 좋은 거 아닐까?
 
-{{< gallery/image src="quest" caption="https://youtu.be/ZbMCWQvXonA" >}}
+{{< gallery/image src="quest" c="https://youtu.be/ZbMCWQvXonA" >}}
 
 일단 이 짓거리가 완전히 끝났다는 것이 너무 행복하다.
 

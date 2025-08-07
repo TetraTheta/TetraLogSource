@@ -4,6 +4,7 @@ slug: mirrored-loongs-pearl
 date: 2024-11-28T17:10:05+09:00
 series:
   - "용을 비추는 구슬: 승소산 제1막"
+  - "명조 위험한 임무: 금주"
 categories:
   - 명조
 tags:
@@ -88,7 +89,7 @@ images:
 
 승소산의 일부 상자는 이 임무를 진행해야만 먹을 수 있다고 하던데...
 
-{{< gallery/image src="052" width="350px" >}}
+{{< gallery/image src="052" w=350px >}}
 
 아까 봤던 수정탑의 이름이 '구슬 시동 장치'인 건가? 벽화에 유리 등잔과 쌍으로 그려져 있던데.
 

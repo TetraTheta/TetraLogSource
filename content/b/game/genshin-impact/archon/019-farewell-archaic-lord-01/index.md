@@ -14,7 +14,7 @@ images:
 
 ![](001.webp)
 
-{{< gallery/image src="not_friend.png" caption="전 「타르탈리아」의 친구가 아닙니다." >}}
+{{< gallery/image src="not_friend.png" c="전 「타르탈리아」의 친구가 아닙니다." >}}
 
 이해관계가 우연히 맞아떨어져 같이 움직이는 거지, 우인단에 가입할 생각은 추호도 없다.
 

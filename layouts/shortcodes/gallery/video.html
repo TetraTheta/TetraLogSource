@@ -1,67 +1,71 @@
-{{- $srcset := .Get "src" -}}
-{{- $align := default "center" (.Get "align") -}}
-{{- $width := default "100%" (.Get "width") -}}
-{{- $caption := default "" (.Get "caption") -}}
-
 {{- $page := .Page -}}
-{{- $style := "" -}}
 
-{{- if strings.Contains $srcset "|" -}}
-  {{- $srcset = split $srcset "|" -}}
-{{- else -}}
-  {{- $srcset = slice $srcset -}}
+{{- $srcRaw := .Get "src" -}}
+{{- if eq $srcRaw "" -}}
+  {{- errorf "[gallery/video] src is required (usage: src=\"001|002|003\")" -}}
+{{- end -}}
+{{- $items := split $srcRaw "|" -}}
+{{- if or (lt (len $items) 1) (gt (len $items) 3) -}}
+  {{- errorf "[gallery] pass 1–3 pipe‑separated videos, got %d" (len $items) -}}
 {{- end -}}
 
-{{- if gt (len $srcset) 3 -}}
-  {{- errorf "[gallery/video] Too many videos. Up to 3 images are allowed. @ %s" $page.Title -}}
-{{- else if lt (len $srcset) 1 -}}
-  {{- errorf "[gallery/video] Not enough video. At least 1 image is required. @ %s" $page.Title -}}
-{{- end -}}
+{{- $alignLong := .Get "align" -}}
+{{- $alignShort := .Get "a" -}}
+{{- $align := cond (ne $alignLong "") $alignLong (cond (ne $alignShort "") $alignShort "center") -}}
 
-{{- if eq (len $srcset) 1 -}}
-  {{- $style = "width: 100%" -}}
-{{- else if eq (len $srcset) 2 -}}
-  {{- $style = "width: 49.5%" -}}
-{{- else -}}
-  {{- $style = "width: 32.5%" -}}
-{{- end -}}
-<div class="gallery" align="{{ $align }}">
-  <div style="width: {{ $width }}">
+{{- $captionLong := .Get "caption" -}}
+{{- $captionShort := .Get "c" -}}
+{{- $caption := cond (ne $captionLong "") $captionLong (cond (ne $captionShort "") $captionShort "") -}}
+
+{{- $widthLong := .Get "width" -}}
+{{- $widthShort := .Get "w" -}}
+{{- $width := cond (ne $widthLong "") $widthLong (cond (ne $widthShort "") $widthShort "100%") -}}
+
+{{- $pct := cond (eq (len $items) 1) "100%" (cond (eq (len $items) 2) "49.5%" "32.5%") -}}
+<div class="gallery" align="{{$align}}">
+  <div style="width:{{$width}}">
     <figure class="gallery-figure">
       <div class="gallery-container">
-        {{- range $srcset -}}
-          {{- $src := (printf "%s" .) | default "" -}}
-          {{- $srcLink := "" -}}
-          {{- if eq (path.Ext $src) "" -}}
-            {{- $src = printf "%s.mp4" $src -}}
+        {{- range $items -}}
+          {{- $raw := . -}}
+          {{- if findRE `^https?://` $raw -}}
+          <div class="gallery-inner" style="width:{{$pct}}"><video style="max-width:100%" src="{{$raw}}" autoplay muted loop controlsList="nodownload" disablepictureinpicture></video></div>
+            {{- continue -}}
           {{- end -}}
-          {{- $url := urls.Parse $src -}}
-          {{- if not $url.Scheme -}}
-            {{/* Process internal video */}}
-            {{- $path := $url.Path -}}
-            {{- $res := "" -}}
-            {{/* Filename begin with leading slash will be treated as global image resource. */}}
-            {{- if hasPrefix $path "/" -}}
-              {{- $path = strings.TrimPrefix "/" $path -}}
-              {{- $res = resources.GetMatch $path -}}
+          {{- $abs := path.Clean (printf "%s/%s" $page.Page.File.Dir $raw) -}}
+          {{- $relBundle := path.Dir (replaceRE `^content/` "" $abs) -}}
+          {{- $bundle := site.GetPage $relBundle -}}
+          {{- if not $bundle -}}
+            {{- errorf "[gallery/video] bundle not found for %q (resolved %q)" $raw $relBundle -}}
+          {{- end -}}
+          {{- $ext := path.Ext $raw -}}
+          {{- $candidate := $raw -}}
+          {{- if eq $ext "" -}}
+            {{- $found := "" -}}
+            {{- range $fmt := slice "mp4" "webm" -}}
+              {{- $try := printf "%s.%s" $raw $fmt -}}
+              {{- if $bundle.Resources.GetMatch $try -}}
+                {{- $found = $try -}}
+                {{- break -}}
+              {{- end -}}
+            {{- end -}}
+            {{- if eq $found "" -}}
+              {{- warnf "[gallery/video] no resource for %q in %q (tried mp4/webm)" $raw $relBundle -}}
             {{- else -}}
-              {{- $res = $page.Resources.GetMatch $path -}}
+              {{- $candidate = $found -}}
             {{- end -}}
-            {{- if ne $res.MediaType.MainType "video" -}}
-              {{- errorf "[gallery/video] Video is not valid: %s @ %s" $src $page.Title -}}
-            {{- end -}}
-            {{- $srcLink = $res.RelPermalink -}}
-          {{- else -}}
-            {{/* Process external video */}}
-            {{- $srcLink = $src -}}
           {{- end -}}
-        <div class="gallery-inner" style="{{ $style }}">
-          <video style="max-width: 100%" src="{{ $srcLink }}" autoplay muted loop controlsList="nodownload" disablepictureinpicture></video>
+          {{- $res := $bundle.Resources.GetMatch $candidate -}}
+          {{- if not $res -}}
+            {{- errorf "[gallery/video] resource lookup failed for %q in %s" $candidate $page.Title -}}
+          {{- end -}}
+        <div class="gallery-inner" style="width:{{$pct}}">
+          <video style="max-width: 100%" src="{{$res.RelPermalink}}" autoplay muted loop controlsList="nodownload" disablepictureinpicture></video>
         </div>
         {{- end -}}
       </div>
-      {{- if ne $caption "" -}}
-      <figcaption class="gallery-figcaption">{{ (printf "%s" $caption) | markdownify }}</figcaption>
+      {{- if gt (len $caption) 0 -}}
+      <figcaption class="gallery-figcaption">{{ $caption | markdownify }}</figcaption>
       {{- end -}}
     </figure>
   </div>

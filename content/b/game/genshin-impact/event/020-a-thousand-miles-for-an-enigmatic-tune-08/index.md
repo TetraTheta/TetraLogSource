@@ -58,7 +58,7 @@ images:
 
 아니, 왜 사고 회로가 그렇게 연결돼? 물건을 사고 싶으면 돈을 벌어야지. 도둑질이나 강도질 말고.
 
-{{< gallery/image src="life_style_1|life_style_2|life_style_3" caption="사고방식 자체가 우리와는 다릅니다">}}
+{{< gallery/image src="life_style_1|life_style_2|life_style_3" c="사고방식 자체가 우리와는 다릅니다">}}
 
 완전 이거네, 이거.
 

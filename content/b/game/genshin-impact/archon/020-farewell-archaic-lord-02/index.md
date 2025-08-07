@@ -66,7 +66,7 @@ images:
 > 「타르탈리아」가 제공한 경비. 주머니에서 나는 짤랑거리는 소리는 기분을 좋게 한다.
 {.bq}
 
-{{< gallery/image src="money_right" caption="돈은 항상 옳다" >}}
+{{< gallery/image src="money_right" c="돈은 항상 옳다" >}}
 
 {{< gallery/image src="013|014|015" >}}
 
@@ -198,7 +198,7 @@ images:
 
 > 이젠 우리의 실험대야.
 
-{{< gallery/image src="car_mine" width="500px" caption="이 솥은 이제 제 겁니다. 제 마음대로 할 수 있는 겁니다." >}}
+{{< gallery/image src="car_mine" w=500px c="이 솥은 이제 제 겁니다. 제 마음대로 할 수 있는 겁니다." >}}
 
 {{< gallery/image src="071|072" >}}
 

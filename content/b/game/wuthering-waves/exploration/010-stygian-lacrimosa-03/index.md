@@ -4,6 +4,7 @@ slug: stygian-lacrimosa-03
 date: 2024-07-03T19:06:28+09:00
 series:
   - "저편의 통곡: 울음새 늪 제1막"
+  - "명조 위험한 임무: 금주"
 categories:
   - 명조
 tags:
@@ -222,7 +223,7 @@ images:
 
 울음새 늪 제1막 \[저편의 통곡\] 완료!
 
-{{< gallery/image src="132" width="350px" >}}
+{{< gallery/image src="132" w=350px >}}
 
 > **보내지지 않은 전자 통신**
 > ***

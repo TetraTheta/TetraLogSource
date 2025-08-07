@@ -3,7 +3,7 @@ title: "달빛의 소원 - 02"
 slug: by-moons-grace-02
 date: 2024-09-06T21:52:24+09:00
 series:
-  - "달빛의 소원"
+  - "달빛의 소원: 명조 이벤트 임무"
 categories:
   - 명조
 tags:

@@ -128,13 +128,13 @@ images:
 
 그런데 임페라토르의 모습이 페비가 알고 있는 것과 조금 다르다고? 수호신이 모습을 바꾸는 일도 있는 건가?
 
-{{< gallery/image src="086" width="50%" >}}
+{{< gallery/image src="086" w=50% >}}
 
 {{< gallery/image src="087|088|089" >}}
 
 로렐라이에게 향하는 길에는 "우리가 성녀의 숭고한 희생에 슬퍼하고 있다"라는 글자가 새겨져 있다.
 
-{{< gallery/image src="090" width="50%" >}}
+{{< gallery/image src="090" w=50% >}}
 
 {{< gallery/image src="091|092|093" >}}
 
@@ -154,7 +154,7 @@ images:
 
 {{< gallery/image src="106|107|108" >}}
 
-{{< gallery/image src="109" width="50%" >}}
+{{< gallery/image src="109" w=50% >}}
 
 페비가 찬송가를 부르자, 정말로 로렐라이에게 가는 길이 열렸다.
 
@@ -172,7 +172,7 @@ images:
 
 아까 광신도가 한 말이 허언은 아니었던 모양인지, 로렐라이가 블레이드 댄서를 무차별적으로 공격하고 있다.
 
-{{< gallery/image src="120" width="50%" >}}
+{{< gallery/image src="120" w=50% >}}
 
 {{< gallery/image src="121|122" >}}
 
@@ -227,7 +227,7 @@ images:
 "지휘자"... 아무리 생각해도 플로로를 지칭하는 모양인데.
 잡석고지에서의 플로로 역시 피안화를 지휘봉처럼 휘두르고 있었으니까.
 
-{{< gallery/image src="154" width="50%" >}}
+{{< gallery/image src="154" w=50% >}}
 
 {{< gallery/image src="155|156|157" >}}
 
@@ -298,7 +298,7 @@ images:
 
 베키오 아카데미에는 카니발 의식 때 사용된 것으로 추정되는 검이 보관되어 있었는데, 아카데미 붕괴 당시 유실되었다가 구름 바다 탐사자가 이를 회수하였고, 이후 구름 바다 인근에 있는 성당 시계탑에 검을 보관하게 되었다고 한다.
 
-{{< gallery/image src="190" width="50%" >}}
+{{< gallery/image src="190" w=50% >}}
 
 {{< gallery/image src="191|192" >}}
 
@@ -308,7 +308,7 @@ images:
 
 아니, 그런 방법이.
 
-{{< gallery/image src="193" width="50%" >}}
+{{< gallery/image src="193" w=50% >}}
 
 {{< gallery/image src="194|195|196" >}}
 

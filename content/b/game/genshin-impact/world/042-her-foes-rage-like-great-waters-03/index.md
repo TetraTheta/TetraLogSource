@@ -92,7 +92,7 @@ images:
 
 그러면 좀 패서라도 듣게 만들어야지.
 
-{{< gallery/image src="026" caption="역사적으로도 이게 약이었다." >}}
+{{< gallery/image src="026" c="역사적으로도 이게 약이었다." >}}
 
 ![](027.webp)
 

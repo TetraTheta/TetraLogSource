@@ -214,7 +214,7 @@ images:
 
 내가 보지 못한 장면은 아마 3.6 버전 PV에서 나온 장면으로 추정된다.
 
-{{< youtube id="GgUoCfGKb8A" start="30" >}}
+{{< youtube id="GgUoCfGKb8A" start=30 >}}
 
 다만 감주 관저에 폭발이 일어나는 장면이 PV에 나오지 않는 것으로 보아, 대충 상황만 일치할 뿐, 동일한 영상은 아닌 것으로 보인다.
 

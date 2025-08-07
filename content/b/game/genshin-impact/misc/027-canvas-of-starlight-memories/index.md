@@ -28,7 +28,7 @@ images:
 
 바삭 쉬림프 카나페를 엄청 많이 만들기는 했는데... 요즘은 다른 세 요리를 더 많이 만들고 있는 것 같다.
 
-{{< gallery/image src="food_a|food_b|food_c" caption="포켓 피타 | 바삭 쉬림프 카나페 | 달콤달콤 닭고기 스튜" >}}
+{{< gallery/image src="food_a|food_b|food_c" c="포켓 피타 | 바삭 쉬림프 카나페 | 달콤달콤 닭고기 스튜" >}}
 
 솔직히 포켓 피타인가, 이 요리가 정말 혜자라고 생각한다.
 

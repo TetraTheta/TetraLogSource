@@ -48,7 +48,7 @@ images:
 
 그리고 죽었다.
 
-{{< gallery/image src="end" width="450px" caption="시체로 결☆정" >}}
+{{< gallery/image src="end" w=450px c="시체로 결☆정" >}}
 
 열심히 움직이다가 갑자기 움직이지 않는 도전자를 자세히 보니, 싸늘한 바닥에 힘없이 몸을 뉘이고 있었다.
 
@@ -58,7 +58,7 @@ images:
 
 부활한 후, 다시 이브에게 재도전하는 도전자.
 
-{{< gallery/image src="end" width="450px" caption="또 한 번 시체로 결☆정" >}}
+{{< gallery/image src="end" w=450px c="또 한 번 시체로 결☆정" >}}
 
 또 죽었다.
 

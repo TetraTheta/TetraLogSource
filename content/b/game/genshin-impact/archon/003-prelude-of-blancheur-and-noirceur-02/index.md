@@ -112,7 +112,7 @@ images:
 
 > 총명한 자들은 언제나 올바른 깃발 아래 모여드는 법이니까.
 
-{{< gallery/image src="jiral" caption="지랄이 풍작이네" >}}
+{{< gallery/image src="jiral" c="지랄이 풍작이네" >}}
 
 나르시시즘이 너무 지나치다.
 
@@ -132,7 +132,7 @@ images:
 
 하지만 폰타인 사람들은 저 속이 오그라드는 푸리나의 행동거지를 매일같이 봐야 한다. 푸리나의 추태를 보았음에도 고개를 돌리기는커녕, 오히려 박수를 치는 모습을 볼 때, 저들은 푸리나의 중2병에 너무 지나치게 노출된 나머지, 그게 낯부끄러운 일임을 인지조차 하지 못하게 된 걸지도 모른다.
 
-{{< gallery/image src="jojo" caption="폰타인 사람들을 구하지 못하는 이 무력감 정말 속상하다" >}}
+{{< gallery/image src="jojo" c="폰타인 사람들을 구하지 못하는 이 무력감 정말 속상하다" >}}
 
 ![](032.webp)
 
@@ -186,7 +186,7 @@ images:
 
 아, 설마 여행자가 여동생의 행방을 묻기 전, 푸리나를 흡족하게 만들기 위해 푸리나를 찬미하는 대사를 말하길 바랐던 거야?
 
-{{< gallery/image src="pepe" width="400px" caption="어휴 진짜..." >}}
+{{< gallery/image src="pepe" w=400px c="어휴 진짜..." >}}
 
 꼴불견이 따로 없다.
 
@@ -278,13 +278,13 @@ images:
 
 설마 페이몬을 비행 물체로 간주하는 거야?
 
-{{< gallery/image src="gaesori" width="400px" caption="이 뭔 개소리야?!" >}}
+{{< gallery/image src="gaesori" w=400px c="이 뭔 개소리야?!" >}}
 
 ![](069.webp)
 
 이의? 이의?!
 
-{{< gallery/image src="objection" width="400px" caption="이의 아주 많지!" >}}
+{{< gallery/image src="objection" w=400px c="이의 아주 많지!" >}}
 
 일반적으로, 법조문은 지나치다고 해도 될 정도로 각 용어를 자세하게 정의하고 있다. 누군가가 법조문을 곡해해, 억울한 피해자를 만드는 걸 방지하기 위해서이다.
 

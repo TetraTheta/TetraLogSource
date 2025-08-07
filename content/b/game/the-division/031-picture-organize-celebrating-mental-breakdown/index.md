@@ -76,7 +76,7 @@ images:
 
 &nbsp;
 
-{{< gallery/video src="https://archive.org/download/youtube-3spnGnavWFg/You_Made_Me_Racist_-_Windows_Update-3spnGnavWFg.mp4" caption="모두가 공감할 윈도우 업데이트" >}}
+{{< gallery/video src="https://archive.org/download/youtube-3spnGnavWFg/You_Made_Me_Racist_-_Windows_Update-3spnGnavWFg.mp4" c="모두가 공감할 윈도우 업데이트" >}}
 
 &nbsp;
 

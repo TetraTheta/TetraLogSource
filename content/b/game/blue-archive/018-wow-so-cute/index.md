@@ -22,7 +22,7 @@ images:
 
 수영복 치세는 승리 포즈를 가만히 보다 보면 꽃게의 집게발을 따라 하는 동작이 있다고 하던데...
 
-{{< youtube id="8dX0vsKMisM" width="50%" >}}
+{{< youtube id="8dX0vsKMisM" w=50% >}}
 
 찾았다.
 

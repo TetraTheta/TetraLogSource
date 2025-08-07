@@ -60,7 +60,7 @@ images:
 
 아직 카니발 축제가 다 끝난 것도 아니고, 수도회와 수호신에 대한 의문점을 정리할 시간도 필요하니, 카르티시아 수색은 조금 미루기로 했다.
 
-{{< gallery/image src="038" width="50%" >}}
+{{< gallery/image src="038" w=50% >}}
 
 {{< gallery/image src="039|040|041" >}}
 
@@ -174,7 +174,7 @@ images:
 
 음... 이건 일단 머릿속 어딘가에 적어두자.
 
-{{< gallery/image src="124" width="50%" >}}
+{{< gallery/image src="124" w=50% >}}
 
 {{< collapse heading="어째서 순례의 명목으로 사람들을 추방하는 건가요?" >}}
 
@@ -213,7 +213,7 @@ images:
 
 {{< /collapse >}}
 
-{{< gallery/image src="137" width="50%" >}}
+{{< gallery/image src="137" w=50% >}}
 
 {{< gallery/image src="138|139|140" >}}
 
@@ -225,7 +225,7 @@ images:
 
 ***
 
-{{< gallery/image src="144" width="50%" >}}
+{{< gallery/image src="144" w=50% >}}
 
 {{< gallery/image src="145|146|147" >}}
 

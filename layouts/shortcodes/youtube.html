@@ -20,6 +20,15 @@ Renders an embedded YouTube video.
 @example {{< youtube id=0RKpf3rK57I loading=lazy start=30 >}}
 */ -}}
 
+{{- /* My own arguments */ -}}
+{{- $widthLong := .Get "width" -}}
+{{- $widthShort := .Get "w" -}}
+{{- $width := cond (ne $widthLong "") $widthLong (cond (ne $widthShort "") $widthShort "80%") -}}
+
+{{- $captionLong := .Get "caption" -}}
+{{- $captionShort := .Get "c" -}}
+{{- $caption := cond (ne $captionLong "") $captionLong (cond (ne $captionShort "") $captionShort "") -}}
+
 {{- /* Removed param check. Always use YouTube shortcode. */ -}}
 {{- with $id := or (.Get "id") (.Get 0) -}}
   {{- /* Set defaults */ -}}
@@ -89,9 +98,6 @@ Renders an embedded YouTube video.
   {{- $allow := "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" -}}
   {{- $referrerpolicy := "strict-origin-when-cross-origin" -}}
   
-  {{- /* My own arguments */ -}}
-  {{- $width := default "80%" ($.Get "width") -}}
-  
   {{- /* Render */ -}}
 <div class="youtube-container" style="max-width: {{ $width }};"><div class="youtube-container-inner">
   <iframe {{- with $allow }} allow="{{ . }}" {{- end -}}
@@ -102,8 +108,8 @@ Renders an embedded YouTube video.
           {{- with $iframeStyle }} style="{{ . | safeCSS }}" {{- end -}}
           {{- with $title }} title="{{ . }}" {{- end -}}
   ></iframe></div>
-  {{- if $.Get "caption" -}}
-    <figcaption>{{ $.Get "caption" | safeHTML | markdownify }}</figcaption>
+  {{- if gt (len $caption) 0 -}}
+    <figcaption>{{ $caption | markdownify }}</figcaption>
   {{- end -}}
 </div>
 {{- else -}}

@@ -521,7 +521,7 @@ images:
 
 ![](139.webp)
 
-{{< gallery/image src="140" width="400px" caption="뭘 어쩌긴. 죽으면 되는 것이다." >}}
+{{< gallery/image src="140" w=400px c="뭘 어쩌긴. 죽으면 되는 것이다." >}}
 
 {{< gallery/image src="141|142" >}}
 
