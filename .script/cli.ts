@@ -379,7 +379,7 @@ program
   .argument('<title>', 'Title of the new article')
   .action((title: string, { kind }: { kind: string }) => {
     const newKind = findKind(kind);
-    const newTitle = title.trim().replaceAll(' ', '-').toLowerCase();
+    const newTitle = title.replace(/[^a-zA-Z0-9]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
 
     // Check title and kind
     if (!newTitle) {

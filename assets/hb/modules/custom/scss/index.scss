@@ -54,7 +54,7 @@ div.katex-output {
 div.hb-blog-post-content {
   // Blockquote
   blockquote {
-    & { font-size: 1.15rem; margin: 0.7rem 0 0.7rem 0; }
+    & { font-size: 1.1rem; margin: 0.7rem 0 0.7rem 0; }
     &.bq {
       // Prevent theme-class override
       background-color: var(--hb-tertiary-bg) !important;
@@ -66,6 +66,7 @@ div.hb-blog-post-content {
     ol:first-child, ul:first-child { margin-top: 0; }
     ol:last-child, ul:last-child, p { margin-bottom: 0; }
     hr { margin: 0.5rem 0; }
+    table, .table { margin-bottom: 0; }
     // Twitter embed (Not working)
     &.twitter-tweet { font-family: var(--hb-font-sans-serif) !important; }
   }
