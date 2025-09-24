@@ -27,13 +27,13 @@ build:
 
 cascade:
   # Remove unprocessed files from build result
-  - _target:
+  - target:
       kind: page
       path: '/*/**'
-    _build:
+    build:
       publishResources: false
   # Disable 'first-section'
-  - _target:
+  - target:
       path: '/**'
     params:
       meta:

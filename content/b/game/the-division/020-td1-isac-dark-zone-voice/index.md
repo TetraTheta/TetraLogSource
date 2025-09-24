@@ -10,7 +10,7 @@ tags:
 #  - 
 images:
 #  - 
-_build:
+build:
   publishResources: true
 ---
 

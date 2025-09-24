@@ -251,14 +251,17 @@ function run(command: string, cwd: string): void {
 // ######################
 // # Parse Command-line #
 // ######################
-// Prevent calling script without NPM (or Bun)
-// Method 1: Check package name
-// Method 2: Check 'package.json' existance
-if (process.env.npm_package_name !== 'tetralog' || !existsSync(join(cwd(), 'package.json'))) {
-  printError('Call this script with NPM or Bun');
-  printError("e.g. 'npm run cli' or 'bun run cli'");
-  exit(1);
-}
+/**
+ * Prevent calling script without NPM (or Bun)
+ * 1. Check package name
+ * 2. Check 'package.json' existance
+ */
+// For whatever reason, this completely blocks script from running
+// if (process.env.npm_package_name !== 'tetralog' || !existsSync(join(cwd(), 'package.json'))) {
+//   printError('Call this script with NPM or Bun');
+//   printError("e.g. 'npm run cli' or 'bun run cli'");
+//   exit(1);
+// }
 
 program.name('cli').description('Utility for TetraLog');
 
@@ -299,15 +302,6 @@ program
         const content = readFileSync(file, 'utf8');
         const $ = load(content, { treeAdapter: SortedAdapter });
 
-        // <code>, <pre>: Properly preserve content (Resolve BeautifulSoup problem - Unnecessary in Node.js/Bun environment)
-        // $('code, pre').each((_, el) => {
-        //   const $el = $(el)
-        //   const text = $el.text()
-        //   if (text) {
-        //     const escaped = encodeHTML(decodeHTML(text))
-        //     $el.text(escaped)
-        //   }
-        // })
         // <a>: Remove trailing slash from href
         $('a[href]').each((_, el) => {
           const $el = $(el);
@@ -379,7 +373,11 @@ program
   .argument('<title>', 'Title of the new article')
   .action((title: string, { kind }: { kind: string }) => {
     const newKind = findKind(kind);
-    const newTitle = title.replace(/[^a-zA-Z0-9]/g, '-').replace(/-+/g, '-').replace(/^-+|-+$/g, '').toLowerCase();
+    const newTitle = title
+      .replace(/[^a-zA-Z0-9]/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .toLowerCase();
 
     // Check title and kind
     if (!newTitle) {
