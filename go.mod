@@ -3,7 +3,7 @@ module github.com/hbstack/theme
 go 1.21.5
 
 require (
-	github.com/KaTeX/KaTeX v0.16.22 // indirect
+	github.com/KaTeX/KaTeX v0.16.25 // indirect
 	github.com/Templarian/MaterialDesign-SVG v7.4.47+incompatible // indirect
 	github.com/desandro/masonry v4.2.2+incompatible // indirect
 	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
@@ -40,7 +40,7 @@ require (
 	github.com/hbstack/footer v0.4.1 // indirect
 	github.com/hbstack/footer/modules/socials v0.3.0 // indirect
 	github.com/hbstack/hb v0.16.2 // indirect
-	github.com/hbstack/header v0.16.6 // indirect
+	github.com/hbstack/header v0.16.7 // indirect
 	github.com/hbstack/header/modules/search v0.1.38 // indirect
 	github.com/hbstack/header/modules/socials v0.2.2 // indirect
 	github.com/hbstack/header/themes/pills v0.2.18 // indirect

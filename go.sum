@@ -1,5 +1,5 @@
-github.com/KaTeX/KaTeX v0.16.22 h1:+CyvN/2mDtqLjGeKRHft2+tQfIgQcc5aWigKHx0egWo=
-github.com/KaTeX/KaTeX v0.16.22/go.mod h1:VI+aE+CVs/VqtbHnuhstfQST46GmrwpXH7LQAzYIouw=
+github.com/KaTeX/KaTeX v0.16.25 h1:y0BfLWCajh+XJlVT867t38VA/lVaOK2IQsopELObs58=
+github.com/KaTeX/KaTeX v0.16.25/go.mod h1:VI+aE+CVs/VqtbHnuhstfQST46GmrwpXH7LQAzYIouw=
 github.com/Templarian/MaterialDesign-SVG v7.4.47+incompatible h1:w99yYrLvkTj5A9Dxd8mzNoFQpOBx9aRS03RrrqjzLuw=
 github.com/Templarian/MaterialDesign-SVG v7.4.47+incompatible/go.mod h1:SRSiaLOZazGp4UpKPQRm37h4A3cKLHXaybAqaJ7Lfx8=
 github.com/desandro/masonry v4.2.2+incompatible h1:4LI69kwq5DJSF9jhHVGfCw+q2Nt3IgJ0KzEp19Z3YiA=
@@ -72,8 +72,8 @@ github.com/hbstack/footer/modules/socials v0.3.0 h1:m8d8o9j+3BQUfxpONEaGP4tL8WSg
 github.com/hbstack/footer/modules/socials v0.3.0/go.mod h1:clVl77mC1//pSZuHEr8aHqDk8Ylggk+I+XOQoBiim8w=
 github.com/hbstack/hb v0.16.2 h1:4hUaWygXmZA26cToXj/hXmMuQzsprNdkBuE4Rs7eIYc=
 github.com/hbstack/hb v0.16.2/go.mod h1:f17XbKHV29zgwV0OaayneXU1nMXFpQUdBYApAPNjFMo=
-github.com/hbstack/header v0.16.6 h1:t8wUlpXAo7FTYutk1run6Slb8AqfJ3aNlFerZLy3FAw=
-github.com/hbstack/header v0.16.6/go.mod h1:ZfeQNeNWaBeGPBZHtbRz2W9IWkmIoMrpOXoDsoYa/Gg=
+github.com/hbstack/header v0.16.7 h1:iqeHhbo/b4AYhkvzvU63DZRwGPIW/LOKwejDd/hqqlM=
+github.com/hbstack/header v0.16.7/go.mod h1:H9BH5lD/s0VYKwqj9l6rxSyDwG4bJg73MSBftVS5aAc=
 github.com/hbstack/header/modules/search v0.1.38 h1:B+deLNUyn1F6DiEEIviu1IlOnykaQ1YEezOa8kljSsM=
 github.com/hbstack/header/modules/search v0.1.38/go.mod h1:Y258ZdhdmujPDG51WfsAb6GIUmyr/gEIs5BHFXRReAA=
 github.com/hbstack/header/modules/socials v0.2.2 h1:HZzeJg3Ncf0vv2QipccYYhSADVTG4Aqt1rYLml23u40=
