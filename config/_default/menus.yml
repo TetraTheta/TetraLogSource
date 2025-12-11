@@ -1,7 +1,7 @@
 main:
   - name: 잡담
     identifier: chit-chat
-    weight: 10
+    weight: 100
     url: /b/chit-chat/
     params:
       header: 기타 잡담
@@ -12,7 +12,7 @@ main:
   - name: 음악
     parent: chit-chat
     identifier: music
-    weight: 11
+    weight: 101
     url: /b/chit-chat/music/
     params:
       header: 음악 이야기
@@ -22,7 +22,7 @@ main:
         name: music
   - name: 게임
     identifier: game
-    weight: 20
+    weight: 200
     url: /b/game/
     params:
       header: 게임 이야기
@@ -34,7 +34,7 @@ main:
   - name: 마인크래프트
     parent: game
     identifier: minecraft
-    weight: 21
+    weight: 201
     url: /b/game/minecraft/
     params:
       header: 마인크래프트 이야기
@@ -45,7 +45,7 @@ main:
   - name: 명조
     parent: game
     identifier: wuthering-waves
-    weight: 22
+    weight: 202
     url: /b/game/wuthering-waves/
     pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub.png"></div>'
     # pre: '<img class="hb-header-menu-icon-image me-1" src="/icons/custom-png/wuthering-waves.png">'
@@ -55,7 +55,7 @@ main:
   - name: 블루 아카이브
     parent: game
     identifier: blue-archive
-    weight: 23
+    weight: 203
     url: /b/game/blue-archive/
     params:
       header: 블루 아카이브 이야기
@@ -66,7 +66,7 @@ main:
   - name: 기타
     parent: game
     identifier: game-misc
-    weight: 24
+    weight: 204
     url: /b/game/misc/
     params:
       header: 기타 게임 이야기
@@ -74,14 +74,25 @@ main:
       icon:
         vendor: font-awesome-solid
         name: gamepad
+  - name: 게임 스토리 정리
+    parent: game
+    identifier: game-story-collection
+    weight: 205
+    url: https://tetratheta.github.io/tgs/
+    params:
+      header: 게임 스토리 정리
+      description: 게임 스토리 정리
+      icon:
+        vendor: font-awesome-solid
+        name: up-right-from-square
   - parent: game
-    weight: 25
+    weight: 206
     params:
       divider: true
   - name: 더 디비전
     parent: game
     identifier: the-division
-    weight: 26
+    weight: 207
     url: /b/game/the-division/
     params:
       header: 더 디비전 시리즈 이야기
@@ -93,7 +104,7 @@ main:
   - name: '붕괴: 스타레일'
     parent: game
     identifier: honkai-star-rail
-    weight: 27
+    weight: 208
     url: /b/game/honkai-star-rail/
     params:
       header: '붕괴: 스타레일 이야기'
@@ -104,7 +115,7 @@ main:
   - name: 타워 오브 판타지
     parent: game
     identifier: tower-of-fantasy
-    weight: 28
+    weight: 209
     url: /b/game/tower-of-fantasy/
     pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/tower-of-fantasy-sub.png"></div>'
     params:
@@ -113,7 +124,7 @@ main:
   - name: 원신
     parent: game
     identifier: genshin
-    weight: 29
+    weight: 210
     url: /b/game/genshin-impact/
     pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/genshin-impact-sub.png"></div>'
     # pre: '<img class="hb-header-menu-icon-image me-1" src="/icons/custom-png/genshin-impact.png">'
@@ -121,13 +132,13 @@ main:
       header: 원신 이야기
       description: 원신 이야기
   - name: separator-main
-    weight: 40
+    weight: 300
     identifier: separator-main
     params:
       divider: true
   - name: PIVOX
     identifier: pivox
-    weight: 50
+    weight: 400
     url: /d/
     params:
       header: 각종 강좌 및 팁
@@ -139,7 +150,7 @@ main:
   - name: 개발
     parent: pivox
     identifier: pivox-development
-    weight: 51
+    weight: 401
     url: /d/development/
     params:
       header: 개발 및 프로그래밍 관련 강좌 및 팁
@@ -150,7 +161,7 @@ main:
   - name: 게임
     parent: pivox
     identifier: pivox-game
-    weight: 52
+    weight: 402
     url: /d/game/
     params:
       header: 게임 관련 강좌 및 팁
@@ -161,7 +172,7 @@ main:
   - name: 데스크톱
     parent: pivox
     identifier: pivox-desktop
-    weight: 53
+    weight: 403
     url: /d/desktop/
     params:
       header: 데스크톱 관련 강좌 및 팁
@@ -172,7 +183,7 @@ main:
   - name: 모바일
     parent: pivox
     identifier: pivox-mobile
-    weight: 54
+    weight: 404
     url: /d/mobile/
     params:
       header: 모바일 관련 강좌 및 팁
@@ -183,7 +194,7 @@ main:
   - name: 서버
     parent: pivox
     identifier: pivox-server
-    weight: 55
+    weight: 405
     url: /d/server/
     params:
       header: 서버 관련 강좌 및 팁
@@ -194,7 +205,7 @@ main:
   - name: 웹
     parent: pivox
     identifier: pivox-web
-    weight: 56
+    weight: 406
     url: /d/web/
     params:
       header: 웹 관련 강좌 및 팁
@@ -205,7 +216,7 @@ main:
   - name: 기타
     parent: pivox
     identifier: pivox-misc
-    weight: 57
+    weight: 407
     url: /d/misc/
     params:
       header: 기타 강좌 및 팁
