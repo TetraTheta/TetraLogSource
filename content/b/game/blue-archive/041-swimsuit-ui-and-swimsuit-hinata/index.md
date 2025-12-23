@@ -1,6 +1,6 @@
 ---
 title: "그래, 이럴 줄 알았지"
-slug: swimsuit-ui-and-hinata
+slug: swimsuit-ui-and-swimsuit-hinata
 date: 2024-02-07T18:20:14+09:00
 series:
 #  - 

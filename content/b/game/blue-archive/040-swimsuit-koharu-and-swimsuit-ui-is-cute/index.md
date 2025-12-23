@@ -1,6 +1,6 @@
 ---
 title: "수영복 코하루와 우이가 너무 귀엽다"
-slug: swimsuit-koharu-and-ui-is-cute
+slug: swimsuit-koharu-and-swimsuit-ui-is-cute
 date: 2024-02-04T15:55:48+09:00
 series:
 #  - 

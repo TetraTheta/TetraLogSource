@@ -1,6 +1,6 @@
 ---
 title: "무장 호시노, 시로코 테러 더블 페스"
-slug: armed-hoshino-shiroko-terror-fes
+slug: armed-hoshino-and-shiroko-terror-fes
 date: 2025-01-23T20:14:29+09:00
 series:
 #  - 

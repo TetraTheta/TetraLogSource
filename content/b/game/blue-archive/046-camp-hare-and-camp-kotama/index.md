@@ -1,6 +1,6 @@
 ---
 title: "큰일 났다"
-slug: camp-hare-and-kotama
+slug: camp-hare-and-camp-kotama
 date: 2024-06-27T19:50:49+09:00
 series:
 #  - 

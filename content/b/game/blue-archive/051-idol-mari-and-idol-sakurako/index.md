@@ -1,6 +1,6 @@
 ---
 title: "이걸 좋다고 해야 해? 말아야 해?"
-slug: idol-mari-and-sakurako
+slug: idol-mari-and-idol-sakurako
 date: 2025-04-15T19:32:21+09:00
 series:
 #  - 
