@@ -68,7 +68,7 @@ markup:
         leftSingleQuote: "'"
         rightAngleQuote: '》'
         rightDoubleQuote: '"'
-        rightSingleQuote: '"'
+        rightSingleQuote: "'"
     parser:
       attribute:
         block: true
