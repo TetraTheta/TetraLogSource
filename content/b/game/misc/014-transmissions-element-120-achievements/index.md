@@ -141,13 +141,13 @@ Transmissions: Element 120의 모든 도전과제 달성 완료!
 3. Animus
 4. Terminus
 
-아니었다.
+WEAT... 아니었다.
 
 &nbsp;
 
 하지만 도전과제의 이미지는 확실히 이진법으로 친 드립이 맞다.
 
-001<sub>(2)</sub> = 1  
-010<sub>(2)</sub> = 2  
-011<sub>(2)</sub> = 3  
-100<sub>(2)</sub> = 4
+* 001<sub>(2)</sub> = 1
+* 010<sub>(2)</sub> = 2
+* 011<sub>(2)</sub> = 3
+* 100<sub>(2)</sub> = 4

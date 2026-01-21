@@ -60,52 +60,52 @@ images:
 
 Take control, take control
 
-I see a vision rising, dreary  
-Fading in as children play twilight games  
-In the town called Ordinary  
+I see a vision rising, dreary
+Fading in as children play twilight games
+In the town called Ordinary
 An eye of light reveals a gateway to doomsday
 
-In that projection of reality  
-Something passes through the stars, shifting walls  
-Enter agents of ill fantasy  
+In that projection of reality
+Something passes through the stars, shifting walls
+Enter agents of ill fantasy
 For evil holds you in its arms, false alarms
 
-Illusory, treading on reality  
-Polaris in a web of hypocrisy  
+Illusory, treading on reality
+Polaris in a web of hypocrisy
 Take control, take control
 
-Oh, can’t you see, see the light is fading?  
-And in the night the demons rage and call your name  
-No deeper madness than your own making  
+Oh, can’t you see, see the light is fading?
+And in the night the demons rage and call your name
+No deeper madness than your own making
 Visions lashing blades of shame, but will you take the blame?
 
-Hissing noises in the hallway  
-Bloodshot eyes, staring through, what seeds are sown?  
-Who’ll survive the blood red power play?  
+Hissing noises in the hallway
+Bloodshot eyes, staring through, what seeds are sown?
+Who’ll survive the blood red power play?
 Who’ll take control, whose name will be known?
 
-Illusory, reality’s all fallacy  
-Polaris in a web of hypocrisy  
+Illusory, reality’s all fallacy
+Polaris in a web of hypocrisy
 Take control, take control
 
-I wish I’d had the wherewithal to find you when I had the chance  
-Instead I danced with death in fervour’s skin  
-I missed the moment before the fall to recognise I had a voice  
-A choice to stop it all from happening  
+I wish I’d had the wherewithal to find you when I had the chance
+Instead I danced with death in fervour’s skin
+I missed the moment before the fall to recognise I had a voice
+A choice to stop it all from happening
 If only I could save you from the pain
 
-A rising sense of awe and wonder  
-A might I see has always been deep within me  
-I can feel my inborn power  
+A rising sense of awe and wonder
+A might I see has always been deep within me
+I can feel my inborn power
 I call the shots when it’s all finally clear to see
 
-And so I’m drawn ever deeper  
-In the Oldest House and all these empty rooms  
-This vacant, spellbound mystery motel  
+And so I’m drawn ever deeper
+In the Oldest House and all these empty rooms
+This vacant, spellbound mystery motel
 Where I’m the keeper, where I set the rules
 
-Potency is my new reality  
-Polaris living now inside of me  
+Potency is my new reality
+Polaris living now inside of me
 I control, I control
 
 {{< /collapse >}}

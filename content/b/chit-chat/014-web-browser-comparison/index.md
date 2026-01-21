@@ -88,19 +88,19 @@ Google은 웹 표준을 선도해 자신에게 유리한 표준을 확립하려 
 
 두 확장 프로그램의 개발자인 gorhill이 밝힌 두 확장 프로그램의 차이점을 보면 MV3를 적용한 uBlock Lite가 MV2를 적용한 uBlock Origin보다 기능이 떨어짐이 확연히 보인다.
 
-* Filter lists update only when the extension updates (no fetching up to date lists from servers)  
+* Filter lists update only when the extension updates (no fetching up to date lists from servers)
   필터 목록은 오직 확장 프로그램이 업데이트될 때에만 업데이트됨 (최신 목록을 서버에서 받아올 수 없음)
-* Many filters are [dropped at conversion time](https://github.com/gorhill/uBlock/blob/master/dist/mv3/log.txt) due to MV3's limited filter syntax  
+* Many filters are [dropped at conversion time](https://github.com/gorhill/uBlock/blob/master/dist/mv3/log.txt) due to MV3's limited filter syntax
   MV3의 제한된 필터 문법 때문에 많은 필터가 MV3로의 이전 과정에서 지원이 중단됨
-* No [crafting your own filters](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-filters) (thus no [element picker](https://github.com/gorhill/uBlock/wiki/Element-picker))  
+* No [crafting your own filters](https://github.com/gorhill/uBlock/wiki/Dashboard:-My-filters) (thus no [element picker](https://github.com/gorhill/uBlock/wiki/Element-picker))
   사용자 필터 생성 불가 (따라서 사용자가 원하는 특정 요소 차단 불가능)
-* No [strict-blocked](https://github.com/gorhill/uBlock/wiki/Strict-blocking) pages  
+* No [strict-blocked](https://github.com/gorhill/uBlock/wiki/Strict-blocking) pages
   전체 페이지 차단 불가능
-* No [per-site switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches)  
+* No [per-site switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches)
   특정 페이지 전용 스위치 사용 불가능
-* No [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Blocking-mode)  
+* No [dynamic filtering](https://github.com/gorhill/uBlock/wiki/Blocking-mode)
   동적 필터링 사용 불가능
-* No [importing external lists](https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists#3rd-party-filter-lists)  
+* No [importing external lists](https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists#3rd-party-filter-lists)
   외부 목록 불러오기 불가능
 
 더 악질적인 건, 이 MV3는 Chrome뿐만 아니라 다른 웹 브라우저의 확장 프로그램에도 적용된다는 점이다. 좋든 싫든, Chrome이 전 세계 웹 브라우저의 절반 이상을 차지하고 있는 이상, 호환성을 위해선 MV3을 도입해야 한다.
@@ -274,9 +274,9 @@ Vivaldi의 북마크바는 Chromium처럼 '모든 북마크'를 북마크 바의
 
 의도된 것인지, 단순히 버그인지는 모르겠지만, 당연히 될 것으로 생각했던 것이 되지 않는다.
 
-* HTML 파일을 웹 브라우저에 드래그&드롭했을 때, HTML 파일이 열리지 않음  
+* HTML 파일을 웹 브라우저에 드래그&드롭했을 때, HTML 파일이 열리지 않음
   다른 Chromium 기반 웹 브라우저는 물론, 심지어 Firefox에서도 가능했던 일이다.
-* Bookmarklet에 적힌 `'` 문자가 `%27`로 대체됨  
+* Bookmarklet에 적힌 `'` 문자가 `%27`로 대체됨
   이러면 Bookmarklet이 정상적으로 작동하지 않는다.
 
 ### 기타 Vivaldi의 단점{id="misc-vivaldi-cons"}
@@ -301,17 +301,17 @@ SRWare Icon은 독일의 SRWare 社가 Chromium 소스 코드를 가져와 만�
 
 대체 어느 부분이 Chrome과 차이 나는 것인지에 대해, [공식 홈페이지](https://www.srware.net/iron/)에서는 다음 요소들이 제거되었다고 한다.
 
-* 설치 ID  
+* 설치 ID
   Chrome이 처음 설치되고 실행되었을 때 Google에 설치 ID를 보내게 된다.
-* 추천  
+* 추천
   설정에 따라 다르지만, 주소창에 입력한 모든 정보가 추천 정보 생성을 위해 Google에 보내진다.
-* 대체 오류 페이지  
+* 대체 오류 페이지
   설정에 따라 다르지만, 만약 잘못된 주소를 주소창에 입력해 접속했을 시, Google이 제공하는 오류 메시지를 보게 된다.
-* 오류 보고  
+* 오류 보고
   설정에 따라 다르지만, 오류가 발생했을 시 자세한 정보가 Google에 전송된다.
-* RLZ 추적  
+* RLZ 추적
   [RLZ](https://github.com/rogerta/rlz)는 프로모션 이벤트 신호와 익명 사용자 코호트를 그룹화하기 위한 라이브러리인데, 2012년 Chromium 소스 코드에 통합되었다. RLZ는 다양한 정보를 Google에 전송하는데, 예를 들자면 언제 어디서 Chrome이 다운로드되었는가와 같은 정보이다.
-* URL 트래커  
+* URL 트래커
   설정에 따라 다르지만, Chrome은 실행 5초 후 백그라운드에서 Google 홈페이지를 몰래 연다.
 
 SRWare Iron이 Chromium에서 제거한 항목들을 보면 웹 브라우저 사용에 있어 없어도 사용에 전혀 지장이 없는 것들로만 가득하다.
@@ -410,15 +410,15 @@ Cent Studio는 reCAPTCHA가 나타나지 않는 문제가 낮은 Chromium 버전
 
 현재 주요 웹 브라우저 엔진과 해당 엔진을 채용한 웹 브라우저의 목록은 다음과 같다.
 
-* Gecko: Mozilla 재단에서 현재 사용 중인 웹 브라우저 엔진  
+* Gecko: Mozilla 재단에서 현재 사용 중인 웹 브라우저 엔진
   Firefox가 이를 사용 중이다.
 * Servo: Mozilla 재단에서 개발하다 중단한 후, 다시 개발 중인 웹 브라우저 엔진
 * Webkit
-  * WebKit2: Apple이 현재 개발 중인 웹 브라우저 엔진  
+  * WebKit2: Apple이 현재 개발 중인 웹 브라우저 엔진
     Safari 외에는 이를 사용하는 웹 브라우저가 없다.
-  * Blink: Google이 현재 개발 중인 웹 브라우저 엔진  
+  * Blink: Google이 현재 개발 중인 웹 브라우저 엔진
     Chromium 기반 웹 브라우저는 모두 Blink 엔진을 사용한다.
-* Presto: Opera에서 사용했던 웹 브라우저 엔진  
+* Presto: Opera에서 사용했던 웹 브라우저 엔진
   현재 Opera도 Chromium 기반 웹 브라우저가 됨에 따라, 사용하는 웹 브라우저가 없다.
 
 ## Firefox의 장점{id="firefox-pros"}
