@@ -27,20 +27,21 @@ images:
 이번에 참고한 글은 [페로로지라 인세인 야전 풀오토(Auto) 1팟클](https://arca.live/b/bluearchive/160188291) 글이었다.
 
 <table class="table table-bordered align-middle table-hover" style="text-align:center;width:50%;min-width:400px">
-  <tr><th colspan="2" style="background-color:#417E44">1 파티</th></tr>
-  <tr><td>하나코(수영복)</td><td>전무 3성</td></tr>
-  <tr><td>호시노(무장) (2번)</td><td>전무 4성</td></tr>
-  <tr><td>나츠</td><td>전무 2성</td></tr>
-  <tr><td style="background-color:#AFA33D"><b>우이</b></td><td><b>전무 1성</b></td></tr>
-  <tr><td style="background-color:#AFA33D"><b>나기사(수영복)</b></td><td><b>전무 4성</b></td></tr>
-  <tr><td style="background-color:#AFA33D"><b>키사키</b></td><td><b>3성</b></td></tr>
-  <tr><th colspan="2" style="background-color:#417E44">2 파티</th></tr>
-  <tr><td style="background-color:#AFA33D"><b>시로코*테러</b></td><td><b>전무 3성</b></td></tr>
-  <tr><td style="background-color:#AFA33D"><b>마리(아이돌)</b></td><td><b>전무 2성</b></td></tr>
-  <tr><td>호시노</td><td>전무 3성</td></tr>
-  <tr><td>이부키</td><td>3성</td></tr>
-  <tr><td style="background-color:#AFA33D"><b>이로하</b></td><td><b>전무 3성</b></td></tr>
-  <tr><td>시로코(수영복)</td><td>전무 2성</td></tr>
+  <tr><th>학생</th><th>권장</th><th>내 사양</th></tr>
+  <tr><th colspan="3" style="background-color:#417E44">1 파티</th></tr>
+  <tr><td>하나코(수영복)</td><td>전무 3성</td><td>전무 4성</td></tr>
+  <tr><td>호시노(무장) (2번)</td><td>전무 4성</td><td>전무 4성</td></tr>
+  <tr><td>나츠</td><td>전무 2성</td><td>전무 2성</td></tr>
+  <tr><td style="background-color:#AFA33D"><b>우이</b></td><td>전무 1성</td><td>전무 1성</td></tr>
+  <tr><td style="background-color:#AFA33D"><b>나기사(수영복)</b></td><td>전무 4성</td><td>전무 1성</td></tr>
+  <tr><td style="background-color:#AFA33D"><b>키사키</b></td><td>3성</td><td>전무 3성</td></tr>
+  <tr><th colspan="3" style="background-color:#417E44">2 파티</th><td></td></tr>
+  <tr><td style="background-color:#AFA33D"><b>시로코*테러</b></td><td>전무 3성</td><td>전무 3성</td></tr>
+  <tr><td style="background-color:#AFA33D"><b>마리(아이돌)</b></td><td>전무 2성</td><td>전무 2성</td></tr>
+  <tr><td>호시노</td><td>전무 3성</td><td>전무 2성</td></tr>
+  <tr><td>이부키</td><td>3성</td><td>전무 1성</td></tr>
+  <tr><td style="background-color:#AFA33D"><b>이로하</b></td><td>전무 3성</td><td>전무 4성</td></tr>
+  <tr><td>시로코(수영복)</td><td>전무 2성</td><td>3성</td></tr>
 </table>
 
 나기사(수영복)의 성급이 조금 낮아서 그런가, 1 파티로 보스가 죽질 않았다. 결국 2 파티까지 동원해서 남은 18줄을 깎아내야만 했다.
