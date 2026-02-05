@@ -99,6 +99,7 @@ const kinds: Kind[] = [
   { name: 'blue-archive', aliases: ['ba', 'bluearchive'], archetype: 'blue-archive', path: 'b/game/blue-archive' },
   { name: 'chit-chat', aliases: ['cc', 'chat', 'chitchat'], archetype: 'chit-chat', path: 'b/chit-chat' },
   { name: 'default', aliases: [], archetype: 'default', path: 'b' },
+  { name: 'endfield', aliases: ['ef'], archetype: 'endfield', path: 'b/game/endfield' },
   { name: 'game-misc', aliases: ['gm'], archetype: 'game-misc', path: 'b/game/misc' },
   // {
   //   name: 'genshin-archon',
