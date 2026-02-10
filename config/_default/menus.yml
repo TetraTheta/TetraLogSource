@@ -42,10 +42,21 @@ main:
       icon:
         vendor: custom
         name: minecraft
+  - name: '명일방주: 엔드필드'
+    parent: game
+    identifier: endfield
+    weight: 202
+    url: /b/game/endfield/
+    params:
+      header: '명일방주: 엔드필드 이야기'
+      description: '명일방주: 엔드필드 이야기'
+      icon:
+        vendor: custom
+        name: endfield
   - name: 명조
     parent: game
     identifier: wuthering-waves
-    weight: 202
+    weight: 203
     url: /b/game/wuthering-waves/
     pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/wuthering-waves-sub.png"></div>'
     # pre: '<img class="hb-header-menu-icon-image me-1" src="/icons/custom-png/wuthering-waves.png">'
@@ -55,7 +66,7 @@ main:
   - name: 블루 아카이브
     parent: game
     identifier: blue-archive
-    weight: 203
+    weight: 204
     url: /b/game/blue-archive/
     params:
       header: 블루 아카이브 이야기
@@ -66,7 +77,7 @@ main:
   - name: 기타
     parent: game
     identifier: game-misc
-    weight: 204
+    weight: 205
     url: /b/game/misc/
     params:
       header: 기타 게임 이야기
@@ -77,7 +88,7 @@ main:
   - name: 게임 스토리 정리
     parent: game
     identifier: game-story-collection
-    weight: 205
+    weight: 206
     url: https://tetratheta.github.io/tgs/
     params:
       header: 게임 스토리 정리
@@ -86,13 +97,13 @@ main:
         vendor: font-awesome-solid
         name: up-right-from-square
   - parent: game
-    weight: 206
+    weight: 207
     params:
       divider: true
   - name: 더 디비전
     parent: game
     identifier: the-division
-    weight: 207
+    weight: 208
     url: /b/game/the-division/
     params:
       header: 더 디비전 시리즈 이야기
@@ -104,7 +115,7 @@ main:
   - name: '붕괴: 스타레일'
     parent: game
     identifier: honkai-star-rail
-    weight: 208
+    weight: 209
     url: /b/game/honkai-star-rail/
     params:
       header: '붕괴: 스타레일 이야기'
@@ -115,7 +126,7 @@ main:
   - name: 타워 오브 판타지
     parent: game
     identifier: tower-of-fantasy
-    weight: 209
+    weight: 210
     url: /b/game/tower-of-fantasy/
     pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/tower-of-fantasy-sub.png"></div>'
     params:
@@ -124,7 +135,7 @@ main:
   - name: 원신
     parent: game
     identifier: genshin
-    weight: 210
+    weight: 211
     url: /b/game/genshin-impact/
     pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/genshin-impact-sub.png"></div>'
     # pre: '<img class="hb-header-menu-icon-image me-1" src="/icons/custom-png/genshin-impact.png">'
