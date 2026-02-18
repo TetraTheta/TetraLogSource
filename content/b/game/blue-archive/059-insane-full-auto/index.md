@@ -35,7 +35,7 @@ images:
   <tr><td style="background-color:#AFA33D"><b>우이</b></td><td>전무 1성</td><td>전무 1성</td></tr>
   <tr><td style="background-color:#AFA33D"><b>나기사(수영복)</b></td><td>전무 4성</td><td>전무 1성</td></tr>
   <tr><td style="background-color:#AFA33D"><b>키사키</b></td><td>3성</td><td>전무 3성</td></tr>
-  <tr><th colspan="3" style="background-color:#417E44">2 파티</th><td></td></tr>
+  <tr><th colspan="3" style="background-color:#417E44">2 파티</th></tr>
   <tr><td style="background-color:#AFA33D"><b>시로코*테러</b></td><td>전무 3성</td><td>전무 3성</td></tr>
   <tr><td style="background-color:#AFA33D"><b>마리(아이돌)</b></td><td>전무 2성</td><td>전무 2성</td></tr>
   <tr><td>호시노</td><td>전무 3성</td><td>전무 2성</td></tr>

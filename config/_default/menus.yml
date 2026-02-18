@@ -27,7 +27,7 @@ main:
     params:
       header: 게임 이야기
       description: 게임 이야기
-      columns: 1 # 2 doesn't look nice
+      columns: 2
       icon:
         vendor: font-awesome-solid
         name: gamepad
@@ -123,25 +123,25 @@ main:
       icon:
         vendor: custom
         name: honkai-star-rail
-  - name: 타워 오브 판타지
-    parent: game
-    identifier: tower-of-fantasy
-    weight: 210
-    url: /b/game/tower-of-fantasy/
-    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/tower-of-fantasy-sub.png"></div>'
-    params:
-      header: 타워 오브 판타지 이야기
-      description: 타워 오브 판타지 이야기
   - name: 원신
     parent: game
     identifier: genshin
-    weight: 211
+    weight: 210
     url: /b/game/genshin-impact/
     pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/genshin-impact-sub.png"></div>'
     # pre: '<img class="hb-header-menu-icon-image me-1" src="/icons/custom-png/genshin-impact.png">'
     params:
       header: 원신 이야기
       description: 원신 이야기
+  - name: 타워 오브 판타지
+    parent: game
+    identifier: tower-of-fantasy
+    weight: 211
+    url: /b/game/tower-of-fantasy/
+    pre: '<div class="dropdown-item-icon d-flex align-items-center bg-body-secondary bg-gradient rounded me-2 p-2"><img class="hb-header-menu-icon-image-sub" src="/icons/custom-png/tower-of-fantasy-sub.png"></div>'
+    params:
+      header: 타워 오브 판타지 이야기
+      description: 타워 오브 판타지 이야기
   - name: separator-main
     weight: 300
     identifier: separator-main

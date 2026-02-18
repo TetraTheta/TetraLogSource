@@ -25,6 +25,13 @@ b, strong { font-weight: 700; }
   a[href*="honkai-star-rail"]:hover, a[href*="genshin"]:hover {
     filter: none;
   }
+  // Remove below after my PR gets merged
+  @media (min-width: 992px) {
+    .hb-header-submenus[data-columns="2"] li.column-span-all, .hb-header-submenus[data-columns="2"] li:has(> .dropdown-divider) {
+      grid-column: 1 / -1;
+      width: 100%;
+    }
+  }
 }
 
 // Main header taxonomy
@@ -72,8 +79,11 @@ div.hb-blog-post-content {
   }
   // Code Block
   pre {
-    background-color: var(--hb-secondary-bg);
-    padding: 1rem;
+    & {
+      background-color: var(--hb-secondary-bg);
+      padding: 1rem;
+    }
+    code { padding: 0; }
   }
   // Headings
   h1, h2, h3, h4, h5, h6 { margin-top: 2rem !important; }
@@ -93,7 +103,11 @@ div.hb-blog-post-content {
   // List
   ul, ol {
     & { margin-bottom: 0.7rem; margin-top: 0.7rem; }
-    li p { margin-bottom: 0; }
+    li {
+      p { margin-bottom: 0; }
+      pre { margin-bottom: 0; }
+      > ul, > ol { margin-bottom: 0; margin-top: 0; }
+    }
   }
   // Paragraph margin
   p:first-child { margin-bottom: 0.7rem; margin-top: 0; }
