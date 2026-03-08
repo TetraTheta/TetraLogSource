@@ -3,10 +3,10 @@ module github.com/hbstack/theme
 go 1.21.5
 
 require (
-	github.com/KaTeX/KaTeX v0.16.33 // indirect
+	github.com/KaTeX/KaTeX v0.16.38 // indirect
 	github.com/Templarian/MaterialDesign-SVG v7.4.47+incompatible // indirect
 	github.com/desandro/masonry v4.2.2+incompatible // indirect
-	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
+	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20800 // indirect
 	github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 // indirect
 	github.com/hbstack/announcement-bar v0.4.1 // indirect
 	github.com/hbstack/back-to-top v0.2.0 // indirect

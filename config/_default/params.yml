@@ -47,8 +47,8 @@ hb:
       rss: true
   heading_sign:
     symbol: "¶"
-  pagination:
-    siblings: 3
+  # pagination:
+  #   siblings: 9 # For some reason, setting this will mess up pagination
   progress_bar:
     height: 4px
   tables:
