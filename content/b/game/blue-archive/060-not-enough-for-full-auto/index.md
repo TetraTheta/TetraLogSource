@@ -1,5 +1,5 @@
 ---
-title: "대결전 풀오토가 쉽지 않네..."
+title: "대결전 풀 오토가 쉽지 않네..."
 slug: not-enough-for-full-auto
 date: 2026-03-08T21:38:48+09:00
 series:
@@ -19,7 +19,7 @@ draft: true
 이번 주의 콘텐츠는 대결전이다. 총력전도 귀찮기 짝이 없는데, 대결전은 각 속성 별로 총력전을 각각 해야 한다는 점에서 3배 더 귀찮다고 할 수 있다.
 그래도 어쩌겠나. 청휘석이 아쉬운 내가 대결전을 할 수밖에.
 
-그래도 사용자의 조작 없이 오토로 총력전/대결전을 깨는 조합을 알려주는 사람이 있어 조금 수고를 덜 수 있었다.
+그래도 사용자의 조작 없이 AUTO로 총력전/대결전을 깨는 조합을 알려주는 사람이 있어 조금 수고를 덜 수 있었다.
 
 {{< gallery/image src="001|002|003" >}}
 
@@ -36,10 +36,14 @@ draft: true
 
 잠깐 시로 센세가 알려주는 죽음의 기하학을 배워 보자.
 
+{{< gallery/image src="noob" w=50% c="^^[원본](https://gall.dcinside.com/projectmx/706740)^^" >}}
+
 {{< gallery/image src="e01|e02|e03" g=0 >}}
 
-{{< gallery/image src="e04|e05|e06" >}}
+{{< gallery/image src="e04|e05|e06" g=0 c="내접 외접 허접" >}}
 
-{{< gallery/image src="noob" w=80% >}}
+{{< gallery/image src="e07|e08|e09" g=0 >}}
 
-<https://gall.dcinside.com/projectmx/706740>
+{{< gallery/image src="e10" >}}
+
+분명히 '풀 오토' 공략이었을 텐데, 수도 없이 '재시작' 버튼을 누르는 내가 있었다. 난 정말 시로가 싫어.
