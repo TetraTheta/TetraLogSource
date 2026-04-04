@@ -1,103 +1,98 @@
-# Note
+# 메모
 
-This is a note for myself for later use.
+나중에 다시 참고하기 위한 개인 메모입니다.
 
-- [Menu Image Icon Format](#menu-image-icon-format)
-  * [Making a Rounded Square Image](#making-a-rounded-square-image)
-- [Storing Image Files](#storing-image-files)
-  * [Git LFS](#git-lfs)
-  * [DVC with Google Drive](#dvc-with-google-drive)
-- [Website Host Comparison](#website-host-comparison)
-  * [GitHub Pages](#github-pages)
-  * [Render](#render)
+- [메뉴 이미지 아이콘 규격](#메뉴-이미지-아이콘-규격)
+  - [둥근 사각형 이미지 만들기](#둥근-사각형-이미지-만들기)
+- [이미지 파일 보관 방식](#이미지-파일-보관-방식)
+  - [Git LFS](#git-lfs)
+  - [Google Drive와 DVC](#google-drive와-dvc)
+- [웹사이트 호스팅 비교](#웹사이트-호스팅-비교)
+  - [GitHub Pages](#github-pages)
+  - [Render](#render)
 
-***
+## 메뉴 이미지 아이콘 규격
 
-## Menu Image Icon Format
+SVG 대신 PNG 이미지를 메뉴 아이콘으로 사용할 수 있음. 다만 PNG 이미지는 아래 규칙을 따르는 편이 좋다.
 
-I can use a PNG image as a menu icon instead of an SVG image. But the PNG image must follow these rules:
+1. 이미지 크기
+   - 메인 메뉴: `16x16`
+   - 서브 메뉴: `32x32`
+2. 이미지 모서리 둥글기
+   - `256x256`: `55px`
+   - `400x400`: `85px`
+   - `512x512`: `109px`
 
-1. Image Size
-   * Main Menu: 16x16
-   * Sub Menu: 32x32
-2. Image Round Radius
-   * 256x256: 55px
-   * 400x400: 85px
-   * 512x512: 109px
+### 둥근 사각형 이미지 만들기
 
-### Making a Rounded Square Image
+Photoshop에서 둥근 사각형 이미지를 만들 때는 아래 순서로 작업한다.
 
-To make rounded square image in Photoshop, follow this.
+1. 이미지 레이어 아래에 둥근 사각형 레이어를 둔다.
+2. 이미지 레이어를 우클릭한 뒤 '클리핑 마스크'로 설정한다.
 
-1. Put a rounded rectangle layer below the image layer
-2. Right-click the image layer and set it as a clipping mask
+## 이미지 파일 보관 방식
 
-## Storing Image Files
+블로그에는 이미지 파일이 매우 많다. `2025-07-07` 기준 대략적인 규모는 아래와 같다.
 
-My blog contains a lot of image files.
-As in 25.07.07, this is the statistics of those image files.
+- 개수: `31,000개 이상`
+- 전체 용량: `2.25 GiB 이상`
 
-* Count: ＞ 31,000
-* Total Size: ＞ 2.25 GiB 
-
-Putting these image files in Git repository will increase pull time. I need a way to store these image files in somewhere else.
+이 파일들을 Git 저장소에 그대로 넣으면 clone/pull 시간이 지나치게 길어진다. 그래서 이미지 파일을 별도 저장소나 외부 스토리지에 두는 방법이 필요하다.
 
 ### Git LFS
 
-I must not use Git LFS, especially the Git LFS provided by GitHub.
+특히 GitHub가 제공하는 Git LFS는 사용하지 않는 편이 낫다.
 
-* Very limited quota<br>
-  GitHub provides 1 GiB free storage and 1 GiB bandwidth per month.<br>
-  None of these can satisfy my situation.
-* Very slow push speed<br>
-  When I tried to push file to Git LFS server on local network, the push speed was ~250 KiB/s.<br>
-  I can't bear with this speed, and I couldn't find out how to speed up the push speed.
+- 무료 용량이 너무 작음
+  GitHub는 월 1 GiB 저장소와 1 GiB 대역폭만 무료로 제공한다.
+  현재 블로그 규모에는 맞지 않는다.
+- 업로드 속도가 너무 느림
+  로컬 네트워크 환경에서도 업로드 속도가 대략 `250 KiB/s` 정도였고, 실사용이 어려웠다.
 
-### DVC with Google Drive
+### Google Drive와 DVC
 
-I also tried [DVC](https://dvc.org/) with Google Drive.
-That sounded nice, but Google was the ball and chain.
+[DVC](https://dvc.org/)와 Google Drive 조합도 시도해봤다. 아이디어 자체는 괜찮지만, Google Drive 쪽 제한이 문제였다.
 
-* Very limited quota<br>
-  Even though I used Service Account, initial push reached quota very quickly.<br>
-  Since I must use DVC for uploading those 'cache' to Google Drive, I can't proceed.
+- 할당량이 빨리 소진됨
+  Service Account를 사용해도 초기 업로드 단계에서 제한량에 빠르게 도달했다.
+- 결국 대용량 캐시 업로드 경로로 쓰기 어려움
 
-## Website Host Comparison
+## 웹사이트 호스팅 비교
 
-I need to find out which host is the best choice.
+블로그에 가장 적합한 호스팅을 찾기 위한 메모다.
 
 ### GitHub Pages
 
-#### Pros
+장점:
 
-* Free of Charge<br>
-  GitHub Pages is free unless the website is heavily used. This is OK for my blog.
-* Very Fast Response Time<br>
-  Since GitHub Pages is on CDN, which ensures the fastest response time.
-* Very Big Bandwidth<br>
-  I don't know about how much GitHub Pages allows, but it is big enough.
+- 무료
+  트래픽이 극단적으로 크지 않다면 무료로 운영 가능하다.
+- 응답 속도가 빠름
+  CDN 기반이라 정적 사이트 응답이 빠르다.
+- 대역폭이 넉넉한 편
+  정확한 수치는 몰라도 일반적인 블로그 용도로는 충분하다.
 
-#### Cons
+단점:
 
-* Total Site Size Limit<br>
-  GitHub Pages limits the total website size to 1 GB. My blog exceeds the limit (≥ 2 GB).<br>
-  My blog is still built and uploaded, but GitHub might stop my blog from being built someday.
-* No Git LFS Support<br>
-  GitHub Pages doesn't support pulling data from Git LFS.
+- 전체 사이트 용량 제한
+  GitHub Pages는 총 사이트 용량을 1 GB로 제한한다.
+  현재 블로그는 2 GB 이상이라 장기적으로 위험하다.
+- Git LFS와의 결합이 좋지 않음
+  GitHub Pages는 Git LFS 데이터를 그대로 호스팅하는 용도로 적합하지 않다.
 
 ### Render
 
-[Render](https://render.com/) allows me to host a static website.
+[Render](https://render.com/)는 정적 사이트 호스팅에 사용할 수 있다.
 
-#### Pros
+장점:
 
-* Free of Charge<br>
-  If the website is static ― which Hugo produces ―, it doesn't cost for hosting the website.
-* Very Fast Response Time<br>
-  Render hosts websites on CDN, which ensures the fastest response time.
+- 무료
+  Hugo처럼 정적 결과물을 배포하는 용도라면 무료 플랜으로도 운영 가능하다.
+- 응답 속도가 빠름
+  Render 역시 CDN 기반 배포가 가능하다.
 
-#### Cons
+단점:
 
-* Limited build time<br>
-  I can only use 500 minutes ― less than 1 day (1,440 minutes) ― per month for building sites in the free tier.<br>
-  It takes 10 minutes to build my blog, so I can only do 50 builds per month.
+- 빌드 시간이 제한됨
+  무료 플랜에서는 월 500분만 빌드에 사용할 수 있다.
+  블로그 한 번 빌드에 10분 정도 걸리면 월 50회 정도밖에 빌드하지 못한다.

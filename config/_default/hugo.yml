@@ -1,5 +1,6 @@
 title: TetraLog
 baseURL: https://tetralog.onrender.com/
+theme: hbtheme
 
 # Copyright, the {year} is the placeholder of this year.
 copyright: "Copyright © {year}. TetraTheta All Rights Reserved."
@@ -90,8 +91,6 @@ outputs:
     - HTML
     - RSS
     - SearchIndex # required by search module.
-    #- Offline # required by PWA module for displaying the offline pages.
-    #- WebAppManifest # required by PWA module to make your site installable.
 
 #permalinks:
 #  blog: /blog/:year/:month/:title

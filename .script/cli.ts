@@ -1,12 +1,12 @@
 #!/usr/bin/env bun
-import s from 'ansi-styles'; // from '@hbstack/node-packages'
+import s from 'ansi-styles';
 import { load } from 'cheerio';
 import { spawnSync } from 'child_process';
 import { program } from 'commander';
 import { Element } from 'domhandler';
 import { sort } from 'fast-sort';
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
-import { globSync, type GlobOptionsWithFileTypesUnset } from 'glob'; // from '@hbstack/node-packages'
+import { globSync, type GlobOptionsWithFileTypesUnset } from 'glob';
 import { minify as minifyHTML } from 'html-minifier-terser';
 import { minify as minifyXML } from 'minify-xml';
 import { html, type Token } from 'parse5';

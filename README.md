@@ -1,103 +1,58 @@
-# TetraLogSource
+# TetraLog 소스 저장소
 
-This is the source of my blog, [TetraLog](https://tetralog.onrender.com/), built with [Hugo](https://gohugo.io/) and the [HB Card Theme](https://github.com/hbstack/theme-cards).
+이 저장소는 [TetraLog](https://tetralog.onrender.com/) 블로그의 Hugo 소스입니다.
 
-- [Requirements](#requirements)
-- [Note](#note)
-  * [Theme Overrides](#theme-overrides)
-  * [Useful commands](#useful-commands)
-    + [Sort `package.json`](#sort--packagejson-)
-    + [Print Dependency Graph](#print-dependency-graph)
-    + [Remove Unnecessary Dependencies](#remove-unnecessary-dependencies)
+현재 블로그는 `themes/hbtheme`에 들어 있는 전통적인 Hugo 테마를 사용하며, 일부 아이콘 관련 의존성만 Hugo Module로 유지합니다.
 
-***
+## 개요
 
-## Requirements
+- 정적 사이트 생성기: `Hugo`
+- 패키지 매니저: `Bun`
+- 테마: [`themes/hbtheme`](themes/hbtheme)
+- 특징:
+  - `hbstack` / `hugomods`의 Hugo Module 기반 테마를 전통적인 Hugo 테마 구조로 통합
+  - Bootstrap, Fuse 등 프런트엔드 런타임 의존성은 루트 `package.json`에서 관리
 
-* Hugo ≥ 0.147.9
-* Bun ≥ 1.2.18
+## 요구 사항
 
-After cloning, run this command:
+- Hugo `0.159.2` 이상 권장
+- Bun `1.2.x` 이상 권장
+
+설치 후에는 프로젝트 루트에서 아래 명령을 실행합니다.
+
 ```bash
 bun install
 ```
 
-Check out `package.json` for scripts that can be used with `bun run <script name>`.
+## 자주 쓰는 명령
 
-## Note
-
-This is a note for myself for later use. Some are separated into [NOTE](NOTE.md).
-
-### Theme Overrides
-
-For various reasons, I've overridden the files of Hugo and HB Card Theme. Here is a list of files that I've overridden and their original sources.
-
-<details>
-<summary>Override List</summary>
-<pre><code>layouts
-│ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/rss.xml">rss.xml</a>
-├─partials
-│ │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_partials/opengraph.html">opengraph.html</a> (Summary Fix)
-│ │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_partials/schema.html">schema.html</a> (Summary Fix)
-│ │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_partials/twitter_cards.html">twitter_cards.html</a> (Summary Fix)
-│ ├─base
-│ │   <a target="_blank" href="https://github.com/hugomods/base/blob/main/layouts/partials/base/title.html">title.html</a> (Custom Title Style)
-│ ├─hb/modules
-│ │ ├─blog/post
-│ │ │   <a target="_blank" href="https://github.com/hbstack/blog/blob/main/layouts/partials/hb/modules/blog/post/summary.html">summary.html</a> (Summary Fix)
-│ │ ├─breadcrumb
-│ │ │   <a target="_blank" href="https://github.com/hbstack/breadcrumb/blob/main/layouts/partials/hb/modules/breadcrumb/index.html">index.html</a> (Hide 'Blog' from Breadcrumb)
-│ │ └─footer
-│ │     <a target="_blank" href="https://github.com/hbstack/footer/blob/main/layouts/partials/hb/modules/footer/powered-by.html">powered-by.html</a> (Custom Footer Text)
-│ └─seo/modules
-│   ├─base
-│   │   <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/base/layouts/partials/seo/modules/base/index.html">index.html</a> (Summary Fix)
-│   ├─favicons
-│   │   <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/favicons/layouts/partials/seo/modules/favicons/index.html">index.html</a> (Remove 'mask-icon.svg')
-│   ├─open-graph
-│   │   <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/open-graph/layouts/partials/seo/modules/open-graph/index.html">index.html</a> (Summary Fix)
-│   ├─schema
-│   │   <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/schema/layouts/partials/seo/modules/schema/index.html">index.html</a> (Summary Fix)
-│   └─twitter-cards
-│       <a target="_blank" href="https://github.com/hugomods/seo/blob/main/modules/twitter-cards/layouts/partials/seo/modules/twitter-cards/index.html">index.html</a> (Summary Fix)
-└─shortcodes
-  │ <a target="_blank" href="https://github.com/hugomods/bootstrap/blob/main/layouts/partials/bootstrap/collapse.html">collapse.html</a>
-  │ imgref.html
-  │ <a target="_blank" href="https://github.com/hbstack/shortcodes/blob/main/layouts/shortcodes/spoiler-tag.html">spoiler.html</a>
-  │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_shortcodes/x.html">x.html</a>
-  │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_shortcodes/x_simple.html">x_simple.html</a>
-  │ <a target="_blank" href="https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_shortcodes/youtube.html"></a>youtube.html</a>
-  └─gallery
-      image.html
-      video.html
-</code></pre>
-</details>
-
-### Useful commands
-
-Here are some commands that I don't want to put in `package.json`.
-
-#### Sort `package.json`
+개발 서버 실행:
 
 ```bash
-bun x sort-package-json package.json
+bun run dev
 ```
 
-#### Print Dependency Graph
-
-Bun doesn't have `ls` feature yet :(
-```bash
-npm ls --all
-```
-
-#### Remove Unnecessary Dependencies
-
-Bun doesn't have `prune` feature yet :(
+프로덕션 빌드:
 
 ```bash
-npm prune
-rm package-lock.json
-rm bun.lock
-rm -r node_modules
-bun install
+bun run build
 ```
+
+업데이트 가능한 패키지 확인:
+
+```bash
+bun run check-update
+```
+
+## 테마 관련 문서
+
+`hbtheme` 자체를 이해하거나 다른 사이트에 적용하려면 아래 문서를 참고하면 됩니다.
+
+- 사용자용 안내: [`themes/hbtheme/README.md`](themes/hbtheme/README.md)
+- 유지보수용 문서: [`themes/hbtheme/DEVELOPMENT.md`](themes/hbtheme/DEVELOPMENT.md)
+
+## 메모
+
+- 아이콘 vendor는 여전히 Hugo Module import로 유지합니다.
+- Bootstrap SCSS/JS와 Fuse는 루트 `node_modules`를 Hugo `mounts`로 노출해 사용합니다.
+- `@hbstack/node-packages`는 더 이상 사용하지 않으며, 필요한 패키지는 루트 `package.json`에 직접 선언되어 있습니다.
