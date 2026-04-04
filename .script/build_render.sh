@@ -88,7 +88,13 @@ if [ "$SASS_INSTALLED_VERSION" != "$SASS_VERSION" ]; then
 else
   echo "Dart Sass version matches: $SASS_VERSION."
 fi
-PATH="$PATH:$SASS_CACHE_DIR" # Make Hugo can find Dart Sass in PATH
+
+# Make sure Hugo resolves the intended Dart Sass first, even if Render already
+# provides another `sass` binary earlier in PATH.
+SASS_BIN_DIR=$(dirname "$SASS_BIN")
+PATH="$SASS_BIN_DIR:$PATH"
+echo "Using Dart Sass binary: $SASS_BIN"
+"$SASS_BIN" --version
 
 # ==== Build site ====
 cd "$HOME/project/src" || {
