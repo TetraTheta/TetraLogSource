@@ -1,5 +1,5 @@
 import { default as params } from '@params'
-import Fuse from 'mods/fuse/fuse'
+import Fuse from 'mods/fuse/fuse.mjs'
 
 /**
  * The Fuse.js search engine.
