@@ -7,7 +7,7 @@ copyright: "Copyright © {year}. TetraTheta All Rights Reserved."
 
 defaultContentLanguage: ko
 defaultContentLanguageInSubdir: false
-languageCode: ko
+locale: ko-KR
 
 hasCJKLanguage: false
 summaryLength: 25 # [Summary Fix] Not used. Use params.ParamSummaryLength instead.

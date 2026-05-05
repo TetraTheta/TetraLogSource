@@ -1,7 +1,7 @@
 {{- $text := .Get 0 }}
 {{- $title := default "" (.Get 1) }}
 {{- if eq $title "" }}
-  {{- with index hugo.Data.abbreviations (lower site.Language.LanguageCode) }}
+  {{- with index hugo.Data.abbreviations (lower site.Language.Locale) }}
     {{- with index . $text }}
       {{- $title = . }}
     {{- end }}

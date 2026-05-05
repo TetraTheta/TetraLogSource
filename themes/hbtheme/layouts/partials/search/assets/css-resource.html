@@ -1,4 +1,4 @@
-{{- $rtl := eq .Language.LanguageDirection "rtl" }}
+{{- $rtl := eq .Language.Direction "rtl" }}
 {{- $postCSSOpts := dict
   "use" (cond $rtl "autoprefixer rtlcss" "autoprefixer")
 }}

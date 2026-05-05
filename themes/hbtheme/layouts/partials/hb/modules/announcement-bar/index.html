@@ -1,4 +1,4 @@
-{{- with index hugo.Data.announcements site.Language.LanguageCode }}
+{{- with index hugo.Data.announcements site.Language.Locale }}
   {{- $icon := partial "icons/icon" (dict
     "vendor" "bs"
     "name" "arrow-right"

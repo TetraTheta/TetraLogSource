@@ -1,4 +1,4 @@
-{{- $rtl := eq .Language.LanguageDirection "rtl" }}
+{{- $rtl := eq .Language.Direction "rtl" }}
 {{- $opts := dict
   "targetPath" (cond $rtl "css/search.rtl.css" "css/search.css")
   "outputStyle" (cond hugo.IsProduction "compressed" "")

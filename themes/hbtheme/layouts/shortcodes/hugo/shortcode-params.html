@@ -46,7 +46,7 @@
     {{- with .description }}
       {{- $desc := . }}
       {{- if reflect.IsMap $desc }}
-        {{- $desc = default .default (index . (site.Language.LanguageCode | lower)) }}
+        {{- $desc = default .default (index . (site.Language.Locale | lower)) }}
       {{- end }}
       {{- $desc | $.Page.RenderString | printf "%s\n" | safeHTML }}
     {{- end }}

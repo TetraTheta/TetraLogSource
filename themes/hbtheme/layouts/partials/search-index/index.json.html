@@ -51,7 +51,7 @@
 {{- end -}}
 {{- $langs := newScratch -}}
 {{- range hugo.Sites -}}
-  {{- $langs.Set .Language.Lang .Language.LanguageName -}}
+  {{- $langs.Set .Language.Lang .Language.Label -}}
 {{- end }}
 {{- $taxonomies := newScratch -}}
 {{- range $name, $taxonomy := site.Taxonomies -}}
