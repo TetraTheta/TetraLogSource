@@ -7,7 +7,7 @@
 ## 개요
 
 - 정적 사이트 생성기: `Hugo`
-- 패키지 매니저: `Bun`
+- 패키지 매니저: `pnpm` (Node.js 기반)
 - 테마: [`themes/hbtheme`](themes/hbtheme)
 - 특징:
   - `hbstack` / `hugomods`의 Hugo Module 기반 테마를 전통적인 Hugo 테마 구조로 통합
@@ -16,12 +16,13 @@
 ## 요구 사항
 
 - Hugo `0.159.2` 이상 권장
-- Bun `1.2.x` 이상 권장
+- Node.js `20.x` 이상 권장
+- pnpm `10.x` 이상 권장
 
 설치 후에는 프로젝트 루트에서 아래 명령을 실행합니다.
 
 ```bash
-bun install
+pnpm install
 ```
 
 ## 자주 쓰는 명령
@@ -29,19 +30,19 @@ bun install
 개발 서버 실행:
 
 ```bash
-bun run dev
+pnpm run dev
 ```
 
 프로덕션 빌드:
 
 ```bash
-bun run build
+pnpm run build
 ```
 
 업데이트 가능한 패키지 확인:
 
 ```bash
-bun run check-update
+pnpm run check-update
 ```
 
 ## 테마 관련 문서

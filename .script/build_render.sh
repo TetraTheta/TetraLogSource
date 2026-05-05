@@ -18,6 +18,46 @@ XDG_CACHE_HOME=${XDG_CACHE_HOME:-$HOME/.cache}
 TMP_DIR="$HOME/tmp"
 mkdir -p "$TMP_DIR"
 
+# ==== Check pnpm ====
+echo "Checking pnpm..."
+PNPM_MAJOR_VERSION=10
+PNPM_BIN=$(command -v pnpm)
+if [ -z "$PNPM_BIN" ]; then
+  PNPM_INSTALLED_VERSION="NOT_INSTALLED"
+else
+  PNPM_INSTALLED_VERSION=$("$PNPM_BIN" --version)
+fi
+PNPM_INSTALLED_MAJOR=$(printf '%s' "$PNPM_INSTALLED_VERSION" | cut -d. -f1)
+
+if [ "$PNPM_INSTALLED_MAJOR" != "$PNPM_MAJOR_VERSION" ]; then
+  echo "pnpm major version mismatch or not installed. Expected: ${PNPM_MAJOR_VERSION}.x | Found: $PNPM_INSTALLED_VERSION"
+  mkdir -p "$HOME/project/src/bin"
+  corepack enable --install-directory "$HOME/project/src/bin" || {
+    echo "Error enabling Corepack."
+    exit 1
+  }
+  export PATH="$HOME/project/src/bin:$PATH"
+  corepack prepare "pnpm@${PNPM_MAJOR_VERSION}" --activate || {
+    echo "Error preparing pnpm@${PNPM_MAJOR_VERSION} with Corepack."
+    exit 1
+  }
+  PNPM_BIN=$(command -v pnpm)
+  if [ -z "$PNPM_BIN" ]; then
+    echo "pnpm is still unavailable after bootstrap."
+    exit 1
+  fi
+  PNPM_INSTALLED_VERSION=$("$PNPM_BIN" --version)
+  PNPM_INSTALLED_MAJOR=$(printf '%s' "$PNPM_INSTALLED_VERSION" | cut -d. -f1)
+  if [ "$PNPM_INSTALLED_MAJOR" != "$PNPM_MAJOR_VERSION" ]; then
+    echo "Unsupported pnpm version after bootstrap: $PNPM_INSTALLED_VERSION (expected ${PNPM_MAJOR_VERSION}.x)"
+    exit 1
+  fi
+else
+  echo "pnpm major version matches: ${PNPM_MAJOR_VERSION}.x."
+fi
+echo "Using pnpm binary: $PNPM_BIN"
+echo "pnpm version: $PNPM_INSTALLED_VERSION"
+
 # ==== Check Hugo ====
 echo "Checking Hugo version..."
 HUGO_BIN=$(command -v hugo)
@@ -101,6 +141,11 @@ cd "$HOME/project/src" || {
   echo "Failed to change directory to build directory"
   exit 1
 }
-bun run cli clean
+echo "Installing workspace dependencies via pnpm..."
+"$PNPM_BIN" install --frozen-lockfile || {
+  echo "Failed to install dependencies with pnpm."
+  exit 1
+}
+"$PNPM_BIN" --filter @tetralog/cli run cli clean
 "$HUGO_BIN" --gc --minify -e production
-bun run cli deslash
+"$PNPM_BIN" --filter @tetralog/cli run cli deslash

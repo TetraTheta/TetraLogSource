@@ -1,40 +1,42 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
+// @ts-check
 import s from 'ansi-styles';
 import { load } from 'cheerio';
 import { spawnSync } from 'child_process';
 import { program } from 'commander';
-import { Element } from 'domhandler';
 import { sort } from 'fast-sort';
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
-import { globSync, type GlobOptionsWithFileTypesUnset } from 'glob';
+import { globSync } from 'glob';
 import { minify as minifyHTML } from 'html-minifier-terser';
 import { minify as minifyXML } from 'minify-xml';
-import { html, type Token } from 'parse5';
+import { html } from 'parse5';
 import { adapter } from 'parse5-htmlparser2-tree-adapter';
-import { join, resolve } from 'path';
+import { dirname, join, resolve } from 'path';
 import { cwd, exit as exitWithCode } from 'process';
+import { fileURLToPath } from 'url';
 
 // ####################
 // # Class & Function #
 // ####################
 // Some variables that would be used in multiple times
-const dirContent = join(cwd(), 'content');
-const dirPublic = join(cwd(), 'public');
-const dirResources = join(cwd(), 'resources');
-const dirRoot = cwd();
+const scriptDir = dirname(fileURLToPath(import.meta.url));
+const dirRoot = resolve(scriptDir, '..');
+const dirContent = join(dirRoot, 'content');
+const dirPublic = join(dirRoot, 'public');
+const dirResources = join(dirRoot, 'resources');
 
 // Generic functions
 const header_max_length = 7;
 /** Print information log message */
-function printInfo(msg: unknown, header = 'INFO'): void {
+function printInfo(msg, header = 'INFO') {
   console.log(`${s.green.open}${header.padEnd(header_max_length)}${s.green.close}:`, msg);
 }
 /** Print error log message */
-function printError(msg: unknown, header = 'ERROR'): void {
+function printError(msg, header = 'ERROR') {
   console.error(`${s.red.open}${header.padEnd(header_max_length)}${s.red.close}:`, msg);
 }
 /** I'm doing this because TypeScript is dumb :( */
-function exit(code?: number | string | null | undefined): never {
+function exit(code) {
   exitWithCode(code);
 }
 
@@ -62,7 +64,7 @@ const attribute_priority = [
 ];
 const SortedAdapter = {
   ...adapter,
-  createElement(tagName: string, namespaceURI: html.NS, attrs: Token.Attribute[]): Element {
+  createElement(tagName, namespaceURI, attrs) {
     attrs.sort((a, b) => {
       const ia = attribute_priority.indexOf(a.name);
       const ib = attribute_priority.indexOf(b.name);
@@ -71,7 +73,7 @@ const SortedAdapter = {
     });
     return adapter.createElement(tagName, namespaceURI, attrs);
   },
-  getAttrList(elem: Element): Token.Attribute[] {
+  getAttrList(elem) {
     const list = adapter.getAttrList(elem);
     list.sort((a, b) => {
       const ia = attribute_priority.indexOf(a.name);
@@ -84,18 +86,16 @@ const SortedAdapter = {
 };
 
 // Kind (for 'new' command)
-interface Kind {
-  /** Name of the kind. */
-  name: string;
-  /** Alias of the kind. This must not include 'name' */
-  aliases: string[];
-  /** Archetype of the kind. */
-  archetype: string;
-  /** Path where the new post will be saved into */
-  path: string;
-}
+/**
+ * @typedef {object} Kind
+ * @property {string} name
+ * @property {string[]} aliases
+ * @property {string} archetype
+ * @property {string} path
+ */
 
-const kinds: Kind[] = [
+/** @type {Kind[]} */
+const kinds = [
   { name: 'blue-archive', aliases: ['ba', 'bluearchive'], archetype: 'blue-archive', path: 'b/game/blue-archive' },
   { name: 'chit-chat', aliases: ['cc', 'chat', 'chitchat'], archetype: 'chit-chat', path: 'b/chit-chat' },
   { name: 'default', aliases: [], archetype: 'default', path: 'b' },
@@ -217,7 +217,7 @@ const kinds: Kind[] = [
   },
 ];
 
-const aliasMap = new Map<string, Kind>();
+const aliasMap = new Map();
 for (const kind of kinds) {
   aliasMap.set(kind.name, kind);
   for (const alias of kind.aliases) {
@@ -225,11 +225,11 @@ for (const kind of kinds) {
   }
 }
 
-function findKind(needle: string): Kind | undefined {
+function findKind(needle) {
   return aliasMap.get(needle);
 }
 
-function showKinds(): string {
+function showKinds() {
   return kinds
     .map((k) => {
       const sorted = [...k.aliases].sort((a, b) => a.localeCompare(b));
@@ -239,7 +239,7 @@ function showKinds(): string {
 }
 
 //
-function run(command: string, cwd: string): void {
+function run(command, cwd) {
   const result = spawnSync(command, { cwd: cwd, shell: true, stdio: ['ignore', 'inherit', 'inherit'] });
   if (result.error) {
     printError(`Failed to start command: ${result.error.message}`);
@@ -254,14 +254,14 @@ function run(command: string, cwd: string): void {
 // # Parse Command-line #
 // ######################
 /**
- * Prevent calling script without NPM (or Bun)
+ * Prevent calling script without NPM-compatible package runner
  * 1. Check package name
  * 2. Check 'package.json' existance
  */
 // For whatever reason, this completely blocks script from running
 // if (process.env.npm_package_name !== 'tetralog' || !existsSync(join(cwd(), 'package.json'))) {
-//   printError('Call this script with NPM or Bun');
-//   printError("e.g. 'npm run cli' or 'bun run cli'");
+//   printError('Call this script with NPM or pnpm');
+//   printError("e.g. 'npm run cli' or 'pnpm run cli'");
 //   exit(1);
 // }
 
@@ -291,10 +291,10 @@ program
   .command('deslash')
   .description('Remove trailing slash from HTML/XML files')
   .argument('[path]', 'Hugo build output directory', dirPublic)
-  .action((path: string) => {
+  .action((path) => {
     // 'minifyHTML' requires parent function to be async. De-async it.
     (async () => {
-      const _globOption: GlobOptionsWithFileTypesUnset = { absolute: true, cwd: resolve(path), dot: false };
+      const _globOption = { absolute: true, cwd: resolve(path), dot: false };
       const _currentYear = new Date().getFullYear().toString();
 
       const filesHTML = sort(globSync('**/*.{htm,html}', _globOption)).by({ asc: true, comparer: natcomp });
@@ -362,7 +362,7 @@ program
       .then(() => {
         printInfo('All files are processed');
       })
-      .catch((err: unknown) => {
+      .catch((err) => {
         printError(err);
       });
   });
@@ -373,7 +373,7 @@ program
   .description('Create new Hugo blog post')
   .requiredOption('-k, --kind <kind>', 'Kind of new article')
   .argument('<title>', 'Title of the new article')
-  .action((title: string, { kind }: { kind: string }) => {
+  .action((title, { kind }) => {
     const newKind = findKind(kind);
     const newTitle = title
       .replace(/[^a-zA-Z0-9]/g, '-')
@@ -404,7 +404,8 @@ program
       mkdirSync(newPath, { recursive: true });
     }
 
-    let dirList: string[];
+    /** @type {string[]} */
+    let dirList;
     try {
       dirList = readdirSync(newPath, { withFileTypes: true })
         .filter((e) => e.isDirectory())
