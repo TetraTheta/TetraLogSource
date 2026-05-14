@@ -1,7 +1,23 @@
 {{/* Generate the description meta tag. */}}
-{{- $desc := default .Title (default (.Summary | plainify) .Description) }}
-<meta name="description" content="{{ $desc }}" />
+{{- if or .Summary .Description -}}
+{{- $summary := "" -}}
+{{- if .IsPage -}}
+  {{- if .Params.summary -}}
+    {{- $summary = .Params.summary | plainify | htmlUnescape -}}
+    {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
+  {{- else -}}
+    {{- $summaryLength := int (default 70 .Site.Params.summary.length) -}}
+    {{- $summary = .Content | plainify | htmlUnescape -}}
+    {{- $summary = $summary | truncate $summaryLength -}}
+    {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
+  {{- end -}}
+{{- else -}}
+  {{- $summary = .Summary -}}
+{{- end -}}
+{{- $summary = trim ($summary | htmlUnescape) " " -}}
+<meta name="description" content="{{ $summary }}" />
+{{- end -}}
 {{/* Generate the noindex meta tag. */}}
-{{- if .Params.noindex }}
-  <meta name="robots" content="noindex">
-{{- end }}
+{{- if .Params.noindex -}}
+<meta name="robots" content="noindex">
+{{- end -}}

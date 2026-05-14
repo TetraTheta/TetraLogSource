@@ -1,5 +1,3 @@
-ParamSummaryLength: 150 # This is what is used for generating summary. Do not use 'summaryLength'.
-
 hb:
   back_to_top:
     icon_name: arrow-up-circle
@@ -96,3 +94,6 @@ search:
 seo:
   favicons:
     icon: images/logo.png
+
+summary:
+  length: 150 # This is what is used for generating summary. Do not use 'summaryLength'.

@@ -12,7 +12,13 @@
 {{- end }}
 {{/* Append the sections titles. */}}
 {{- if .Site.Params.title_sections }}
-  {{- $sections := partial "base/functions/sections-titles" . }}
+  {{- $removals := slice "Blog" "블로그" -}}
+  {{- $sections := partial "base/functions/sections-titles" .Page | collections.Reverse -}}
+  {{- range $r := $removals -}}
+    {{- if and (gt (len $sections) 0) (eq (index $sections 0) $r) -}}
+      {{- $sections = after 1 $sections -}}
+    {{- end -}}
+  {{- end -}}
   {{- $depth := default 0 site.Params.title_sections_depth }}
   {{- $dir := default "end" site.Params.title_sections_depth_dir }}
   {{- with $depth }}
@@ -22,11 +28,14 @@
       {{- $sections = first . $sections }}
     {{- end }}
   {{- end }}
-  {{- $titles = $titles | append $sections }}
+  {{/* Combine sections with hard-coded separator */}}
+  {{- if gt ($sections | len) 1 -}}
+    {{- $titles = $titles | append "-" (delimit $sections "/") -}}
+  {{- end -}}
 {{- end }}
 {{/* Append the site title at the end. */}}
 {{- if not .IsHome }}
-  {{- $titles = $titles | append .Site.Title }}
+  {{- $titles = $titles | append "-" .Site.Title }}
 {{- end }}
-{{- $separator := printf " %s " .Site.Params.title_separator }}
-{{- delimit $titles $separator -}}
+{{/* Combine titles with hard-coded separator */}}
+{{- delimit $titles " " -}}

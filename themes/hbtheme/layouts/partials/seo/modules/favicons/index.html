@@ -37,17 +37,7 @@
   {{- warnf "[seo] the assets/%s does not exist." $faviconName }}
 {{- end }}
 {{/* Mask (Pinned Tab) icon for Safari browser. */}}
-{{- $maskIcon := default "mask-icon.svg" .Site.Params.seo.favicons.mask_icon }}
-{{- with resources.Get $maskIcon }}
-  {{- $mask := . }}
-  <link
-    rel="mask-icon"
-    href="{{ $mask.RelPermalink }}"
-    color="{{ default `#000000` $.Site.Params.seo.favicons.mask_icon_color }}"
-  />
-{{- else }}
-  {{- warnf "[seo] the assets/%s does not exist." $maskIcon }}
-{{- end }}
+{{/* REMOVED */}}
 {{/* For classic browsers. */}}
 {{- $ico := resources.Get "favicon.ico" }}
 {{/* Output nothing to publish the resource. */}}

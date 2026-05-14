@@ -9,7 +9,21 @@
 {{- end }}
 
 {{- if or .Description .Summary site.Params.description -}}
-  {{- $summary := partial "hb-custom/functions/get-summary" . -}}
+  {{- $summary := "" -}}
+  {{- if .IsPage -}}
+    {{- if .Params.summary -}}
+      {{- $summary = .Params.summary | plainify | htmlUnescape -}}
+      {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
+    {{- else -}}
+      {{- $summaryLength := int (default 70 .Site.Params.summary.length) -}}
+      {{- $summary = .Content | plainify | htmlUnescape -}}
+      {{- $summary = $summary | truncate $summaryLength -}}
+      {{- $summary = replaceRE "[\r\n]+" " " $summary -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $summary = .Summary -}}
+  {{- end -}}
+  {{- $summary = trim ($summary | htmlUnescape) " " -}}
   <meta property="og:description" content="{{ $summary | plainify }}">
   {{- /* warnf "[%s] [OG] %s" .Title $summary */ -}}
 {{- end -}}

@@ -1,5 +1,12 @@
 {{/* Custom page meta */}}
-{{- $ancestors := partial "hb-custom/functions/ancestors" .Page -}}
+{{- $removals := slice "Blog" "블로그" -}}
+{{- $ancestors := slice -}}
+{{- range $a := .Page.Ancestors.Reverse -}}
+  {{- if or $a.IsHome (in $removals $a.Title) -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $ancestors = $ancestors | append $a -}}
+{{- end -}}
 <span class="hb-blog-post-section">
   <div class="badge bg-secondary text-decoration-none fw-normal">
   {{- range $i, $a := $ancestors -}}
