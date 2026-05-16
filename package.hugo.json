@@ -9,7 +9,8 @@
     "check-update": "pnpm dlx npm-check-updates",
     "cli": "pnpm --filter @tetralog/cli run cli",
     "dev": "hugo server --renderToMemory --disableFastRender -D -p 44",
-    "dev.prod": "hugo server --gc --minify --renderToMemory --disableFastRender -D -e production -p 44"
+    "dev.prod": "hugo server --gc --minify --renderToMemory --disableFastRender -D -e production -p 44",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^8.0.0",
@@ -29,5 +30,9 @@
     "eslint-plugin-prettier": "^5.5.5",
     "prettier": "^3.8.3",
     "typescript-eslint": "^8.59.2"
+  },
+  "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499",
+  "engines": {
+    "npm": "Use pnpm instead of npm."
   }
 }

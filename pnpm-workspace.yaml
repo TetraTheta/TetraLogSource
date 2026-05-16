@@ -1,3 +1,4 @@
 packages:
   - "."
   - ".script"
+preferSymlinkedExecutables: true # Temporary fix for pnpm

@@ -20,7 +20,7 @@ mkdir -p "$TMP_DIR"
 
 # ==== Check pnpm ====
 echo "Checking pnpm..."
-PNPM_MAJOR_VERSION=10
+PNPM_MAJOR_VERSION=11
 PNPM_BIN=$(command -v pnpm)
 if [ -z "$PNPM_BIN" ]; then
   PNPM_INSTALLED_VERSION="NOT_INSTALLED"
