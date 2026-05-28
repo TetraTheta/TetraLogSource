@@ -38,6 +38,67 @@ images:
 > [!NOTE] 확인 사항
 > 스크립트를 최초로 실행하는 시각이 오후 11시 59분일 경우, 스크립트가 중복 실행될 수 있습니다.
 
+{{< collapse heading="최신 버전 (`gsudo` 사용)" expand=true >}}
+
+Windows 11의 보안 강화로 인해 `net`, `mshta` 명령어가 정상 작동하지 않습니다. 따라서 해당 명령어를 [`gsudo`](https://github.com/gerardog/gsudo)와 `powershell`로 대체하였습니다.
+
+<link-preview url="https://github.com/gerardog/gsudo" title="GitHub - gerardog/gsudo: Sudo for Windows" desc="Sudo for Windows." image="https://opengraph.githubassets.com/a6ffcea3af92d9c4e6da8e16d6935a822aa15ee8f19f130147ae87242b7bdbb5/gerardog/gsudo"></link-preview>
+
+`gsudo.exe`가 위치한 경로를 `%PATH%`에 추가한 후 사용하세요.
+
+```bat
+@echo off
+setlocal ENABLEDELAYEDEXPANSION
+
+REM Check admin privileges
+gsudo status IsElevated >nul 2>&1
+if !ErrorLevel! equ 0 (set "IS_ADMIN=true") else (set "IS_ADMIN=false")
+
+if "%1" == "TASKRUN" (
+  if "!IS_ADMIN!" == "true" (
+    @REM ================ 아래에 실행할 내용 입력 ================
+    cd /d "C:\Windows"
+    start "First" "C:\Windows\notepad.exe" "C:\Windows\Logs\CBS\CBS.log"
+    @REM ================ 위에 실행할 내용 입력 ================
+  ) else (
+    powershell -Command "[System.Windows.Forms.MessageBox]::Show('This task requires admin privileges', 'Error', 0, 16)"
+  )
+) else (
+  set "TNAME=SkipUAC\%~n0"
+  schtasks /query /tn "!TNAME!" >nul 2>&1
+  if !ErrorLevel! equ 0 (
+    REM Task exists. Run it.
+    echo Task detected. Running it...
+    schtasks /run /tn "!TNAME!"
+  ) else (
+    REM Task doesn't exists. Create it.
+    echo Task is not detected. Creating new one...
+    REM Task creation needs admin privileges
+    if not "!IS_ADMIN!" == "true" (goto ELEVATE)
+    schtasks /create /f /tn "!TNAME!" /sc ONCE /st "23:59" /tr "\"%~dpnx0\" TASKRUN" /rl HIGHEST
+    powershell -Command "& { $task = Get-ScheduledTask -TaskName '%~n0'; foreach ($trigger in $task.Triggers) { $trigger.Enabled = $false; } Set-ScheduledTask -InputObject $task; }"
+    if !ErrorLevel! equ 0 (
+      REM Run newly created task
+      schtasks /run /tn "!TNAME!"
+    ) else (
+      REM Task creation failed
+      powershell -Command "[System.Windows.Forms.MessageBox]::Show('Failed to create task', 'Failed', 0, 16)"
+    )
+  )
+)
+goto:eof
+
+:ELEVATE
+gsudo "%~f0" %*
+exit /b
+```
+
+{{< /collapse >}}
+
+{{< collapse heading="이전 버전 (`net`, `mshta` 사용)" >}}
+
+Microsoft의 보안 강화로 인해 아래 스크립트는 Windows 11 이상의 OS에서 작동하지 않을 수 있습니다. 가능하다면 gsudo를 사용하는 스크립트를 사용해 주세요.
+
 ```bat
 @echo off
 setlocal ENABLEDELAYEDEXPANSION
@@ -85,6 +146,8 @@ cd /d %~dp0
 mshta "javascript: var shell = new ActiveXObject('shell.application'); shell.ShellExecute('%~nx0', '', '', 'runas', 1);close();"
 exit
 ```
+
+{{< /collapse >}}
 
 사용 방법은 다음과 같습니다.
 
