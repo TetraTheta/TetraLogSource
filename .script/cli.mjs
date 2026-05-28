@@ -2,18 +2,17 @@
 // @ts-check
 import s from 'ansi-styles';
 import { load } from 'cheerio';
-import { spawnSync } from 'child_process';
 import { program } from 'commander';
 import { sort } from 'fast-sort';
-import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
 import { globSync } from 'glob';
 import { minify as minifyHTML } from 'html-minifier-terser';
 import { minify as minifyXML } from 'minify-xml';
-import { html } from 'parse5';
+import { spawnSync } from 'node:child_process';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
+import { exit } from 'node:process';
+import { fileURLToPath } from 'node:url';
 import { adapter } from 'parse5-htmlparser2-tree-adapter';
-import { dirname, join, resolve } from 'path';
-import { cwd, exit as exitWithCode } from 'process';
-import { fileURLToPath } from 'url';
 
 // ####################
 // # Class & Function #
@@ -27,17 +26,21 @@ const dirResources = join(dirRoot, 'resources');
 
 // Generic functions
 const header_max_length = 7;
-/** Print information log message */
+/**
+ * Print information log message
+ * @param {unknown} msg Message or Object to print
+ * @param {string} [header='INFO'] Header of the log
+ */
 function printInfo(msg, header = 'INFO') {
   console.log(`${s.green.open}${header.padEnd(header_max_length)}${s.green.close}:`, msg);
 }
-/** Print error log message */
+/**
+ * Print error log message
+ * @param {unknown} msg Message or Object to print
+ * @param {string} [header='ERROR'] Header of the log
+ */
 function printError(msg, header = 'ERROR') {
   console.error(`${s.red.open}${header.padEnd(header_max_length)}${s.red.close}:`, msg);
-}
-/** I'm doing this because TypeScript is dumb :( */
-function exit(code) {
-  exitWithCode(code);
 }
 
 // Natural comparer
@@ -62,8 +65,18 @@ const attribute_priority = [
   'crossorigin',
   'async',
 ];
+/**
+ * @typedef {object} HtmlAttribute
+ * @property {string} name
+ * @property {string} value
+ */
 const SortedAdapter = {
   ...adapter,
+  /**
+   * @param {string} tagName
+   * @param {import('parse5').html.NS} namespaceURI
+   * @param {HtmlAttribute[]} attrs
+   */
   createElement(tagName, namespaceURI, attrs) {
     attrs.sort((a, b) => {
       const ia = attribute_priority.indexOf(a.name);
@@ -73,6 +86,10 @@ const SortedAdapter = {
     });
     return adapter.createElement(tagName, namespaceURI, attrs);
   },
+  /**
+   * @param {import('domhandler').Element} elem
+   * @returns {HtmlAttribute[]}
+   */
   getAttrList(elem) {
     const list = adapter.getAttrList(elem);
     list.sort((a, b) => {
@@ -225,6 +242,10 @@ for (const kind of kinds) {
   }
 }
 
+/**
+ * @param {string} needle
+ * @returns {Kind | undefined}
+ */
 function findKind(needle) {
   return aliasMap.get(needle);
 }
@@ -239,6 +260,10 @@ function showKinds() {
 }
 
 //
+/**
+ * @param {string} command
+ * @param {string} cwd
+ */
 function run(command, cwd) {
   const result = spawnSync(command, { cwd: cwd, shell: true, stdio: ['ignore', 'inherit', 'inherit'] });
   if (result.error) {
@@ -253,18 +278,6 @@ function run(command, cwd) {
 // ######################
 // # Parse Command-line #
 // ######################
-/**
- * Prevent calling script without NPM-compatible package runner
- * 1. Check package name
- * 2. Check 'package.json' existance
- */
-// For whatever reason, this completely blocks script from running
-// if (process.env.npm_package_name !== 'tetralog' || !existsSync(join(cwd(), 'package.json'))) {
-//   printError('Call this script with NPM or pnpm');
-//   printError("e.g. 'npm run cli' or 'pnpm run cli'");
-//   exit(1);
-// }
-
 program.name('cli').description('Utility for TetraLog');
 
 // clean
@@ -362,7 +375,7 @@ program
       .then(() => {
         printInfo('All files are processed');
       })
-      .catch((err) => {
+      .catch((/** @type {Error} */ err) => {
         printError(err);
       });
   });
@@ -410,7 +423,7 @@ program
       dirList = readdirSync(newPath, { withFileTypes: true })
         .filter((e) => e.isDirectory())
         .map((e) => e.name);
-    } catch (err) {
+    } catch (_) {
       printError(`Failed to read directory: '${newPath}'`);
       exit(1);
     }
