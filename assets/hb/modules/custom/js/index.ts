@@ -3,9 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const scrollPos = parseInt(sessionStorage.getItem('scrollPos') ?? '');
   const scrollUrl = sessionStorage.getItem('scrollUrl') ?? '';
-  if (scrollPos > 0 && scrollUrl == location.href) {
-    window.scroll({ top: scrollPos, left: 0, behavior: 'smooth' }); // 'instant'
-  }
+  if (scrollPos > 0 && scrollUrl == location.href) window.scroll({ top: scrollPos, left: 0, behavior: 'smooth' }); // 'instant'
   sessionStorage.removeItem('scrollPos');
   sessionStorage.removeItem('scrollUrl');
 });
@@ -43,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 //
 // <link-preview> HTML Tag
-// @ts-ignore
+// @ts-expect-error: TypeScript can't handle symlinked file well :(
 class LinkPreviewElem extends HTMLElement {
   static observedAttributes = ['url', 'title', 'desc', 'image'];
 
@@ -94,7 +92,6 @@ class LinkPreviewElem extends HTMLElement {
     this.render({ title, desc, image }, url);
   }
 
-  // @ts-ignore
   async fetchOpenGraphData(url: string): Promise<void> {
     const cachedData = localStorage.getItem(`LinkPreview: ${url}`);
     if (cachedData) {
@@ -127,7 +124,7 @@ class LinkPreviewElem extends HTMLElement {
     this.innerHTML = `
     <figure class="link-preview">
       <a class="lp-link" href="${url}" target="_blank" rel="noopener">
-        ${image ? `<div class="lp-image" style="background-image: url('${image}');">&nbsp;</div>` : ''}
+        ${image ? `<div class="lp-image lp-placeholder">&nbsp;</div>` : ''}
         <div class="lp-text">
           <p class="lp-title">${title}</p>
           <p class="lp-desc">${desc}</p>
@@ -136,6 +133,24 @@ class LinkPreviewElem extends HTMLElement {
       </a>
     </figure>
     `;
+    if (image) this.loadPreviewImage(image);
+  }
+
+  loadPreviewImage(imageUrl: string) {
+    const imageEl = this.querySelector('.lp-image') as HTMLElement | null;
+    if (!imageEl) return;
+    const img = new Image();
+    img.onload = async () => {
+      try {
+        await img.decode();
+      } catch {}
+      imageEl.style.backgroundImage = `url("${imageUrl}")`;
+      imageEl.classList.remove('lp-placeholder');
+    };
+    img.onerror = () => {
+      imageEl.remove();
+    };
+    img.src = imageUrl;
   }
 }
 

@@ -14,7 +14,9 @@
     "verbatimModuleSyntax": true,
     // Best practices
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    // Symlink
+    "preserveSymlinks": true
   },
   "include": [".script/**/*.cjs", ".script/**/*.js", ".script/**/*.mjs", ".script/**/*.ts"]
 }
