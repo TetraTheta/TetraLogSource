@@ -406,11 +406,11 @@ program
 
     const newPath = join(dirContent, newKind.path);
 
-    console.log(`${s.yellow.open}-------- Input Information --------${s.yellow.close}`);
+    console.log(`${s.yellowBright.open}-------- Input Information --------${s.yellowBright.close}`);
     console.log(`Title: ${newTitle}`);
     console.log(`Kind: ${newKind.name}`);
     console.log(`Content Path: ${newPath}`);
-    console.log(`${s.yellow.open}-----------------------------------${s.yellow.close}`);
+    console.log(`${s.yellowBright.open}-----------------------------------${s.yellowBright.close}`);
 
     if (!existsSync(newPath)) {
       printInfo(`New path will be created: ${newPath}`);
