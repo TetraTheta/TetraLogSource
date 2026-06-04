@@ -1,19 +1,19 @@
-import params from "@params";
+import params from '@params';
 (() => {
-  const nav = document.querySelector('.hb-header-nav') as HTMLElement
+  const nav = document.querySelector('.hb-header-nav') as HTMLElement;
   if (!nav) {
-    return
+    return;
   }
 
   const topOffset = () => {
-      const v =  nav.clientHeight + 24
-      document.body.style.setProperty(`--${params.prefix}top-offset`, v + 'px')
-  }
+    const v = nav.clientHeight + 24;
+    document.body.style.setProperty(`--${params.prefix}top-offset`, v + 'px');
+  };
 
   if (params.sticky) {
-      topOffset()
-      window.addEventListener('resize', () => {
-          topOffset()
-      })
+    topOffset();
+    window.addEventListener('resize', () => {
+      topOffset();
+    });
   }
-})()
+})();

@@ -6,11 +6,11 @@
     border-bottom: 5px solid transparent;
     width: 0;
     height: 0;
-    content: "";
+    content: '';
     display: inline-block;
   }
 
-  &[aria-expanded=true] {
+  &[aria-expanded='true'] {
     &::before {
       border-top: 10px solid;
       border-left: 5px solid transparent;

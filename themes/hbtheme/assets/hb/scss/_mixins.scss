@@ -1,5 +1,5 @@
-@mixin top-offset($position:"") {
-  @if $position != "" {
+@mixin top-offset($position: '') {
+  @if $position != '' {
     position: $position;
   }
 

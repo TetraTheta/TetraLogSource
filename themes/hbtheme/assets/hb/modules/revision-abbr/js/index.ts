@@ -1,16 +1,16 @@
-import Tooltip from "js/bootstrap/src/tooltip"
+import Tooltip from 'js/bootstrap/src/tooltip';
 
 (() => {
-  document.querySelectorAll('abbr').forEach(element => {
-    let tooltip
+  document.querySelectorAll('abbr').forEach((element) => {
+    let tooltip;
     element.addEventListener('mouseenter', () => {
       tooltip = Tooltip.getOrCreateInstance(element, {
-        placement: 'bottom'
-      })
-      tooltip.show()
-    })
+        placement: 'bottom',
+      });
+      tooltip.show();
+    });
     element.addEventListener('mouseout', () => {
-      tooltip && tooltip.dispose()
-    })
+      tooltip && tooltip.dispose();
+    });
   });
-})()
+})();

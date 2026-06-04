@@ -1,55 +1,53 @@
-import * as params from '@params'
+import * as params from '@params';
 
 (() => {
-  let activeItem = 0
-  let timer = 0
-  let expandTimeout = 0
+  let activeItem = 0;
+  let timer = 0;
+  let expandTimeout = 0;
 
   const clearTimer = (): void => {
-    clearInterval(timer)
-  }
+    clearInterval(timer);
+  };
 
   const clearExpandTimeout = (): void => {
-    clearTimeout(expandTimeout)
-  }
+    clearTimeout(expandTimeout);
+  };
 
   document.addEventListener('DOMContentLoaded', () => {
-    const announcements = document.querySelectorAll('.hb-announcement')
-    if (announcements.length < 2) {
-      return
-    }
+    const announcements = document.querySelectorAll('.hb-announcement');
+    if (announcements.length < 2) return;
 
     const setTimer = (): void => {
-      clearTimer()
+      clearTimer();
       timer = setInterval(() => {
-        announcements[activeItem].classList.add('inactivating')
+        announcements[activeItem].classList.add('inactivating');
         setTimeout(() => {
-          announcements[activeItem].classList.remove('active', 'inactivating')
-          activeItem = ++activeItem
-          activeItem = activeItem < announcements.length ? activeItem : activeItem % announcements.length
-          announcements[activeItem].classList.add('active')
-        }, 200)
-      }, params.announcement_bar.interval ?? 5000)
-    }
+          announcements[activeItem].classList.remove('active', 'inactivating');
+          activeItem = ++activeItem;
+          activeItem = activeItem < announcements.length ? activeItem : activeItem % announcements.length;
+          announcements[activeItem].classList.add('active');
+        }, 200);
+      }, params.announcement_bar.interval ?? 5000);
+    };
 
     const expanding = (): void => {
-      clearExpandTimeout()
+      clearExpandTimeout();
       expandTimeout = setTimeout(() => {
-        bar.classList.add('active')
-      }, params.announcement_bar.expand_stall_threshold ?? 1000)
-    }
+        bar.classList.add('active');
+      }, params.announcement_bar.expand_stall_threshold ?? 1000);
+    };
 
-    setTimer()
+    setTimer();
 
-    const bar = document.querySelector('.hb-announcement-bar') as HTMLElement
+    const bar = document.querySelector('.hb-announcement-bar') as HTMLElement;
     bar.addEventListener('mouseenter', () => {
-      clearTimer()
-      expanding()
-    })
+      clearTimer();
+      expanding();
+    });
     bar.addEventListener('mouseleave', () => {
-      setTimer()
-      clearExpandTimeout()
-      bar.classList.remove('active')
-    })
-  })
-})()
+      setTimer();
+      clearExpandTimeout();
+      bar.classList.remove('active');
+    });
+  });
+})();

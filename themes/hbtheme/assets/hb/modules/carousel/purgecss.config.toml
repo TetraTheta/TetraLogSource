@@ -1,3 +1,1 @@
-attributes = [
-    'data-bs-target'
-]
+attributes = ['data-bs-target']

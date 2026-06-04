@@ -10,15 +10,27 @@
   "wrap" false
   "expand" false
 }}
+{{- $translationKeys := slice
+  "copied"
+  "copy_code"
+  "copy_failed"
+  "toggle_code_block"
+  "toggle_line_numbers"
+  "toggle_line_wrapping"
+}}
 {{- $i18n := newScratch }}
 {{- $sites := hugo.Sites }}
-{{- with index hugo.Data "code-block-panel" }}
-  {{- range $lang, $translations := .i18n }}
-    {{- range $sites }}
-      {{- if eq $lang .Language.Lang }}
-        {{- $i18n.Set $lang $translations }}
-      {{- end }}
+{{- range $lang := slice "en" "ko" }}
+  {{- $filename := printf "themes/hbtheme/i18n/%s.toml" $lang }}
+  {{- $translations := readFile $filename | transform.Unmarshal }}
+  {{- $messages := dict }}
+  {{- range $key := $translationKeys }}
+    {{- with index $translations $key }}
+      {{- $messages = merge $messages (dict $key .) }}
     {{- end }}
+  {{- end }}
+  {{- with $messages }}
+    {{- $i18n.Set $lang . }}
   {{- end }}
 {{- end }}
 {{- $params := merge $defaults .Site.Params.code_block_panel (dict

@@ -67,7 +67,7 @@
         {{- with $filename -}}
           <p class="user-select-all mb-1 text-secondary">{{ . }}.{{ $lang }}</p>
         {{- end -}}
-        {{- highlight $code $lang -}}
+        {{- partial "code-block/render" (dict "Type" $lang "Inner" $code) -}}
       </div>
     {{- end -}}
   </div>

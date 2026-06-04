@@ -1,35 +1,35 @@
-import params from '@params'
+import params from '@params';
 
 class Historiographer {
-  private key = 'search-histories'
+  private key = 'search-histories';
 
   get() {
-    let histories = JSON.parse(localStorage.getItem(this.key) ?? '[]')
+    let histories = JSON.parse(localStorage.getItem(this.key) ?? '[]');
     if (!(histories instanceof Array)) {
-        histories = []
+      histories = [];
     }
 
-    return histories.slice(0, params.historiesCount)
+    return histories.slice(0, params.historiesCount);
   }
 
   save(query: string): void {
     if (query === '') {
-      return
+      return;
     }
 
-    let histories = this.get()
-    histories = histories.filter((history) => history.query !== query)
+    let histories = this.get();
+    histories = histories.filter((history) => history.query !== query);
     histories.unshift({
       query: query,
-      date: (new Date()),
-    })
+      date: new Date(),
+    });
 
     if (histories.length > params.historiesCount) {
-      histories.pop()
+      histories.pop();
     }
 
-    localStorage.setItem(this.key, JSON.stringify(histories))
+    localStorage.setItem(this.key, JSON.stringify(histories));
   }
 }
 
-export default (new Historiographer())
+export default new Historiographer();

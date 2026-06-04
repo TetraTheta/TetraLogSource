@@ -1,7 +1,2 @@
-classes = [
-    "table-responsive"
-]
-attributes = [
-    "data-layout",
-    "data-section"
-]
+classes = ["table-responsive"]
+attributes = ["data-layout", "data-section"]

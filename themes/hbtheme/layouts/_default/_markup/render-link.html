@@ -4,9 +4,5 @@
 {{- end -}}
 {{- $target := $dest | safeURL -}}
 {{- $external := partial "base/functions/is-url-external" $target -}}
-<a
-  href="{{ $target }}"
-  {{ with .Title }}title="{{ . }}"{{ end }}
-  {{ if $external }}target="_blank" rel="noopener noreferrer"{{ end }}>
-  {{- .Text | safeHTML -}}
-</a>
+{{- /* 링크 뒤 템플릿 개행이 인라인 공백으로 렌더링되지 않도록 제거한다. */ -}}
+<a href="{{ $target }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>

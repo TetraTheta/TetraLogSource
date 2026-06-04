@@ -4,7 +4,7 @@
     <div class="hugo-preview-source-title" style="font-weight: bold; margin-bottom: .25rem;">
       {{- i18n "hugo_preview_source" | default "Source" -}}
     </div>
-    {{- highlight $source "markdown" -}}
+    {{- partial "code-block/render" (dict "Type" "markdown" "Inner" $source) -}}
   </div>
   <div class="hugo-preview-result">
     <div class="hugo-preview-result-title" style="font-weight: bold; margin-bottom: .25rem;">

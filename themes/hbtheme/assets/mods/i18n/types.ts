@@ -1,10 +1,9 @@
-export type Language = string
+export type Language = string;
 
-export type Translation = {
-    one?: string,
-    other: string,
-}
-
-export type Translations = Record<Language, Translation>
-
-export type Context = Record<string, number | string>
+export type PluralTranslation = {
+  one?: string;
+  other: string;
+};
+export type Translation = string | PluralTranslation;
+export type Translations = Record<Language, Record<string, Translation>>;
+export type Context = Record<string, number | string>;
