@@ -12,8 +12,8 @@ images:
   - 001.webp
 ---
 
-![](001.webp)
+{{< gallery/image src="001" w=80% >}}
 
-![](002.webp)
+{{< gallery/image src="002" w=80% >}}
 
 그래... 그거면 된거야...

@@ -1,6 +1,6 @@
 ---
 title: "말을 조심해서 해야 하는 이유"
-slug: the-reason-why-you-have-to-be-careful-about-what-you-say
+slug: danger-of-careless-words
 date: 2022-02-01T23:54:39+09:00
 series:
 #  - 

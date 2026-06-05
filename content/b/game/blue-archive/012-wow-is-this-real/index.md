@@ -14,7 +14,7 @@ images:
 
 {{< gallery/image src="001|002" >}}
 
-![](003.webp)
+{{< gallery/image src="003" w=80% >}}
 
 이야, 이런 일이 생기기도 하네?
 
