@@ -50,7 +50,7 @@ C:\ADB>adb shell
 
 다음과 같이 ADB 셸이 나타나면 정상적으로 연결된 겁니다.
 
-```plaintext{linenos=false}
+```cmd{linenos=false}
 C:\ADB>adb shell
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
@@ -59,7 +59,7 @@ codename:/ $
 
 ADB 셸을 나가는 방법은 `exit`을 입력하고 <kbd>ENTER</kbd> 키를 누르면 됩니다.
 
-```plaintext{linenos=false}
+```cmd{linenos=false}
 codename:/ $ exit
 
 C:\ADB>
@@ -69,13 +69,13 @@ C:\ADB>
 
 명령 프롬프트에 다음과 같이 입력하세요.
 
-```plaintext{linenos=false}
+```cmd{linenos=false}
 C:\ADB>adb shell settings put system csc_pref_camera_forced_shuttersound_key 0 && echo done
 ```
 
 명령이 제대로 수행되었다면 다음과 같이 `done`이 출력될 것입니다.
 
-```plaintext{linenos=false}
+```cmd{linenos=false}
 C:\ADB>adb shell settings put system csc_pref_camera_forced_shuttersound_key 0 && echo done
 done
 
@@ -84,7 +84,7 @@ C:\ADB>
 
 ADB 셸에서의 작업 역시 대동소이합니다.
 
-```plaintext{linenos=false}
+```cmd{linenos=false}
 C:\ADB>adb shell
 codename:/ $ settings put system csc_pref_camera_forced_shuttersound_key 0 && echo done
 done

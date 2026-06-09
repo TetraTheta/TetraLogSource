@@ -26,7 +26,7 @@ Wi-Fi 프로필 공유는 여러 기기를 쓰는 사람에게 있어 정말 중
 
 C 드라이브에 직접 `WiFi` 폴더를 만들거나, 명령 프롬프트를 열고 다음과 같이 입력합니다.
 
-```batch
+```dos{linenos=false}
 mkdir C:\WiFi
 ```
 
@@ -36,7 +36,7 @@ mkdir C:\WiFi
 
 만약 특정 Wi-Fi 프로필만 내보내고 싶다면, 현재 저장된 Wi-Fi 프로필을 확인해야 합니다.
 
-```batch
+```dos{linenos=false}
 netsh wlan show profiles
 ```
 
@@ -61,19 +61,19 @@ Wi-Fi 인터페이스의 프로필:
 
 이제 Wi-Fi 프로필을 내보낼 시간입니다. 먼저 아까 생성했던 `C:\WiFi` 경로로 이동합니다. 프로필을 내보낼 때 `folder=` 구문을 사용해도 되지만, 직접 해당 폴더로 이동해 작업하는 편이 조금 더 수월합니다.
 
-```batch
+```dos{linenos=false}
 cd /D C:\WiFi
 ```
 
 이제 Wi-Fi 프로필을 내보냅니다. 이 글에서는 `My_WiFi_5G` 프로필만을 내보내겠습니다.
 
-```batch
+```dos{linenos=false}
 netsh wlan export profile key=clear name=My_WiFi_5G
 ```
 
 만약 모든 Wi-Fi 프로필을 내보내고 싶다면 `name=My_WiFi_5G` 부분을 생략하면 됩니다.
 
-```batch
+```dos{linenos=false}
 netsh wlan export profile key=clear
 ```
 
@@ -133,25 +133,25 @@ Wi-Fi 프로필을 내보낼 때 `key=clear` 구문을 사용했기 때문에, W
 
 이전에 저장한 Wi-Fi 프로필을 불러올 차례입니다. 다시 한번 Wi-Fi 프로필이 저장된 경로로 이동합니다.
 
-```batch
+```dos{linenos=false}
 cd /D C:\WiFi
 ```
 
 다음 명령어로 `C:\WiFi` 폴더에 저장된 Wi-Fi 프로필을 불러올 수 있습니다.
 
-```batch
+```dos{linenos=false}
 netsh wlan add profile filename="Wi-Fi-My_WiFi_5G.xml"
 ```
 
 만약 `C:\WiFi`에 있는 모든 Wi-Fi 프로필을 불러오려면 다음과 같이 입력해야 합니다.
 
-```batch
+```dos{linenos=false}
 for %f in (*.xml) do netsh wlan add profile filename="%f"
 ```
 
 배치 파일을 작성할 경우, `%f`를 `%%f`로 고쳐 써야 합니다.
 
-```batch
+```dos{linenos=false}
 for %%f in (*.xml) do netsh wlan add profile filename="%%f"
 ```
 
