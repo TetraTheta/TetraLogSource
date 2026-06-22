@@ -1,5 +1,7 @@
+overrides:
+  "undici": "^7.28.0"
+nodeLinker: "hoisted"
 packages:
   - "."
   - ".script"
 preferSymlinkedExecutables: true # Temporary fix for pnpm
-nodeLinker: "hoisted"
