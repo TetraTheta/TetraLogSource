@@ -147,6 +147,10 @@ time = 2
 [params.hb.search]
 modal = true
 
+[params.hb.sections]
+hide_blog = false
+hide_docs = false
+
 [params.hb.styles]
 hb_top_offset = "24px"
 prefix = "hb-"

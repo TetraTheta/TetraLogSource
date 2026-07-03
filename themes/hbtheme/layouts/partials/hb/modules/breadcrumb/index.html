@@ -2,10 +2,9 @@
 <div class="container-fluid px-0 mb-4">
   <nav aria-label="breadcrumb">
     <ol class="hb-breadcrumb breadcrumb">
-  {{- $removals := slice "Blog" "블로그" -}}
   {{- $ancestors := slice -}}
   {{- range $a := .Ancestors.Reverse -}}
-    {{- if or $a.IsHome (in $removals $a.Title) -}}
+    {{- if or $a.IsHome (partial "hb/functions/should-hide-section" $a) -}}
       {{- continue -}}
     {{- end -}}
     {{- $ancestors = $ancestors | append $a -}}

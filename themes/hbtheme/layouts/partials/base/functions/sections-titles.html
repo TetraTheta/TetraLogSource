@@ -3,7 +3,7 @@
 {{/* Get parent section of the page. */}}
 {{- range .Ancestors }}
   {{/* Break the loop if home page reached. */}}
-  {{- if .IsHome }}
+  {{- if or .IsHome (partial "hb/functions/should-hide-section" .) }}
     {{- continue }}
   {{- end }}
   {{- $titles = $titles | append (partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true)) }}

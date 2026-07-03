@@ -120,6 +120,21 @@ params:
 - `navs_reduce_font_size`: 좌측 탐색 글자 축소
 - `navs_sticky_scroll`: 탐색 영역 sticky 동작
 
+## 섹션 경로 표시
+
+```yaml
+params:
+  hb:
+    sections:
+      hide_blog: false
+      hide_docs: false
+```
+
+- `hide_blog`: title, breadcrumb, page meta에서 블로그 루트 섹션을 숨김
+- `hide_docs`: title, breadcrumb, page meta에서 문서 루트 섹션을 숨김
+- 블로그 루트는 `blog`와 `b`, 문서 루트는 `docs`와 `d`를 지원합니다.
+- `Blog` / `블로그`는 hbtheme i18n 값이 아니라 보통 `content/blog/_index.md` 또는 `content/b/_index.md`의 `title`에서 옵니다.
+
 ## 검색
 
 ```yaml
@@ -210,6 +225,8 @@ params:
       symbol: '¶'
     progress_bar:
       height: 4px
+    sections:
+      hide_blog: true
     tables:
       align: middle
     header:

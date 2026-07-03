@@ -49,6 +49,8 @@ hb:
   #   siblings: 9 # For some reason, setting this will mess up pagination
   progress_bar:
     height: 4px
+  sections:
+    hide_blog: true
   tables:
     align: middle
   terms:
