@@ -1,4 +1,4 @@
-{{- $titles := slice .Title }}
+{{- $titles := slice (partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true)) }}
 {{- if and .IsHome (eq .Title "") }}
   {{- $titles = slice .Site.Title }}
 {{- end }}

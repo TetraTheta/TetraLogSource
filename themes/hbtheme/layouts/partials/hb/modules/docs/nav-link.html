@@ -3,4 +3,4 @@
     {{ partial "icons/icon" (merge (dict "height" "1em" "width" "1em") .) }}
   </span>
 {{- end }}
-{{- .LinkTitle -}}
+{{- partial "hb/functions/render-title" (dict "Page" . "Title" .LinkTitle) -}}

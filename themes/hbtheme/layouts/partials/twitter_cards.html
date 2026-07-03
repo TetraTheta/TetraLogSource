@@ -6,7 +6,7 @@
   <meta name="twitter:card" content="summary">
 {{- end }}
 
-{{- with or .Title site.Title site.Params.title | plainify -}}
+{{- with or (partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true)) site.Title site.Params.title -}}
   <meta name="twitter:title" content="{{ . }}">
 {{- end }}
 

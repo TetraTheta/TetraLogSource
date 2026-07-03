@@ -1,16 +1,17 @@
 {{- $page := .Page }}
+{{- $plainTitle := partial "hb/functions/render-title" (dict "Page" $page "Title" $page.Title "Plain" true) }}
 {{- $className := .ClassName }}
 {{- $placeholder := default true .Placeholder }}
 {{- if $page.Params.images }}
   {{ partial "images/image" (dict
     "Filename" (index $page.Params.images 0)
     "Page" $page
-    "Alt" $page.Title
+    "Alt" $plainTitle
     "ClassName" $className)
   }}
 {{- else if $page.Params.email_hash }}
   {{ partial "gravatar/avatar-params" (dict
-    "Alt" $page.Title
+    "Alt" $plainTitle
     "Id" $page.Params.email_hash
     "Default" "retro"
     "ClassName" $className

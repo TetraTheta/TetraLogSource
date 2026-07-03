@@ -6,7 +6,7 @@
 {{- range $pages -}}
   {{- $page := . -}}
   {{- $item := newScratch -}}
-  {{- $item.Set "title" .Title -}}
+  {{- $item.Set "title" (partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true)) -}}
   {{- if default true site.Params.search.index_summary -}}
     {{- $item.Set "summary" (default .Summary .Description | plainify | htmlUnescape) -}}
   {{- end -}}
@@ -43,7 +43,7 @@
   {{- if default true site.Params.search.index_taxonomies -}}
     {{- range $name, $taxonomy := site.Taxonomies -}}
       {{- range $page.GetTerms $name -}}
-        {{- $item.Add $name (slice .Title) }}
+        {{- $item.Add $name (slice (partial "hb/functions/render-title" (dict "Page" .Page "Title" .Title "Plain" true))) }}
       {{- end -}}
     {{- end -}}
   {{- end }}
@@ -56,7 +56,7 @@
 {{- $taxonomies := newScratch -}}
 {{- range $name, $taxonomy := site.Taxonomies -}}
   {{- range $taxonomy -}}
-    {{- $taxonomies.Add $name (slice .Page.Title) -}}
+    {{- $taxonomies.Add $name (slice (partial "hb/functions/render-title" (dict "Page" .Page "Title" .Page.Title "Plain" true))) -}}
   {{- end -}}
 {{- end -}}
 {{- $years := partial "search-index/functions/years" . -}}

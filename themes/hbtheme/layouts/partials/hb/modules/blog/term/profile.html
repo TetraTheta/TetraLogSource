@@ -6,7 +6,7 @@
     "ClassName" "hb-blog-term-img img-fluid rounded-circle mb-3")
   }}
   <h1 class="text-center h4 mb-3 mt-2">
-    <a class="text-decoration-none" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a class="text-decoration-none" href="{{ .RelPermalink }}">{{ partial "hb/functions/render-title" (dict "Page" . "Title" .Title) }}</a>
   </h1>
   {{- with .Description }}
     <p class="text-body-secondary text-center mb-1">{{ . }}</p>

@@ -9,6 +9,7 @@
       {{- continue }}
     {{- end }}
     {{- $page := site.GetPage .name }}
+    {{- $pageTitle := partial "hb/functions/render-title" (dict "Page" $page "Title" $page.Title) }}
     <li class="nav-item" role="presentation">
       <button
         class="nav-link{{ cond $first ` active` `` }}"
@@ -19,7 +20,7 @@
         role="tab"
         aria-controls="taxonomy-{{ $name }}-tab-pane"
         aria-selected="{{ cond $first `true` `false` }}">
-        {{- default $page.Title $title -}}
+        {{- default $pageTitle $title -}}
       </button>
     </li>
     {{- $first = false }}
@@ -43,7 +44,7 @@
         <a
           class="taxonomy-term taxonomy-term-{{ $name }} btn btn-sm btn-outline-secondary p-1 me-1 mb-1"
           href="{{ .Page.RelPermalink }}">
-          <span class="taxonomy-term-title">{{- .Page.Title -}}</span>
+          <span class="taxonomy-term-title">{{- partial "hb/functions/render-title" (dict "Page" .Page "Title" .Page.Title) -}}</span>
           {{- if $count }}
             <small class="taxonomy-term-count border rounded px-1">
               {{- .Count -}}

@@ -3,7 +3,7 @@
     <div class="hb-blog-post">
       <a class="hb-blog-post-title-link d-flex" href="{{ .RelPermalink }}">
         <span class="me-md-1">
-          {{ .Title }}
+          {{ partial "hb/functions/render-title" (dict "Page" . "Title" .Title) }}
         </span>
         <span
           class="hb-blog-post-meta ms-auto d-none d-md-block text-body-secondary text-nowrap">

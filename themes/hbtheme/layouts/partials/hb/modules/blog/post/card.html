@@ -12,6 +12,8 @@
 {{- $pageMeta := default dict $page.Params.meta }}
 {{- $modularize := default true .Modularize }}
 {{- $listStyle := default "" .ListStyle }}
+{{- $title := partial "hb/functions/render-title" (dict "Page" $page "Title" $page.Title) }}
+{{- $plainTitle := partial "hb/functions/render-title" (dict "Page" $page "Title" $page.Title "Plain" true) }}
 {{- $thumbnail := true }}
 {{- $thumbnailPos := "top" }}
 {{- if eq .Caller "list" }}
@@ -55,13 +57,13 @@
     <div class="hb-blog-post-title card-title h5 py-1">
       <a
         class="hb-blog-post-title-link d-block"
-        title="{{ $page.Title }}"
+        title="{{ $plainTitle }}"
         {{ if $external }}target="_blank" rel="external"{{ end }}
         href="{{ $url }}">
         {{- if $page.Params.pinned }}
           {{- partialCached "hb/modules/blog/helpers/pinned-icon" . -}}
         {{- end }}
-        {{- $page.Title -}}
+        {{- $title -}}
         {{- if $external }}
           {{- partial "icons/icon" (dict "vendor" "bootstrap" "name" "box-arrow-up-right" "className" "ms-1") }}
         {{- end }}

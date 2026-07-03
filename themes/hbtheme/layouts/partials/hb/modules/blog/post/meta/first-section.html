@@ -3,7 +3,7 @@
     <a
       class="badge bg-secondary text-decoration-none fw-normal"
       href="{{ .RelPermalink }}">
-      {{ .Title }}
+      {{ partial "hb/functions/render-title" (dict "Page" . "Title" .Title) }}
     </a>
   </span>
 {{- end }}

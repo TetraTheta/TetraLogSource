@@ -6,6 +6,6 @@
   {{- if .IsHome }}
     {{- continue }}
   {{- end }}
-  {{- $titles = $titles | append .Title }}
+  {{- $titles = $titles | append (partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true)) }}
 {{- end }}
 {{- return $titles }}

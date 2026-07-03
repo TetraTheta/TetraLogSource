@@ -9,7 +9,7 @@
         <a
           class="hb-blog-post-taxonomy hb-blog-post-taxonomy-{{ $kind | singularize }} badge bg-secondary text-decoration-none fw-normal me-1"
           href="{{ .RelPermalink }}">
-          {{- .Title -}}
+          {{- partial "hb/functions/render-title" (dict "Page" .Page "Title" .Title) -}}
         </a>
       </span>
     {{- end }}

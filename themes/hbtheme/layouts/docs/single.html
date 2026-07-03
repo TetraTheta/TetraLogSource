@@ -8,7 +8,7 @@
       {{ partial "hugopress/functions/render-hooks" (dict "Page" . "Name" "hb-docs-main-begin") }}
       <div class="hb-docs-doc">
         <div class="hb-docs-doc-intro hb-module">
-          <h1 class="mb-3">{{ .Title }}</h1>
+          <h1 class="mb-3">{{ partial "hb/functions/render-title" (dict "Page" . "Title" .Title) }}</h1>
           {{- if ne (default dict .Params.meta) false }}
             <div class="hb-blog-post-meta hb-docs-doc-meta mb-3">
               {{- partial "hb/modules/docs/doc/meta" . }}

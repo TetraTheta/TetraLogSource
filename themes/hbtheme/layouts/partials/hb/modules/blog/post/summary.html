@@ -13,6 +13,7 @@
   {{- $summary = .Page.Summary -}}
 {{- end -}}
 {{- $summary = trim ($summary | htmlUnescape) " " -}}
+{{- $plainTitle := printf "%s" (partial "hb/functions/render-title" (dict "Page" .Page "Title" .Page.Title "Plain" true)) }}
 {{- $truncated := .Page.Truncated }}
 {{- with .Page.Description }}
   {{- $summary = . }}
@@ -27,7 +28,7 @@
       class="text-secondary"
       href="{{ .URL }}"
       {{ if $.External }}target="_blank" rel="external"{{ end }}>
-      {{- i18n "read_more_about" .Page.Title -}}
+      {{- i18n "read_more_about" $plainTitle -}}
     </a>
   </div>
 {{- end }}

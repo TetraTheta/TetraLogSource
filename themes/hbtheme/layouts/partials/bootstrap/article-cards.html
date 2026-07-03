@@ -22,16 +22,18 @@
 {{ with $itemAttrs }}{{ $itemAttrsStr = delimit . " " | printf " %s" }}{{ end }}
 <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5 justify-content-center">
   {{- range first $limit $pages }}
+    {{- $title := partial "hb/functions/render-title" (dict "Page" . "Title" .Title) }}
+    {{- $plainTitle := partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true) }}
     {{- if $linkText }}
       {{ printf `<div class="col"%s>` $itemAttrsStr | safeHTML }}
     {{- else }}
-      {{ printf `<a class="col text-decoration-none" href="%s" title="%s"%s>` .RelPermalink .Title $itemAttrsStr | safeHTML }}
+      {{ printf `<a class="col text-decoration-none" href="%s" title="%s"%s>` .RelPermalink $plainTitle $itemAttrsStr | safeHTML }}
     {{- end }}
       <div class="card shadow h-100 w-100 position-relative">
         {{- with .FirstSection }}
           <span
             class="z-1 badge rounded-1 text-bg-secondary opacity-75 position-absolute fw-normal top-0 start-0 ms-2 mt-2 text-decoration-none">
-            {{- .Title -}}
+            {{- partial "hb/functions/render-title" (dict "Page" . "Title" .Title) -}}
           </span>
         {{- end }}
         <span
@@ -55,7 +57,7 @@
         {{- end }}
         <div class="card-body d-flex flex-column p-4">
           <div class="card-title h5">
-            {{- .Title -}}
+            {{- $title -}}
           </div>
           <div class="card-text mt-1 text-body-secondary{{ cond (not $linkText) ` mb-0` ` mb-2` }}">
             {{- truncate $summaryLen "..." (default .Summary .Description) | plainify | htmlUnescape -}}

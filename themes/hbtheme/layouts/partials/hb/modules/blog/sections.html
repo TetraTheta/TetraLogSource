@@ -6,12 +6,12 @@
           class="nav-link active"
           aria-current="page"
           href="{{ .RelPermalink }}">
-          {{ printf "%v" .CurrentSection.Title }}
+          {{ partial "hb/functions/render-title" (dict "Page" .CurrentSection "Title" .CurrentSection.Title) }}
         </a>
       </li>
       {{- range .Sections }}
         <li class="nav-item">
-          <a class="nav-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <a class="nav-link" href="{{ .RelPermalink }}">{{ partial "hb/functions/render-title" (dict "Page" . "Title" .Title) }}</a>
         </li>
       {{- end }}
     </ul>

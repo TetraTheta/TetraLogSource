@@ -11,21 +11,25 @@
     {{- $ancestors = $ancestors | append $a -}}
   {{- end -}}
   {{- range $a := $ancestors -}}
+    {{- $title := partial "hb/functions/render-title" (dict "Page" . "Title" .Title) -}}
+    {{- $plainTitle := partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true) -}}
       <li class="breadcrumb-item">
-        <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+        <a href="{{ .RelPermalink }}" title="{{ $plainTitle }}">
     {{- with .Params.nav_icon }}
       {{- partial "icons/icon" (merge . (dict "color" "" "className" "me-1")) }}
     {{- end }}
-    {{- cond .IsHome (i18n "hb_breadcrumb_home") .Title -}}
+    {{- cond .IsHome (i18n "hb_breadcrumb_home") $title -}}
         </a>
       </li>
   {{- end -}}
+  {{- $title := partial "hb/functions/render-title" (dict "Page" . "Title" .Title) -}}
+  {{- $plainTitle := partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true) -}}
       <li class="breadcrumb-item active" aria-current="page">
-        <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+        <a href="{{ .RelPermalink }}" title="{{ $plainTitle }}">
   {{- with .Params.nav_icon }}
     {{- partial "icons/icon" (merge . (dict "color" "" "className" "me-1")) }}
   {{- end }}
-  {{- .Title -}}
+  {{- $title -}}
         </a>
       </li>
     </ol>

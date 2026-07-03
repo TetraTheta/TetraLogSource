@@ -2,7 +2,7 @@
   <div class="row align-items-center flex-grow-1 hb-module">
     <div class="col-6 offset-3">
       <h1 class="mb-4 pb-3 text-center border-bottom">
-        {{- .Title -}}
+        {{- partial "hb/functions/render-title" (dict "Page" . "Title" .Title) -}}
         <small class="ms-1 text-secondary">({{- len .Data.Terms -}})</small>
       </h1>
       <ul
@@ -16,7 +16,7 @@
               data-total-pages="{{ $totalPages }}"
               href="{{ .Page.RelPermalink }}"
               style="--size: {{ $fontSize }};">
-              {{- .Page.Title -}}
+              {{- partial "hb/functions/render-title" (dict "Page" .Page "Title" .Page.Title) -}}
               <span class="ms-1">({{- $totalPages -}})</span>
             </a>
           </li>

@@ -25,16 +25,18 @@
       {{- $first := true }}
       {{- range $page := $pages }}
         {{- $imgs := partialCached "_funcs/get-page-images" . . }}
+        {{- $title := partial "hb/functions/render-title" (dict "Page" $page "Title" $page.Title) }}
+        {{- $plainTitle := partial "hb/functions/render-title" (dict "Page" $page "Title" $page.Title "Plain" true) }}
         <div class="carousel-item{{ cond $first ` active` `` }}">
           {{- with index $imgs 0 }}
             {{- $img := .RelPermalink }}
             {{- with .Image }}
               {{- $img = printf "%s?height=360px" .Name }}
             {{- end }}
-            <a href="{{ $page.RelPermalink }}" title="{{ $page.Title }}">
+            <a href="{{ $page.RelPermalink }}" title="{{ $plainTitle }}">
               {{ partial "images/image" (dict
                 "Page" $page
-                "Alt" $page.Title
+                "Alt" $plainTitle
                 "Filename" $img
                 "ClassName" "carousel-img d-block w-100"
                 "LazyLoading" $first
@@ -46,7 +48,7 @@
                 <a
                   class="carousel-link d-block text-decoration-none"
                   href="{{ $page.RelPermalink }}">
-                  {{- $page.Title -}}
+                  {{- $title -}}
                 </a>
               </div>
             </div>
@@ -54,7 +56,7 @@
             <a
               class="carousel-img-placeholder carousel-link d-flex align-items-center justify-content-center text-decoration-none h5 mb-0 px-3 text-center"
               href="{{ $page.RelPermalink }}">
-              {{- $page.Title -}}
+              {{- $title -}}
             </a>
           {{- end }}
         </div>

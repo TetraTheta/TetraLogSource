@@ -21,6 +21,7 @@
 {{- if or $prev $next }}
 <div class="hb-docs-doc-nav mb-3 row row-cols-1 g-3{{ with (and $prev $next) }} row-cols-md-2{{ end }}">
   {{ with $prev }}
+    {{- $title := partial "hb/functions/render-title" (dict "Page" . "Title" .LinkTitle) }}
     <div class="col">
       <a
         class="hb-module h-100 py-1 d-flex align-items-center justify-content-center text-decoration-none"
@@ -32,16 +33,17 @@
           "height" $size
           "className" "me-2 flex-shrink-0")
         -}}
-        {{- .LinkTitle -}}
+        {{- $title -}}
       </a>
     </div>
   {{ end }}
   {{ with $next }}
+    {{- $title := partial "hb/functions/render-title" (dict "Page" . "Title" .LinkTitle) }}
     <div class="col">
       <a
         class="hb-module h-100 py-1 d-flex align-items-center justify-content-center text-decoration-none"
         href="{{ .RelPermalink }}">
-        {{- .LinkTitle -}}
+        {{- $title -}}
         {{- partial "icons/icon" (dict
           "vendor" "bootstrap"
           "name" "arrow-right-circle"

@@ -1,5 +1,5 @@
 <div class="hb-docs-doc-intro hb-module">
-  <h1 class="hb-docs-doc-title mb-0">{{ .Title }}</h1>
+  <h1 class="hb-docs-doc-title mb-0">{{ partial "hb/functions/render-title" (dict "Page" . "Title" .Title) }}</h1>
   {{- with and (default false .Params.hide_subtitle | not) .Description }}
     <p class="lead mt-3">{{ . }}</p>
   {{- end }}
@@ -26,7 +26,7 @@
       <li
         {{ if not $last }}class="mb-4"{{ end }}>
         <a class="fs-6 text-decoration-none" href="{{ .RelPermalink }}">
-          {{- .Title -}}
+          {{- partial "hb/functions/render-title" (dict "Page" . "Title" .Title) -}}
         </a>
         <div class="mt-1 text-body-secondary">{{- default .Summary .Description -}}</div>
         <ul class="list-unstyled ps-4 pt-2 mt-2 border-start">
@@ -37,7 +37,7 @@
       <li
         {{ if not $last }}class="mb-4"{{ end }}>
         <a class="fs-6 text-decoration-none" href="{{ .RelPermalink }}">
-          {{- .Title -}}
+          {{- partial "hb/functions/render-title" (dict "Page" . "Title" .Title) -}}
         </a>
         <div class="mt-1 text-body-secondary">{{- default .Summary .Description -}}</div>
       </li>

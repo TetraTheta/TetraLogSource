@@ -1,4 +1,4 @@
-{{- with or .Title site.Title | plainify }}
+{{- with or (partial "hb/functions/render-title" (dict "Page" . "Title" .Title "Plain" true)) site.Title }}
   <meta itemprop="name" content="{{ . }}">
 {{- end }}
 
@@ -51,17 +51,17 @@ Keywords precedence:
 */}}
 {{- $keywords := slice }}
 {{- range .GetTerms "keywords" }}
-  {{- $keywords = $keywords | append .Title }}
+  {{- $keywords = $keywords | append (partial "hb/functions/render-title" (dict "Page" .Page "Title" .Title "Plain" true)) }}
 {{- else }}
   {{- with .Keywords }}
     {{- $keywords = . }}
   {{- else }}
     {{- range .GetTerms "tags" }}
-      {{- $keywords = $keywords | append .Title }}
+      {{- $keywords = $keywords | append (partial "hb/functions/render-title" (dict "Page" .Page "Title" .Title "Plain" true)) }}
     {{- else }}
       {{- range $taxonomy, $_ := site.Taxonomies }}
         {{- range $.GetTerms $taxonomy }}
-          {{- $keywords = $keywords | append .Title }}
+          {{- $keywords = $keywords | append (partial "hb/functions/render-title" (dict "Page" .Page "Title" .Title "Plain" true)) }}
         {{- end }}
       {{- end }}
     {{- end }}
