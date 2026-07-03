@@ -1,1 +1,1 @@
-import 'js/bootstrap/src/collapse';
+import 'bootstrap/js/src/collapse';

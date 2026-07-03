@@ -1,5 +1,5 @@
-import 'js/bootstrap/src/dropdown';
-import 'js/bootstrap/src/offcanvas';
+import 'bootstrap/js/src/dropdown';
+import 'bootstrap/js/src/offcanvas';
 
 (() => {
   document.addEventListener('DOMContentLoaded', () => {

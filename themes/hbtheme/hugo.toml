@@ -340,6 +340,24 @@ taxonomies = 0.1
 title = 1
 year = 1
 
+[params.icons]
+throw_on_error = true
+
+[params.icons.vendors.bs]
+name = "bootstrap"
+
+[params.icons.vendors.fab]
+name = "font-awesome-brands"
+
+[params.icons.vendors.far]
+name = "font-awesome-regular"
+
+[params.icons.vendors.fas]
+name = "font-awesome-solid"
+
+[params.icons.vendors.simple]
+name = "simple-icons"
+
 [params.seo.favicons]
 icon = "favicon.png"
 mask_icon = "mask-icon.svg"

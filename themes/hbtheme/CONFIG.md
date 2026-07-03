@@ -256,6 +256,6 @@ params:
 ## 자주 생기는 문제 빠른 확인
 
 1. 검색 결과가 없음: `outputs.home`에 `SearchIndex`가 있는지 확인합니다.
-2. 아이콘이 안 보임: `config/_default/module.yml`의 아이콘 vendor import 누락 여부를 확인합니다.
+2. 아이콘이 안 보임: npm 아이콘 패키지가 설치되어 있는지, 또는 사이트/테마의 `assets/icons/<vendor>/<name>.svg` 로컬 아이콘이 있는지 확인합니다.
 3. 로고가 안 보임: `params.hb.logo` 경로의 이미지 파일 존재 여부를 확인합니다.
 4. 검색 정확도가 이상함: `params.search.threshold`, `min_match_char_length`, `index_content`를 먼저 조정합니다.

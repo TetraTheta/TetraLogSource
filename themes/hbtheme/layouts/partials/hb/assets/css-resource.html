@@ -25,6 +25,7 @@
       $sassSilenceDeprecations
     )
     "silenceDependencyDeprecations" true
+    "includePaths" (slice "node_modules")
     "targetPath" (printf "css/%s%s.css" $bundle $suffix)
     "enableSourceMap" hugo.IsProduction
     "vars" site.Params.hb.styles

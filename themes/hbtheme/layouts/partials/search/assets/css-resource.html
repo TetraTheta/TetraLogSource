@@ -7,6 +7,7 @@
   "transpiler" (default "dartsass" site.Params.search.sass_transpiler)
   "silenceDeprecations" (slice "if-function")
   "silenceDependencyDeprecations" true
+  "includePaths" (slice "node_modules")
   "targetPath" (cond $rtl "css/search.rtl.css" "css/search.css")
   "enableSourceMap" (not hugo.IsProduction)
   "outputStyle" (cond hugo.IsProduction "compressed" "expanded")

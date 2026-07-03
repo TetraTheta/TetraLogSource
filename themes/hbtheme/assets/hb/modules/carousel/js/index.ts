@@ -1,4 +1,4 @@
-import Carousel from 'js/bootstrap/src/carousel';
+import Carousel from 'bootstrap/js/src/carousel';
 
 (() => {
   document.querySelectorAll<HTMLElement>('.carousel').forEach((el) => {

@@ -2,7 +2,7 @@
 
 이 저장소는 [TetraLog](https://tetralog.onrender.com/) 블로그의 Hugo 소스입니다.
 
-현재 블로그는 `themes/hbtheme`에 들어 있는 전통적인 Hugo 테마를 사용하며, 일부 아이콘 관련 의존성만 Hugo Module로 유지합니다.
+현재 블로그는 `themes/hbtheme`에 들어 있는 전통적인 Hugo 테마를 사용합니다. 외부 Hugo Module은 쓰지 않고, 테마의 프런트엔드 의존성은 pnpm workspace로 설치합니다.
 
 ## 개요
 
@@ -11,18 +11,25 @@
 - 테마: [`themes/hbtheme`](themes/hbtheme)
 - 특징:
   - `hbstack` / `hugomods`의 Hugo Module 기반 테마를 전통적인 Hugo 테마 구조로 통합
-  - Bootstrap, Fuse 등 프런트엔드 런타임 의존성은 루트 `package.json`에서 관리
+  - Bootstrap, Fuse, highlight.js, 아이콘 등 테마 의존성은 `themes/hbtheme/package.json`에서 관리
+  - 루트 `package.json`은 사이트 실행 스크립트와 CLI 엔트리만 유지
 
 ## 요구 사항
 
-- Hugo `0.159.2` 이상 권장
+- Hugo `0.161.1` 이상 권장
 - Node.js `20.x` 이상 권장
-- pnpm `10.x` 이상 권장
+- pnpm `11.x` 이상 권장
 
-설치 후에는 프로젝트 루트에서 아래 명령을 실행합니다.
+클론 후 프로젝트 루트에서 의존성을 설치합니다. Hugo는 npm 의존성을 자동 설치하지 않습니다.
 
 ```bash
 pnpm install
+```
+
+프로덕션 빌드는 아래 명령을 사용합니다.
+
+```bash
+pnpm run build
 ```
 
 ## 자주 쓰는 명령
@@ -54,6 +61,6 @@ pnpm run check-update
 
 ## 메모
 
-- 아이콘 vendor는 여전히 Hugo Module import로 유지합니다.
-- Bootstrap SCSS/JS와 Fuse는 루트 `node_modules`를 Hugo `mounts`로 노출해 사용합니다.
-- `@hbstack/node-packages`는 더 이상 사용하지 않으며, 필요한 패키지는 루트 `package.json`에 직접 선언되어 있습니다.
+- 외부 Hugo Module은 없습니다. `hugo mod graph`는 `project hbtheme`만 반환해야 합니다.
+- 루트 `config/_default/module.yml`은 필요하지 않습니다. Hugo 기본 mount가 루트 `assets`와 테마 `assets`, `layouts`, `i18n`을 처리합니다.
+- `@hbstack/node-packages`는 더 이상 사용하지 않으며, 필요한 테마 패키지는 `themes/hbtheme/package.json`에 직접 선언되어 있습니다.

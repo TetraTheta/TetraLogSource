@@ -1,1 +1,1 @@
-import 'js/bootstrap/src/scrollspy';
+import 'bootstrap/js/src/scrollspy';

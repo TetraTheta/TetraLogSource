@@ -1,4 +1,4 @@
-import Tooltip from 'js/bootstrap/src/tooltip';
+import Tooltip from 'bootstrap/js/src/tooltip';
 
 (() => {
   document.querySelectorAll('abbr').forEach((element) => {

@@ -78,19 +78,7 @@
 - `github.com/hugomods/search-index`
 - `github.com/hugomods/snackbar`
 
-## 테마 밖에 남겨둔 외부 의존성
-
-### Hugo Module
-
-현재 `config/_default/module.yml`에서 유지하는 외부 Hugo Module은 아래 다섯 가지 아이콘 vendor입니다.
-
-- `github.com/hugomods/icons/vendors/bootstrap`
-- `github.com/hugomods/icons/vendors/font-awesome`
-- `github.com/hugomods/icons/vendors/lucide`
-- `github.com/hugomods/icons/vendors/mdi`
-- `github.com/hugomods/icons/vendors/simple-icons`
-
-### 사이트 수준에서 관리하는 기능
+## 테마 밖에 남겨둔 기능
 
 아래 기능은 통합 대상에서 제외했거나, 사이트 설정/외부 스크립트/CDN 방식으로 관리하는 것이 전제입니다.
 
@@ -104,10 +92,20 @@
 
 - Disqus wrapper는 더 이상 외부 Hugo Module이 아닙니다.
   관련 hook partial은 `hbtheme` 내부에 포함되어 있습니다.
-- Bootstrap SCSS와 JS는 테마 폴더에 vendoring하지 않았습니다.
-  대신 루트 `node_modules`를 `module.mounts`로 노출해 사용합니다.
-- `@hbstack/node-packages`는 제거되었고, 필요한 프런트엔드 패키지는 루트 `package.json`에 직접 선언되어 있습니다.
+- Bootstrap, Fuse, highlight.js, PostCSS 관련 npm 패키지는 `themes/hbtheme/package.json`에서 관리합니다.
+- 아이콘 렌더링 partial은 `hbtheme` 내부에 포함되어 있고, Bootstrap Icons, Font Awesome, Lucide, MDI, Simple Icons SVG는 npm 패키지에서 읽습니다.
+- 루트 `config/_default/module.yml`은 필요하지 않습니다. 비표준 경로를 mount해야 할 때만 사이트에서 별도로 추가합니다.
 - Hugo 0.159 기준 deprecated API 치환은 이미 테마 내부에 반영되어 있습니다.
+
+## 아이콘 소스와 라이선스
+
+아이콘 SVG는 복사본을 두지 않고 아래 npm 패키지에서 직접 읽습니다.
+
+- `bootstrap-icons`: MIT
+- `@fortawesome/fontawesome-free`: Font Awesome Free 라이선스
+- `lucide-static`: ISC
+- `@mdi/svg`: 코드 MIT, 아이콘은 Apache 2.0 또는 각 아이콘의 재배포 라이선스
+- `simple-icons`: CC0-1.0. 브랜드 아이콘은 Simple Icons 패키지의 라이선스/브랜드 가이드 메타데이터도 함께 확인해야 합니다.
 
 ## `hugo.toml` 기본값 이관 범위
 
@@ -146,13 +144,13 @@
 1. 이 기능이 테마 내부인지, 외부 Hugo Module인지, 사이트 수준 기능인지 확인
 2. [`hugo.toml`](hugo.toml)에 기본값이 있는지 확인
 3. 루트 `config/_default/params.yml`, `config/_default/hugo.yml`에서 override가 있는지 확인
-4. `config/_default/module.yml`의 mount/import가 올바른지 확인
+4. 테마 npm 의존성이 설치되어 있고 Hugo 기본 mount가 유지되는지 확인
 5. 루트 `layouts/`, `assets/`, `i18n/`에서 사이트 고유 오버라이드가 있는지 확인
 6. 그래도 이상하면 upstream 원본과 비교
 
 ## AI 또는 유지보수 담당자를 위한 메모
 
-이 테마를 다룰 때는 [README.md](E:/REPO/hugo-blog/themes/hbtheme/README.md)만 읽고 끝내면 안 됩니다.  
+이 테마를 다룰 때는 [README.md](README.md)만 읽고 끝내면 안 됩니다.  
 아래 두 문서를 함께 봐야 현재 구조를 정확히 이해할 수 있습니다.
 
 - [README.md](README.md)
