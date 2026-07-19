@@ -12,29 +12,29 @@ images:
   - logo.webp
 ---
 
-Visual Studio는 매우 훌륭한 IDE입니다만, 사소한 부분에서 부족한 점이 있습니다. 창 상단의 툴바를 고정할 수 없다거나, 특정 UI 요소를 숨길 수 없다거나 하는 것 말이죠.
+Visual Studio는 매우 훌륭한 IDE이지만 창 상단의 툴바를 고정할 수 없다거나, 특정 UI 요소를 숨길 수 없다거나 하는 것 같이 사소한 부분에서 부족한 점이 제법 많다.
 
-이 글에서는 은근히 거슬리는 로그인 버튼과 피드백 버튼을 제거하는 방법을 알려드리겠습니다.
+이 글에서는 은근히 거슬리는 로그인 버튼과 피드백 버튼을 제거하는 방법을 안내하겠다.
 
 {{< gallery/image src="001" caption="우측 상단의 로그인 버튼과 피드백 버튼" >}}
 
 # Visual Commander 설치
 
-먼저 [Visual Commander](https://marketplace.visualstudio.com/items?itemName=SergeyVlasov.VisualCommander) 확장 패키지 설치가 필요합니다.
+먼저 [Visual Commander](https://marketplace.visualstudio.com/items?itemName=SergeyVlasov.VisualCommander) 확장 패키지 설치가 필요하다.
 
 <link-preview url="https://marketplace.visualstudio.com/items?itemName=SergeyVlasov.VisualCommander" title="Visual Commander - Visual Studio Marketplace" desc="Extension for Visual Studio - Automate repetitive tasks in Visual Studio IDE. Reuse your existing Visual Studio macros or create new commands and extensions in C# or VB. Record and playback text editing macros." image="https://SergeyVlasov.gallerycdn.vsassets.io/extensions/sergeyvlasov/visualcommander/3.4.1/1738562624414/Microsoft.VisualStudio.Services.Icons.Default"></link-preview>
 
-Visual Studio를 연 뒤, '확장 - 확장 관리' 메뉴를 눌러 확장 관리자를 엽니다.
+Visual Studio를 연 뒤, '확장 - 확장 관리' 메뉴를 눌러 확장 관리자를 연다.
 
 {{< gallery/image src="002" >}}
 
-검색창에 Visual Commander를 검색한 후, 해당 확장 패키지를 설치합니다. Visual Studio를 완전히 종료해야 확장 패키지가 실제로 설치되므로, Visual Studio를 종료한 후, 다시 시작합니다.
+검색창에 Visual Commander를 검색한 후, 해당 확장 패키지를 설치한다. Visual Studio를 완전히 종료해야 확장 패키지가 실제로 설치되므로, Visual Studio를 종료한 후, 다시 시작한다.
 
-이제 Visual Studio를 다시 열면 '확장' 메뉴 아래 VCmd 메뉴가 새로 생긴 것을 확인할 수 있습니다.
+이제 Visual Studio를 다시 열면 '확장' 메뉴 아래 VCmd 메뉴가 새로 생긴 것을 확인할 수 있다.
 
 # Extension 다운로드 및 불러오기
 
-다음 두 파일을 다운로드합니다.
+다음 두 파일을 다운로드한다.
 
 * [Hide Feedback in VS 2022.vcmd](https://www.mediafire.com/file/4zgh77rqnjtl2zf/Hide_Feedback_in_VS_2022.vcmd/file)
 * [Hide Sign In in VS 2022.vcmd](https://www.mediafire.com/file/u0tds14h2ocyihk/Hide_Sign_In_in_VS_2022.vcmd/file)
@@ -167,8 +167,8 @@ Visual Studio를 연 뒤, '확장 - 확장 관리' 메뉴를 눌러 확장 관�
 ```
 {{< /collapse >}}
 
-'확장 - VCmd - Import'를 눌러 두 vcmd 파일을 불러옵니다. 각각 하나의 Extension을 등록합니다.
+'확장 - VCmd - Import'를 눌러 두 vcmd 파일을 불러온다. 각각 하나의 Extension을 등록한다.
 
 {{< gallery/image src="003" >}}
 
-이제 Visual Studio를 재시작하면 로그인 버튼과 피드백 버튼이 사라진 걸 확인할 수 있습니다.
+이제 Visual Studio를 재시작하면 로그인 버튼과 피드백 버튼이 사라진 걸 확인할 수 있다.
