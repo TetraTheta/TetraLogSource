@@ -300,11 +300,14 @@ Windows Installer는 몹시 까탈스러워 시스템 무결성이 손상된 상
 
 개인적으로 `HKLM`의 키는 소유자를 변경해서는 안된다고 생각하지만, 시스템의 유일한 사용자가 나 자신이었으므로 그냥 변경했다.
 
-1. `HKLM\SOFTWARE\Classes\Directory\shell`에 `AnyCode`라는 키를 생성한다.
-2. `AnyCode`를 우클릭한 후, '사용 권한'을 클릭한다.
-3. 다음과 같이 설정한다.
-   - 그룹 또는 사용자 이름: `SYSTEM`, `Administrators`, '현재 사용자'를 추가한 후, 셋 모두에게 '모든 권한'을 부여한다.
-   - 고급 - 소유자: `Administrators`를 '현재 사용자'로 변경한다.
+1. 다음 두 경로에 `AnyCode`라는 키를 생성한다.
+   - `HKLM\SOFTWARE\Classes\Directory\shell`
+   - `HKLM\SOFTWARE\Classes\Directory\Background\shell`
+2. 각 `AnyCode` 키에 대해 다음 작업을 수행한다.
+   1. `AnyCode`를 우클릭한 후, '사용 권한'을 클릭한다.
+   2. 다음과 같이 설정한다.
+      - 그룹 또는 사용자 이름: `SYSTEM`, `Administrators`, '현재 사용자'를 추가한 후, 셋 모두에게 '모든 권한'을 부여한다.
+      - 고급 - 소유자: `Administrators`를 '현재 사용자'로 변경한다.
 
 # 6. MSI 수동 설치
 
