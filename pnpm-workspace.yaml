@@ -1,4 +1,5 @@
 overrides:
+  "postcss": ">=8.5.18"
   "undici": "^7.28.0"
 nodeLinker: "hoisted"
 packages:

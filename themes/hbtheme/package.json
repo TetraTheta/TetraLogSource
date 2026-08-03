@@ -3,26 +3,26 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.3.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "@fullhuman/postcss-purgecss": "^8.0.0",
     "@mdi/svg": "^7.4.47",
     "@popperjs/core": "^2.11.8",
-    "autoprefixer": "^10.5.0",
+    "autoprefixer": "^10.5.4",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
-    "fuse.js": "^7.4.2",
+    "fuse.js": "^7.5.0",
     "highlight.js": "^11.11.1",
-    "lucide-static": "^1.23.0",
+    "lucide-static": "^1.28.0",
     "postcss-cli": "^11.0.1",
     "rtlcss": "^4.3.0",
-    "simple-icons": "^16.24.1"
+    "simple-icons": "^16.28.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^26.0.0",
-    "eslint": "^10.5.0",
+    "@types/node": "^26.1.2",
+    "eslint": "^10.8.0",
     "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.8.4",
-    "typescript-eslint": "^8.61.1"
+    "prettier": "^3.9.6",
+    "typescript-eslint": "^8.65.0"
   }
 }

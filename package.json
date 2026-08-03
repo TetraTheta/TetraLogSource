@@ -6,13 +6,14 @@
   "type": "module",
   "scripts": {
     "build": "pnpm --filter @tetralog/cli run cli clean && hugo --gc --minify -e production && pnpm --filter @tetralog/cli run cli deslash",
-    "check-update": "pnpm dlx npm-check-updates",
     "cli": "pnpm --filter @tetralog/cli run cli",
     "dev": "hugo server --renderToMemory --disableFastRender -D -p 44",
     "dev.prod": "hugo server --gc --minify --renderToMemory --disableFastRender -D -e production -p 44",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "update": "pnpm dlx npm-check-updates --workspaces",
+    "upgrade": "pnpm dlx npm-check-updates --workspaces -u && pnpm install"
   },
-  "packageManager": "pnpm@11.8.0+sha512.c1f5e7c4cb241c8f174b743851d82f42b802324afc8b0f116b96adb15aa06664948dde36960a3ba1079ba5b4b29dd0140135b94b5b5f5263592249d68e555f26",
+  "packageManager": "pnpm@11.18.0",
   "engines": {
     "npm": "Use pnpm instead of npm."
   }
