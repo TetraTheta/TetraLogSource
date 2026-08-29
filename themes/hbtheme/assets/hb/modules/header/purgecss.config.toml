@@ -1,5 +1,0 @@
-attributes = ["data-columns"]
-classes = [
-  "offcanvas-backdrop", # Required by Offcanvas.
-  "shadow-sm",
-]

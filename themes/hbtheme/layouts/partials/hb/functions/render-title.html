@@ -1,9 +1,0 @@
-{{- $title := .Title -}}
-{{- with .Page -}}
-  {{- $title = .RenderString $title -}}
-{{- end -}}
-{{- if .Plain -}}
-  {{- $title | plainify | htmlUnescape -}}
-{{- else -}}
-  {{- $title -}}
-{{- end -}}

@@ -141,6 +141,15 @@ cd "$HOME/project/src" || {
   echo "Failed to change directory to build directory"
   exit 1
 }
+echo "Updating git submodules..."
+git submodule sync --recursive || {
+  echo "Failed to sync git submodules."
+  exit 1
+}
+git submodule update --init --recursive --remote --force || {
+  echo "Failed to update git submodules."
+  exit 1
+}
 echo "Installing workspace dependencies via pnpm..."
 "$PNPM_BIN" install --frozen-lockfile || {
   echo "Failed to install dependencies with pnpm."
