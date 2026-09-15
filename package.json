@@ -13,7 +13,7 @@
     "update": "pnpm dlx npm-check-updates --cooldown 7d --workspaces",
     "upgrade": "pnpm dlx npm-check-updates --cooldown 7d --workspaces -u && pnpm install"
   },
-  "packageManager": "pnpm@11.24.0",
+  "packageManager": "pnpm@12.4.2",
   "engines": {
     "npm": "Use pnpm instead of npm."
   }
