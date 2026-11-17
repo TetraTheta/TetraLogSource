@@ -1,6 +1,6 @@
 ---
 title: "뭔가 묘하게 맛이 없는데..."
-slug: armed-aris-and-kei
+slug: armed-aris-and-kei-fes
 date: 2026-06-09T22:16:52+09:00
 series:
 #  - 
