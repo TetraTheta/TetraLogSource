@@ -1,6 +1,6 @@
 ---
 title: "풀 오토 인세인"
-slug: insane-full-auto
+slug: total-assault-insane-full-auto
 date: 2026-01-21T21:38:46+09:00
 series:
 #  - 
